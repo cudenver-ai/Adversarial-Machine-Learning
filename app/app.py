@@ -1,5 +1,5 @@
 from flask import Flask, send_from_directory, request, jsonify
-from app.model import pre_processing
+#from app.model import pre_processing
 from werkzeug.utils import secure_filename
 import os
 

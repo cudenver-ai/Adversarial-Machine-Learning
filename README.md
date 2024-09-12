@@ -18,10 +18,18 @@
 
 #### Create a Virtual Environment
 
+**Python Virtual Environment**
 - python -m venv .venv
 - Activate it
   - Windows: .venv\Scripts\activate
   - Linux: source .venv/bin/activate
+
+Alternatively, if you use Conda to manage your environments:
+
+**Conda**
+- conda create -n Adversarial-Machine-Learning python=3.10
+- Activate it:
+  - conda activate Adversarial-Machine-Learning
 
 #### Install Python Dependencies:
 
@@ -30,8 +38,10 @@
 
 #### Install Node.js / npm Dependencies:
 
+If you don't already have Node.js installed, follow [these instructions](https://nodejs.org/en/download/package-manager) to install.
+
 - nvm use node (get the latest version of Node.js)
-- npm install
+- npm --prefix ./amlchallenge install ./amlchallenge
 
 #### Build the Project
 
@@ -44,12 +54,12 @@ Before running the app, you need to build the front end using Remix
 Back-End:
 Make sure the backend (Flask) is running on a separate port (I have it set to port 5000):
 
-- python app.py
+- python ./app/app.py
 
 Front-End:
 Start the Remix front end
 
-- npm start
+- npm --prefix ./amlchallenge start
 
 The Flask API will be available at http://<ip>:5000/
 The Remix front end will be available at http://<ip>:3000/ or whatever port you specified
