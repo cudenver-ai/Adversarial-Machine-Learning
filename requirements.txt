@@ -1,0 +1,5 @@
+# Add requirements here
+Flask==2.3.2
+Werkzeug==2.3.4
+pandas==2.1.0
+
