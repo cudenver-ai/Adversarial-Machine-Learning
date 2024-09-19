@@ -13,7 +13,6 @@ const mainListItems = [
   { text: 'Learn More', icon: <AssignmentRoundedIcon /> },
 ];
 
-
 export default function MenuContent() {
   return (
     <Stack sx={{ flexGrow: 1, p: 1, justifyContent: 'space-between' }}>

@@ -86,6 +86,17 @@ def get_leaderboard_data():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
+    
+@app.route("/api/visits", methods=["GET"])
+def get_site_visits():
+    data = f'{path}{"Data/visits.json"}'
+
+    if os.path.exists(data):
+        results = loadData(data)
+        return jsonify(results)
+    else:
+        return jsonify({"error": "Challenge data not found"}), 404
+    
 # Run the Flask app on port 5000
 if __name__ == "__main__":
     # For local development, you can run on localhost

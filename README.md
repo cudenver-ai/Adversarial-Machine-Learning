@@ -1,8 +1,22 @@
+# Adversarial Machine Learning challenge for the 5th Data Science and AI Symposium
+
+## Before Contributing to This Project:
+
+### Branching Strategy:
+
+- Always create a separate branch for your changes.
+- Never push your changes directly to the main branch.- Pull Requests:
+- All changes must go through a pull request.
+- Pull requests must be reviewed and approved before merging.
+- Feel free to ask questions or seek clarification if needed.
+
+
 ### Prerequisites:
 
 - Python: Version 3.10 or higher.
 - Node.js / npm: You can install this via nvm (Node Version Manager) for better version control. You will need Node.js version 20 or higher
 - nvm: Highly recommend you install nvm to manage your Node.js versions efficiently.
+
 
 #### Create a Virtual Environment
 
@@ -27,7 +41,7 @@ Alternatively, if you use Conda to manage your environments:
 #### Install Node.js / npm Dependencies:
 
 Install Node.js [Install npm](https://nodejs.org/en/download/package-manager)
-Install nvm [install nvm](https://github.com/nvm-sh/nvm)
+Install nvm [Install nvm](https://github.com/nvm-sh/nvm)
 
 - Run `nvm use node`
   - To get the latest version of node
@@ -36,7 +50,7 @@ Install nvm [install nvm](https://github.com/nvm-sh/nvm)
 
 1. Navigate to the Project Directory:
 
-   - `cd front-end-temp`
+   - `cd front-end`
 
 2. Install Depencies:
 
@@ -46,10 +60,12 @@ Install nvm [install nvm](https://github.com/nvm-sh/nvm)
 
    - `npm run dev`
 
-4. Project Structure: The front-end code primarily resides in the src/ folder, which contains the following key files:
+4. Front-End Structure: The front-end code primarily resides in the src/ folder, which contains the following key files:
 
-- `src/App.jsx`: The main entry point for the React application.
-- `src/CreateItem.jsx`: Component that handles item creation. -`src/UsersList.jsx`: Component that displays a list of users.
+- `src/App.jsx`: The main entry point for the React application. This is what you see when you go to `localhost:5173`
+- `src/config.js` : Serves a global variable to indicate which route to to use for the API 
+- `src/componets`: Independent site components. These componenets are used thoughrout the app to 
+- `vite.config.js`: Configuration for the api routes
 
 5. Why We Use Vite:
 

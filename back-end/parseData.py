@@ -22,7 +22,7 @@ def loadData(file):
 def load_image_dir(images, teamName):
 
     dirName = secure_filename(teamName)
-    TEAM_UPLOAD = os.path.join("uploads", dirName)
+    TEAM_UPLOAD = os.path.join("Uploads", dirName)
     os.makedirs(TEAM_UPLOAD, exist_ok=True)
 
     # Process each uploaded image

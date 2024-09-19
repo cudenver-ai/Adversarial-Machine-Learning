@@ -51,7 +51,7 @@ export default function SessionsChart() {
     fetch(`${API_BASE_URL}/api/visits`)
       .then((response) => response.json())
       .then((data) => {
-        setVisitsData(data); // Store the fetched data in state
+        setVisitsData(data); 
       })
       .catch((error) => console.error("Error fetching visits data:", error));
   }, []);

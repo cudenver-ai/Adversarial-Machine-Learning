@@ -10,27 +10,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import AppNavbar from './components/AppNavbar.jsx';
-import AppTheme from '../shared-theme/AppTheme.jsx';
-import {
-  chartsCustomizations,
-  dataGridCustomizations,
-  datePickersCustomizations,
-  treeViewCustomizations,
-} from './theme/customizations';
-
-const xThemeComponents = {
-  ...chartsCustomizations,
-  ...dataGridCustomizations,
-  ...datePickersCustomizations,
-  ...treeViewCustomizations,
-};
+import AppTheme from '../theme/AppTheme.jsx';
 
 export default function Dashboard(props) {
   return (
-    <AppTheme {...props} themeComponents={xThemeComponents}>
+    <AppTheme {...props} >
       <CssBaseline enableColorScheme />
       <Router>
-      <Box sx={{ display: 'flex', pt: '64px' }}> {/* Add padding to prevent overlap */}
+      <Box sx={{ display: 'flex', pt: '64px' }}> 
       <AppNavbar />
         <Box
           component="main"
@@ -40,7 +27,7 @@ export default function Dashboard(props) {
               ? `rgba(${theme.vars.palette.background.defaultChannel} / 1)`
               : alpha(theme.palette.background.default, 1),
             overflow: 'auto',
-            paddingTop: '20px', // Optional: Add additional padding
+            paddingTop: '20px', 
           })}
         >
           <Stack

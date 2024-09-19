@@ -12,6 +12,8 @@ import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 import SideMenuMobile from './SideMenuMobile';
 import MenuButton from './MenuButton';
 import { Link } from 'react-router-dom';
+import ColorModeIconDropdown from '../../theme/ColorModeIconDropdown';
+
 
 
 const Toolbar = styled(MuiToolbar)({
@@ -91,10 +93,13 @@ export default function AppNavbar() {
               </Button>
             </Box>
           </Stack>
+          <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
+          <ColorModeIconDropdown />
           <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
             <MenuRoundedIcon />
           </MenuButton>
           <SideMenuMobile open={open} toggleDrawer={toggleDrawer} />
+          </Stack>
         </Stack>
       </StyledToolbar>
     </AppBar>
