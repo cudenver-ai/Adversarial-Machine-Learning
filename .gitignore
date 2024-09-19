@@ -1,3 +1,15 @@
 __pycache__/
 .venv/
 .idea/
+/front_end/build/
+node_modules/
+package-lock.json
+notes.md
+Vite.md
+app.log
+
+#uncomment this out when it goes out to prod
+#.env.development
+#.env.production
+#.flaskenv
+
