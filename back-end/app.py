@@ -25,7 +25,8 @@ UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # ensure your routes are prefixed with /api.
-
+path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+#path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
 @app.route("/api/upload-images", methods=["POST"])
 def upload_images():
@@ -43,11 +44,10 @@ def upload_images():
     return jsonify({"message": message, "uploaded": len(files)})
 
 
-
 @app.route("/api/team-data", methods=["GET"])
 def get_team_data():
-    path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
-    data = f"{path}{"Data/TeamData.json"}"
+
+    data = f'{path}{"Data/TeamData.json"}'
     # Load and return the parsed team data
     if os.path.exists(data):
         results = loadData(data)
@@ -58,20 +58,8 @@ def get_team_data():
 
 @app.route("/api/eval-data", methods=["GET"])
 def get_eval_data():
-    path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
     # Load and return the parsed team data
-    data = f"{path}{"Data/evalMetric.json"}"
-
-    if os.path.exists(data):
-        results = loadData(data)
-        return jsonify(results)
-    else:
-        return jsonify({"error": "Evaluation data not found"}), 404
-
-@app.route("/api/visits", methods=["GET"])
-def get_visits_data():
-    path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
-    data = f"{path}{"Data/visits.json"}"
+    data = f'{path}{"Data/evalMetric.json"}'
 
     if os.path.exists(data):
         results = loadData(data)
@@ -81,8 +69,7 @@ def get_visits_data():
 
 @app.route('/api/challenge', methods=['GET'])
 def get_challenge_content():
-    path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
-    data = f"{path}{"Data/challenge.json"}"
+    data = f'{path}{"Data/challenge.json"}'
 
     if os.path.exists(data):
         results = loadData(data)
@@ -92,8 +79,7 @@ def get_challenge_content():
 
 @app.route("/api/leaderboard", methods=["GET"])
 def get_leaderboard_data():
-    path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
-    data = f"{path}{"Data/leaderboard.json"}"
+    data = f'{path}{"Data/leaderboard.json"}'
 
     if os.path.exists(data):
         results = loadData(data)
