@@ -1,0 +1,28 @@
+[
+    {
+      "id": "Visits",
+      "label": "Visits",
+      "showMark": false,
+      "curve": "linear",
+      "stack": "total",
+      "area": true,
+      "stackOrder": "ascending",
+      "data": [
+        30, 40, 35, 50, 55, 60, 65, 70, 75, 80, 85, 90,
+        95, 100, 110, 120, 125, 130, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190
+      ]
+    },
+    {
+      "id": "Uploads",
+      "label": "Uploads",
+      "showMark": false,
+      "curve": "linear",
+      "stack": "total",
+      "area": true,
+      "stackOrder": "ascending",
+      "data": [
+        5, 10, 8, 12, 9, 14, 12, 15, 16, 17, 18, 19,
+        20, 22, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41
+      ]
+    }
+  ]
