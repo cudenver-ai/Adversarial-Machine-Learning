@@ -1,0 +1,82 @@
+[
+    {
+        "id": 16,
+        "TeamName": "Code Crusaders",
+        "LastSubmission": "2024-09-17 15:30:00",
+        "SuccessRate": 90,
+        "PerturbationMagnitude": 88,
+        "AverageConfidence": 80.6,
+        "ConfidenceGap": 10.6,
+        "VisualSimilarity": 78.6,
+        "TotalScore": "92",
+        "Rank": 16
+    },
+    {
+        "incorrect_ratio": "SuccessRate",
+        "avg_confidence_incorrect": "AverageConfidence",
+        "avg_confidence_gap": "ConfidenceGap",
+        "avg_l2_perturbation": "PerturbationMagnitude",
+        "avg_ssim": "VisualSimilarity",
+        "score": "TotalScore"
+    },
+    {
+        "incorrect_ratio": 0.965,
+        "avg_confidence_incorrect": 0.9855,
+        "avg_l2_perturbation": 1.3523,
+        "avg_ssim": 0.9899,
+        "avg_confidence_gap": -0.0482,
+        "score": 0.6118,
+        "team_name": "AI Knights",
+        "time_stamp": "2024-09-14 13:15:00"
+    },
+    {
+        "incorrect_ratio": 0.965,
+        "avg_confidence_incorrect": 0.9855,
+        "avg_l2_perturbation": 1.3523,
+        "avg_ssim": 0.9899,
+        "avg_confidence_gap": -0.0482,
+        "score": 0.6118,
+        "team_name": "Data Guradians",
+        "time_stamp": "2024-09-14 13:30:00"
+    },
+    {
+        "incorrect_ratio": 0.965,
+        "avg_confidence_incorrect": 0.9855,
+        "avg_l2_perturbation": 1.3523,
+        "avg_ssim": 0.9899,
+        "avg_confidence_gap": -0.0482,
+        "score": 0.6118,
+        "team_name": "AI Knights",
+        "time_stamp": "2024-09-14 13:15:00"
+    },
+    {
+        "incorrect_ratio": 0.965,
+        "avg_confidence_incorrect": 0.9855,
+        "avg_l2_perturbation": 1.3523,
+        "avg_ssim": 0.9899,
+        "avg_confidence_gap": -0.0482,
+        "score": 0.6118,
+        "team_name": "Data Guradians",
+        "time_stamp": "2024-09-14 13:30:00"
+    },
+    {
+        "incorrect_ratio": 0.965,
+        "avg_confidence_incorrect": 0.9855,
+        "avg_l2_perturbation": 1.3523,
+        "avg_ssim": 0.9899,
+        "avg_confidence_gap": -0.0482,
+        "score": 0.6118,
+        "team_name": "AI Knights",
+        "time_stamp": "2024-09-14 13:15:00"
+    },
+    {
+        "incorrect_ratio": 0.965,
+        "avg_confidence_incorrect": 0.9855,
+        "avg_l2_perturbation": 1.3523,
+        "avg_ssim": 0.9899,
+        "avg_confidence_gap": -0.0482,
+        "score": 0.6118,
+        "team_name": "Data Guradians",
+        "time_stamp": "2024-09-14 13:30:00"
+    }
+]
