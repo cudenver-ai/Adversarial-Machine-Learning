@@ -7,8 +7,8 @@ import os
 from parseData import loadData, load_image_dir
 """
 Frontend URL: http://192.168.1.100:5173
-Backend API: Proxied via Vite from /api to http://192.168.1.100:5000/api"""
-
+Backend API: Proxied via Vite from /api to http://192.168.1.100:5000/api
+"""
 
 app = Flask(__name__)
 
@@ -19,13 +19,15 @@ else:
 
 CORS(app, resources={r"/api/*": {"origins": app.config["CORS_ORIGINS"]}})
 
-print(os.environ.get("FLASK_ENV"))
+# print(os.environ.get("FLASK_ENV"))
 
 UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
+path = os.getcwd()
+print(path)
 # ensure your routes are prefixed with /api.
-path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+# path = "C:/Users/Admin/Desktop/aiass/Adversarial-Machine-Learning/back-end"
 #path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
 @app.route("/api/upload-images", methods=["POST"])
@@ -44,10 +46,12 @@ def upload_images():
     return jsonify({"message": message, "uploaded": len(files)})
 
 
-@app.route("/api/team-data", methods=["GET"])
+@app.route("/api/team-data/", methods=["GET"])
 def get_team_data():
 
-    data = f'{path}{"Data/TeamData.json"}'
+    # data = f'{path}{"Data/TeamData.json"}'
+    data = os.path.join(path, "Data/TeamData.json")
+
     # Load and return the parsed team data
     if os.path.exists(data):
         results = loadData(data)
@@ -56,10 +60,13 @@ def get_team_data():
         return jsonify({"error": "Evaluation data not found"}), 404
 
 
-@app.route("/api/eval-data", methods=["GET"])
+@app.route("/api/eval-data/", methods=["GET"])
 def get_eval_data():
     # Load and return the parsed team data
-    data = f'{path}{"Data/evalMetric.json"}'
+    # data = f'{path}{"Data/evalMetric.json"}'
+    # data = f'{path}/Data/evalMetric.json'
+    data = os.path.join(path, "Data/evalMetric.json")
+
 
     if os.path.exists(data):
         results = loadData(data)
@@ -67,9 +74,10 @@ def get_eval_data():
     else:
         return jsonify({"error": "Visits data not found"}), 404
 
-@app.route('/api/challenge', methods=['GET'])
+@app.route('/api/challenge/', methods=['GET'])
 def get_challenge_content():
-    data = f'{path}{"Data/challenge.json"}'
+    # data = f'{path}{"Data/challenge.json"}'
+    data = os.path.join(path, "Data/challenge.json")
 
     if os.path.exists(data):
         results = loadData(data)
@@ -77,9 +85,10 @@ def get_challenge_content():
     else:
         return jsonify({"error": "Challenge data not found"}), 404
 
-@app.route("/api/leaderboard", methods=["GET"])
+@app.route("/api/leaderboard/", methods=["GET"])
 def get_leaderboard_data():
-    data = f'{path}{"Data/leaderboard.json"}'
+    # data = f'{path}{"Data/leaderboard.json"}'
+    data = os.path.join(path, "Data/leaderboard.json")
 
     if os.path.exists(data):
         results = loadData(data)
@@ -87,9 +96,11 @@ def get_leaderboard_data():
     else:
         return jsonify({"error": "Challenge data not found"}), 404
     
-@app.route("/api/visits", methods=["GET"])
+@app.route("/api/visits/", methods=["GET"])
 def get_site_visits():
-    data = f'{path}{"Data/visits.json"}'
+    # data = f'{path}{"Data/visits.json"}'
+    # data = f'{path}/Data/visits.json'
+    data = os.path.join(path, "Data/visits.json")
 
     if os.path.exists(data):
         results = loadData(data)
@@ -101,6 +112,7 @@ def get_site_visits():
 if __name__ == "__main__":
     # For local development, you can run on localhost
     app.run(port=5000, debug=True)
+    # app.run(host='0.0.0.0', port=5000, debug=True)
 
     # If you want to access this from other devices on your network, uncomment the line below
     # Replace '0.0.0.0' with your machine's local IP address if needed (e.g., 192.168.x.x)
