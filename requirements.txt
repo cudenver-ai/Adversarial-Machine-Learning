@@ -7,3 +7,7 @@ python-dotenv
 gunicorn
 pandas==2.1.0
 schedule
+skimage
+torch
+pickle
+git+https://github.com/RobustBench/robustbench.git

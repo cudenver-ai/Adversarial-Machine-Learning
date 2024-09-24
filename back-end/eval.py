@@ -21,10 +21,12 @@ logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s %(levelname)s %(message)s",
     handlers=[
-        logging.FileHandler("app.log"),
+        logging.FileHandler("eval.log"),
         logging.StreamHandler(),
     ],
 )
+
+logging.info("Starting evaluation script")
 
 def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamma=0.3, delta=0.2, epsilon=0.1667):
     # Pass the perturbed images through the model to get the logits
@@ -84,6 +86,14 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
              delta * (1 - avg_ssim) +  # SSIM is already between 0 and 1
              epsilon * avg_confidence_gap)  # Confidence gap normalized to [0,1]
 
+    
+    print(f"Incorrect ratio: {incorrect_ratio:.4f}")
+    print(f"Avg confidence of incorrect predictions: {avg_confidence_incorrect:.4f}")
+    print(f"Avg L2 perturbation: {avg_l2_perturbation:.4f}")
+    print(f"Avg SSIM: {avg_ssim:.4f}")
+    print(f"Avg confidence gap: {avg_confidence_gap:.4f}")
+    print(f"Score: {score:.4f}")
+
     return {
         "incorrect_ratio": round(float(incorrect_ratio), 4),
         "avg_confidence_incorrect": round(float(avg_confidence_incorrect), 4),
@@ -115,8 +125,15 @@ def main():
                     team_name = tmp[1].strip()
                     time_stamp = tmp[0].strip()
     
-    
-        x_test, y_test = load_cifar10(n_examples=200)
+        cifar_data = torch.load('cifar10_test_100_per_class.pt')
+
+        # Extract the images and labels tensors
+        x_test = cifar_data['images']
+        y_test = cifar_data['labels']
+        # x_test, y_test = load_cifar10(cifar_folder, n_examples=1000)
+        # model = load_model(model_name='Bai2024MixedNUTS')
+        x_test = x_test / 255.0
+        # x_test, y_test = load_cifar10(n_examples=200)
         model = load_model(model_name='Kireev2021Effectiveness_RLATAugMix', dataset='cifar10', threat_model='corruptions')
 
         # Check if GPU is available and set the device accordingly
