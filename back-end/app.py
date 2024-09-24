@@ -1,14 +1,14 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory, send_file
 from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
 import os
-
-
 from parseData import loadData, load_image_dir
+
 """
 Frontend URL: http://192.168.1.100:5173
 Backend API: Proxied via Vite from /api to http://192.168.1.100:5000/api
 """
+
 
 app = Flask(__name__)
 
@@ -20,15 +20,15 @@ else:
 CORS(app, resources={r"/api/*": {"origins": app.config["CORS_ORIGINS"]}})
 
 # print(os.environ.get("FLASK_ENV"))
+# print(os.environ.get("FLASK_ENV"))
 
 UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-path = os.getcwd()
-print(path)
 # ensure your routes are prefixed with /api.
-# path = "C:/Users/Admin/Desktop/aiass/Adversarial-Machine-Learning/back-end"
-#path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
+# path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
+
 
 @app.route("/api/upload-images", methods=["POST"])
 def upload_images():
@@ -38,7 +38,7 @@ def upload_images():
 
     # Get the list of uploaded files and team name
     files = request.files.getlist("files")
-    teamName = request.form.get('teamName', 'default_team')
+    teamName = request.form.get("teamName", "default_team")
 
     # Call the logic function to handle the image upload
     message = load_image_dir(files, teamName)
@@ -46,7 +46,7 @@ def upload_images():
     return jsonify({"message": message, "uploaded": len(files)})
 
 
-@app.route("/api/team-data/", methods=["GET"])
+@app.route("/api/team-data", methods=["GET"])
 def get_team_data():
 
     # data = f'{path}{"Data/TeamData.json"}'
@@ -60,13 +60,10 @@ def get_team_data():
         return jsonify({"error": "Evaluation data not found"}), 404
 
 
-@app.route("/api/eval-data/", methods=["GET"])
+@app.route("/api/eval-data", methods=["GET"])
 def get_eval_data():
     # Load and return the parsed team data
-    # data = f'{path}{"Data/evalMetric.json"}'
-    # data = f'{path}/Data/evalMetric.json'
-    data = os.path.join(path, "Data/evalMetric.json")
-
+    data = f'{path}{"Data/evalMetric.json"}'
 
     if os.path.exists(data):
         results = loadData(data)
@@ -74,7 +71,8 @@ def get_eval_data():
     else:
         return jsonify({"error": "Visits data not found"}), 404
 
-@app.route('/api/challenge/', methods=['GET'])
+
+@app.route("/api/challenge", methods=["GET"])
 def get_challenge_content():
     # data = f'{path}{"Data/challenge.json"}'
     data = os.path.join(path, "Data/challenge.json")
@@ -85,7 +83,8 @@ def get_challenge_content():
     else:
         return jsonify({"error": "Challenge data not found"}), 404
 
-@app.route("/api/leaderboard/", methods=["GET"])
+
+@app.route("/api/leaderboard", methods=["GET"])
 def get_leaderboard_data():
     # data = f'{path}{"Data/leaderboard.json"}'
     data = os.path.join(path, "Data/leaderboard.json")
@@ -95,11 +94,10 @@ def get_leaderboard_data():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
-    
-@app.route("/api/visits/", methods=["GET"])
+
+
+@app.route("/api/visits", methods=["GET"])
 def get_site_visits():
-    # data = f'{path}{"Data/visits.json"}'
-    # data = f'{path}/Data/visits.json'
     data = os.path.join(path, "Data/visits.json")
 
     if os.path.exists(data):
@@ -107,13 +105,12 @@ def get_site_visits():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
-    
+
+
 # Run the Flask app on port 5000
 if __name__ == "__main__":
     # For local development, you can run on localhost
     app.run(port=5000, debug=True)
-    # app.run(host='0.0.0.0', port=5000, debug=True)
 
     # If you want to access this from other devices on your network, uncomment the line below
-    # Replace '0.0.0.0' with your machine's local IP address if needed (e.g., 192.168.x.x)
-    # app.run(host='0.0.0.0', port=5000)
+    # app.run(host="0.0.0.0", port=5000, debug=True)
