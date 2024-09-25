@@ -1,17 +1,14 @@
-from werkzeug.utils import secure_filename
 import json
 import os
 import logging
-from skimage.metrics import structural_similarity as ssim
+from datetime import datetime
+import shutil
+import pickle
 import torch
 import torch.nn.functional as F
 from robustbench.data import load_cifar10
 from robustbench.utils import load_model
-import foolbox as fb
-import torch
-import pickle
-import os
-import numpy as np
+from skimage.metrics import structural_similarity as ssim
 
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -27,6 +24,7 @@ logging.basicConfig(
 )
 
 logging.info("Starting evaluation script")
+
 
 def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamma=0.3, delta=0.2, epsilon=0.1667):
     # Pass the perturbed images through the model to get the logits
@@ -86,7 +84,6 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
              delta * (1 - avg_ssim) +  # SSIM is already between 0 and 1
              epsilon * avg_confidence_gap)  # Confidence gap normalized to [0,1]
 
-    
     print(f"Incorrect ratio: {incorrect_ratio:.4f}")
     print(f"Avg confidence of incorrect predictions: {avg_confidence_incorrect:.4f}")
     print(f"Avg L2 perturbation: {avg_l2_perturbation:.4f}")
@@ -105,15 +102,35 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
 
 
 def main():
-    # Example usage:
-    # file_path = os.path.join('challenge', 'advs.pkl')
-    # import pdb; pdb.set_trace()
+    # Get current directory
     current_directory = os.getcwd()
-    dir_path = os.path.join(current_directory, 'Uploads')
-    for folder_name in os.listdir(dir_path):
+
+    # Create the 'evaluated' directory if it doesn't exist
+    evaluated_dir = os.path.join(current_directory, 'evaluated')
+    if not os.path.exists(evaluated_dir):
+        os.makedirs(evaluated_dir)
+
+    # Create a timestamped folder inside 'evaluated'
+    timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M')
+    timestamped_folder = os.path.join(evaluated_dir, timestamp)
+    # print(timestamped_folder)
+    os.makedirs(timestamped_folder)
+
+    # Move all folders from 'Uploads' to the timestamped folder
+    uploads_dir = os.path.join(current_directory, 'Uploads')
+
+    for folder_name in os.listdir(uploads_dir):
+        src_folder = os.path.join(uploads_dir, folder_name)
+        dest_folder = os.path.join(timestamped_folder, folder_name)
+        shutil.move(src_folder, dest_folder)
+
+    # Now process the folders in the timestamped folder
+    for folder_name in os.listdir(timestamped_folder):
+        folder_path = os.path.join(timestamped_folder, folder_name)
         
-        for name in os.listdir(os.path.join(dir_path, folder_name)):
-            path_name = os.path.join(dir_path, folder_name, name)
+        # print(folder_path)
+        for name in os.listdir(folder_path):
+            path_name = os.path.join(folder_path, name)
             
             if name.endswith(".pkl"):
                 with open(path_name, 'rb') as f:
@@ -124,35 +141,28 @@ def main():
                     tmp = f.readlines()
                     team_name = tmp[1].strip()
                     time_stamp = tmp[0].strip()
-    
+        
+        # Load CIFAR-10 data
         cifar_data = torch.load('cifar10_test_100_per_class.pt')
-
-        # Extract the images and labels tensors
-        x_test = cifar_data['images']
+        x_test = cifar_data['images'] / 255.0
         y_test = cifar_data['labels']
-        # x_test, y_test = load_cifar10(cifar_folder, n_examples=1000)
-        # model = load_model(model_name='Bai2024MixedNUTS')
-        x_test = x_test / 255.0
-        # x_test, y_test = load_cifar10(n_examples=200)
+
+        # Load the model
         model = load_model(model_name='Kireev2021Effectiveness_RLATAugMix', dataset='cifar10', threat_model='corruptions')
-
-        # Check if GPU is available and set the device accordingly
-        # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-        print(f"Using device: {device}")
-
         model = model.to(device)
         x_test = x_test.to(device)
         y_test = y_test.to(device)
 
+        # Evaluate and calculate the score
         score_metrics = calculate_score(model, x_test, advs[0], y_test)
         score_metrics["team_name"] = team_name
         score_metrics["time_stamp"] = time_stamp
         
-        submission_json = os.path.join(current_directory, "Data", "allSubmisisons.json")
-            # breakpoint()
+        # Append the results to the JSON file
+        submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
+        # print(submission_json)
         with open(submission_json, "r") as f:
             data = json.load(f)
-            # breakpoint()
             data.append(score_metrics)
 
         with open(submission_json, "w") as f:    

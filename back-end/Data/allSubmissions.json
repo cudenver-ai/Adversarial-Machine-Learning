@@ -1,0 +1,22 @@
+[
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9852,
+        "avg_l2_perturbation": 1.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 0.6075,
+        "team_name": "AI Knights",
+        "time_stamp": "2024-09-14 13:15:00"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9852,
+        "avg_l2_perturbation": 1.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 0.6075,
+        "team_name": "Data Guradians",
+        "time_stamp": "2024-09-14 13:30:00"
+    }
+]
