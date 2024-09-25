@@ -14,7 +14,7 @@ export default defineConfig({
   },
   server: {
     // Set this to "0.0.0.0" to allow access from other devices on the network
-    host: "localhost",
+    host: "0.0.0.0",
     port: 5173,
     proxy: {
       "/api": {

@@ -30,5 +30,15 @@
         "section": "Rules",
         "text": "The adversarial examples must only be generated from the provided test dataset. Your submission should include code for evaluating the performance of your perturbations."
       }
-    ]
+    ],
+    "dataset": "Dataset Description",
+    "rules": [
+      "1) Rule 1",
+      "2) Rule 2",
+      "3) Rule 3",
+      "4) Rule 4"
+    ],
+    "objective": "The Decoy Challenge focuses on generating adversarial examples that can mislead a machine learning model trained on the CIFAR-10 dataset. Participants will receive a pre-trained, robust classifier and a set of test examples from the CIFAR-10 dataset. Your objective is to create subtle perturbations to these test examples that can fool the classifier while maintaining the images' visual integrity.",
+    "submission": "Submission Requirements",
+    "eval": "Evaluation Criteria"
   }

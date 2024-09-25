@@ -9,6 +9,7 @@ import PageViewsBarChart from './PageViewsBarChart';
 import SessionsChart from './SessionsChart';
 import StatCard from './StatCard';
 import { API_BASE_URL } from '../config.js';
+import ChallengePage from "../pages/ChallengePage.jsx";
 
 
 export default function MainGrid() {
@@ -41,23 +42,25 @@ export default function MainGrid() {
   return (
 
     <Box sx={{ width: '100%', maxWidth: { sm: '100%', md: '1700px' } }}>
-      {/* cards */}
+      < ChallengePage/>
       <Typography component="h2" variant="h6" sx={{ mb: 2 }}>
-        Decoy Challenge
+        Best Overall Metrics
         </Typography>
+        
         <Grid
         container
         spacing={2}
         columns={12}
         sx={{ mb: (theme) => theme.spacing(2) }}
       >
+        
         <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
           <StatCard
             title={data[0].title}
-            value={Math.max(...data[0].data.slice(-30)).toString()} // Calculate total of last 30 values
+            value={Math.max(...data[0].data.slice(-30)).toString()} 
             interval={data[0].interval}
-            trend={data[0].trend}  // Calculated trend from backend
-            data={data[0].data.slice(-30)}  // Pass only the last 30 data points
+            trend={data[0].trend}  
+            data={data[0].data.slice(-30)}  
           />
         </Grid>
 
@@ -78,6 +81,42 @@ export default function MainGrid() {
             interval={data[2].interval}
             trend={data[2].trend}
             data={data[2].data.slice(-30)}
+          />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
+          <StatCard
+            title={data[3].title}
+            value={Math.max(...data[3].data.slice(-30)).toString()}
+            interval={data[3].interval}
+            trend={data[3].trend}
+            data={data[3].data.slice(-30)}
+          />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
+          <StatCard
+            title={data[4].title}
+            value={Math.max(...data[4].data.slice(-30)).toString()}
+            interval={data[4].interval}
+            trend={data[4].trend}
+            data={data[4].data.slice(-30)}
+          />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
+          <StatCard
+            title={data[5].title}
+            value={Math.max(...data[5].data.slice(-30)).toString()}
+            interval={data[5].interval}
+            trend={data[5].trend}
+            data={data[5].data.slice(-30)}
+          />
+        </Grid>
+        <Grid size={{ xs: 12, sm: 6, lg: 3 }}>
+          <StatCard
+            title={data[3].title}
+            value={Math.max(...data[3].data.slice(-30)).toString()}
+            interval={data[3].interval}
+            trend={data[3].trend}
+            data={data[3].data.slice(-30)}
           />
         </Grid>
         <Grid size={{ xs: 12, sm: 6, lg: 3 }}>

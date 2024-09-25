@@ -39,8 +39,6 @@ export default function Dashboard(props) {
               mt: { xs: 8, md: 0 },
             }}
           >
-
-
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/challenge" element={<ChallengePage />} />

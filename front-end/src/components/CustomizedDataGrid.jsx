@@ -28,10 +28,13 @@ export default function CustomizedDataGrid() {
       { field: 'SuccessRate', headerName: 'Success Rate', width: 150 },
       { field: 'PerturbationMagnitude', headerName: 'Perturbation Magnitude', width: 200 },
       { field: 'VisualSimilarity', headerName: 'Visual Similarity', width: 150 },
+      { field: 'AverageConfidence', headerName: 'Average Confidence', width: 150 },
+      { field: 'ConfidenceGap', headerName: 'Confidence Gap', width: 150 },
       { field: 'TotalScore', headerName: 'Total Score', width: 150 },
       { field: 'Rank', headerName: 'Rank', width: 100 },
     ];
-
+    
+    
   return (
     <Box sx={{ height: '100%', width: '100%' }}>
     <DataGrid

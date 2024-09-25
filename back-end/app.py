@@ -26,11 +26,11 @@ UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # ensure your routes are prefixed with /api.
-# path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
-path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
+path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+#path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
 
-@app.route("/api/upload-images", methods=["POST"])
+@app.route('/api/upload-images', methods=["POST"])
 def upload_images():
     # Check if files are provided
     if "files" not in request.files:
@@ -46,7 +46,7 @@ def upload_images():
     return jsonify({"message": message, "uploaded": len(files)})
 
 
-@app.route("/api/team-data", methods=["GET"])
+@app.route('/api/team-data', methods=["GET"])
 def get_team_data():
 
     # data = f'{path}{"Data/TeamData.json"}'
@@ -60,7 +60,7 @@ def get_team_data():
         return jsonify({"error": "Evaluation data not found"}), 404
 
 
-@app.route("/api/eval-data", methods=["GET"])
+@app.route('/api/eval-data', methods=["GET"])
 def get_eval_data():
     # Load and return the parsed team data
     data = f'{path}{"Data/evalMetric.json"}'
@@ -72,7 +72,7 @@ def get_eval_data():
         return jsonify({"error": "Visits data not found"}), 404
 
 
-@app.route("/api/challenge", methods=["GET"])
+@app.route('/api/challenge', methods=["GET"])
 def get_challenge_content():
     # data = f'{path}{"Data/challenge.json"}'
     data = os.path.join(path, "Data/challenge.json")
@@ -84,7 +84,7 @@ def get_challenge_content():
         return jsonify({"error": "Challenge data not found"}), 404
 
 
-@app.route("/api/leaderboard", methods=["GET"])
+@app.route('/api/leaderboard', methods=["GET"])
 def get_leaderboard_data():
     # data = f'{path}{"Data/leaderboard.json"}'
     data = os.path.join(path, "Data/leaderboard.json")
@@ -96,7 +96,7 @@ def get_leaderboard_data():
         return jsonify({"error": "Challenge data not found"}), 404
 
 
-@app.route("/api/visits", methods=["GET"])
+@app.route('/api/visits', methods=["GET"])
 def get_site_visits():
     data = os.path.join(path, "Data/visits.json")
 
@@ -110,7 +110,7 @@ def get_site_visits():
 # Run the Flask app on port 5000
 if __name__ == "__main__":
     # For local development, you can run on localhost
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
     # If you want to access this from other devices on your network, uncomment the line below
     # app.run(host="0.0.0.0", port=5000, debug=True)
