@@ -108,13 +108,13 @@ def main():
     # Create the 'evaluated' directory if it doesn't exist
     evaluated_dir = os.path.join(current_directory, 'evaluated')
     if not os.path.exists(evaluated_dir):
-        os.makedirs(evaluated_dir)
+        os.makedirs(evaluated_dir, exist_ok=True)
 
     # Create a timestamped folder inside 'evaluated'
-    timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M')
+    timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     timestamped_folder = os.path.join(evaluated_dir, timestamp)
     # print(timestamped_folder)
-    os.makedirs(timestamped_folder)
+    os.makedirs(timestamped_folder, exist_ok=True)
 
     # Move all folders from 'Uploads' to the timestamped folder
     uploads_dir = os.path.join(current_directory, 'Uploads')
@@ -161,6 +161,7 @@ def main():
         # Append the results to the JSON file
         submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
         # print(submission_json)
+        print(submission_json)
         with open(submission_json, "r") as f:
             data = json.load(f)
             data.append(score_metrics)
