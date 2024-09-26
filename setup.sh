@@ -34,45 +34,47 @@ cd front-end
 npm install
 cd ..
 
-# 5. Create Python virtual environment using venv
-#  always use python or python3 depending on your setup
-echo "Setting up Python virtual environment..."
-python -m venv .venv
+# # 5. Create Python virtual environment using venv
+# #  always use python or python3 depending on your setup
+# echo "Setting up Python virtual environment..."
+# python -m venv .venv
 
-# 6. Activate the virtual environment and install Python dependencies
-echo "Activating virtual environment and installing Python dependencies..."
-if [[ -d ".venv/bin" ]]; then
-    # Unix/Linux virtual environment
-    source .venv/bin/activate
-elif [[ -d ".venv/Scripts" ]]; then
-    # Windows virtual environment
-    source .venv/Scripts/activate
-else
-    echo "Error: Could not find virtual environment activation script."
-    exit 1
-fi
+# # 6. Activate the virtual environment and install Python dependencies
+# echo "Activating virtual environment and installing Python dependencies..."
+# if [[ -d ".venv/bin" ]]; then
+#     # Unix/Linux virtual environment
+#     source .venv/bin/activate
+# elif [[ -d ".venv/Scripts" ]]; then
+#     # Windows virtual environment
+#     source .venv/Scripts/activate
+# else
+#     echo "Error: Could not find virtual environment activation script."
+#     exit 1
+# fi
+
+# # Install Python dependencies
+# pip install -r requirements.txt
+
+# # Deactivate virtual environment
+# deactivate
+# echo "Virtual environment deactivated."
+
 
 # Anaconda Setup
 # Uncomment the following lines if you prefer to use Anaconda for the Python environment
 
-# echo "Creating Anaconda environment..."
-# conda create --name myenv python=3.8 -y
+echo "Creating Anaconda environment..."
+conda create --name decoychallenge python=3.10 -y
 
-# echo "Activating Anaconda environment..."
-# conda activate myenv
+echo "Activating Anaconda environment..."
+source ~/anaconda3/etc/profile.d/conda.sh
+conda activate decoychallenge
 
-# echo "Installing Python dependencies in Anaconda environment..."
-# pip install -r requirements.txt
-
-# echo "Deactivating Anaconda environment..."
-# conda deactivate
-
-# Install Python dependencies
+echo "Installing Python dependencies in Anaconda environment..."
 pip install -r requirements.txt
 
-# Deactivate virtual environment
-deactivate
-echo "Virtual environment deactivated."
+echo "Deactivating Anaconda environment..."
+conda deactivate
 
 echo "Setup complete!"
 echo "Please activate the virtual environment before running the back-end:"

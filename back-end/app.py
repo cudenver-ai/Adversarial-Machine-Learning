@@ -4,10 +4,6 @@ from config import DevelopmentConfig, ProductionConfig
 import os
 from parseData import loadData, load_image_dir
 
-"""
-Frontend URL: http://192.168.1.100:5173
-Backend API: Proxied via Vite from /api to http://192.168.1.100:5000/api
-"""
 app = Flask(__name__)
 
 if app.debug:
@@ -28,8 +24,8 @@ UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # ensure your routes are prefixed with /api.
-# path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
-path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
+path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+#path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
 
 @app.route("/api/upload-images", methods=["POST"])
