@@ -46,49 +46,49 @@ Welcome to the **Adversarial Machine Learning Challenge** project! This reposito
 
 1. **Clone the Repository**:
 
-    ```bash
-    git clone https://github.com/your-repo/adversarial-machine-learning.git
-    cd adversarial-machine-learning
-    ```
+```bash
+git clone https://github.com/cudenver-ai/Adversarial-Machine-Learning
+cd Adversarial-Machine-Learning
+```
 
 2. **Run the Setup Script**:
 
-    You can now set up both the back-end and front-end automatically using the provided `setup.sh` script.
+You can now set up both the back-end and front-end automatically using the provided `setup.sh` script.
 
-    ```bash
-    ./setup.sh
-    ```
+```bash
+./setup.sh
+```
 
-    This script will:
-    - Set up `nvm` and install Node.js version 22.
-    - Install front-end and back-end dependencies.
-    - Create and activate a Python virtual environment.
-    - Install Python dependencies.
+This script will:
+- Set up `nvm` and install Node.js version 22.
+- Install front-end and back-end dependencies.
+- Create and activate a Python virtual environment.
+- Install Python dependencies.
 
 3. **Activate Virtual Environment**:
 
-    After running the script, you can activate the virtual environment:
+After running the script, you can activate the virtual environment:
 
-    ```bash
-    source .venv/bin/activate  # On Unix/Linux
-    # Or for Windows:
-    .venv\Scripts\activate
-    ```
+```bash
+source .venv/bin/activate  # On Unix/Linux
+# Or for Windows:
+.venv\Scripts\activate
+```
 
 4. **Running Flask and React**:
 
-    To start the Flask back-end:
+To start the Flask back-end:
 
-    ```bash
-    flask run
-    ```
+```bash
+flask run
+```
 
-    To start the React front-end:
+To start the React front-end:
 
-    ```bash
-    cd front-end
-    npm run dev
-    ```
+```bash
+cd front-end
+npm run dev
+```
 
 ---
 
@@ -100,9 +100,9 @@ For detailed deployment instructions, refer to `production-server.md`.
 
 ## Documentation
 
-- **Server Architecture**: See `Server.md` for an overview.
-- **Development Setup**: See `development-server.md` for detailed instructions.
-- **Production Deployment**: See `production-server.md` for deployment steps.
+- **Server Architecture**: See `/docs/Server.md` for an overview.
+- **Development Setup**: See `/docs/development-server.md` for detailed instructions.
+- **Production Deployment**: See `/docs/production-server.md` for deployment steps.
 
 ---
 

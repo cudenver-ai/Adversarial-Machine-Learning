@@ -10,8 +10,8 @@ This guide covers the setup and workflow for developing the application in a loc
   2. Running the Setup Script
   3. Configuration Adjustments (Optional)
 - Running the Application
-  - Back-End Server
-  - Front-End Client
+  1. Back-End Server
+  2. Front-End Client
 - Switching Environments
 - Workflow Summary
 - Additional Notes
@@ -24,128 +24,134 @@ This guide covers the setup and workflow for developing the application in a loc
 - Virtual Environment (optional but recommended)
 - Git
 
-## Setup Instructions
+### Setup Instructions
 
-### 1. Clone the Repository
+##### 1. Clone the Repository
 
-git clone https://your-repo-url.git
-cd your-repo-name
+```bash
+git clone https://github.com/cudenver-ai/Adversarial-Machine-Learning
+cd Adversarial-Machine-Learning
+```
 
-2. Running the Setup Script
+##### 2. Running the Setup Script
 
 Run the provided shell script to set up the back-end, front-end, and install necessary dependencies:
 
-bash
+```bash
 
 ./setup.sh  # Ensure you have execution permissions, use chmod +x setup.sh if necessary
+```
 
-The script will handle:
+- The script will handle:
+    - Creating and activating a Python virtual environment.
+    - Installing Python dependencies (requirements.txt).
+    - Installing Node.js dependencies (npm install).
+    - Starting the servers for both the back-end and front-end.
 
-    Creating and activating a Python virtual environment.
-    Installing Python dependencies (requirements.txt).
-    Installing Node.js dependencies (npm install).
-    Starting the servers for both the back-end and front-end.
-
-3. Configuration Adjustments (Optional)
+##### 3. Configuration Adjustments (Optional)
 
 If you need to make any specific adjustments to the development environment, you can still manually modify these files:
 
-    Back-End:
-        .flaskenv: Ensure the following settings are correct for your environment.
+#### Back-End:
 
-    ini
+- .flaskenv: Ensure the following settings are correct for your environment.
 
-FLASK_APP=app.py
-FLASK_DEBUG=1
-FLASK_RUN_HOST=0.0.0.0
-FLASK_RUN_PORT=5000
+``` bash
+    FLASK_APP=app.py
+    FLASK_DEBUG=1
+    FLASK_RUN_HOST=0.0.0.0
+    FLASK_RUN_PORT=5000
+```
 
-Front-End:
+####Front-End:
+- .env.dev: Set the correct API base URL and proxy target.
 
-    .env.dev: Set the correct API base URL and proxy target.
-
-ini
-
+``` bash
     VITE_API_BASE_URL=http://localhost:5000
     VITE_PROXY_TARGET=http://localhost:5000
+```
 
-Running the Application
-Back-End Server
+### Running the Application
 
-If the script did not automatically start the back-end server, you can do so manually:
+##### 1. Back-End Server
 
-bash
+- If the script did not automatically start the back-end server, you can do so manually:
 
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+``` bash
+
+source venv/bin/activate  
 flask run
 
-The server will start on http://0.0.0.0:5000.
-Front-End Client
+```
 
-To start the front-end development server:
+- The server will start on `http://0.0.0.0:5000`
 
-bash
+##### 2. Front-End Client
+
+- To start the front-end development server:
+
+``` bash
 
 npm run dev
 
-The application will be accessible at http://localhost:5173 or http://your-local-ip:5173.
-Switching Environments
+```
 
-If you work from multiple locations (e.g., home and lab), adjust the configurations:
+- The application will be accessible at `http://localhost:5173` or `http://your-ip:5173`.
 
-    In .env.dev, modify the API base URL and proxy target as needed:
+### Switching Environments
 
-ini
+- If you work from multiple locations adjust the configurations:
+
+    - In .env.dev, modify the API base URL and proxy target as needed:
+
+``` ini
 
 # For Home
 VITE_API_BASE_URL=http://home-ip:5000
 VITE_PROXY_TARGET=http://home-ip:5000
 
-# For Lab
+# For location like the lab
 # VITE_API_BASE_URL=http://lab-ip:5000
 # VITE_PROXY_TARGET=http://lab-ip:5000
 
-In config.py, update CORS origins to accommodate the different environments:
+``` 
+- In config.py, update CORS origins to accommodate the different environments:
 
-python
+``` python
 
 class DevelopmentConfig(Config):
     DEBUG = True
     CORS_ORIGINS = [
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "http://your-local-ip:5173",
+        "http://your-ip:5173",
     ]
 
-Workflow Summary
+```
 
-    Back-End:
-        Use the shell script to automate setup and starting the server.
-        If needed, run flask run manually.
+### Workflow Summary
 
-    Front-End:
-        Ensure .env.dev has the correct API URLs.
-        Run npm run dev.
+- Back-End:
+    - Use the shell script to automate setup and starting the server.
+    - If needed, run flask run manually.
 
-    Access the Application:
-        Open http://localhost:5173 or http://your-local-ip:5173 in your browser.
+- Front-End:
+    - Ensure .env.dev has the correct API URLs.
+    - Run `npm run dev`.
 
-Additional Notes
+- Access the Application:
+    - Open `http://localhost:5173` or `http://your-ip:5173` in your browser.
 
-    No Need to Build:
-        In development, you do not need to build the front-end.
-        Hot reloading is enabled for rapid iteration.
+### Additional Notes
 
-    Debugging:
-        Both front-end and back-end have debug modes enabled.
-        Use console logs and error messages to troubleshoot.
+- No Need to Build:
+    - In development, you do not need to build the front-end.
+    - Hot reloading is enabled for rapid iteration.
 
-    Team Collaboration:
-        Keep configurations documented within the files.
-        Use comments to indicate how to switch between settings.
+- Debugging:
+    - Both front-end and back-end have debug modes enabled.
+    - Use console logs and error messages to troubleshoot.
 
-Resources
-
-    Flask Documentation
-    Vite Documentation
-    React Documentation
+- Team Collaboration:
+    - Keep configurations documented within the files.
+    - Use comments to indicate how to switch between settings.
