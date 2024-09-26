@@ -1,25 +1,5 @@
 [
     {
-        "id": 16,
-        "TeamName": "Code Crusaders",
-        "LastSubmission": "2024-09-17 15:30:00",
-        "SuccessRate": 90,
-        "PerturbationMagnitude": 88,
-        "AverageConfidence": 80.6,
-        "ConfidenceGap": 10.6,
-        "VisualSimilarity": 78.6,
-        "TotalScore": "92",
-        "Rank": 0
-    },
-    {
-        "incorrect_ratio": "SuccessRate",
-        "avg_confidence_incorrect": "AverageConfidence",
-        "avg_confidence_gap": "ConfidenceGap",
-        "avg_l2_perturbation": "PerturbationMagnitude",
-        "avg_ssim": "VisualSimilarity",
-        "score": "TotalScore"
-    },
-    {
         "incorrect_ratio": 0.8987,
         "avg_confidence_incorrect": 0.958,
         "avg_l2_perturbation": 1.6863,
@@ -209,5 +189,5 @@
         "team_name": "Tech Titans",
         "time_stamp": "2024-08-25 22:05:16"
     }
-    
+
 ]

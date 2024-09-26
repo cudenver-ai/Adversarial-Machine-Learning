@@ -42,7 +42,7 @@ function getDaysInMonth(month, year) {
 
 export default function SessionsChart() {
   const theme = useTheme();
-  const daysInMonth  = getDaysInMonth(10, 2024);
+  const daysInMonth = getDaysInMonth(10, 2024);
 
   // State to hold visits data
   const [visitsData, setVisitsData] = useState([]);
@@ -51,9 +51,9 @@ export default function SessionsChart() {
     fetch(`${API_BASE_URL}/api/visits`)
       .then((response) => response.json())
       .then((data) => {
-        setVisitsData(data); 
+        setVisitsData(data);
       })
-      .catch((error) => console.error("Error fetching visits data:", error));
+      .catch((error) => console.error('Error fetching visits data:', error));
   }, []);
 
   const colorPalette = [
@@ -63,9 +63,11 @@ export default function SessionsChart() {
   ];
 
   return (
-    <Card variant="outlined" sx={{ width: '100%' }}>
-      <CardContent>
-        <Typography component="h2" variant="subtitle2" gutterBottom>
+    <Card variant="outlined" sx={{ width: '100%', height: '100%' }}>
+      <CardContent
+        sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}
+      >
+        <Typography component="h2" variant="subtitle" gutterBottom>
           Site Visits
         </Typography>
         <Stack sx={{ justifyContent: 'space-between' }}>
@@ -77,47 +79,49 @@ export default function SessionsChart() {
               gap: 1,
             }}
           >
-          <Typography variant="h4" component="p">
-            {/* Display the total visits from visitsData */}
-            {visitsData.length > 0 ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0) : 0}
+            <Typography variant="h4" component="p">
+              {/* Display the total visits from visitsData */}
+              {visitsData.length > 0
+                ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0)
+                : 0}
+            </Typography>
+            <Chip size="small" color="success" label="+35%" />
+          </Stack>
+          <Typography variant="caption" sx={{ color: 'text.secondary' }}>
+            Visits per day
           </Typography>
-          <Chip size="small" color="success" label="+35%" />
         </Stack>
-        <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-          Visits per day
-        </Typography>
-      </Stack>
-      <LineChart
-        colors={colorPalette}
-        xAxis={[
-          {
-            scaleType: 'point',
-            data: daysInMonth,
-            tickInterval: (index, i) => (i + 1) % 5 === 0,
-          },
-        ]}
-        series={visitsData}
-        height={250}
-        margin={{ left: 50, right: 20, top: 20, bottom: 20 }}
-        grid={{ horizontal: true }}
-        sx={{
-          '& .MuiAreaElement-series-uploads': {
-            fill: "url('#uploads')",
-          },
-          '& .MuiAreaElement-series-visits': {
-            fill: "url('#visits')",
-          },
-        }}
-        slotProps={{
-          legend: {
-            hidden: true,
-          },
-        }}
-      >
-        <AreaGradient color={theme.palette.primary.dark} id="uploads" />
-        <AreaGradient color={theme.palette.primary.main} id="visits" />
-      </LineChart>
-    </CardContent>
-  </Card>
-);
+        <LineChart
+          colors={colorPalette}
+          xAxis={[
+            {
+              scaleType: 'point',
+              data: daysInMonth,
+              tickInterval: (index, i) => (i + 1) % 5 === 0,
+            },
+          ]}
+          series={visitsData}
+          height={250}
+          margin={{ left: 50, right: 20, top: 20, bottom: 20 }}
+          grid={{ horizontal: true }}
+          sx={{
+            '& .MuiAreaElement-series-uploads': {
+              fill: "url('#uploads')",
+            },
+            '& .MuiAreaElement-series-visits': {
+              fill: "url('#visits')",
+            },
+          }}
+          slotProps={{
+            legend: {
+              hidden: true,
+            },
+          }}
+        >
+          <AreaGradient color={theme.palette.primary.dark} id="uploads" />
+          <AreaGradient color={theme.palette.primary.main} id="visits" />
+        </LineChart>
+      </CardContent>
+    </Card>
+  );
 }

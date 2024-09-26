@@ -44,7 +44,8 @@ function calculateTrend(data) {
     return { trend: 'neutral', percentage: '0%' };
   }
 
-  const percentageChange = ((lastValue - secondLastValue) / secondLastValue) * 100;
+  const percentageChange =
+    ((lastValue - secondLastValue) / secondLastValue) * 100;
 
   if (percentageChange > 0) {
     return { trend: 'up', percentage: `+${percentageChange.toFixed(1)}%` };
@@ -124,7 +125,7 @@ function StatCard({ title, value, interval, data }) {
               showTooltip
               xAxis={{
                 scaleType: 'band',
-                data: daysInWeek, // Use the correct property 'data' for xAxis
+                data: daysInWeek,
               }}
               sx={{
                 [`& .${areaElementClasses.root}`]: {
