@@ -42,6 +42,25 @@ Welcome to the **Adversarial Machine Learning Challenge** project! This reposito
 
 ## Setup and Development
 
+**Important Note**: Before running the back-end, make sure to update the `path` variable in `back-end/app.py` to point to the directory on your machine where the data files (e.g., `TeamData.json`, `challenge.json`) are stored.
+
+For example:
+
+**Unix/Linux**: Update path like this:
+
+```python
+path = "/path/to/your/directory/back-end/"
+```
+
+**Windows**: Update path to your directory:
+
+```python
+path = "C:/path/to/your/directory/back-end/"
+```
+Without updating this path, the API routes won't be able to find and load the necessary data files for the app to function correctly.
+
+---
+
 ### Running the Setup Script
 
 1. **Clone the Repository**:
@@ -53,7 +72,7 @@ cd Adversarial-Machine-Learning
 
 2. **Run the Setup Script**:
 
-You can now set up both the back-end and front-end automatically using the provided `setup.sh` script.
+You can now set up both the back-end and front-end automatically using the provided `setup.sh` script. Depending on whether you are using **Anaconda** or a **Python virtual environment**, you'll need to **comment or uncomment certain parts of the script**.
 
 ```bash
 ./setup.sh
@@ -62,8 +81,13 @@ You can now set up both the back-end and front-end automatically using the provi
 This script will:
 - Set up `nvm` and install Node.js version 22.
 - Install front-end and back-end dependencies.
-- Create and activate a Python virtual environment.
+- Set up a Python environment (either Anaconda or virtual environment)
 - Install Python dependencies.
+
+### Important Notes for the Setup Script:
+
+- **Python Virtual Environment**: If you prefer to use a standard Python virtual environment (`.venv`), ensure the `venv` section is **uncommented** and the Anaconda section is commented in the setup.sh script.
+- Anaconda Environment: If you are using Anaconda, ensure the **Anaconda setup** section is **uncommented** and the venv section is commented.
 
 3. **Activate Virtual Environment**:
 
@@ -171,4 +195,4 @@ For detailed deployment instructions, refer to `production-server.md`.
 
 ---
 
-By following this README and the accompanying documentation, you should be able to set up, develop, and deploy the application efficiently.
+By following this README and the accompanying documentation, you should be able to set up, develop, and deploy the application. Please let me know if you encounter any issues.
