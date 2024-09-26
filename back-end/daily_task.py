@@ -4,7 +4,7 @@ from datetime import datetime
 import statistics
 from model import (
     generate_team_data,
-)  # Assuming model.py has a function generate_team_data
+)
 
 # Paths
 TEAM_DATA_PATH = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/Data/TeamData.json"

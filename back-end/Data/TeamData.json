@@ -1,162 +1,122 @@
 [
-  {
-      "id": 16,
-      "TeamName": "Code Crusaders",
-      "LastSubmission": "2024-09-17 15:30:00",
-      "SuccessRate": 90,
-      "PerturbationMagnitude": 88,
-      "VisualSimilarity": 78.6,
-      "TotalScore": "92",
-      "Rank": 16
-  },
-  {
-      "id": 15,
-      "TeamName": "Neural Nexus",
-      "LastSubmission": "2024-09-14 14:00:00",
-      "SuccessRate": 75,
-      "PerturbationMagnitude": 82,
-      "VisualSimilarity": 64.5,
-      "TotalScore": "78",
-      "Rank": 15
-  },
-  {
-      "id": 14,
-      "TeamName": "The Deep Learners",
-      "LastSubmission": "2024-09-17 15:20:00",
-      "SuccessRate": 82,
-      "PerturbationMagnitude": 85,
-      "VisualSimilarity": 73.3,
-      "TotalScore": "80",
-      "Rank": 14
-  },
-  {
-      "id": 13,
-      "TeamName": "AI Mavericks",
-      "LastSubmission": "2024-09-14 13:45:00",
-      "SuccessRate": 64,
-      "PerturbationMagnitude": 65,
-      "VisualSimilarity": 55.6,
-      "TotalScore": "60",
-      "Rank": 13
-  },
-  {
-      "id": 12,
-      "TeamName": "The Machine Squad",
-      "LastSubmission": "2024-09-17 15:10:00",
-      "SuccessRate": 88,
-      "PerturbationMagnitude": 80,
-      "VisualSimilarity": 68.5,
-      "TotalScore": "85",
-      "Rank": 12
-  },
-  {
-      "id": 11,
-      "TeamName": "The Algo Rangers",
-      "LastSubmission": "2024-09-14 13:30:00",
-      "SuccessRate": 72,
-      "PerturbationMagnitude": 75,
-      "VisualSimilarity": 60.4,
-      "TotalScore": "70",
-      "Rank": 11
-  },
-  {
-      "id": 10,
-      "TeamName": "Neural Knights",
-      "LastSubmission": "2024-09-17 15:00:00",
-      "SuccessRate": 82,
-      "PerturbationMagnitude": 85,
-      "VisualSimilarity": 71.0,
-      "TotalScore": "87",
-      "Rank": 10
-  },
-  {
-      "id": 9,
-      "TeamName": "Cyber Sentinels",
-      "LastSubmission": "2024-09-14 13:15:00",
-      "SuccessRate": 60,
-      "PerturbationMagnitude": 70,
-      "VisualSimilarity": 64.1,
-      "TotalScore": "66",
-      "Rank": 9
-  },
-  {
-      "id": 8,
-      "TeamName": "Data Guardians",
-      "LastSubmission": "2024-09-17 14:55:00",
-      "SuccessRate": 77,
-      "PerturbationMagnitude": 80,
-      "VisualSimilarity": 62.3,
-      "TotalScore": "81",
-      "Rank": 8
-  },
-  {
-      "id": 7,
-      "TeamName": "AI Avengers",
-      "LastSubmission": "2024-09-14 13:00:00",
-      "SuccessRate": 84,
-      "PerturbationMagnitude": 79,
-      "VisualSimilarity": 65.0,
-      "TotalScore": "78",
-      "Rank": 7
-  },
-  {
-      "id": 6,
-      "TeamName": "Matrix Overlords",
-      "LastSubmission": "2024-09-17 14:50:00",
-      "SuccessRate": 88,
-      "PerturbationMagnitude": 90,
-      "VisualSimilarity": 80.2,
-      "TotalScore": "95",
-      "Rank": 6
-  },
-  {
-      "id": 5,
-      "TeamName": "Deep Blue Seekers",
-      "LastSubmission": "2024-09-14 12:45:00",
-      "SuccessRate": 70,
-      "PerturbationMagnitude": 68,
-      "VisualSimilarity": 55.2,
-      "TotalScore": "65",
-      "Rank": 5
-  },
-  {
-      "id": 4,
-      "TeamName": "Quantum Predators",
-      "LastSubmission": "2024-09-17 14:40:00",
-      "SuccessRate": 92,
-      "PerturbationMagnitude": 85,
-      "VisualSimilarity": 60.5,
-      "TotalScore": "89",
-      "Rank": 4
-  },
-  {
-      "id": 3,
-      "TeamName": "Neural Crusaders",
-      "LastSubmission": "2024-09-14 12:30:00",
-      "SuccessRate": 65,
-      "PerturbationMagnitude": 72,
-      "VisualSimilarity": 70.5,
-      "TotalScore": "74",
-      "Rank": 3
-  },
-  {
-      "id": 2,
-      "TeamName": "AI Titans",
-      "LastSubmission": "2024-09-17 14:25:00",
-      "SuccessRate": 78,
-      "PerturbationMagnitude": 82,
-      "VisualSimilarity": 69.1,
-      "TotalScore": "75",
-      "Rank": 2
-  },
-  {
-      "id": 1,
-      "TeamName": "Cyber Warriors",
-      "LastSubmission": "2024-09-17 14:23:00",
-      "SuccessRate": 85,
-      "PerturbationMagnitude": 90,
-      "VisualSimilarity": 72.5,
-      "TotalScore": "88",
-      "Rank": 1
-  }
+    {
+        "id": 1,
+        "TeamName": "Tech Titans",
+        "LastSubmission": "2024-08-25 22:05:16",
+        "SuccessRate": 90,
+        "PerturbationMagnitude": 63,
+        "AverageConfidence": 98.5,
+        "ConfidenceGap": -8.7,
+        "VisualSimilarity": 96.0,
+        "TotalScore": 61,
+        "Rank": 8
+    },
+    {
+        "id": 2,
+        "TeamName": "Tech Titans",
+        "LastSubmission": "2024-08-29 22:05:16",
+        "SuccessRate": 92,
+        "PerturbationMagnitude": 75,
+        "AverageConfidence": 98.0,
+        "ConfidenceGap": -7.8,
+        "VisualSimilarity": 97.7,
+        "TotalScore": 53,
+        "Rank": 10
+    },
+    {
+        "id": 3,
+        "TeamName": "AI Warriors",
+        "LastSubmission": "2024-09-02 22:05:16",
+        "SuccessRate": 94,
+        "PerturbationMagnitude": 91,
+        "AverageConfidence": 98.4,
+        "ConfidenceGap": 1.0,
+        "VisualSimilarity": 95.9,
+        "TotalScore": 69,
+        "Rank": 4
+    },
+    {
+        "id": 4,
+        "TeamName": "Data Guardians",
+        "LastSubmission": "2024-09-07 22:05:16",
+        "SuccessRate": 95,
+        "PerturbationMagnitude": 92,
+        "AverageConfidence": 98.6,
+        "ConfidenceGap": 2.4,
+        "VisualSimilarity": 96.3,
+        "TotalScore": 64,
+        "Rank": 6
+    },
+    {
+        "id": 5,
+        "TeamName": "Quantum Quest",
+        "LastSubmission": "2024-09-12 22:05:16",
+        "SuccessRate": 87,
+        "PerturbationMagnitude": 70,
+        "AverageConfidence": 95.5,
+        "ConfidenceGap": 1.8,
+        "VisualSimilarity": 97.6,
+        "TotalScore": 74,
+        "Rank": 2
+    },
+    {
+        "id": 6,
+        "TeamName": "Algo Avengers",
+        "LastSubmission": "2024-09-17 22:05:16",
+        "SuccessRate": 98,
+        "PerturbationMagnitude": 57,
+        "AverageConfidence": 99.3,
+        "ConfidenceGap": -9.1,
+        "VisualSimilarity": 98.5,
+        "TotalScore": 53,
+        "Rank": 9
+    },
+    {
+        "id": 7,
+        "TeamName": "Algo Avengers",
+        "LastSubmission": "2024-09-18 22:05:16",
+        "SuccessRate": 86,
+        "PerturbationMagnitude": 59,
+        "AverageConfidence": 96.0,
+        "ConfidenceGap": -9.3,
+        "VisualSimilarity": 99.8,
+        "TotalScore": 65,
+        "Rank": 5
+    },
+    {
+        "id": 8,
+        "TeamName": "Data Guardians",
+        "LastSubmission": "2024-09-20 22:05:16",
+        "SuccessRate": 92,
+        "PerturbationMagnitude": 52,
+        "AverageConfidence": 97.0,
+        "ConfidenceGap": -4.1,
+        "VisualSimilarity": 96.1,
+        "TotalScore": 69,
+        "Rank": 3
+    },
+    {
+        "id": 9,
+        "TeamName": "Algo Avengers",
+        "LastSubmission": "2024-09-22 22:05:16",
+        "SuccessRate": 90,
+        "PerturbationMagnitude": 84,
+        "AverageConfidence": 95.8,
+        "ConfidenceGap": -4.1,
+        "VisualSimilarity": 96.1,
+        "TotalScore": 79,
+        "Rank": 1
+    },
+    {
+        "id": 10,
+        "TeamName": "Neural Knights",
+        "LastSubmission": "2024-09-23 22:05:16",
+        "SuccessRate": 96,
+        "PerturbationMagnitude": 79,
+        "AverageConfidence": 96.7,
+        "ConfidenceGap": -2.0,
+        "VisualSimilarity": 97.7,
+        "TotalScore": 63,
+        "Rank": 7
+    }
 ]

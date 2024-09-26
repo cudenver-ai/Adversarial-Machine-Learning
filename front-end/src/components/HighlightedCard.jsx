@@ -26,31 +26,31 @@ export default function HighlightedCard() {
 
   const handleSubmit = async () => {
     if (files.length === 0 || teamName.trim() === '') {
-      alert("Please select files and enter a team name!");
+      alert('Please select files and enter a team name!');
       return;
     }
 
     const formData = new FormData();
     files.forEach((file) => {
-      formData.append("files", file);
+      formData.append('files', file);
     });
 
-    formData.append('teamName', teamName); // Add the team name to the form data
+    formData.append('teamName', teamName); 
 
     try {
       const response = await fetch(`${API_BASE_URL}/api/upload-images`, {
-        method: "POST",
+        method: 'POST',
         body: formData,
       });
 
       if (response.ok) {
-        alert("Files uploaded successfully!");
+        alert('Files uploaded successfully!');
       } else {
-        alert("Failed to upload files.");
+        alert('Failed to upload files.');
       }
     } catch (error) {
-      console.error("Error uploading files:", error);
-      alert("Error uploading files.");
+      console.error('Error uploading files:', error);
+      alert('Error uploading files.');
     }
   };
 
@@ -67,15 +67,30 @@ export default function HighlightedCard() {
           Upload Images
         </Typography>
         <Typography sx={{ color: 'text.secondary', mb: '8px' }}>
-          Please make sure your images are in png format
+          Please make sure your images are in .png format
         </Typography>
         <TextField
           label="Team Name"
           variant="outlined"
           fullWidth
+          required
           value={teamName}
           onChange={(e) => setTeamName(e.target.value)}
-          sx={{ mb: 2 }}
+          sx={{
+            mb: 2,
+            '& .MuiInputLabel-root': {
+              transform: 'translate(14px, 20px) scale(1)',
+            },
+            '& .MuiInputLabel-root.Mui-focused, & .MuiInputLabel-root.MuiInputLabel-shrink':
+              {
+                transform: 'translate(14px, -6px) scale(0.75)',
+              },
+          }}
+          slotProps={{
+            inputLabel: {
+              shrink: teamName.length > 0,
+            },
+          }}
         />
 
         <input
@@ -85,7 +100,8 @@ export default function HighlightedCard() {
           multiple
           onChange={handleFileUpload}
         />
-        <Button onClick={handleSubmit}
+        <Button
+          onClick={handleSubmit}
           variant="contained"
           size="small"
           color="primary"

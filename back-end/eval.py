@@ -14,7 +14,7 @@ import os
 import numpy as np
 
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 logging.basicConfig(
@@ -26,7 +26,18 @@ logging.basicConfig(
     ],
 )
 
-def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamma=0.3, delta=0.2, epsilon=0.1667):
+
+def calculate_score(
+    model,
+    x_test,
+    advs,
+    y_test,
+    alpha=0.1667,
+    beta=0.1667,
+    gamma=0.3,
+    delta=0.2,
+    epsilon=0.1667,
+):
     # Pass the perturbed images through the model to get the logits
     with torch.no_grad():
         logits_adv = model(advs.to(device))
@@ -43,7 +54,9 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
 
     # Confidence of incorrect predictions (Softmax output is already between 0 and 1)
     softmax_logits_adv = F.softmax(logits_adv, dim=1)
-    incorrect_confidences = softmax_logits_adv[misclassified_indices, predicted_labels_adv[misclassified_indices]]
+    incorrect_confidences = softmax_logits_adv[
+        misclassified_indices, predicted_labels_adv[misclassified_indices]
+    ]
     avg_confidence_incorrect = incorrect_confidences.mean().item()
 
     # Calculate L2 norm of the perturbations and normalize it
@@ -64,11 +77,20 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
             smaller_dim = min(original.shape[0], original.shape[1])
             win_size = smaller_dim if smaller_dim % 2 != 0 else smaller_dim - 1
             data_range = 1.0  # Since images are normalized between 0 and 1
-            ssim_val, _ = ssim(original, perturbed, win_size=win_size, channel_axis=2, data_range=data_range, full=True)
+            ssim_val, _ = ssim(
+                original,
+                perturbed,
+                win_size=win_size,
+                channel_axis=2,
+                data_range=data_range,
+                full=True,
+            )
             avg_ssim += ssim_val
         return avg_ssim / len(original_images)
 
-    avg_ssim = compute_avg_ssim(x_test[misclassified_indices], advs[misclassified_indices])
+    avg_ssim = compute_avg_ssim(
+        x_test[misclassified_indices], advs[misclassified_indices]
+    )
 
     # Confidence gap between original and perturbed predictions
     softmax_logits_orig = F.softmax(logits_orig, dim=1)
@@ -78,11 +100,14 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
     avg_confidence_gap = confidence_gap.mean().item()
 
     # Final score calculation with normalized metrics
-    score = (alpha * incorrect_ratio +
-             beta * avg_confidence_incorrect +  # No normalization needed, softmax is already in [0,1]
-             gamma * (1 - avg_l2_perturbation / max_perturbation) +  # Normalized L2
-             delta * (1 - avg_ssim) +  # SSIM is already between 0 and 1
-             epsilon * avg_confidence_gap)  # Confidence gap normalized to [0,1]
+    score = (
+        alpha * incorrect_ratio
+        + beta
+        * avg_confidence_incorrect  # No normalization needed, softmax is already in [0,1]
+        + gamma * (1 - avg_l2_perturbation / max_perturbation)  # Normalized L2
+        + delta * (1 - avg_ssim)  # SSIM is already between 0 and 1
+        + epsilon * avg_confidence_gap
+    )  # Confidence gap normalized to [0,1]
 
     return {
         "incorrect_ratio": round(float(incorrect_ratio), 4),
@@ -90,7 +115,7 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
         "avg_l2_perturbation": round(float(avg_l2_perturbation), 4),
         "avg_ssim": round(float(avg_ssim), 4),
         "avg_confidence_gap": round(float(avg_confidence_gap), 4),
-        "score": round(float(score), 4)
+        "score": round(float(score), 4),
     }
 
 
@@ -99,25 +124,28 @@ def main():
     # file_path = os.path.join('challenge', 'advs.pkl')
     # import pdb; pdb.set_trace()
     current_directory = os.getcwd()
-    dir_path = os.path.join(current_directory, 'Uploads')
+    dir_path = os.path.join(current_directory, "Uploads")
     for folder_name in os.listdir(dir_path):
-        
+
         for name in os.listdir(os.path.join(dir_path, folder_name)):
             path_name = os.path.join(dir_path, folder_name, name)
-            
+
             if name.endswith(".pkl"):
-                with open(path_name, 'rb') as f:
+                with open(path_name, "rb") as f:
                     advs = pickle.load(f)
 
             if name.endswith(".txt"):
-                with open(path_name, 'r') as f:
+                with open(path_name, "r") as f:
                     tmp = f.readlines()
                     team_name = tmp[1].strip()
                     time_stamp = tmp[0].strip()
-    
-    
+
         x_test, y_test = load_cifar10(n_examples=200)
-        model = load_model(model_name='Kireev2021Effectiveness_RLATAugMix', dataset='cifar10', threat_model='corruptions')
+        model = load_model(
+            model_name="Kireev2021Effectiveness_RLATAugMix",
+            dataset="cifar10",
+            threat_model="corruptions",
+        )
 
         # Check if GPU is available and set the device accordingly
         # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -130,15 +158,15 @@ def main():
         score_metrics = calculate_score(model, x_test, advs[0], y_test)
         score_metrics["team_name"] = team_name
         score_metrics["time_stamp"] = time_stamp
-        
+
         submission_json = os.path.join(current_directory, "Data", "allSubmisisons.json")
-            # breakpoint()
+        # breakpoint()
         with open(submission_json, "r") as f:
             data = json.load(f)
-            # breakpoint()
+            #  breakpoint()
             data.append(score_metrics)
 
-        with open(submission_json, "w") as f:    
+        with open(submission_json, "w") as f:
             json.dump(data, f, indent=4)
 
 

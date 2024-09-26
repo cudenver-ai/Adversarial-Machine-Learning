@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -8,15 +9,16 @@ import MuiToolbar from '@mui/material/Toolbar';
 import { tabsClasses } from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import DashboardRoundedIcon from '@mui/icons-material/DashboardRounded';
 import SideMenuMobile from './SideMenuMobile';
 import MenuButton from './MenuButton';
-import { Link } from 'react-router-dom';
 import ColorModeIconDropdown from '../../theme/ColorModeIconDropdown';
+import logo from '../assets/club.png';
+import IconButton from '@mui/material/IconButton';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import { useColorScheme } from '@mui/material/styles';
 
-
-
-const Toolbar = styled(MuiToolbar)({
+export const Toolbar = styled(MuiToolbar)({
   width: '100%',
   padding: '12px',
   display: 'flex',
@@ -46,11 +48,26 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   padding: '8px 12px',
 }));
 
-export default function AppNavbar() {
+export default function AppNavbar({ setCurrentPage }) {
   const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const isMenuOpen = Boolean(anchorEl);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
+  };
+
+  const handleMenuClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+    handleMenuClose();
   };
 
   return (
@@ -62,7 +79,7 @@ export default function AppNavbar() {
         backgroundImage: 'none',
         borderBottom: '1px solid',
         borderColor: 'divider',
-        zIndex: 1100, // Ensure it's on top of other components
+        zIndex: 1100,
       }}
     >
       <StyledToolbar variant="regular">
@@ -75,30 +92,69 @@ export default function AppNavbar() {
             width: '100%',
           }}
         >
-          <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
+          <Stack direction="row" spacing={3} sx={{ justifyContent: 'center' }}>
             <CustomIcon />
-            <Typography variant="h4" component="h1" sx={{ color: 'text.primary' }}>
+            <Typography
+              variant="h4"
+              component="h1"
+              sx={{ color: 'text.primary' }}
+            >
               Decoy Challenge
             </Typography>
 
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button component={Link} to="/" variant="text" color="info" size="small">
+              <Button
+                color="info"
+                size="small"
+                onClick={() => setCurrentPage('main')}
+              >
                 Main
               </Button>
-              <Button component={Link} to="/challenge" variant="text" color="info" size="small">
-                Challenge
-              </Button>
-              <Button component={Link} to="/teams" variant="text" color="info" size="small">
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                onClick={() => setCurrentPage('teams')}
+              >
                 Teams
               </Button>
             </Box>
+            {/* For smaller screens: Mobile menu */}
+            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+              <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                onClick={handleMenuClick}
+              >
+                <MenuRoundedIcon />
+              </IconButton>
+              <Menu
+                anchorEl={anchorEl}
+                open={isMenuOpen}
+                onClose={handleMenuClose}
+                PaperProps={{
+                  style: {
+                    width: '200px',
+                  },
+                }}
+              >
+                <MenuItem onClick={() => handlePageChange('main')}>
+                  Main
+                </MenuItem>
+                <MenuItem onClick={() => handlePageChange('teams')}>
+                  Teams
+                </MenuItem>
+              </Menu>
+            </Box>
           </Stack>
           <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
-          <ColorModeIconDropdown />
-          <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
-            <MenuRoundedIcon />
-          </MenuButton>
-          <SideMenuMobile open={open} toggleDrawer={toggleDrawer} />
+            <ColorModeIconDropdown />
+            <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
+              <MenuRoundedIcon />
+            </MenuButton>
+            <SideMenuMobile open={open} toggleDrawer={toggleDrawer} />
           </Stack>
         </Stack>
       </StyledToolbar>
@@ -106,27 +162,42 @@ export default function AppNavbar() {
   );
 }
 
+AppNavbar.propTypes = {
+  setCurrentPage: PropTypes.func.isRequired,
+};
+
 export function CustomIcon() {
+  const { mode } = useColorScheme();
+
   return (
     <Box
       sx={{
         width: '1.5rem',
         height: '1.5rem',
-        bgcolor: 'black',
         borderRadius: '999px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'center',
-        backgroundImage:
-          'linear-gradient(135deg, hsl(210, 98%, 60%) 0%, hsl(210, 100%, 35%) 100%)',
         color: 'hsla(210, 100%, 95%, 0.9)',
-        border: '1px solid',
-        borderColor: 'hsl(210, 100%, 55%)',
-        boxShadow: 'inset 0 2px 5px rgba(255, 255, 255, 0.3)',
+        border: '0px solid',
+        borderColor: mode === 'dark' ? 'white' : 'black',
+        bgcolor: mode === 'dark' ? 'transparent' : 'white',
+        boxShadow:
+          mode === 'dark'
+            ? 'inset 0 2px 5px rgba(0, 0, 0, 0.3)'
+            : 'inset 0 2px 5px rgba(255, 255, 255, 0.3)',
       }}
     >
-      <DashboardRoundedIcon color="inherit" sx={{ fontSize: '1rem' }} />
+      <img
+        src={logo}
+        alt="custom icon"
+        style={{
+          width: '3rem',
+          height: '3rem',
+          filter: mode === 'dark' ? 'invert(100%)' : 'none',
+        }}
+      />
     </Box>
   );
 }

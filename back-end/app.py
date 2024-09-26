@@ -1,33 +1,31 @@
-from flask import Flask, request, jsonify, send_from_directory, send_file
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
 import os
 from parseData import loadData, load_image_dir
 
-"""
-Frontend URL: http://192.168.1.100:5173
-Backend API: Proxied via Vite from /api to http://192.168.1.100:5000/api
-"""
-
-
 app = Flask(__name__)
 
-if os.environ.get("FLASK_ENV") == "development":
+if app.debug:
     app.config.from_object(DevelopmentConfig)
+    print("Running in Development Mode")
 else:
     app.config.from_object(ProductionConfig)
+    print("Running in Production Mode")
 
 CORS(app, resources={r"/api/*": {"origins": app.config["CORS_ORIGINS"]}})
 
-# print(os.environ.get("FLASK_ENV"))
-# print(os.environ.get("FLASK_ENV"))
-
+# Print environment and configuration info
+print(f"FLASK_DEBUG: {os.environ.get('FLASK_DEBUG', 'Not Set')}")
+print(f"App debug mode: {app.debug}")
+print(f"Running on host: {os.environ.get('FLASK_RUN_HOST', '127.0.0.1')}")
+print(f"Running on port: {os.environ.get('FLASK_RUN_PORT', '5000')}")
 UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # ensure your routes are prefixed with /api.
-# path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
-path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
+path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+#path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
 
 @app.route("/api/upload-images", methods=["POST"])
@@ -105,12 +103,3 @@ def get_site_visits():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
-
-
-# Run the Flask app on port 5000
-if __name__ == "__main__":
-    # For local development, you can run on localhost
-    app.run(port=5000, debug=True)
-
-    # If you want to access this from other devices on your network, uncomment the line below
-    # app.run(host="0.0.0.0", port=5000, debug=True)

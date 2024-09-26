@@ -1,9 +1,8 @@
-# Add requirements here
 Flask==2.3.2
+Flask-Cors==4.0.0
+python-dotenv==1.0.0
+gunicorn==20.1.0
 Werkzeug==2.3.4
-Flask-Cors==5.0.0
-flask-compress
-python-dotenv
-gunicorn
-pandas==2.1.0
-schedule
+flask-compress==1.13
+pandas==1.5.3
+schedule==1.1.0

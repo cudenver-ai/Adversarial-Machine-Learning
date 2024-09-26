@@ -1,34 +1,26 @@
-{
-    "title": "Decoy Challenge: Deceptive Examples to Confuse and Outsmart Your AI",
-    "intro": "We are excited to introduce the Decoy Challenge: Deceptive Examples to Confuse and Outsmart Your AI, part of the CU Denver Data Science and AI Symposium.",
-    "content": [
-      {
-        "section": "Introduction",
-        "text": "The CIFAR-10 dataset is a well-known benchmark for image classification tasks, consisting of 10 classes such as airplanes, dogs, and ships. Although deep learning models have achieved impressive accuracy on this dataset, they remain vulnerable to adversarial examples—inputs that have been carefully manipulated to mislead models while appearing almost identical to the human eye."
-      },
-      {
-        "section": "The Challenge",
-        "text": "The Decoy Challenge focuses on generating adversarial examples that can mislead a machine learning model trained on the CIFAR-10 dataset. Participants will receive a pre-trained, robust classifier and a set of test examples from the CIFAR-10 dataset. Your objective is to create subtle perturbations to these test examples that can fool the classifier while maintaining the images' visual integrity."
-      },
-      {
-        "section": "Types of Perturbations",
-        "text": "The adversarial examples you generate should be crafted using small, imperceptible perturbations to the test images. These perturbations should not significantly change the visual appearance of the images but must be sufficient to cause the classifier to misclassify them."
-      },
-      {
-        "section": "Objective",
-        "text": "Your goal is to maximize the classifier’s error rate by making slight modifications to the provided test images. The challenge will test how effectively you can deceive a robust classifier while keeping the perturbations small and unnoticeable to the human eye."
-      },
-      {
-        "section": "Specific Tasks",
-        "text": "Adversarial Example Generation, Perturbation Constraints, Evaluation Criteria, and Tools and Constraints are provided in the challenge description."
-      },
-      {
-        "section": "Submission Requirements",
-        "text": "Participants must submit a Jupyter Notebook containing the code used to generate adversarial examples, evaluation results showing the classifier’s misclassification rate, and visual comparisons between original and perturbed images."
-      },
-      {
-        "section": "Rules",
-        "text": "The adversarial examples must only be generated from the provided test dataset. Your submission should include code for evaluating the performance of your perturbations."
-      }
+[
+  {
+    "img": "https://picsum.photos/800/450?image=442",
+    "title": "Challenge Objective",
+    "description": "The objective of this challenge is to create adversarial examples that can mislead a robust AI model. Participants must craft subtle perturbations that deceive the classifier while preserving image quality."
+  },
+  {
+    "title": "Submission Guidelines",
+    "description": "Submit the adversarial examples in the required format. Include a detailed README outlining the methods and algorithms used. Visual comparisons of the original and perturbed images are encouraged."
+  },
+  {
+    "title": "Rules & Guidelines",
+    "description": [
+      "1) Submissions must adhere to the provided format.",
+      "2) Perturbations should be subtle yet effective.",
+      "3) Each team is allowed one submission per day.",
+      "4) Follow ethical AI guidelines at all times."
     ]
+  },
+  {
+    "img": "https://picsum.photos/800/450?image=692",
+    "tag": "Dataset Description",
+    "title": "Dataset Description",
+    "description": "Participants will use the CIFAR-10 dataset and a pre-trained classifier. Use state-of-the-art adversarial techniques to craft perturbations that successfully deceive the model without compromising image integrity."
   }
+]

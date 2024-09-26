@@ -1,0 +1,32 @@
+{
+  "name": "adversarial-machine-learning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Adversarial Machine Learning Challenge for the 5th Data Science and AI Symposium",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "prettier": "^3.3.3"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,css,md}": [
+      "prettier --write"
+    ],
+    "**/*.py": [
+      "black",
+      "pylint"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cudenver-ai/Adversarial-Machine-Learning.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cudenver-ai/Adversarial-Machine-Learning/issues"
+  },
+  "homepage": "https://github.com/cudenver-ai/Adversarial-Machine-Learning#readme"
+}
