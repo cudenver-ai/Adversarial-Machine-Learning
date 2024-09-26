@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
 import os
@@ -103,3 +103,9 @@ def get_site_visits():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
