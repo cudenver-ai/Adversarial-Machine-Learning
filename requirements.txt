@@ -5,9 +5,7 @@ Flask-Cors==5.0.0
 flask-compress
 python-dotenv
 gunicorn
-pandas==2.1.0
+pandas
 schedule
-skimage
-torch
-pickle
+scikit-image
 git+https://github.com/RobustBench/robustbench.git
