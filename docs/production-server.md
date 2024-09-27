@@ -178,7 +178,7 @@ gunicorn -w 50 -b 0.0.0.0:8000 app:app
 - Create a systemd service file to run Gunicorn as a background service.
 
 ``` bash
-sudo nano /etc/systemd/system/decoychallenge.service
+sudo gedit /etc/systemd/system/decoychallenge.service
 ```
 
 Add the following configuration:
@@ -217,31 +217,67 @@ Install the Nginx web server.
 ##### 2. Configure Nginx Server Block
 
 Create a new server block configuration for Nginx.
+I like to use gedit but you can use a built in editor like nano or vim
+- `pip install gedit`
 
 ``` bash
 sudo gedit /etc/nginx/sites-available/decoychallenge
 ```
 
-Add the following content:
+Add the following content to support both http and https:
+To set up a self-signed certificate look at docs SSL-TLS-Setup.md
 
 ``` bash
+# HTTPS Server Block
 server {
-    listen 80;
-    server_name 10.18.22.224;
+    listen 443 ssl;
+    server_name decoychallenge.ucdenver.pvt;
 
-    root /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static; 
-    index index.html;
+    include snippets/self-signed.conf;
+    include snippets/ssl-params.conf;
 
-    location / {
-        try_files $uri $uri/ /index.html;
+    root /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end;
+    index templates/index.html;
+
+    location /static/ {
+        alias /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static/;
     }
 
-    location /api {
+    location / {
+        try_files $uri $uri/ /templates/index.html;
+    }
+
+    location /api/ {
         proxy_pass http://127.0.0.1:8000;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
     }
 }
+
+
+# HTTP Server Block
+server {
+    listen 80;
+    server_name decoychallenge.ucdenver.pvt;
+
+    root /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end;
+    index templates/index.html;
+
+    location /static/ {
+        alias /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static/;
+    }
+
+    location / {
+        try_files $uri $uri/ /templates/index.html;
+    }
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+
 ``` 
 
 ##### 3. Enable Nginx Configuration and Restart
@@ -276,6 +312,44 @@ sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
 
 - Security Updates: Regularly update the server to keep it secure.
 
+
+Thought the setup you may may be using these commands a lot:
+Restart Services
+
+Restart Gunicorn:
+
+```bash
+
+sudo systemctl restart decoychallenge
+```
+Reload Nginx:
+
+```bash
+
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+Edit Nginx:
+```bash
+sudo gedit /etc/nginx/sites-available/decoychallenge
+```
+
+Stop Services (Kill the server)
+
+
+Stop Nginx:
+
+```bash
+
+sudo systemctl stop nginx
+```
+Stop Gunicorn (decoychallenge service):
+
+```bash
+sudo systemctl stop decoychallenge
+```
+
 ### Workflow Summary
 
 - **Back-End**:
@@ -301,3 +375,61 @@ sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
 
 - **SSL/TLS**: For HTTPS, obtain SSL certificates (e.g., using Let's Encrypt), and update the Nginx configuration accordingly.
 - **Maintenance**: Regularly monitor logs and keep your system updated.
+
+
+
+##### troubleshooting
+sometimes you may experience ownership errors related to the static directory
+
+1. solution
+Change Ownership to Your User
+
+If you're the only user on the machine, you can change the ownership of the static directory to you
+
+Change Ownership:
+
+```bash
+
+sudo chown -R vicente:www-data /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
+```
+Set Permissions:
+
+```bash
+
+sudo chmod -R 755 /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
+```
+Explanation:
+
+    The directory is now owned by vicente, with the group www-data.
+    Nginx (running as www-data) can read the files because the permissions allow group read and execute.
+
+1. Ensure Nginx User Has Access to Parent Directories
+
+Since Nginx needs to traverse the directory structure to reach the static directory, ensure that the www-data user has execute permissions on parent directories.
+
+Set Execute Permissions for Others:
+
+```bash
+
+sudo chmod o+x /home/vicente
+sudo chmod o+x /home/vicente/prod-decoy-challenge
+sudo chmod o+x /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning
+sudo chmod o+x /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end
+```
+This grants execute permissions to others (which includes www-data) on the directories.
+2. Final Steps
+
+Restart Nginx:
+
+```bash
+
+sudo systemctl restart nginx
+```
+Test Application:
+
+    Open your browser and navigate to http://decoychallenge.ucdenver.pvt.
+    Verify that your application and static files are loading correctly.
+
+2. solution
+Delete the dirctory from the terminal and recreate it manually
+`sudo rm -rf path/static/`
