@@ -1,14 +1,25 @@
 from robustbench.utils import clean_accuracy
-from robustbench.data import load_cifar10
 from robustbench.utils import load_model
+from torch import unique
 import foolbox as fb
 import torch
 import pickle
 import os
 
 
-x_test, y_test = load_cifar10(n_examples=200)
+cifar_data = torch.load('cifar10_test_100_per_class.pt')
+
+# Extract the images and labels tensors
+x_test = cifar_data['images']
+y_test = cifar_data['labels']
+
+print(unique(y_test, return_counts=True))
+# x_test, y_test = load_cifar10(cifar_folder, n_examples=1000)
 # model = load_model(model_name='Bai2024MixedNUTS')
+x_test = x_test / 255.0
+
+print(x_test.shape, y_test.shape)
+print(torch.max(x_test), torch.min(x_test))
 
 model = load_model(
     model_name="Kireev2021Effectiveness_RLATAugMix",
