@@ -15,21 +15,22 @@ else:
 
 CORS(app, resources={r"/api/*": {"origins": app.config["CORS_ORIGINS"]}})
 
+# Serve the static frontend
+# Route for the main page
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 # Print environment and configuration info
 print(f"FLASK_DEBUG: {os.environ.get('FLASK_DEBUG', 'Not Set')}")
 print(f"App debug mode: {app.debug}")
-print(f"Running on host: {os.environ.get('FLASK_RUN_HOST', '127.0.0.1')}")
-print(f"Running on port: {os.environ.get('FLASK_RUN_PORT', '5000')}")
-UPLOAD_FOLDER = "Uploads"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 # ensure your routes are prefixed with /api.
 path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
 #path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+UPLOAD_FOLDER = "Uploads"
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route("/api/upload-images", methods=["POST"])
 def upload_images():
@@ -106,9 +107,3 @@ def get_site_visits():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
-
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-

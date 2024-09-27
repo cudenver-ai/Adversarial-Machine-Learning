@@ -16,6 +16,8 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     DEBUG = False
     CORS_ORIGINS = [
-        "http://10.18.22.224:5173",
-        "http://dns-name", # if we can get one 
+        #"http://10.18.22.224:5173",
+        "http://decoychallenge.ucdenver.pvt",
+        "https://decoychallenge.ucdenver.pvt",
     ]
+
