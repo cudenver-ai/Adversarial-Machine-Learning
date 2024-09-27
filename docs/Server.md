@@ -7,7 +7,8 @@ This document provides an overview of how the back-end server and front-end clie
 1. Architecture Overview
 2. Development Environment
 3. Production Environment
-4. Additional Resources
+4. Explanation of Development vs. Production Servers
+5. Additional Resources
 
 ---
 
@@ -80,6 +81,55 @@ In the production environment:
 For detailed setup instructions, refer to the **production-server.md** guide.
 
 ---
+### Explanation of Development vs. Production Servers
+#### Development: Flask Development Server (port 5000)
+
+When you run Flask directly using the command `flask run`, it defaults to port 5000. This is useful for `development` purposes but should not be used in production as it lacks optimizations for performance and security.
+
+Example:
+
+```bash
+flask run
+```
+
+This serves the Flask app at `http://127.0.0.1:5000` (or `0.0.0.0:5000` if configured to allow external connections).
+
+#### Production: Gunicorn WSGI Server (port 8000)
+
+Gunicorn is a production-grade WSGI server, designed for handling high traffic and running multiple worker processes. It is commonly used to serve Flask applications in production environments.
+
+Example:
+
+```bash
+gunicorn -w 50 -b 0.0.0.0:8000 app:app
+```
+This starts the Flask app on Gunicorn at `http://0.0.0.0:8000`, using 50 worker processes for better concurrency.
+#### Why Different Ports?
+
+- **Development (flask run)**: Uses port 5000 and is designed for ease of development, not performance or security.
+- **Production (gunicorn)**: Uses port 8000 or another configurable port and can handle much higher loads with multiple worker processes.
+
+#### Gunicorn with Nginx for Production
+
+In production, it’s common to have **Nginx** running on port 80 (HTTP) or port 443 (HTTPS). Nginx serves static files (like CSS, JavaScript, images) and acts as a **reverse proxy** to pass API requests to Gunicorn running the Flask application.
+
+Example Flow:
+
+1. **Client request**: A client makes a request to `http://10.18.22.224` (your server IP) on port 80.
+2. **Nginx**: Nginx forwards requests to Gunicorn on port 8000 (for API requests) while serving static files directly.
+3. **Gunicorn**: Gunicorn processes the Flask application and returns the response to Nginx.
+4. **Nginx to Client**: Nginx sends the response back to the client.
+
+#### Important Points:
+
+- **Nginx runs on port 80** (or 443 for HTTPS).
+- **Gunicorn runs on port 8000** (or a different configurable port).
+- **Flask development server runs on port 5000**, but should not be used in production.
+
+#### In Summary:
+
+- **Development Mode**: Use `flask run` (typically on port 5000).
+- **Production Mode**: Use Gunicorn (typically on port 8000) behind Nginx (on port 80 or 443).
 
 ## Additional Resources
 

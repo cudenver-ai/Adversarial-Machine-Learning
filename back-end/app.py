@@ -27,6 +27,9 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
 #path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 @app.route("/api/upload-images", methods=["POST"])
 def upload_images():

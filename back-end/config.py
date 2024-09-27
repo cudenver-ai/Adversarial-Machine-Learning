@@ -16,7 +16,6 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     DEBUG = False
     CORS_ORIGINS = [
-        "http://your-server-private-ip:5173",
-        # If you get a DNS, include it here
-        "http://your-dns-name",
+        "http://10.18.22.224:5173",
+        "http://dns-name", # if we can get one 
     ]
