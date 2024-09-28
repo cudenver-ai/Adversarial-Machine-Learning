@@ -1,5 +1,9 @@
 import * as React from 'react';
 import TeamsPage from './pages/TeamsPage.jsx';
+import GettingStartedPage from './pages/GettingStartedPage.jsx';
+import ProblemPage from './pages/ProblemPage.jsx';
+import OrganizersPage from './pages/OrganizersPage.jsx';
+import HomePage from './pages/HomePage.jsx';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import AppNavbar, { Toolbar } from './components/AppNavbar';
@@ -7,7 +11,7 @@ import AppTheme from '../theme/AppTheme.jsx';
 import MainGrid from './components/MainGrid';
 
 export default function Dashboard(props) {
-  const [currentPage, setCurrentPage] = React.useState('main');
+  const [currentPage, setCurrentPage] = React.useState('home');
 
   return (
     <AppTheme {...props}>
@@ -51,7 +55,10 @@ export default function Dashboard(props) {
           }}
         >
           {currentPage === 'main' && <MainGrid />}
-          {currentPage === 'teams' && <TeamsPage />}
+          {currentPage === 'data' && <GettingStartedPage />}
+          {currentPage === 'organizers' && <OrganizersPage />}
+          {currentPage === 'problem' && <ProblemPage />}
+          {currentPage === 'home' && <HomePage />}
         </Box>
       </Box>
     </AppTheme>

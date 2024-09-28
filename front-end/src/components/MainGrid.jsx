@@ -29,16 +29,18 @@ export default function MainGrid() {
       })
       .catch((error) => {
         console.error('Error fetching eval data:', error);
-        setLoading(false);
+        // setLoading(false);
       });
   }, []);
 
-  if (loading) {
-    return <Typography>Loading...</Typography>;
-  }
-  console.log(data);
+  // if (loading) {
+  //   return <Typography align={'center'}>Loading...</Typography>;
+  // }
+  // console.log(data);
 
   return (
+    loading ? (<Typography align={'center'}>Loading...</Typography>) :
+      (
     <Box
       sx={{
         width: '100%',
@@ -134,5 +136,6 @@ export default function MainGrid() {
       </Grid>
       <Copyright sx={{ my: 4 }} />
     </Box>
+      )
   );
 }

@@ -26,7 +26,8 @@ print(f"FLASK_DEBUG: {os.environ.get('FLASK_DEBUG', 'Not Set')}")
 print(f"App debug mode: {app.debug}")
 
 # ensure your routes are prefixed with /api.
-path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+# path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+path = '/Users/mohamed/Documents/School/AISA/Adversarial-Machine-Learning/back-end/'
 #path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
 UPLOAD_FOLDER = "Uploads"
@@ -107,3 +108,16 @@ def get_site_visits():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
+
+@app.route("/api/home-page", methods=["GET"])
+def get_home_page():
+
+    # data = f'{path}{"Data/TeamData.json"}'
+    data = os.path.join(path, "Data/home.json")
+
+    # Load and return the parsed team data
+    if os.path.exists(data):
+        results = loadData(data)
+        return jsonify(results)
+    else:
+        return jsonify({"error": "Evaluation data not found"}), 404
