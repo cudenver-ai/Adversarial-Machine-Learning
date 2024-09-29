@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
+from Decoy.parseData import loadData, load_image_dir
 import os
-from parseData import loadData, load_image_dir
 
 app = Flask(__name__)
 
