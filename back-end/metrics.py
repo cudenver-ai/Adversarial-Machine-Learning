@@ -27,3 +27,5 @@ def update_leaderBoard():
     # Save the updated leaderBoard data
     with open("Data/leaderBoard.json", "w") as f:
         json.dump(leaderBoard, f, indent=4)
+
+# Hola, soy un comentario
