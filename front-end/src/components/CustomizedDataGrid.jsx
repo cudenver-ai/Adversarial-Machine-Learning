@@ -7,7 +7,6 @@ export default function CustomizedDataGrid() {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
-
     fetch(`${API_BASE_URL}/api/team-data`)
       .then((response) => response.json())
       .then((data) => {

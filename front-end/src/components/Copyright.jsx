@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 
 export default function Copyright(props) {
   return (
@@ -17,7 +17,7 @@ export default function Copyright(props) {
           ...(Array.isArray(props.sx) ? props.sx : [props.sx]),
         ]}
       >
-        {'Developed by:'}
+        {'Developed by: '}
         <Link color="inherit" href="mailto:aisa@ucdenver.edu">
           AI Student Association
         </Link>{' '}
