@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
-from Decoy.parseData import loadData, load_image_dir
+from Decoy.parseData import loadData, load_pickle_file
 import os
 
 app = Flask(__name__)
@@ -38,18 +38,18 @@ os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 @app.route("/api/upload-images", methods=["POST"])
 def upload_images():
-    # Check if files are provided
-    if "files" not in request.files:
+    if "file" not in request.files:
         return jsonify({"error": "No files provided"}), 400
 
-    # Get the list of uploaded files and team name
-    files = request.files.getlist("files")
+    file = request.files["file"]
     teamName = request.form.get("teamName", "default_team")
 
-    # Call the logic function to handle the image upload
-    message = load_image_dir(files, teamName)
+    if not file.filename.endswith(".pkl"):
+        return jsonify({"error": "Invalid file type. Please upload a .pkl file"}), 400
 
-    return jsonify({"message": message, "uploaded": len(files)})
+    message = load_pickle_file(file, teamName)
+
+    return jsonify({"message": message, "uploaded": 1})
 
 
 @app.route("/api/team-data", methods=["GET"])
@@ -126,10 +126,9 @@ def get_example_code():
 
 @app.route("/api/download-notebook", methods=["GET"])
 def download_notebook():
-    file_path = os.path.join(path, "Data/")
-    filename = "Decoy.ipynb"
+    notebook = os.path.join(path, "Data/Decoy.ipynb")
 
-    if os.path.exists(os.path.join(file_path, filename)):
-        return send_from_directory(file_path, filename, as_attachment=True)
+    if os.path.exists(notebook):
+        return send_from_directory(notebook, as_attachment=True)
     else:
         return jsonify({"error": "Notebook not found"}), 404

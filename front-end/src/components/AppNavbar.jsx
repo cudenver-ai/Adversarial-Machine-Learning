@@ -17,10 +17,6 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useColorScheme } from '@mui/material/styles';
-import GettingStartedPage from '../pages/GettingStartedPage.jsx';
-import OrganizersPage from '../pages/OrganizersPage.jsx';
-import ProblemPage from '../pages/ProblemPage.jsx';
-import HomePage from '../pages/HomePage.jsx';
 
 export const Toolbar = styled(MuiToolbar)({
   width: '100%',

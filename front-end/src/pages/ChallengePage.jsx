@@ -5,13 +5,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { API_BASE_URL } from '../config.js';
 import Grid from '@mui/material/Grid2';
-import CardMedia from '@mui/material/CardMedia';
 import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import cifar1 from '../assets/cifar1.png';
-import aml1 from '../assets/aml1.jpg';
 import HighlightedCard from '../components/HighlightedCard';
-import DownloadIcon from '@mui/icons-material/Download';
 
 const SyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -32,8 +27,12 @@ const SyledCardContent = styled(CardContent)({
   },
 });
 
-export default function ChallengePage() {
+export default function ChallengePage({ setCurrentPage }) {
   const [challengeData, setChallengeData] = useState(null);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/api/challenge`)
@@ -53,14 +52,42 @@ export default function ChallengePage() {
           <SyledCard variant="outlined" tabIndex={0} sx={{ height: '100%' }}>
             <SyledCardContent>
               <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+                Submission Guidelines
+              </Typography>
+              <Typography variant="body1" fontSize={18} lineHeight={1.8}>
+                Ensure your submission follows these guidelines:
+              </Typography>
+              <ul
+                style={{
+                  paddingLeft: '20px',
+                  fontSize: '1.05rem',
+                  lineHeight: 1.7,
+                }}
+              >
+                <li>File format: .pkl</li>
+                <li>Maximum file size: 100MB</li>
+                <li>For more details check out the problem page.</li>
+              </ul>
+            </SyledCardContent>
+            <SyledCardContent>
+              <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
                 Upload Your Submission
               </Typography>
               <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-                Please upload your file in .zip format. Ensure that it follows
+                Please upload your file in .pkl format. Ensure that it follows
                 the required file structure.
               </Typography>
-              <HighlightedCard />
+              <Box sx={{ mt: 2, mb: 2 }}>
+                <HighlightedCard />
+              </Box>
+            </SyledCardContent>
+          </SyledCard>
+        </Grid>
 
+        {/* Submission Guidelines and Support Section */}
+        <Grid size={{ xs: 12, md: 6 }}>
+          <SyledCard variant="outlined" tabIndex={0} sx={{ height: '100%' }}>
+            <SyledCardContent>
               <Typography variant="h4" sx={{ fontWeight: 'bold', mt: 4 }}>
                 Key Dates
               </Typography>
@@ -87,33 +114,7 @@ export default function ChallengePage() {
                 *All metrics below are updated every hour.
               </Typography>
             </SyledCardContent>
-          </SyledCard>
-        </Grid>
-
-        {/* Submission Guidelines and Support Section */}
-        <Grid size={{ xs: 12, md: 6 }}>
-          <SyledCard variant="outlined" tabIndex={0} sx={{ height: '100%' }}>
             <SyledCardContent>
-              <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
-                Submission Guidelines
-              </Typography>
-              <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-                Ensure your submission follows these guidelines:
-              </Typography>
-              <ul
-                style={{
-                  paddingLeft: '20px',
-                  fontSize: '1.05rem',
-                  lineHeight: 1.7,
-                }}
-              >
-                <li>File format: .zip</li>
-                <li>Maximum file size: 50MB</li>
-                <li>
-                  Follow the directory structure outlined in the documentation.
-                </li>
-              </ul>
-
               <Typography variant="h4" sx={{ fontWeight: 'bold', mt: 4 }}>
                 Need Help?
               </Typography>
@@ -129,7 +130,7 @@ export default function ChallengePage() {
                 }}
               >
                 <li>
-                  Visit the <a href="/faq">FAQ</a>
+                  Visit the <a href="/Getting Started">FAQ</a>
                 </li>
                 <li>
                   Email us at{' '}

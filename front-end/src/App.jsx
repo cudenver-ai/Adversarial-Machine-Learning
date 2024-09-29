@@ -29,7 +29,7 @@ export default function Dashboard(props) {
         <AppNavbar setCurrentPage={setCurrentPage} />
         <Toolbar />
 
-        {currentPage === 'main' && <MainGrid />}
+        {currentPage === 'main' && <MainGrid setCurrentPage={setCurrentPage} />}
         {currentPage === 'data' && <GettingStartedPage />}
         {currentPage === 'organizers' && <OrganizersPage />}
         {currentPage === 'problem' && <ProblemPage />}
