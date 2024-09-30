@@ -13,6 +13,7 @@ import { API_BASE_URL } from '../config.js';
 import HighlightedCard from '../components/HighlightedCard.jsx';
 import { useInView } from 'react-intersection-observer';
 import PropTypes from 'prop-types';
+import Divider from '@mui/material/Divider';
 
 const SyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -83,45 +84,51 @@ export default function MainGrid({ setCurrentPage }) {
     >
       <Grid container spacing={2} columns={12}>
         <Grid size={{ xs: 12, md: 6 }}>
-          <SyledCard variant="outlined" tabIndex={0} sx={{ height: '100%' }}>
+          <SyledCard sx={{ height: '100%' }}>
             <SyledCardContent>
-              <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                 Submission Guidelines
               </Typography>
               <Typography variant="body1" fontSize={18} lineHeight={1.8}>
                 Ensure your submission follows these guidelines:
               </Typography>
-              <ul
-                style={{
-                  paddingLeft: '20px',
-                  fontSize: '1.05rem',
-                  lineHeight: 1.7,
-                }}
-              >
-                <li>File format: .pkl</li>
-                <li>Maximum file size: 100MB</li>
-                <li>For more details check out the problem page.</li>
-              </ul>
+              <Typography variant="body1" fontSize={18} lineHeight={1.8}>
+                <ul style={{ paddingLeft: '20px' }}>
+                  <li>
+                    <strong>File format</strong>: .pkl
+                  </li>
+                  <li>
+                    <strong>Maximum file size</strong>: 100MB
+                  </li>
+                  <li>For more details check out the problem page.</li>
+                </ul>
+              </Typography>
             </SyledCardContent>
+            <Divider />
             <SyledCardContent>
-              <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                 Upload Your Submission
               </Typography>
               <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-                Please upload your file in .pkl format. Ensure that it follows
-                the required file structure.
+                Please upload your file in .pkl format,
               </Typography>
               <Box sx={{ mt: 2, mb: 2 }}>
                 <HighlightedCard />
               </Box>
+              <Typography variant="body1" sx={{ mt: 2 }}>
+                *All metrics below are updated every hour.
+              </Typography>
             </SyledCardContent>
           </SyledCard>
         </Grid>
         <Grid size={{ xs: 12, md: 6 }}>
-          <SyledCard variant="outlined" tabIndex={0} sx={{ height: '100%' }}>
+          <SyledCard sx={{ height: '100%' }}>
             <SyledCardContent>
               <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                 Key Dates
+              </Typography>
+              <Typography variant="body1" fontSize={18} lineHeight={1.8}>
+                Keep the following dates in mind
               </Typography>
               <Typography variant="body1" fontSize={18} lineHeight={1.8}>
                 <ul style={{ paddingLeft: '20px' }}>
@@ -134,7 +141,16 @@ export default function MainGrid({ setCurrentPage }) {
                   </li>
                   <li>
                     <strong>CU Denver Data Science and AI Symposium:</strong>{' '}
-                    November 1st, 2024
+                    November 1st, 2024.{' '}
+                    <a
+                      style={{
+                        cursor: 'pointer',
+                        borderBottom: '1px solid #3f51b5',
+                      }}
+                      href="https://datascience.ucdenver.edu/events/symposium"
+                    >
+                      DSAI
+                    </a>
                   </li>
                   <li>
                     <strong>Winners Notified:</strong> October 30th, 2024. Their
@@ -142,12 +158,10 @@ export default function MainGrid({ setCurrentPage }) {
                   </li>
                 </ul>
               </Typography>
-              <Typography variant="body1" sx={{ mt: 2 }}>
-                *All metrics below are updated every hour.
-              </Typography>
             </SyledCardContent>
+            <Divider />
             <SyledCardContent>
-              <Typography variant="h4" sx={{ fontWeight: 'bold', mt: 2 }}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
                 Need Help?
               </Typography>
               <Typography variant="body1" fontSize={18} lineHeight={1.8}>
@@ -201,14 +215,14 @@ export default function MainGrid({ setCurrentPage }) {
             </SyledCardContent>
           </SyledCard>
         </Grid>
-        <Grid size={{ sm: 12, md: 6 }}>
+        <Grid size={{ sm: 12, md: 8 }}>
           <SessionsChart />
         </Grid>
-        <Grid size={{ sm: 12, md: 6 }}>
+        <Grid size={{ sm: 12, md: 4 }}>
           <PageViewsBarChart />
         </Grid>
         <Box sx={{ textAlign: 'center', mb: 2 }}>
-          <Typography component="h2" variant="h6">
+          <Typography component="h2" variant="h4">
             Best Overall Metrics
           </Typography>
         </Box>
@@ -263,8 +277,8 @@ export default function MainGrid({ setCurrentPage }) {
         </Grid>
         <Grid container spacing={2} justifyContent="center" alignItems="center">
           <Grid>
-            <Box sx={{ textAlign: 'center', mb: 2 }}>
-              <Typography component="h2" variant="h6">
+            <Box sx={{ textAlign: 'left', mb: 2 }}>
+              <Typography component="h2" variant="h4">
                 All Submissions
               </Typography>
             </Box>

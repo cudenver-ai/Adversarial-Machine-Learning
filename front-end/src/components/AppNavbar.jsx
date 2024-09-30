@@ -96,7 +96,7 @@ export default function AppNavbar({ setCurrentPage }) {
             <CustomIcon />
             <Typography
               variant="h4"
-              component="h1"
+              component="h2"
               sx={{ color: 'text.primary' }}
             >
               Decoy Challenge
@@ -104,40 +104,41 @@ export default function AppNavbar({ setCurrentPage }) {
 
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button
-                color="info"
-                size="small"
+                variant="text"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('home')}
               >
                 Home
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('problem')}
               >
                 Problem
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('data')}
               >
                 Getting Started
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('main')}
               >
                 Submit
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('organizers')}
               >
                 Organizers
@@ -146,7 +147,7 @@ export default function AppNavbar({ setCurrentPage }) {
             {/* For smaller screens: Mobile menu */}
             <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
               <IconButton
-                size="large"
+                size="medium"
                 edge="start"
                 color="inherit"
                 aria-label="menu"

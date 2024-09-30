@@ -53,40 +53,28 @@ export default function HighlightedCard() {
 
   return (
     <Box>
-      <Typography variant="h6" component="div">
-        Team Submission
-      </Typography>
-      <Typography sx={{ color: 'text.secondary' }}>
-        Please make sure your upload is a single .pkl file only.
+      <Typography variant="h6">Team Submission</Typography>
+      <Typography sx={{ color: 'text.secondary', mb: 1 }}>
+        Please make sure your type your team name correctly.
       </Typography>
       <TextField
         label="Team Name"
-        variant="outlined"
         required
+        fullWidth
         value={teamName}
         onChange={(e) => setTeamName(e.target.value)}
-        sx={{
-          mb: 2,
-          '& .MuiInputLabel-root': {
-            transform: 'translate(14px, 20px) scale(1)',
-          },
-          '& .MuiInputLabel-root.Mui-focused, & .MuiInputLabel-root.MuiInputLabel-shrink':
-            {
-              transform: 'translate(14px, -6px) scale(0.75)',
-            },
-        }}
-        slotProps={{
-          inputLabel: {
-            shrink: teamName.length > 0,
-          },
-        }}
       />
 
-      <input type="file" accept=".pkl" onChange={handleFileUpload} />
+      <input
+        type="file"
+        accept=".pkl"
+        onChange={handleFileUpload}
+        style={{ display: 'block', marginBottom: '16px', marginTop: '16px' }}
+      />
       <Button
         onClick={handleSubmit}
         variant="contained"
-        size="small"
+        size="Large"
         color="primary"
         endIcon={<ChevronRightRoundedIcon />}
       >

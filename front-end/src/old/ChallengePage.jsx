@@ -6,7 +6,7 @@ import Box from '@mui/material/Box';
 import { API_BASE_URL } from '../config.js';
 import Grid from '@mui/material/Grid2';
 import { styled } from '@mui/material/styles';
-import HighlightedCard from '../components/HighlightedCard';
+import HighlightedCard from '../components/HighlightedCard.jsx';
 
 const SyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',

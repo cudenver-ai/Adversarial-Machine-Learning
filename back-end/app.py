@@ -54,8 +54,6 @@ def upload_images():
 
 @app.route("/api/team-data", methods=["GET"])
 def get_team_data():
-
-    # data = f'{path}{"Data/TeamData.json"}'
     data = os.path.join(path, "Data/TeamData.json")
 
     # Load and return the parsed team data
@@ -78,16 +76,15 @@ def get_eval_data():
         return jsonify({"error": "Visits data not found"}), 404
 
 
-@app.route("/api/challenge", methods=["GET"])
+@app.route("/api/organization", methods=["GET"])
 def get_challenge_content():
-    # data = f'{path}{"Data/challenge.json"}'
-    data = os.path.join(path, "Data/challenge.json")
+    data = os.path.join(path, "Data/organization.json")
 
     if os.path.exists(data):
         results = loadData(data)
         return jsonify(results)
     else:
-        return jsonify({"error": "Challenge data not found"}), 404
+        return jsonify({"error": "Organization data not found"}), 404
 
 
 @app.route("/api/leaderboard", methods=["GET"])

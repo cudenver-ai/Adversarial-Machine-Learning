@@ -33,7 +33,7 @@ export default function ProblemPage() {
       <HeroBanner
         title="Understanding the Challenge"
         subtitle="Description, rules, evaluation, and more."
-        imageUrl="https://picsum.photos/1200/600?image=491"
+        imageUrl="https://picsum.photos/1200/600?image=190"
         color="white"
       />
       {/* Text on Left, Image on Right */}
@@ -273,6 +273,9 @@ export default function ProblemPage() {
 
             <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
               Explanation of Metrics:
+            </Typography>
+            <Typography variant="h7">
+              The following formula defines the scoring system:
             </Typography>
             <MarkdownLatex />
             <Typography variant="body1" fontSize={18} lineHeight={1.8}>

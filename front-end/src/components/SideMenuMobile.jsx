@@ -36,7 +36,6 @@ function SideMenuMobile({ open, toggleDrawer }) {
             direction="row"
             sx={{ gap: 1, alignItems: 'center', flexGrow: 1, p: 1 }}
           >
-
             <Box
               sx={{
                 width: '3rem',
@@ -62,7 +61,7 @@ function SideMenuMobile({ open, toggleDrawer }) {
                 style={{
                   width: '2.5rem',
                   height: '2.5rem',
-                  filter: mode === 'dark' ? 'invert(100%)' : 'none', 
+                  filter: mode === 'dark' ? 'invert(100%)' : 'none',
                 }}
               />
             </Box>

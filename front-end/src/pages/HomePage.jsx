@@ -8,7 +8,6 @@ import panda from '../assets/panda.png';
 import gibbon from '../assets/gibbon.png';
 import Button from '@mui/material/Button';
 import { useInView } from 'react-intersection-observer';
-import Copyright from '../components/Copyright.jsx';
 import micdrop from '../assets/micdrop.gif';
 import HeroBanner from '../components/HeroBanner.jsx';
 
@@ -42,10 +41,10 @@ export default function HomePage() {
       <HeroBanner
         title="Welcome to the Decoy Challenge"
         subtitle="Compete, learn, and outsmart AI models in this exciting challenge."
-        imageUrl="https://picsum.photos/1200/600?image=442"
-        color="black"
+        imageUrl="https://picsum.photos/1200/600?image=998"
+        color="White"
       />
-      {/* Text on Left, Image on Right */}
+      {/* Text on Left, Image on Right 442*/}
       <Grid
         container
         spacing={2}
@@ -53,7 +52,7 @@ export default function HomePage() {
         sx={{ mb: (theme) => theme.spacing(2) }}
       >
         <Grid size={{ sm: 12, md: 6 }}>
-          <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
+          <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
             Challenge Overview
           </Typography>
 
@@ -70,7 +69,18 @@ export default function HomePage() {
             . This challenge is part of the{' '}
             <strong>CU Denver Data Science and AI Symposium.</strong>
           </Typography>
-          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
+          <Typography
+            variant="body1"
+            fontSize={18}
+            lineHeight={1.6}
+            sx={{ mt: 2 }}
+          >
+            The challenge is simple, we give a{' '}
+            <strong>pre-trained model</strong> and a set of images. Your job is
+            to trick the model into making incorrect predictions. Trick the
+            model, and win <strong>money</strong>.
+          </Typography>
+          <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, mt: 2 }}>
             Example:
           </Typography>
           <Typography
@@ -79,11 +89,16 @@ export default function HomePage() {
             lineHeight={1.8}
             sx={{ mt: 2 }}
           >
-            <strong>Top</strong> picture clearly shows a <strong>Panda</strong>,
-            right? A fancy Machine Learning Model{' '}
-            <strong>incorrectly classified</strong> this <strong>Panda</strong>{' '}
-            as a <strong>Gibbon</strong> with over{' '}
-            <strong>99% confidence</strong>.
+            In this example, we see a demonstration of how subtle changes to an
+            image can dramatically affect how a machine learning model
+            classifies it. On the left, we have an image of a panda that the
+            model correctly classifies with 57.7% confidence. However, by adding
+            a small amount of adversarial noise—almost imperceptible to the
+            human eye—this image is transformed. This noise is carefully
+            designed using a technique called gradient-based adversarial
+            attacks. The resulting image on the right is almost identical to the
+            original for us, but the model is now confidently misclassifying the
+            panda as a gibbon with 99.3% confidence.
           </Typography>
           <Typography
             variant="body1"
@@ -91,9 +106,8 @@ export default function HomePage() {
             lineHeight={1.6}
             sx={{ mt: 2 }}
           >
-            For those who do not know, the <strong>bottom</strong> image is what
-            an actual <strong>Gibbon</strong> looks like. See, not a{' '}
-            <strong>Panda</strong>.{' '}
+            For those who do not know, the bottom image is what an actual{' '}
+            <strong>Gibbon</strong>. See, not a Panda.{' '}
             <span
               onClick={handleOpenGif}
               role="button"
@@ -111,26 +125,15 @@ export default function HomePage() {
                 fontSize: '1em',
               }}
             >
-              AI Tricked 
+              AI Tricked.
             </span>
           </Typography>
-          <Typography
-            variant="body1"
-            fontSize={18}
-            lineHeight={1.6}
-            sx={{ mt: 2 }}
-          >
-            The <strong>challenge</strong> is simple, we give a{' '}
-            <strong>pre-trained model</strong> and a set of images. Your job is
-            to <strong>trick the model</strong>trick the model into making
-            incorrect predictions. Trick the model, and win{' '}
-            <strong>money</strong>.
-          </Typography>
         </Grid>
+
         <Grid size={{ sm: 12, md: 6 }}>
           <Box
             sx={{
-              my: 10,
+              my: 15,
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
@@ -146,7 +149,7 @@ export default function HomePage() {
                 borderRadius: '12px',
                 boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
                 width: '100%',
-                maxWidth: '500px',
+
                 height: 'auto',
                 objectFit: 'cover',
               }}
@@ -160,7 +163,7 @@ export default function HomePage() {
                 borderRadius: '12px',
                 boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
                 width: '100%',
-                maxWidth: '300px',
+                maxWidth: '400px',
                 height: 'auto',
                 objectFit: 'cover',
               }}
@@ -243,7 +246,10 @@ export default function HomePage() {
                 variant="contained"
                 color="primary"
                 size="large"
-                sx={{ boxShadow: '0 3px 10px rgba(0,0,0,0.2)' }}
+                sx={{
+                  boxShadow: '0 3px 10px rgba(0,0,0,0.2)',
+                  fontSize: '1.2rem',
+                }}
                 href="https://forms.office.com/r/Xb3MZjTibT"
               >
                 Join the Challenge
@@ -260,7 +266,7 @@ export default function HomePage() {
               height: '100%',
             }}
           >
-            <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+            <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
               Prizes
             </Typography>
             <Typography variant="body1" fontSize={18} lineHeight={1.8}>
@@ -292,7 +298,7 @@ export default function HomePage() {
               mt: 2,
             }}
           >
-            <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+            <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
               Key Dates
             </Typography>
             <Typography variant="body1" fontSize={18} lineHeight={1.8}>

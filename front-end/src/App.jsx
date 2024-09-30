@@ -24,6 +24,8 @@ export default function Dashboard(props) {
           my: 2,
           gap: 2,
           alignItems: 'center',
+          justifyContent: 'center',
+          width: '100%',
         }}
       >
         <AppNavbar setCurrentPage={setCurrentPage} />
