@@ -5,9 +5,9 @@
         "avg_l2_perturbation": 1.3521,
         "avg_ssim": 0.9893,
         "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "AI Knights",
-        "time_stamp": "2024-09-14 13:15:00"
+        "score": 1.6075,
+        "team_name": "AI Knights 1",
+        "time_stamp": "2024-09-15 13:15:00"
     },
     {
         "incorrect_ratio": 0.948,
@@ -15,8 +15,8 @@
         "avg_l2_perturbation": 1.3521,
         "avg_ssim": 0.9893,
         "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "Data Guradians",
+        "score": 2.6075,
+        "team_name": "Data Guradians 2",
         "time_stamp": "2024-09-14 13:30:00"
     },
     {
@@ -25,8 +25,68 @@
         "avg_l2_perturbation": 1.3521,
         "avg_ssim": 0.9893,
         "avg_confidence_gap": -0.0572,
+        "score": -0.6075,
+        "team_name": "AI Knights 3",
+        "time_stamp": "2024-09-14 14:15:00"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9852,
+        "avg_l2_perturbation": 1.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 2.8075,
+        "team_name": "Data Guradians 4",
+        "time_stamp": "2024-08-14 13:30:00"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 1.9852,
+        "avg_l2_perturbation": 0.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
         "score": 0.6075,
-        "team_name": "AI Knights",
+        "team_name": "AI Knights 5",
+        "time_stamp": "2024-10-14 13:15:00"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9852,
+        "avg_l2_perturbation": 1.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 2.8075,
+        "team_name": "Data Guradians 6",
+        "time_stamp": "2024-09-14 18:30:00"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9852,
+        "avg_l2_perturbation": 1.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 0.6075,
+        "team_name": "AI Knights 7",
+        "time_stamp": "2024-09-15 13:15:00"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.5852,
+        "avg_l2_perturbation": 2.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 0.6075,
+        "team_name": "Data Guradians 8",
+        "time_stamp": "2024-09-17 13:30:00"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9852,
+        "avg_l2_perturbation": 1.3521,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 0.6075,
+        "team_name": "AI Knights 9",
         "time_stamp": "2024-09-14 13:15:00"
     },
     {
@@ -36,67 +96,7 @@
         "avg_ssim": 0.9893,
         "avg_confidence_gap": -0.0572,
         "score": 0.6075,
-        "team_name": "Data Guradians",
-        "time_stamp": "2024-09-14 13:30:00"
-    },
-    {
-        "incorrect_ratio": 0.948,
-        "avg_confidence_incorrect": 0.9852,
-        "avg_l2_perturbation": 1.3521,
-        "avg_ssim": 0.9893,
-        "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "AI Knights",
-        "time_stamp": "2024-09-14 13:15:00"
-    },
-    {
-        "incorrect_ratio": 0.948,
-        "avg_confidence_incorrect": 0.9852,
-        "avg_l2_perturbation": 1.3521,
-        "avg_ssim": 0.9893,
-        "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "Data Guradians",
-        "time_stamp": "2024-09-14 13:30:00"
-    },
-    {
-        "incorrect_ratio": 0.948,
-        "avg_confidence_incorrect": 0.9852,
-        "avg_l2_perturbation": 1.3521,
-        "avg_ssim": 0.9893,
-        "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "AI Knights",
-        "time_stamp": "2024-09-14 13:15:00"
-    },
-    {
-        "incorrect_ratio": 0.948,
-        "avg_confidence_incorrect": 0.9852,
-        "avg_l2_perturbation": 1.3521,
-        "avg_ssim": 0.9893,
-        "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "Data Guradians",
-        "time_stamp": "2024-09-14 13:30:00"
-    },
-    {
-        "incorrect_ratio": 0.948,
-        "avg_confidence_incorrect": 0.9852,
-        "avg_l2_perturbation": 1.3521,
-        "avg_ssim": 0.9893,
-        "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "AI Knights",
-        "time_stamp": "2024-09-14 13:15:00"
-    },
-    {
-        "incorrect_ratio": 0.948,
-        "avg_confidence_incorrect": 0.9852,
-        "avg_l2_perturbation": 1.3521,
-        "avg_ssim": 0.9893,
-        "avg_confidence_gap": -0.0572,
-        "score": 0.6075,
-        "team_name": "Data Guradians",
+        "team_name": "Data Guradians 10",
         "time_stamp": "2024-09-14 13:30:00"
     }
 ]
