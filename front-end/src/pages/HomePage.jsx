@@ -93,8 +93,8 @@ export default function HomePage() {
             image can dramatically affect how a machine learning model
             classifies it. On the left, we have an image of a panda that the
             model correctly classifies with 57.7% confidence. However, by adding
-            a small amount of adversarial noise—almost imperceptible to the
-            human eye—this image is transformed. This noise is carefully
+            a small amount of adversarial noise, almost imperceptible to the
+            human eye, this image is transformed. This noise is carefully
             designed using a technique called gradient-based adversarial
             attacks. The resulting image on the right is almost identical to the
             original for us, but the model is now confidently misclassifying the
@@ -107,7 +107,7 @@ export default function HomePage() {
             sx={{ mt: 2 }}
           >
             For those who do not know, the bottom image is what an actual{' '}
-            <strong>Gibbon</strong>. See, not a Panda.{' '}
+            <strong>Gibbon</strong> looks like. Very different from a Panda.{' '}
             <span
               onClick={handleOpenGif}
               role="button"
