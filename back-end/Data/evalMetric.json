@@ -1,49 +1,32 @@
 [
   {
-    "title": "Best Success Rate",
-    "data": [
-      84, 85, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 99, 98,
-      97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85
-    ],
-    "interval": "monthly",
+    "title": "Success Rate",
+    "data": [],
+    "interval": "",
     "trend": "up"
   },
   {
-    "title": "Best Perturbation Magnitude",
-    "data": [
-      56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73,
-      74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86
-    ],
-    "interval": "monthly",
+    "title": "Perturbation Magnitude",
+    "data": [],
+    "interval": "AI Warriors",
     "trend": "up"
   },
   {
-    "title": "Best Visual Similarity",
-    "data": [
-      60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77,
-      78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90
-    ],
-    "interval": "monthly",
+    "title": "Visual Similarity",
+    "data": [],
+    "interval": "",
     "trend": "up"
   },
   {
-    "title": "Best Average Confidence",
-    "data": [
-      90.1, 91.3, 89.7, 92.5, 93.0, 90.9, 94.1, 92.8, 93.5, 95.2, 91.8, 94.4,
-      93.6, 92.0, 91.9, 92.6, 90.5, 93.3, 94.8, 92.7, 93.9, 92.4, 91.7, 90.3,
-      94.1, 93.8, 92.9, 91.6, 92.2, 93.4, 94.7
-    ],
-    "interval": "monthly",
+    "title": "Average Confidence",
+    "data": [],
+    "interval": "",
     "trend": "up"
   },
   {
-    "title": "Best Confidence Gap",
-    "data": [
-      -8.7, -7.5, -9.2, -6.8, -7.1, -8.9, -6.2, -7.4, -8.0, -7.6, -6.9, -8.3,
-      -7.7, -8.1, -9.0, -7.9, -6.5, -8.2, -7.6, -8.4, -9.1, -7.8, -7.3, -8.7,
-      -7.0, -6.9, -7.4, -9.0, -7.1, -8.5, -7.9
-    ],
-    "interval": "monthly",
+    "title": "Confidence Gap",
+    "data": [],
+    "interval": "",
     "trend": "down"
   }
 ]

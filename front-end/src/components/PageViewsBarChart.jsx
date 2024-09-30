@@ -44,7 +44,7 @@ export default function Leaderboard() {
     <Card variant="outlined" sx={{ width: '100%' }}>
       <CardContent>
         <Typography component="h2" variant="subtitle" gutterBottom>
-          Top 5 Leaderboard
+          Leaderboard: Top 5
         </Typography>
         <TableContainer component={Paper}>
           <Table>

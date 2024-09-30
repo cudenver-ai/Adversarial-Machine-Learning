@@ -96,7 +96,7 @@ export default function AppNavbar({ setCurrentPage }) {
             <CustomIcon />
             <Typography
               variant="h4"
-              component="h1"
+              component="h2"
               sx={{ color: 'text.primary' }}
             >
               Decoy Challenge
@@ -104,25 +104,50 @@ export default function AppNavbar({ setCurrentPage }) {
 
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button
-                color="info"
-                size="small"
-                onClick={() => setCurrentPage('main')}
+                variant="text"
+                color="primary"
+                size="large"
+                onClick={() => setCurrentPage('home')}
               >
-                Main
+                Home
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
-                onClick={() => setCurrentPage('teams')}
+                color="primary"
+                size="large"
+                onClick={() => setCurrentPage('problem')}
               >
-                Teams
+                Problem
+              </Button>
+              <Button
+                variant="text"
+                color="primary"
+                size="large"
+                onClick={() => setCurrentPage('data')}
+              >
+                Getting Started
+              </Button>
+              <Button
+                variant="text"
+                color="primary"
+                size="large"
+                onClick={() => setCurrentPage('main')}
+              >
+                Submit
+              </Button>
+              <Button
+                variant="text"
+                color="primary"
+                size="large"
+                onClick={() => setCurrentPage('organizers')}
+              >
+                Organizers
               </Button>
             </Box>
             {/* For smaller screens: Mobile menu */}
             <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
               <IconButton
-                size="large"
+                size="medium"
                 edge="start"
                 color="inherit"
                 aria-label="menu"
@@ -140,11 +165,20 @@ export default function AppNavbar({ setCurrentPage }) {
                   },
                 }}
               >
-                <MenuItem onClick={() => handlePageChange('main')}>
-                  Main
+                <MenuItem onClick={() => handlePageChange('home')}>
+                  Home
                 </MenuItem>
-                <MenuItem onClick={() => handlePageChange('teams')}>
-                  Teams
+                <MenuItem onClick={() => handlePageChange('problem')}>
+                  Problem
+                </MenuItem>
+                <MenuItem onClick={() => handlePageChange('data')}>
+                  Getting Started
+                </MenuItem>
+                <MenuItem onClick={() => handlePageChange('main')}>
+                  Submit
+                </MenuItem>
+                <MenuItem onClick={() => handlePageChange('organizers')}>
+                  Organizers
                 </MenuItem>
               </Menu>
             </Box>

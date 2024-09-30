@@ -2,19 +2,26 @@ import React, { useState, useEffect } from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import { API_BASE_URL } from '../config.js';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 export default function CustomizedDataGrid() {
   const [rows, setRows] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-
     fetch(`${API_BASE_URL}/api/team-data`)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => {
         setRows(data);
+        setLoading(false);
       })
       .catch((error) => {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching eval data:', error);
       });
   }, []);
 
@@ -39,7 +46,9 @@ export default function CustomizedDataGrid() {
     { field: 'Rank', headerName: 'Rank', width: 100 },
   ];
 
-  return (
+  return loading ? (
+    <Typography align={'center'}>Loading...</Typography>
+  ) : (
     <Box
       sx={{
         boxShadow: 0,
