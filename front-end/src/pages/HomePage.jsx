@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid2';
 import CardMedia from '@mui/material/CardMedia';
@@ -8,15 +7,10 @@ import panda from '../assets/panda.png';
 import gibbon from '../assets/gibbon.png';
 import Button from '@mui/material/Button';
 import { useInView } from 'react-intersection-observer';
-import micdrop from '../assets/micdrop.gif';
 import HeroBanner from '../components/HeroBanner.jsx';
 
 export default function HomePage() {
   const { ref, inView } = useInView({ triggerOnce: true });
-  const [openGif, setOpenGif] = useState(false);
-
-  const handleOpenGif = () => setOpenGif(true);
-  const handleCloseGif = () => setOpenGif(false);
 
   return (
     <Box
@@ -98,35 +92,9 @@ export default function HomePage() {
             designed using a technique called gradient-based adversarial
             attacks. The resulting image on the right is almost identical to the
             original for us, but the model is now confidently misclassifying the
-            panda as a gibbon with 99.3% confidence.
-          </Typography>
-          <Typography
-            variant="body1"
-            fontSize={18}
-            lineHeight={1.6}
-            sx={{ mt: 2 }}
-          >
-            For those who do not know, the bottom image is what an actual{' '}
-            <strong>Gibbon</strong> looks like. Very different from a Panda.{' '}
-            <span
-              onClick={handleOpenGif}
-              role="button"
-              aria-label="Show surprise GIF"
-              tabIndex={0}
-              onKeyPress={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  handleOpenGif();
-                }
-              }}
-              style={{
-                color: 'blue',
-                textDecoration: 'underline',
-                cursor: 'pointer',
-                fontSize: '1em',
-              }}
-            >
-              AI Tricked.
-            </span>
+            panda as a gibbon with 99.3% confidence. For those who do not know,
+            the bottom image is what an actual <strong>Gibbon</strong> looks
+            like. Very different from a Panda.{' '}
           </Typography>
         </Grid>
 
@@ -323,42 +291,6 @@ export default function HomePage() {
           </Box>
         </Grid>
       </Grid>
-      <Modal
-        open={openGif}
-        onClose={handleCloseGif}
-        aria-labelledby="gif-modal-title"
-        aria-describedby="gif-modal-description"
-      >
-        <Box
-          sx={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            bgcolor: 'background.paper',
-            boxShadow: 24,
-            p: 4,
-            outline: 'none',
-            borderRadius: '8px',
-            maxWidth: '90%',
-            maxHeight: '90%',
-            overflow: 'auto',
-          }}
-        >
-          <Box sx={{ textAlign: 'right' }}>
-            <Button onClick={handleCloseGif} variant="contained" size="small">
-              Close
-            </Button>
-          </Box>
-          <Box sx={{ mt: 2, textAlign: 'center' }}>
-            <img
-              src={micdrop}
-              alt="Surprise GIF"
-              style={{ maxWidth: '100%', height: 'auto' }}
-            />
-          </Box>
-        </Box>
-      </Modal>
     </Box>
   );
 }
