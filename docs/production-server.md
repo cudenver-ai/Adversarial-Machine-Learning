@@ -192,8 +192,8 @@ After=network.target
 User=vicente
 Group=www-data
 WorkingDirectory=/home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end
-Environment="PATH=/home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/.venv/bin"
-ExecStart=/home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/.venv/bin/gunicorn -w 50 -b 0.0.0.0:8000 app:app
+Environment="PATH=/home/vicente/anaconda3/envs/Production/bin"
+ExecStart=/home/vicente/anaconda3/envs/Production/bin/gunicorn -w 50 -b 0.0.0.0:8000 app:app
 
 [Install]
 WantedBy=multi-user.target
@@ -241,6 +241,8 @@ server {
 
     location /static/ {
         alias /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static/;
+        expires 1d;
+        add_header Cache-Control "public";
     }
 
     location / {
@@ -252,6 +254,8 @@ server {
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
     }
+    access_log /var/log/nginx/decoychallenge_access.log;
+    error_log /var/log/nginx/decoychallenge_error.log;
 }
 
 
@@ -309,18 +313,25 @@ sudo ufw status
 journalctl -u decoychallenge
 sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
 ```
+real time logs
+journalctl -u decoychallenge -f
+
 
 - Security Updates: Regularly update the server to keep it secure.
 
 
-Thought the setup you may may be using these commands a lot:
+### Thought the setup you may may be using these commands a lot:
+
 Restart Services
 
 Restart Gunicorn:
 
 ```bash
-
+sudo systemctl daemon-reload
+sudo systemctl enable decoychallenge
+sudo systemctl start decoychallenge
 sudo systemctl restart decoychallenge
+sudo systemctl status decoychallenge
 ```
 Reload Nginx:
 
@@ -333,6 +344,7 @@ sudo systemctl reload nginx
 Edit Nginx:
 ```bash
 sudo gedit /etc/nginx/sites-available/decoychallenge
+sudo gedit /etc/systemd/system/decoychallenge.service
 ```
 
 Stop Services (Kill the server)
@@ -349,6 +361,48 @@ Stop Gunicorn (decoychallenge service):
 ```bash
 sudo systemctl stop decoychallenge
 ```
+
+sudo systemctl stop decoychallenge
+sudo systemctl stop nginx
+sudo pkill gunicorn
+sudo pkill nginx
+sudo rm -rf /var/cache/nginx/*
+sudo systemctl daemon-reload
+sudo systemctl start decoychallenge
+sudo systemctl start nginx
+
+sudo systemctl status decoychallenge
+sudo systemctl status nginx
+
+journalctl -u decoychallenge -f
+sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+
+
+sudo gedit /etc/systemd/system/decoychallenge.service
+
+
+
+
+sudo chown -R vicente:www-data /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
+sudo chmod -R 755 /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
+
+sudo systemctl daemon-reload
+sudo systemctl enable decoychallenge
+sudo systemctl start decoychallenge
+
+sudo nginx -t
+sudo systemctl restart nginx
+sudo systemctl reload nginx
+
+
+- **Monitor Logs**:
+``` bash
+journalctl -u decoychallenge
+sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+```
+real time logs
+journalctl -u decoychallenge -f
+
 
 ### Workflow Summary
 

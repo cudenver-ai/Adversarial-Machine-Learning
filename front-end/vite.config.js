@@ -15,8 +15,3 @@ export default defineConfig({
     },
   },
 });
-// If Accessing from Other Devices: in dev
-// server: {
-//   host: "0.0.0.0",
-//   port: 5173,
-// },

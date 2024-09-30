@@ -28,9 +28,9 @@ print(f"FLASK_DEBUG: {os.environ.get('FLASK_DEBUG', 'Not Set')}")
 print(f"App debug mode: {app.debug}")
 
 # ensure your routes are prefixed with /api.
-# path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
+path = "/home/vicente/Challenge/Adversarial-Machine-Learning/back-end/"
 # path = "/Users/mohamed/Documents/School/AISA/Adversarial-Machine-Learning/back-end/"
-path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
+#path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
 
 UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -89,7 +89,6 @@ def get_challenge_content():
 
 @app.route("/api/leaderboard", methods=["GET"])
 def get_leaderboard_data():
-    # data = f'{path}{"Data/leaderboard.json"}'
     data = os.path.join(path, "Data/leaderboard.json")
 
     if os.path.exists(data):
