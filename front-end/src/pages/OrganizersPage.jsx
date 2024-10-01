@@ -6,8 +6,11 @@ import Grid from '@mui/material/Grid2';
 import CardMedia from '@mui/material/CardMedia';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Button from '@mui/material/Button';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import andy from '../assets/andy.jpg';
+import sumaiya from '../assets/sumaiya.jpg';
 
 const SyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -16,17 +19,6 @@ const SyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
   backgroundColor: theme.palette.background.paper,
 }));
-
-const SyledCardContent = styled(CardContent)({
-  display: 'flex',
-  flexDirection: 'column',
-  gap: 4,
-  padding: 16,
-  flexGrow: 1,
-  '&:last-child': {
-    paddingBottom: 16,
-  },
-});
 
 export default function ChallengePage() {
   const [data, setData] = useState([]);
@@ -54,6 +46,7 @@ export default function ChallengePage() {
     <Box
       sx={{
         width: '100%',
+        height: '100%',
         maxWidth: {
           xs: '100%',
           sm: '100%',
@@ -65,30 +58,83 @@ export default function ChallengePage() {
         px: 2,
       }}
     >
-      <Grid container spacing={3} columns={12} sx={{ mb: 4 }}>
+      <Grid
+        container
+        spacing={2}
+        columns={12}
+        sx={{ mb: (theme) => theme.spacing(2) }}
+        display:flex
+        flexDirection:column
+      >
+        <Grid item size={{ xs: 12, sm: 12, lg: 12 }}>
+          <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+            AI Student Association
+          </Typography>
+          <Typography variant="body1" fontSize={18} lineHeight={1.8}>
+            The AI Student Association at CU Denver is a student-led
+            organization dedicated to exploring the applications of artificial
+            intelligence, data science, and machine learning. We provide a
+            collaborative platform for students to connect, engage, and grow
+            through hands-on projects, coding challenges, and research
+            initiatives. Our mission is to bridge the gap between theory and
+            practice by organizing events such as hackathons, workshops, and
+            technical talks that equip students with the skills needed to excel
+            in the AI industry. We focus on fostering an environment of
+            innovation, collaboration, and professional development, ensuring
+            that our members are prepared to tackle real-world challenges and
+            contribute meaningfully to the field of AI. Whether you’re an
+            experienced AI enthusiast or just getting started, the AI Student
+            Association offers opportunities for learning, networking, and
+            advancing your AI journey.
+          </Typography>
+          <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
+            This challenge was built, designed, and engineered by our members.
+            Interested in how we did it?
+          </Typography>
+          <Box sx={{ mb: 4 }}>
+            <Button
+              variant="contained"
+              color="primary"
+              size="large"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                boxShadow: '0 3px 10px rgba(0,0,0,0.2)',
+                fontSize: '1.2rem',
+              }}
+              startIcon={<PersonAddIcon />}
+              href="https://forms.office.com/r/Wk4fW5eRba"
+            >
+              Become a Member
+            </Button>
+          </Box>
+        </Grid>
         {data.map((member, index) => (
-          <Grid item xs={12} md={4} key={index}>
+          <Grid item size={{ xs: 12, sm: 6, lg: 4 }} key={index}>
             <SyledCard variant="outlined">
-              <Box sx={{alignItems: 'center', p: 2 }}>
+              <Box sx={{ height: '100%', alignItems: 'center', p: 2 }}>
                 <CardMedia
                   component="img"
-                  image={member.logo}
+                  image={
+                    member.position === 'Andy Tran'
+                      ? andy
+                      : member.position === 'Sumaiya Shrabony'
+                        ? sumaiya
+                        : member.logo
+                  }
                   alt={member.position}
-                  sx={{ width: 80, height: 80, borderRadius: '25%', mr: 2 }}
+                  sx={{ width: 80, height: 80, borderRadius: '25%' }}
                 />
-                <Box>
-                  <Typography variant="h6">{member.position}</Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {member.description}
-                  </Typography>
-                </Box>
+                <Typography variant="h6">{member.position}</Typography>
+                <Typography variant="h6">{member.details.name}</Typography>
+                <a
+                  href={member.details.major}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LinkedInIcon />
+                </a>
               </Box>
-
-              <SyledCardContent>
-                <Typography variant="h6">{member.details.name} </Typography>
-                <Typography variant="body1">{member.details.major}</Typography>
-                <LinkedInIcon />
-              </SyledCardContent>
             </SyledCard>
           </Grid>
         ))}
