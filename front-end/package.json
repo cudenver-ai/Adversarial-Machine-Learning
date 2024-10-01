@@ -18,9 +18,17 @@
     "@mui/x-data-grid": "latest",
     "@mui/x-date-pickers": "latest",
     "@mui/x-tree-view": "latest",
+    "emoji-picker-react": "^4.12.0",
+    "katex": "^0.16.11",
+    "prismjs": "^1.29.0",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.13.1",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

@@ -1,30 +1,41 @@
 [
   {
-      "id": "Visits",
-      "label": "Visits",
-      "showMark": false,
-      "curve": "linear",
-      "stack": "total",
-      "area": true,
-      "stackOrder": "ascending",
-      "data": [
-          30, 39, 40, 50, 64, 60, 55, 61, 57, 54, 48, 52,
-          63, 57, 65, 56, 55, 54, 54, 51, 47, 48, 56, 64,
-          77, 68, 62, 55, 45, 43
-      ]
+    "id": "Visits",
+    "label": "Visits",
+    "showMark": false,
+    "curve": "linear",
+    "stack": "total",
+    "area": true,
+    "stackOrder": "ascending",
+    "data": [
+      30, 39, 40, 50, 64, 60, 55, 61, 57, 54, 48, 52, 63, 57, 65, 56, 55, 54,
+      54, 51, 47, 48, 56, 64, 77, 68, 62, 55, 45, 43
+    ]
   },
   {
-      "id": "Uploads",
-      "label": "Uploads",
-      "showMark": false,
-      "curve": "linear",
-      "stack": "total",
-      "area": true,
-      "stackOrder": "ascending",
-      "data": [
-          5, 8, 5, 12, 8, 14, 15, 13, 11, 11, 6, 6, 7, 14,
-          10, 15, 14, 13, 15, 14, 16, 11, 16, 16, 11, 15,
-          16, 21, 19, 18
-      ]
+    "id": "Uploads",
+    "label": "Uploads",
+    "showMark": false,
+    "curve": "linear",
+    "stack": "total",
+    "area": true,
+    "stackOrder": "ascending",
+    "data": [
+      5, 8, 5, 12, 8, 14, 15, 13, 11, 11, 6, 6, 7, 14, 10, 15, 14, 13, 15, 14,
+      16, 11, 16, 16, 11, 15, 16, 21, 19, 18
+    ]
+  },
+  {
+    "id": "Unique",
+    "label": "Unique",
+    "showMark": false,
+    "curve": "linear",
+    "stack": "total",
+    "area": true,
+    "stackOrder": "ascending",
+    "data": [
+      5, 8, 5, 12, 8, 14, 15, 13, 11, 11, 6, 6, 7, 14, 10, 15, 14, 13, 15, 14,
+      16, 11, 16, 16, 11, 15, 16, 21, 19, 18
+    ]
   }
 ]

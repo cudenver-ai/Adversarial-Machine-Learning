@@ -27,7 +27,7 @@ def load_image_dir(images, teamName):
 
     # Process each uploaded image
     for img in images:
-        if img.filename.endswith(".png"):
+        if img.filename.endswith(".pkl"):
             imageName = secure_filename(img.filename)
             imagePath = os.path.join(TEAM_UPLOAD, imageName)
             img.save(imagePath)

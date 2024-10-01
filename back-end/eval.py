@@ -26,7 +26,17 @@ logging.basicConfig(
 logging.info("Starting evaluation script")
 
 
-def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamma=0.3, delta=0.2, epsilon=0.1667):
+def calculate_score(
+    model,
+    x_test,
+    advs,
+    y_test,
+    alpha=0.1667,
+    beta=0.1667,
+    gamma=0.3,
+    delta=0.2,
+    epsilon=0.1667,
+):
     # Pass the perturbed images through the model to get the logits
     with torch.no_grad():
         logits_adv = model(advs.to(device))
@@ -115,23 +125,23 @@ def calculate_score(model, x_test, advs, y_test, alpha=0.1667, beta=0.1667, gamm
     }
 
 
-def main():
+def evaluate():
     # Get current directory
     current_directory = os.getcwd()
 
     # Create the 'evaluated' directory if it doesn't exist
-    evaluated_dir = os.path.join(current_directory, 'evaluated')
+    evaluated_dir = os.path.join(current_directory, "evaluated")
     if not os.path.exists(evaluated_dir):
         os.makedirs(evaluated_dir, exist_ok=True)
 
     # Create a timestamped folder inside 'evaluated'
-    timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     timestamped_folder = os.path.join(evaluated_dir, timestamp)
     # print(timestamped_folder)
     os.makedirs(timestamped_folder, exist_ok=True)
 
     # Move all folders from 'Uploads' to the timestamped folder
-    uploads_dir = os.path.join(current_directory, 'Uploads')
+    uploads_dir = os.path.join(current_directory, "Uploads")
 
     for folder_name in os.listdir(uploads_dir):
         src_folder = os.path.join(uploads_dir, folder_name)
@@ -141,11 +151,11 @@ def main():
     # Now process the folders in the timestamped folder
     for folder_name in os.listdir(timestamped_folder):
         folder_path = os.path.join(timestamped_folder, folder_name)
-        
+
         # print(folder_path)
         for name in os.listdir(folder_path):
             path_name = os.path.join(folder_path, name)
-            
+
             if name.endswith(".pkl"):
                 with open(path_name, "rb") as f:
                     advs = pickle.load(f)
@@ -155,14 +165,18 @@ def main():
                     tmp = f.readlines()
                     team_name = tmp[1].strip()
                     time_stamp = tmp[0].strip()
-        
+
         # Load CIFAR-10 data
-        cifar_data = torch.load('cifar10_test_100_per_class.pt')
-        x_test = cifar_data['images'] / 255.0
-        y_test = cifar_data['labels']
+        cifar_data = torch.load("cifar10_test_100_per_class.pt")
+        x_test = cifar_data["images"] / 255.0
+        y_test = cifar_data["labels"]
 
         # Load the model
-        model = load_model(model_name='Kireev2021Effectiveness_RLATAugMix', dataset='cifar10', threat_model='corruptions')
+        model = load_model(
+            model_name="Kireev2021Effectiveness_RLATAugMix",
+            dataset="cifar10",
+            threat_model="corruptions",
+        )
         model = model.to(device)
         x_test = x_test.to(device)
         y_test = y_test.to(device)
@@ -171,7 +185,7 @@ def main():
         score_metrics = calculate_score(model, x_test, advs[0], y_test)
         score_metrics["team_name"] = team_name
         score_metrics["time_stamp"] = time_stamp
-        
+
         # Append the results to the JSON file
         submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
         # print(submission_json)
@@ -182,7 +196,3 @@ def main():
 
         with open(submission_json, "w") as f:
             json.dump(data, f, indent=4)
-
-
-if __name__ == "__main__":
-    main()

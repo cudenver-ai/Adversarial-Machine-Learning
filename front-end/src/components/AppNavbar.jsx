@@ -17,6 +17,10 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useColorScheme } from '@mui/material/styles';
+import GettingStartedPage from '../pages/GettingStartedPage.jsx';
+import OrganizersPage from '../pages/OrganizersPage.jsx';
+import ProblemPage from '../pages/ProblemPage.jsx';
+import HomePage from '../pages/HomePage.jsx';
 
 export const Toolbar = styled(MuiToolbar)({
   width: '100%',
@@ -106,17 +110,41 @@ export default function AppNavbar({ setCurrentPage }) {
               <Button
                 color="info"
                 size="small"
-                onClick={() => setCurrentPage('main')}
+                onClick={() => setCurrentPage('home')}
               >
-                Main
+                Home
               </Button>
               <Button
                 variant="text"
                 color="info"
                 size="small"
-                onClick={() => setCurrentPage('teams')}
+                onClick={() => setCurrentPage('problem')}
               >
-                Teams
+                Problem
+              </Button>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                onClick={() => setCurrentPage('data')}
+              >
+                Getting Started
+              </Button>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                onClick={() => setCurrentPage('main')}
+              >
+                Submit
+              </Button>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                onClick={() => setCurrentPage('organizers')}
+              >
+                Organizers
               </Button>
             </Box>
             {/* For smaller screens: Mobile menu */}
@@ -140,11 +168,20 @@ export default function AppNavbar({ setCurrentPage }) {
                   },
                 }}
               >
-                <MenuItem onClick={() => handlePageChange('main')}>
-                  Main
+                <MenuItem onClick={() => handlePageChange('home')}>
+                  Home
                 </MenuItem>
-                <MenuItem onClick={() => handlePageChange('teams')}>
-                  Teams
+                <MenuItem onClick={() => handlePageChange('problem')}>
+                  Problem
+                </MenuItem>
+                <MenuItem onClick={() => handlePageChange('data')}>
+                  Getting Started
+                </MenuItem>
+                <MenuItem onClick={() => handlePageChange('main')}>
+                  Submit
+                </MenuItem>
+                <MenuItem onClick={() => handlePageChange('organizers')}>
+                  Organizers
                 </MenuItem>
               </Menu>
             </Box>
