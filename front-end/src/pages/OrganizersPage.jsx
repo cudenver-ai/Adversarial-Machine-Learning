@@ -7,6 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const SyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -68,7 +69,7 @@ export default function ChallengePage() {
         {data.map((member, index) => (
           <Grid item xs={12} md={4} key={index}>
             <SyledCard variant="outlined">
-              <Box sx={{ display: 'flex', alignItems: 'center', p: 2 }}>
+              <Box sx={{alignItems: 'center', p: 2 }}>
                 <CardMedia
                   component="img"
                   image={member.logo}
@@ -86,6 +87,7 @@ export default function ChallengePage() {
               <SyledCardContent>
                 <Typography variant="h6">{member.details.name} </Typography>
                 <Typography variant="body1">{member.details.major}</Typography>
+                <LinkedInIcon />
               </SyledCardContent>
             </SyledCard>
           </Grid>

@@ -4,7 +4,7 @@ python-dotenv==1.0.0
 gunicorn==20.1.0
 Werkzeug==2.3.4
 flask-compress==1.13
-#pandas==1.5.3
+pandas==1.5.3
 schedule==1.1.0
 gedit==0.0.2
 schedule

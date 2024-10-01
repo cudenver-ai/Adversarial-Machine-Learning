@@ -5,7 +5,7 @@ def calculate_rank():
     team_data = []
 
     # Load submissions
-    with open('../Data/allSubmissions.json') as file:
+    with open('Data/allSubmissions.json') as file:
         submissions = json.load(file)
 
     # Sort submission by timestamp, team name for tiebreaker
@@ -37,5 +37,5 @@ def calculate_rank():
         team_data[score[2]]['Rank'] = index + 1
 
     # Save TeamData
-    with open('../Data/TeamData.json', 'w') as outfile:
+    with open('Data/TeamData.json', 'w') as outfile:
         outfile.write(json.dumps(team_data, indent=4))

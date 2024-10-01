@@ -178,7 +178,7 @@ gunicorn -w 50 -b 0.0.0.0:8000 app:app
 - Create a systemd service file to run Gunicorn as a background service.
 
 ``` bash
-sudo gedit /etc/systemd/system/decoychallenge.service
+sudo gedit /etc/systemd/system/production-server.service
 ```
 
 Add the following configuration:
@@ -191,9 +191,9 @@ After=network.target
 [Service]
 User=vicente
 Group=www-data
-WorkingDirectory=/home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end
-Environment="PATH=/home/vicente/anaconda3/envs/Production/bin"
-ExecStart=/home/vicente/anaconda3/envs/Production/bin/gunicorn -w 50 -b 0.0.0.0:8000 app:app
+WorkingDirectory=/home/vicente/dec/Adversarial-Machine-Learning/back-end
+Environment="PATH=/home/vicente/dec/Adversarial-Machine-Learning/.venv/bin"
+ExecStart=/home/vicente/dec/Adversarial-Machine-Learning/.venv/bin/gunicorn -w 40 -b 0.0.0.0:8000 app:app
 
 [Install]
 WantedBy=multi-user.target
@@ -203,11 +203,14 @@ WantedBy=multi-user.target
 
 ``` bash
 sudo systemctl daemon-reload
-sudo systemctl enable decoychallenge
-sudo systemctl start decoychallenge
-sudo systemctl status decoychallenge
+sudo systemctl enable production-server
+sudo systemctl start production-server
+sudo systemctl status production-server
 ```
+OUTPUT
+``` bash
 
+```
 ### Nginx Configuration
 ##### 1. Install Nginx
 
@@ -221,7 +224,7 @@ I like to use gedit but you can use a built in editor like nano or vim
 - `pip install gedit`
 
 ``` bash
-sudo gedit /etc/nginx/sites-available/decoychallenge
+sudo gedit /etc/nginx/sites-available/production-server
 ```
 
 Add the following content to support both http and https:
@@ -233,29 +236,46 @@ server {
     listen 443 ssl;
     server_name decoychallenge.ucdenver.pvt;
 
+    # SSL Configuration
     include snippets/self-signed.conf;
     include snippets/ssl-params.conf;
 
-    root /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end;
+    # Logging
+    access_log /var/log/nginx/production-server_access.log;
+    error_log /var/log/nginx/production-server_error.log;
+
+    # Root Directory
+    root /home/vicente/dec/Adversarial-Machine-Learning/back-end;
     index templates/index.html;
 
+    # Serve Static Assets with Caching
     location /static/ {
-        alias /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static/;
+        alias /home/vicente/dec/Adversarial-Machine-Learning/back-end/static/;
         expires 1d;
         add_header Cache-Control "public";
     }
 
+    # Handle Client-Side Routing for React
     location / {
         try_files $uri $uri/ /templates/index.html;
     }
 
+    # Proxy API Requests to Backend Server
     location /api/ {
         proxy_pass http://127.0.0.1:8000;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
     }
-    access_log /var/log/nginx/decoychallenge_access.log;
-    error_log /var/log/nginx/decoychallenge_error.log;
+
+    # Security Headers
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+    add_header Referrer-Policy "no-referrer" always;
+    add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';" always;
+
 }
 
 
@@ -264,22 +284,8 @@ server {
     listen 80;
     server_name decoychallenge.ucdenver.pvt;
 
-    root /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end;
-    index templates/index.html;
-
-    location /static/ {
-        alias /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static/;
-    }
-
-    location / {
-        try_files $uri $uri/ /templates/index.html;
-    }
-
-    location /api/ {
-        proxy_pass http://127.0.0.1:8000;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-    }
+    # Redirect All HTTP Requests to HTTPS
+    return 301 https://$host$request_uri;
 }
 
 ``` 
@@ -290,7 +296,7 @@ server {
 
 
 ``` bash
-sudo ln -s /etc/nginx/sites-available/decoychallenge /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available/production-server /etc/nginx/sites-enabled
 sudo nginx -t
 sudo systemctl restart nginx
 ```
@@ -310,8 +316,8 @@ sudo ufw status
 
 - **Monitor Logs**:
 ``` bash
-journalctl -u decoychallenge
-sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
+journalctl -u production-server
+sudo tail -f /var/log/nginx/production-server_access.log /var/log/nginx/production-server_error.log
 ```
 real time logs
 journalctl -u decoychallenge -f
@@ -361,12 +367,15 @@ Stop Gunicorn (decoychallenge service):
 ```bash
 sudo systemctl stop decoychallenge
 ```
-
+```bash    KILLLL
 sudo systemctl stop decoychallenge
 sudo systemctl stop nginx
 sudo pkill gunicorn
 sudo pkill nginx
 sudo rm -rf /var/cache/nginx/*
+```
+
+
 sudo systemctl daemon-reload
 sudo systemctl start decoychallenge
 sudo systemctl start nginx

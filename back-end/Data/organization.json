@@ -2,52 +2,40 @@
   {
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Vicente.jpg",
     "position": "Vicente Ramos",
-    "description": "Research Interests: Machine Learning, Deep Learning, Graph Neural Networks",
-    "details": { "name": "President", "major": "Ph.D. Student" }
-  },
-  {
-    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Vicente.jpg",
-    "position": "Vicente Ramos",
-    "description": "Research Interests: Machine Learning, Deep Learning, Graph Neural Networks",
-    "details": { "name": "President", "major": "Ph.D. Student" }
+    "description": "",
+    "details": { "name": "President", "major": "https://www.linkedin.com/in/ramosv" }
   },
   {
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Mohamed.png",
     "position": "Mohamed Abdel-Hafiz",
-    "description": "Research Interests: Data Mining, Machine Learning, Artificial Intelligence",
+    "description": "",
     "details": {
       "name": "Vice President",
-      "major": "Ph.D. Student"
+      "major": "https://www.linkedin.com/in/abdelhafizm"
     }
   },
   {
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Javad.jpg",
     "position": "Mohammadjavad Zohrabi",
-    "description": "Research Interests: Machine Learning, Deep Learning, Adversarial Machine Learning.",
-    "details": { "name": "Treasurer", "major": "Ph.D. Student" }
+    "description": "",
+    "details": { "name": "Treasurer", "major": "https://www.linkedin.com/in/mohammadjavad-zohrabi" }
   },
   {
     "logo": "https://media.licdn.com/dms/image/v2/D5603AQEj7M3CrRIeeA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683141035145?e=2147483647&v=beta&t=SwOX2QZpQGekWketUo6ocZDcWDKJsMR668bkaxMKkYI",
     "position": "An Tran",
-    "description": "Research Interests: Machine Learning, Deep Learning.",
-    "details": { "name": "Brand Strategist", "major": "Undergrad" }
+    "description": "",
+    "details": { "name": "Brand Strategist", "major": "https://www.linkedin.com/in/an-tran-905818244" }
   },
   {
-    "logo": "https://picsum.photos/100/100?random=105",
-    "position": "Sumaiya",
-    "description": "Outreach Coordinator",
-    "details": { "name": "Outreach Coordinator", "major": "MS Student" }
-  },
-  {
-    "logo": "https://picsum.photos/100/100?random=105",
-    "position": "Anmol",
-    "description": "Information Officer",
-    "details": { "name": "Information Officer", "major": "MS Student" }
+    "logo": "https://picsum.photos/100/100?image=399",
+    "position": "Sumaiya Shrabony",
+    "description": "",
+    "details": { "name": "Outreach Coordinator", "major": "https://www.linkedin.com/in/sumaiya-shrabony" }
   },
   {
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Farnoush.jpg",
     "position": "Dr. Farnoush Banaei-Kashani ",
-    "description": "https://cse.ucdenver.edu/~farnoush/#research",
-    "details": { "name": "Advisor", "major": "Computer Science Faculty" }
+    "description": "",
+    "details": { "name": "Advisor", "major": "https://www.linkedin.com/in/farnoush-banaei-kashani-3614454" }
   }
 ]

@@ -19,21 +19,6 @@ def loadData(file):
     return data
 
 
-# def load_image_dir(images, teamName):
-
-#     dirName = secure_filename(teamName)
-#     TEAM_UPLOAD = os.path.join("Uploads", dirName)
-#     os.makedirs(TEAM_UPLOAD, exist_ok=True)
-
-#     # Process each uploaded image
-#     for img in images:
-#         if img.filename.endswith(".pkl"):
-#             imageName = secure_filename(img.filename)
-#             imagePath = os.path.join(TEAM_UPLOAD, imageName)
-#             img.save(imagePath)
-
-#     return "Upload Successful"
-
 
 def load_pickle_file(file, teamName):
     dirName = secure_filename(teamName)

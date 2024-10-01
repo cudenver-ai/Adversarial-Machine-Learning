@@ -12,7 +12,7 @@ def update_evalMetrics():
                 'trend': ''} for label in metric_labels]
 
     # Open submissions data
-    with open ('../Data/allSubmissions.json') as file:
+    with open ('Data/allSubmissions.json') as file:
         submissions = json.load(file)
 
     # Parse submissions, group by date
@@ -65,7 +65,7 @@ def update_leaderBoard():
     history = {}
 
     # Load submissions
-    with open('../Data/allSubmissions.json') as file:
+    with open('Data/allSubmissions.json') as file:
         submissions = json.load(file)
 
     # Extract scores + timestamps, and team names
