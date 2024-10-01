@@ -1,0 +1,53 @@
+[
+  {
+    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Vicente.jpg",
+    "position": "Vicente Ramos",
+    "description": "Research Interests: Machine Learning, Deep Learning, Graph Neural Networks",
+    "details": { "name": "President", "major": "Ph.D. Student" }
+  },
+  {
+    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Vicente.jpg",
+    "position": "Vicente Ramos",
+    "description": "Research Interests: Machine Learning, Deep Learning, Graph Neural Networks",
+    "details": { "name": "President", "major": "Ph.D. Student" }
+  },
+  {
+    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Mohamed.png",
+    "position": "Mohamed Abdel-Hafiz",
+    "description": "Research Interests: Data Mining, Machine Learning, Artificial Intelligence",
+    "details": {
+      "name": "Vice President",
+      "major": "Ph.D. Student"
+    }
+  },
+  {
+    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Javad.jpg",
+    "position": "Mohammadjavad Zohrabi",
+    "description": "Research Interests: Machine Learning, Deep Learning, Adversarial Machine Learning.",
+    "details": { "name": "Treasurer", "major": "Ph.D. Student" }
+  },
+  {
+    "logo": "https://media.licdn.com/dms/image/v2/D5603AQEj7M3CrRIeeA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683141035145?e=2147483647&v=beta&t=SwOX2QZpQGekWketUo6ocZDcWDKJsMR668bkaxMKkYI",
+    "position": "An Tran",
+    "description": "Research Interests: Machine Learning, Deep Learning.",
+    "details": { "name": "Brand Strategist", "major": "Undergrad" }
+  },
+  {
+    "logo": "https://picsum.photos/100/100?random=105",
+    "position": "Sumaiya",
+    "description": "Outreach Coordinator",
+    "details": { "name": "Outreach Coordinator", "major": "MS Student" }
+  },
+  {
+    "logo": "https://picsum.photos/100/100?random=105",
+    "position": "Anmol",
+    "description": "Information Officer",
+    "details": { "name": "Information Officer", "major": "MS Student" }
+  },
+  {
+    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Farnoush.jpg",
+    "position": "Dr. Farnoush Banaei-Kashani ",
+    "description": "https://cse.ucdenver.edu/~farnoush/#research",
+    "details": { "name": "Advisor", "major": "Computer Science Faculty" }
+  }
+]

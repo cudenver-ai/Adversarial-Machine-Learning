@@ -1,4 +1,4 @@
-# Adversarial Machine Learning Challenge
+# Adversarial Machine Learning Challenge - Production Branch
 
 Welcome to the **Adversarial Machine Learning Challenge** project! This repository contains the codebase for both the back-end (Flask API) and front-end (React with Vite) applications.
 

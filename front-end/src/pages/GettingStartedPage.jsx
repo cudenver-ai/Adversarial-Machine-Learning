@@ -112,8 +112,6 @@ export default function GettingStartedPage() {
           <Typography variant="h6" sx={{ mb: 2 }}>
             Pick Your Setup Option:
           </Typography>
-
-          {/* Lighthearted but professional bullet points */}
           <ul
             style={{
               paddingLeft: '20px',
