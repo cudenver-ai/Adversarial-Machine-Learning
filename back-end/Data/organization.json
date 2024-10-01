@@ -3,7 +3,10 @@
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Vicente.jpg",
     "position": "Vicente Ramos",
     "description": "",
-    "details": { "name": "President", "major": "https://www.linkedin.com/in/ramosv" }
+    "details": {
+      "name": "President",
+      "major": "https://www.linkedin.com/in/ramosv"
+    }
   },
   {
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Mohamed.png",
@@ -18,24 +21,36 @@
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Javad.jpg",
     "position": "Mohammadjavad Zohrabi",
     "description": "",
-    "details": { "name": "Treasurer", "major": "https://www.linkedin.com/in/mohammadjavad-zohrabi" }
+    "details": {
+      "name": "Treasurer",
+      "major": "https://www.linkedin.com/in/mohammadjavad-zohrabi"
+    }
   },
   {
-    "logo": "https://media.licdn.com/dms/image/v2/D5603AQEj7M3CrRIeeA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683141035145?e=2147483647&v=beta&t=SwOX2QZpQGekWketUo6ocZDcWDKJsMR668bkaxMKkYI",
-    "position": "An Tran",
+    "logo": "",
+    "position": "Andy Tran",
     "description": "",
-    "details": { "name": "Brand Strategist", "major": "https://www.linkedin.com/in/an-tran-905818244" }
+    "details": {
+      "name": "Brand Strategist",
+      "major": "https://www.linkedin.com/in/an-tran-905818244"
+    }
   },
   {
-    "logo": "https://picsum.photos/100/100?image=399",
+    "logo": "",
     "position": "Sumaiya Shrabony",
     "description": "",
-    "details": { "name": "Outreach Coordinator", "major": "https://www.linkedin.com/in/sumaiya-shrabony" }
+    "details": {
+      "name": "Outreach Coordinator",
+      "major": "https://www.linkedin.com/in/sumaiya-shrabony"
+    }
   },
   {
     "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Farnoush.jpg",
-    "position": "Dr. Farnoush Banaei-Kashani ",
+    "position": "Dr. Farnoush Banaei-Kashani",
     "description": "",
-    "details": { "name": "Advisor", "major": "https://www.linkedin.com/in/farnoush-banaei-kashani-3614454" }
+    "details": {
+      "name": "Advisor",
+      "major": "https://www.linkedin.com/in/farnoush-banaei-kashani-3614454"
+    }
   }
 ]
