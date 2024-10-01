@@ -5,7 +5,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Stack from '@mui/material/Stack';
-import HandshakeIcon from '@mui/icons-material/Handshake';
+import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import AssignmentRoundedIcon from '@mui/icons-material/AssignmentRounded';
 import HowToRegRoundedIcon from '@mui/icons-material/HowToRegRounded';
 import ForumIcon from '@mui/icons-material/Forum';
@@ -22,7 +22,7 @@ const mainListItems = [
   },
   {
     text: 'Become a Member',
-    icon: <HandshakeIcon />,
+    icon: <PersonAddIcon />,
     link: 'https://forms.office.com/r/Wk4fW5eRba',
   },
   {
@@ -62,6 +62,8 @@ export default function MenuContent() {
               <ListItemButton
                 component="a"
                 href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   color: 'text.primary',
                   borderRadius: '8px',

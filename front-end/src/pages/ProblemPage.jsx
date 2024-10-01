@@ -32,7 +32,7 @@ export default function ProblemPage() {
     >
       <HeroBanner
         title="Understanding the Challenge"
-        subtitle="Description, rules, evaluation, and more."
+        subtitle="Compete, Learn, and Outsmart AI Models in this Exciting Challenge!"
         imageUrl="https://picsum.photos/1200/600?image=190"
         color="white"
       />
@@ -161,8 +161,8 @@ export default function ProblemPage() {
                 Decoy Challenge: Deceptive Examples to Confuse and Outsmart Your
                 AI
               </strong>
-              , all CU Denver students must follow these guidelines to ensure a
-              fair and streamlined competition:
+              , all students must follow these guidelines to ensure a fair and
+              streamlined competition:
             </Typography>
 
             <Typography variant="body1" fontSize={18} lineHeight={1.8}>
@@ -274,7 +274,7 @@ export default function ProblemPage() {
             <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
               Explanation of Metrics:
             </Typography>
-            <Typography variant="h7">
+            <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
               The following formula defines the scoring system:
             </Typography>
             <MarkdownLatex />
@@ -364,11 +364,11 @@ export default function ProblemPage() {
               Participation
             </Typography>
             <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-              The Decoy Challenge is open to all CU Denver students across
-              disciplines, interested in data science, Artificial Intelligence,
-              and related fields. Whether you’re a beginner or an advanced
-              student, this challenge allows you to explore adversarial machine
-              learning in a practical setting.
+              The Decoy Challenge is open to all students across disciplines,
+              interested in data science, Artificial Intelligence, and related
+              fields. Whether you’re a beginner or an advanced student, this
+              challenge allows you to explore adversarial machine learning in a
+              practical setting.
             </Typography>
 
             <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
@@ -409,12 +409,11 @@ export default function ProblemPage() {
             </Typography>
             <Typography variant="body1" fontSize={18} lineHeight={1.8}>
               The Decoy Challenge: Deceptive Examples to Confuse and Outsmart
-              Your AI offers exciting opportunities for CU Denver students to
-              showcase their skills in adversarial machine learning. The
-              top-performing teams will not only receive monetary rewards but
-              will also have the prestigious opportunity to present their work
-              at the CU Denver Data Science and AI Symposium on November 1st,
-              2024.
+              Your AI offers exciting opportunities for students to showcase
+              their skills in adversarial machine learning. The top-performing
+              teams will not only receive monetary rewards but will also have
+              the prestigious opportunity to present their work at the CU Denver
+              Data Science and AI Symposium on November 1st, 2024.
             </Typography>
 
             <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
@@ -426,8 +425,8 @@ export default function ProblemPage() {
                   <strong>1st Place:</strong>
                   <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
                     <li>
-                      <strong>Monetary Prize:</strong> Awarded to the team with
-                      the highest overall score in the challenge.
+                      <strong>$250 Prize:</strong> Awarded to the team with the
+                      highest overall score in the challenge.
                     </li>
                     <li>
                       <strong>Presentation Opportunity:</strong> The first-place
@@ -442,8 +441,8 @@ export default function ProblemPage() {
                   <strong>2nd Place:</strong>
                   <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
                     <li>
-                      <strong>Monetary Prize:</strong> Awarded to the team with
-                      the second-highest score.
+                      <strong>$150 Prize:</strong> Awarded to the team with the
+                      second-highest score.
                     </li>
                     <li>
                       <strong>Presentation Opportunity:</strong> The
@@ -456,8 +455,8 @@ export default function ProblemPage() {
                   <strong>3rd Place:</strong>
                   <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
                     <li>
-                      <strong>Monetary Prize:</strong> Awarded to the team with
-                      the third-highest score.
+                      <strong>$100 Prize:</strong> Awarded to the team with the
+                      third-highest score.
                     </li>
                     <li>
                       <strong>Presentation Opportunity:</strong> The third-place
@@ -494,9 +493,9 @@ export default function ProblemPage() {
               sx={{ fontWeight: 'bold', mt: 2 }}
             >
               Whether you're looking to hone your skills, gain recognition, or
-              win exciting prizes, this challenge offers CU Denver students a
-              unique chance to make their mark in the field of adversarial
-              machine learning!
+              win exciting prizes, this challenge offers students a unique
+              chance to make their mark in the field of adversarial machine
+              learning!
             </Typography>
 
             <Box sx={{ mt: 'auto', pt: 2 }}>
@@ -504,7 +503,12 @@ export default function ProblemPage() {
                 variant="contained"
                 color="primary"
                 size="large"
-                sx={{ boxShadow: '0 3px 10px rgba(0,0,0,0.2)' }}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  boxShadow: '0 3px 10px rgba(0,0,0,0.2)',
+                  fontSize: '1.2rem',
+                }}
                 href="https://forms.office.com/r/Xb3MZjTibT"
               >
                 Join the Challenge

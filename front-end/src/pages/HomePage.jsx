@@ -34,11 +34,10 @@ export default function HomePage() {
     >
       <HeroBanner
         title="Welcome to the Decoy Challenge"
-        subtitle="Compete, learn, and outsmart AI models in this exciting challenge."
+        subtitle="Compete, Learn, and Outsmart AI Models in this Exciting Challenge!"
         imageUrl="https://picsum.photos/1200/600?image=998"
         color="White"
       />
-      {/* Text on Left, Image on Right 442*/}
       <Grid
         container
         spacing={2}
@@ -72,7 +71,7 @@ export default function HomePage() {
             The challenge is simple, we give a{' '}
             <strong>pre-trained model</strong> and a set of images. Your job is
             to trick the model into making incorrect predictions. Trick the
-            model, and win <strong>money</strong>.
+            model, and win a<strong>prize!</strong>.
           </Typography>
           <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, mt: 2 }}>
             Example:
@@ -151,17 +150,18 @@ export default function HomePage() {
               Introduction
             </Typography>
             <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-              This challenge invites <strong>all CU Denver students</strong> to
-              dive into the intriguing world of{' '}
-              <strong>adversarial machine learning</strong> by crafting
-              adversarial examples that can deceive a robust machine learning
-              classifier trained on the <strong>CIFAR-10 dataset</strong>. Your
-              mission is to create subtle but effective modifications to a set
-              of test images, fooling the classifier into making incorrect
-              predictions. This challenge is a perfect opportunity for students
-              to explore model vulnerabilities, gain hands-on experience with
-              adversarial techniques, and contribute to ongoing research in AI
-              robustness and security.
+              This challenge invites{' '}
+              <strong>all Auraria Campus students</strong> to dive into the
+              intriguing world of <strong>adversarial machine learning</strong>{' '}
+              by crafting adversarial examples that can deceive a robust machine
+              learning classifier trained on the{' '}
+              <strong>CIFAR-10 dataset</strong>. Your mission is to create
+              subtle but effective modifications to a set of test images,
+              fooling the classifier into making incorrect predictions. This
+              challenge is a perfect opportunity for students to explore model
+              vulnerabilities, gain hands-on experience with adversarial
+              techniques, and contribute to ongoing research in AI robustness
+              and security.
             </Typography>
 
             <Typography
@@ -185,15 +185,14 @@ export default function HomePage() {
               lineHeight={1.8}
               sx={{ mt: 2 }}
             >
-              In the <strong>Decoy Challenge</strong>, CU Denver students will
-              have the chance to exploit these vulnerabilities. You will be
-              provided with a <strong>robust classifier</strong> trained on
-              CIFAR-10 and a set of test images. Your task is to generate small
-              perturbations to these test images that fool the classifier,
-              forcing it to make incorrect predictions. By participating, you’ll
-              be engaging in cutting-edge research that explores the limits of
-              AI systems and helps to improve future defenses against
-              adversarial attacks.
+              In the <strong>Decoy Challenge</strong>, students will have the
+              chance to exploit these vulnerabilities. You will be provided with
+              a <strong>robust classifier</strong> trained on CIFAR-10 and a set
+              of test images. Your task is to generate small perturbations to
+              these test images that fool the classifier, forcing it to make
+              incorrect predictions. By participating, you’ll be engaging in
+              cutting-edge research that explores the limits of AI systems and
+              helps to improve future defenses against adversarial attacks.
             </Typography>
 
             <Typography
@@ -214,6 +213,8 @@ export default function HomePage() {
                 variant="contained"
                 color="primary"
                 size="large"
+                target="_blank"
+                rel="noopener noreferrer"
                 sx={{
                   boxShadow: '0 3px 10px rgba(0,0,0,0.2)',
                   fontSize: '1.2rem',
@@ -250,7 +251,9 @@ export default function HomePage() {
                 </li>
                 <li>
                   <strong>Top 10:</strong> Certificates of participation.
-                  ​Winners will present their solutions at the CU Denver AI
+                </li>
+                <li>
+                  Top 3 teams will present their solutions at the CU Denver AI
                   Symposium on November 1st, 2024.
                 </li>
               </ul>
