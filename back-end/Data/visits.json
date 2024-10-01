@@ -27,7 +27,7 @@
   },
   {
     "id": "Unique",
-    "label": "Unique",
+    "label": "Unique Visitors",
     "showMark": false,
     "curve": "linear",
     "stack": "total",

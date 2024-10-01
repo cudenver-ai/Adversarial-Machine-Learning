@@ -17,10 +17,6 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useColorScheme } from '@mui/material/styles';
-import GettingStartedPage from '../pages/GettingStartedPage.jsx';
-import OrganizersPage from '../pages/OrganizersPage.jsx';
-import ProblemPage from '../pages/ProblemPage.jsx';
-import HomePage from '../pages/HomePage.jsx';
 
 export const Toolbar = styled(MuiToolbar)({
   width: '100%',
@@ -100,7 +96,7 @@ export default function AppNavbar({ setCurrentPage }) {
             <CustomIcon />
             <Typography
               variant="h4"
-              component="h1"
+              component="h2"
               sx={{ color: 'text.primary' }}
             >
               Decoy Challenge
@@ -108,40 +104,41 @@ export default function AppNavbar({ setCurrentPage }) {
 
             <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
               <Button
-                color="info"
-                size="small"
+                variant="text"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('home')}
               >
                 Home
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('problem')}
               >
                 Problem
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('data')}
               >
                 Getting Started
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('main')}
               >
                 Submit
               </Button>
               <Button
                 variant="text"
-                color="info"
-                size="small"
+                color="primary"
+                size="large"
                 onClick={() => setCurrentPage('organizers')}
               >
                 Organizers
@@ -150,7 +147,7 @@ export default function AppNavbar({ setCurrentPage }) {
             {/* For smaller screens: Mobile menu */}
             <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
               <IconButton
-                size="large"
+                size="medium"
                 edge="start"
                 color="inherit"
                 aria-label="menu"

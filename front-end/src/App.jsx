@@ -24,12 +24,14 @@ export default function Dashboard(props) {
           my: 2,
           gap: 2,
           alignItems: 'center',
+          justifyContent: 'center',
+          width: '100%',
         }}
       >
         <AppNavbar setCurrentPage={setCurrentPage} />
         <Toolbar />
 
-        {currentPage === 'main' && <MainGrid />}
+        {currentPage === 'main' && <MainGrid setCurrentPage={setCurrentPage} />}
         {currentPage === 'data' && <GettingStartedPage />}
         {currentPage === 'organizers' && <OrganizersPage />}
         {currentPage === 'problem' && <ProblemPage />}

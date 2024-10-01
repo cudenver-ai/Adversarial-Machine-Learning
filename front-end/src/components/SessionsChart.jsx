@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -43,26 +43,54 @@ function getDaysInMonth(month, year) {
 export default function SessionsChart() {
   const theme = useTheme();
   const daysInMonth = getDaysInMonth(10, 2024);
-
-  // State to hold visits data
   const [visitsData, setVisitsData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    fetch(`${API_BASE_URL}/api/visits`)
-      .then((response) => response.json())
-      .then((data) => {
-        setVisitsData(data);
-      })
-      .catch((error) => console.error('Error fetching visits data:', error));
-  }, []);
+  // Calculate total visits (all-time sum)
+  const totalVisits =
+    visitsData.length > 0
+      ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0)
+      : 0;
 
+  // Calculate the percentage change based on the last two points
+  const percentageChange = useMemo(() => {
+    if (visitsData.length === 0 || visitsData[0].data.length < 2) {
+      return 0; // Return 0 if there aren't enough data points
+    }
+
+    const data = visitsData[0].data;
+    const lastValue = data[data.length - 1]; // Most recent visit count
+    const secondLastValue = data[data.length - 2]; // Previous visit count
+
+    const change = ((lastValue - secondLastValue) / secondLastValue) * 100;
+    return change.toFixed(2); // Keep two decimal places
+  }, [visitsData]);
   const colorPalette = [
     theme.palette.primary.light,
     theme.palette.primary.main,
     theme.palette.primary.dark,
   ];
 
-  return (
+  useEffect(() => {
+    fetch(`${API_BASE_URL}/api/visits`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setVisitsData(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error fetching eval data:', error);
+      });
+  }, []);
+
+  return loading ? (
+    <Typography align={'center'}>Loading...</Typography>
+  ) : (
     <Card variant="outlined" sx={{ width: '100%', height: '100%' }}>
       <CardContent
         sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}
@@ -80,7 +108,6 @@ export default function SessionsChart() {
             }}
           >
             <Typography variant="h4" component="p">
-              {/* Display the total visits from visitsData */}
               {visitsData.length > 0
                 ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0)
                 : 0}
@@ -91,6 +118,7 @@ export default function SessionsChart() {
             Visits per day
           </Typography>
         </Stack>
+
         <LineChart
           colors={colorPalette}
           xAxis={[
@@ -111,6 +139,9 @@ export default function SessionsChart() {
             '& .MuiAreaElement-series-visits': {
               fill: "url('#visits')",
             },
+            '& .MuiAreaElement-series-unique': {
+              fill: "url('#unique')",
+            },
           }}
           slotProps={{
             legend: {
@@ -120,6 +151,7 @@ export default function SessionsChart() {
         >
           <AreaGradient color={theme.palette.primary.dark} id="uploads" />
           <AreaGradient color={theme.palette.primary.main} id="visits" />
+          <AreaGradient color={theme.palette.secondary.main} id="unique" />
         </LineChart>
       </CardContent>
     </Card>

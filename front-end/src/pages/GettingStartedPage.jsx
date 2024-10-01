@@ -28,7 +28,7 @@ const StyledCardContent = styled(CardContent)({
   display: 'flex',
   flexDirection: 'column',
   gap: 4,
-  padding: 16,
+  padding: 10,
   flexGrow: 1,
   '&:last-child': {
     paddingBottom: 16,
@@ -95,13 +95,13 @@ export default function GettingStartedPage() {
       <HeroBanner
         title="Getting Started"
         subtitle="Step-by-Step Instructions for Your First Submission"
-        imageUrl="https://picsum.photos/1200/600?image=885"
-        color="black"
+        imageUrl="https://picsum.photos/1200/600?image=491"
+        color="white"
       />
       <StyledCard sx={{ my: 4 }}>
         <StyledCardContent>
           <Typography variant="h4" sx={{ mt: 2, mb: 2, fontWeight: 'bold' }}>
-            Welcome to the Decoy Challenge setup guide!
+            Setup guide
           </Typography>
           <Typography variant="subtitle1" sx={{ mb: 2 }}>
             Choose the setup method that works best for you. Whether you’re

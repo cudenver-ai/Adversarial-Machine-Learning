@@ -31,12 +31,12 @@ const mainListItems = [
     link: 'https://ucdenver.campuslabs.com/engage/organization/aisa',
   },
   {
-    text: 'Tech Support',
+    text: 'Email Us',
     icon: <EmailIcon />,
     link: 'mailto:aisa@ucdenver.edu',
   },
   {
-    text: 'Join our Discord',
+    text: 'Discord',
     icon: <ForumIcon />,
     link: 'https://discord.gg/VG28u28bwK',
   },
@@ -63,13 +63,14 @@ export default function MenuContent() {
                 component="a"
                 href={item.link}
                 sx={{
-                  color: 'primary.main',
+                  color: 'text.primary',
+                  borderRadius: '8px',
                   '&:hover': {
-                    backgroundColor: 'action.hover',
+                    backgroundColor: 'rgba(100, 108, 255, 0.1)',
                   },
                 }}
               >
-                <ListItemIcon sx={{ color: 'primary.main' }}>
+                <ListItemIcon sx={{ color: 'text.primary' }}>
                   {item.icon}
                 </ListItemIcon>
                 <ListItemText
@@ -81,8 +82,7 @@ export default function MenuContent() {
                 />
               </ListItemButton>
             </ListItem>
-            {index === 0 && <Divider />}{' '}
-            {index === 3 && <Divider />}
+            {index === 0 && <Divider />} {index === 3 && <Divider />}
           </React.Fragment>
         ))}
       </List>
