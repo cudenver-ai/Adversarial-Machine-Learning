@@ -10,7 +10,7 @@ export default defineConfig({
       '/api': {
         target: process.env.VITE_PROXY_TARGET,
         changeOrigin: true,
-        secure: false,
+        secure: true,
       },
     },
   },

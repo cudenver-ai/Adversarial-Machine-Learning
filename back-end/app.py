@@ -1,10 +1,11 @@
 from flask import Flask, request, jsonify, render_template, send_from_directory
 from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
-from Decoy.parseData import loadData, load_pickle_file
+from parseData import loadData, load_pickle_file
 import os
 
 app = Flask(__name__)
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 if app.debug:
     app.config.from_object(DevelopmentConfig)

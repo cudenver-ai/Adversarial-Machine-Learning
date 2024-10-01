@@ -386,9 +386,11 @@ sudo gedit /etc/systemd/system/decoychallenge.service
 sudo chown -R vicente:www-data /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
 sudo chmod -R 755 /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
 
-sudo systemctl daemon-reload
+
 sudo systemctl enable decoychallenge
 sudo systemctl start decoychallenge
+sudo systemctl restart decoychallenge
+sudo systemctl reload nginx
 
 sudo nginx -t
 sudo systemctl restart nginx
