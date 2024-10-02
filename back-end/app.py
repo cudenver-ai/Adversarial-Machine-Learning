@@ -30,7 +30,7 @@ print(f"FLASK_DEBUG: {os.environ.get('FLASK_DEBUG', 'Not Set')}")
 print(f"App debug mode: {app.debug}")
 
 # ensure your routes are prefixed with /api.
-path = "/Users/mohamed/Documents/School/AISA/Adversarial-Machine-Learning/back-end/"
+path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
 
 UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
