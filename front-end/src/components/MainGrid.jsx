@@ -82,7 +82,12 @@ export default function MainGrid({ setCurrentPage }) {
         overflow: 'hidden',
       }}
     >
-      <Grid container spacing={2} columns={12}>
+      <Grid
+        container
+        spacing={2}
+        columns={12}
+        sx={{ mb: (theme) => theme.spacing(2) }}
+      >
         <Grid size={{ xs: 12, md: 6 }}>
           <SyledCard sx={{ height: '100%' }}>
             <SyledCardContent>

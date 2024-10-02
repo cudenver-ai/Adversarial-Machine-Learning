@@ -1,31 +1,31 @@
 [
   {
     "title": "Success Rate",
-    "data": [],
+    "data": [0],
     "interval": "",
-    "trend": "up"
+    "trend": "down"
   },
   {
     "title": "Perturbation Magnitude",
-    "data": [],
+    "data": [0],
     "interval": "",
-    "trend": "up"
+    "trend": "down"
   },
   {
     "title": "Visual Similarity",
-    "data": [],
+    "data": [0],
     "interval": "",
-    "trend": "up"
+    "trend": "down"
   },
   {
     "title": "Average Confidence",
-    "data": [],
+    "data": [0],
     "interval": "",
-    "trend": "up"
+    "trend": "down"
   },
   {
     "title": "Confidence Gap",
-    "data": [],
+    "data": [0],
     "interval": "",
     "trend": "down"
   }

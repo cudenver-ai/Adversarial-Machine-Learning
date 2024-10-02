@@ -1,14 +1,14 @@
 [
   {
-    "id": 100,
-    "TeamName": "AI Student Association",
-    "LastSubmission": "2024-10-01 01:10:15",
+    "id": 0,
+    "TeamName": "",
+    "LastSubmission": "",
     "SuccessRate": 0,
     "PerturbationMagnitude": 0,
     "AverageConfidence": 0,
     "ConfidenceGap": 0,
     "VisualSimilarity": 0,
     "TotalScore": 0,
-    "Rank": 100
+    "Rank": 0
   }
 ]

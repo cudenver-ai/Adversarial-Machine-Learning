@@ -71,7 +71,7 @@ export default function HomePage() {
             The challenge is simple, we give a{' '}
             <strong>pre-trained model</strong> and a set of images. Your job is
             to trick the model into making incorrect predictions. Trick the
-            model, and win a<strong>prize!</strong>.
+            model, and win a <strong>prize!</strong>.
           </Typography>
           <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, mt: 2 }}>
             Example:
