@@ -3,94 +3,107 @@ import pandas as pd
 import re
 import json
 
+"""
+We will look for the initial HTML document load (GET /):
+
+    The initial request for / (or any other base URL path) is a be a strong indicator of a visit. This would be the first request when someone accesses the website.
+    Example: GET / HTTP/1.1 or GET /index.html HTTP/1.1
+
+We also need to exclude static asset requests:
+
+    Static resources like .js, .css, .png, and API requests shouldn't be counted as individual visits. Filter those out to avoid inflating the visit count.
+    Example paths to exclude: /static/, /assets/, /api/, or file extensions like .js, .css, .png.
+
+"""
+
 
 def update_visits():
-    data = pd.read_csv('/var/log/nginx/production-server_access.log', delimiter=' ', header=None)
-    data.fillna(" ", inplace=True)
-    cols = [0, 1, 3]
-    filtered_data = data[cols]
+    # Lab path
+    # path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
+    # logs = f"/var/log/nginx/production-server_access.log"
+    #
+    # json_file_path = f"{path}Data/visits.json"
 
-    ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
+    # Local path:
+    path = "C:/Users/ramosv/Desktop/BDLab/AI Student Association/Github/Adversarial-Machine-Learning/back-end/"
+    logs = f"{path}production-server_access.log"
+    json_file_path = f"{path}Data/visits.json"
 
-    # Filtering rows where the 3rd column contains a valid IP address
-    filtered_data_ip = filtered_data[filtered_data[3].apply(lambda x: bool(re.match(ip_pattern, x)))]
+    # Read log file
+    with open(logs, "r") as file:
+        log_data = file.readlines()
 
-    filtered_data_ip.iloc[:, 1] = filtered_data_ip.iloc[:, 1].str.split(',').str[0]
-    filtered_data_ip= filtered_data_ip.drop_duplicates()
+    # Regex pattern to capture IP, Date, Method, Path, Status Code, and Response Size
+    log_pattern = re.compile(
+        r'(?P<ip>\d+\.\d+\.\d+\.\d+) - - \[(?P<date>\d{2}/\w{3}/\d{4}:\d{2}:\d{2}:\d{2} [+-]\d{4})\] "(?P<method>\w+) (?P<path>\S+) HTTP/\d\.\d" (?P<status>\d+) (?P<size>\d+)'
+    )
 
-    # this will keep order of the days
-    days = filtered_data_ip[0].unique()
+    # Parse the log data
+    parsed_data = []
+    for log in log_data:
+        match = log_pattern.match(log)
+        if match:
+            parsed_data.append(match.groupdict())
 
-    views_per_day_list = []
-    for day in days: 
-        views_per_day_list.append(filtered_data_ip[filtered_data_ip[0] == day].shape[0])
-        
-    vistits_dict =   {
-        "id": "Visits",
-        "label": "Visits",
-        "showMark": False,
-        "curve": "linear",
-        "stack": "total",
-        "area": True,
-        "stackOrder": "ascending",
-    }
-    vistits_dict['data'] = views_per_day_list
-        
-        
-    # counts_all_visit_times_daily
-    counts_all_unique_visits_daily = []
-    filtered_data_date = filtered_data_ip[[0, 3]]
-    filtered_data_date = filtered_data_date.drop_duplicates()
+    # Convert parsed data into a pandas DataFrame
+    df_parsed = pd.DataFrame(parsed_data)
 
-    for day in set(filtered_data_date[0]):
-        counts_all_unique_visits_daily.append(filtered_data_date[filtered_data_date[0] == day].shape[0])
+    # Extract date (only the day part) for easier grouping
+    df_parsed["date"] = pd.to_datetime(df_parsed["date"], format="%d/%b/%Y:%H:%M:%S %z")
 
-    unique_vistits_dict =   {
-        "id": "Unique",
-        "label": "Unique",
-        "showMark": False,
-        "curve": "linear",
-        "stack": "total",
-        "area": True,
-        "stackOrder": "ascending",
-    }
-    unique_vistits_dict['data'] = counts_all_unique_visits_daily
+    # Filter: Only count `GET /` requests, exclude static files and API calls
+    df_filtered = df_parsed[
+        (df_parsed["method"] == "GET")
+        & (df_parsed["path"] == "/")  # Only initial page load
+    ]
 
+    # Group by date and count unique visits
+    visits = df_filtered.groupby(df_filtered["date"].dt.date)["ip"].count().to_dict()
 
+    # Initialize dictionaries to track metrics for uploads and unique visits
+    uploads = defaultdict(int)
+    unique_visits = defaultdict(set)
 
-    # Create a defaultdict to store the counts for each day
-    post_request_counts = defaultdict(int)
+    # Loop through parsed data and update metrics for uploads and unique visits
+    for _, row in df_parsed.iterrows():
+        date = row["date"].strftime("%Y-%m-%d")  # Format the date as 'YYYY-MM-DD'
+        method = row["method"]
+        ip = row["ip"]
 
-    # Open and read the log file line by line
-    with open('/var/log/nginx/production-server_access.log', 'r') as file:
-        for line in file:
-            # Check if the line contains a "GET" request
-            if "POST" in line:
-                # Extract the date from the line (assuming the format is consistent)
-                date_part = line.split()[0]  # This extracts the date (e.g., "2024-09-23")
-                
-                # Increment the count for this date
-                post_request_counts[date_part] += 1
+        # Count uploads (POST requests)
+        if method == "POST":
+            uploads[date] += 1
 
-    # Print the results for each day
-    uploads_list = []
-    for date, count in post_request_counts.items():
-        uploads_list.append(count)
+        # Track unique visitors by IP address
+        unique_visits[date].add(ip)
 
-    unique_uploads_dict =   {
-        "id": "Uploads",
-        "label": "Uploads",
-        "showMark": False,
-        "curve": "linear",
-        "stack": "total",
-        "area": True,
-        "stackOrder": "ascending",
-    }
-    unique_uploads_dict['data'] = uploads_list
+    # Convert unique visits sets to counts
+    unique_visits_count = {}
 
+    for date, ips in unique_visits.items():
+        unique_visits_count[date] = len(ips)
 
-    # Save the result dictionary as w JSON file
-    with open('Data/visits.json', 'w') as f:
-        tmp = [unique_vistits_dict, vistits_dict, unique_uploads_dict]
-        json.dump(tmp, f, indent=4)
+    # Load the existing JSON data
+    with open(json_file_path, "r") as f:
+        json_data = json.load(f)
 
+    # Update the JSON data with the new metrics
+    for metric in json_data:
+        if metric["id"] == "Visits":
+            metric["data"] = [visits.get(date, 0) for date in sorted(visits.keys())]
+        elif metric["id"] == "Uploads":
+            metric["data"] = [uploads.get(date, 0) for date in sorted(uploads.keys())]
+        elif metric["id"] == "Unique":
+            metric["data"] = [
+                unique_visits_count.get(date, 0)
+                for date in sorted(unique_visits_count.keys())
+            ]
+
+    # Write the updated JSON data back to the file
+    with open(json_file_path, "w") as f:
+        json.dump(json_data, f, indent=4)
+
+    print("JSON file updated successfully!")
+
+if __name__ == "__main__":
+    update_visits()
