@@ -3,6 +3,7 @@ from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
 from parseData import loadData, load_pickle_file
 import os
+from datetime import datetime
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
@@ -29,7 +30,7 @@ print(f"FLASK_DEBUG: {os.environ.get('FLASK_DEBUG', 'Not Set')}")
 print(f"App debug mode: {app.debug}")
 
 # ensure your routes are prefixed with /api.
-path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
+path = "/Users/mohamed/Documents/School/AISA/Adversarial-Machine-Learning/back-end/"
 
 UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -127,3 +128,14 @@ def download_notebook():
         return send_from_directory(notebook, as_attachment=True)
     else:
         return jsonify({"error": "Notebook not found"}), 404
+
+@app.route("/api/update-timestamp", methods=["GET"])
+def update_timestamp():
+    if os.path.isfile('Data/evalMetric.json'):
+        timestamp = datetime.fromtimestamp(os.path.getmtime('Data/evalMetric.json')).strftime('%Y-%m-%d %H:%M:%S')
+
+        output = {'success': True, 'timestamp': timestamp}
+    else:
+        output = {'success': False, 'timstamp': ''}
+
+    return jsonify(output)

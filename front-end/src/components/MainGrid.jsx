@@ -38,6 +38,8 @@ export default function MainGrid({ setCurrentPage }) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const { ref, inView } = useInView({ triggerOnce: true });
+  const [updateTime, setUpdateTime] = useState([]);
+  const [timeLoading, setTimeLoading] = useState(true);
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
@@ -54,6 +56,23 @@ export default function MainGrid({ setCurrentPage }) {
       .then((data) => {
         setData(data);
         setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error fetching eval data:', error);
+      });
+  }, []);
+
+  useEffect(() => {
+    fetch(`${API_BASE_URL}/api/update-timestamp`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setUpdateTime(data);
+        setTimeLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching eval data:', error);
@@ -115,9 +134,19 @@ export default function MainGrid({ setCurrentPage }) {
               <Box sx={{ mt: 2, mb: 2 }}>
                 <HighlightedCard />
               </Box>
-              <Typography variant="body1" sx={{ mt: 2 }}>
-                *All metrics below are updated every hour.
-              </Typography>
+              {timeLoading ? (
+                <Typography variant="body1" sx={{ mt: 2 }}>
+                  *All metrics below are updated every hour.
+                </Typography>
+              ) : (updateTime.success ? (
+                  <Typography variant="body1" sx={{ mt: 2 }}>
+                    *All metrics below are updated every hour. Last update: {updateTime.timestamp}
+                  </Typography>
+                ) : (
+                  <Typography variant="body1" sx={{ mt: 2 }}>
+                    *All metrics below are updated every hour.
+                  </Typography>
+                ))}
             </SyledCardContent>
           </SyledCard>
         </Grid>
