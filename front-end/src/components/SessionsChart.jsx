@@ -56,7 +56,7 @@ export default function SessionsChart() {
     const secondLastValue = data[data.length - 2];
 
     const change = ((lastValue - secondLastValue) / secondLastValue) * 100;
-    return change;
+    return Math.ceil(change);
   }, [visitsData]);
   const colorPalette = [
     theme.palette.primary.light,

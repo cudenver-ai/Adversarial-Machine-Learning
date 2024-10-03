@@ -1,0 +1,3 @@
+*/10 * * * * /bin/bash -c "source /home/vicente/dec/Adversarial-Machine-Learning/.venv/bin/activate && /usr/bin/python3 /home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py"
+
+

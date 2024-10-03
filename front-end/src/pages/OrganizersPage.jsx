@@ -11,6 +11,7 @@ import Button from '@mui/material/Button';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import andy from '../assets/andy.jpg';
 import sumaiya from '../assets/sumaiya.jpg';
+import jessica from '../assets/jessica.jpg';
 
 import bus from '../assets/bus.png';
 import clas from '../assets/clas.png';
@@ -123,7 +124,9 @@ export default function ChallengePage() {
                       ? andy
                       : member.position === 'Sumaiya Shrabony'
                         ? sumaiya
-                        : member.logo
+                        : member.position === 'Jessica Tan'
+                          ? jessica
+                          : member.logo
                   }
                   alt={member.position}
                   sx={{ width: 80, height: 80, borderRadius: '25%' }}

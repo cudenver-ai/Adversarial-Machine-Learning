@@ -334,10 +334,10 @@ Restart Gunicorn:
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable decoychallenge
-sudo systemctl start decoychallenge
-sudo systemctl restart decoychallenge
-sudo systemctl status decoychallenge
+sudo systemctl enable 
+sudo systemctl start 
+sudo systemctl restart 
+sudo systemctl status 
 ```
 Reload Nginx:
 

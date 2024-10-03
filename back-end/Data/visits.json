@@ -1,32 +1,40 @@
 [
-  {
-    "id": "Visits",
-    "label": "Visits",
-    "showMark": false,
-    "curve": "linear",
-    "stack": "total",
-    "area": true,
-    "stackOrder": "ascending",
-    "data": []
-  },
-  {
-    "id": "Uploads",
-    "label": "Uploads",
-    "showMark": false,
-    "curve": "linear",
-    "stack": "total",
-    "area": true,
-    "stackOrder": "ascending",
-    "data": []
-  },
-  {
-    "id": "Unique",
-    "label": "Unique Visitors",
-    "showMark": false,
-    "curve": "linear",
-    "stack": "total",
-    "area": true,
-    "stackOrder": "ascending",
-    "data": []
-  }
+    {
+        "id": "Visits",
+        "label": "Visits",
+        "showMark": false,
+        "curve": "linear",
+        "stack": "total",
+        "area": true,
+        "stackOrder": "ascending",
+        "data": [
+            30,
+            58,
+            46
+        ]
+    },
+    {
+        "id": "Uploads",
+        "label": "Uploads",
+        "showMark": false,
+        "curve": "linear",
+        "stack": "total",
+        "area": true,
+        "stackOrder": "ascending",
+        "data": []
+    },
+    {
+        "id": "Unique",
+        "label": "Unique Visitors",
+        "showMark": false,
+        "curve": "linear",
+        "stack": "total",
+        "area": true,
+        "stackOrder": "ascending",
+        "data": [
+            6,
+            14,
+            13
+        ]
+    }
 ]
