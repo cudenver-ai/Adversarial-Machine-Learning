@@ -1,4 +1,5 @@
 import json
+import os
 from datetime import datetime
 import logging
 
@@ -10,6 +11,8 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
+data_path = '/home/vicente/dec/Adversarial-Machine-Learning/back-end/'
+
 
 def calculate_rank():
     logging.info('Starting calculate_rank')
@@ -18,7 +21,7 @@ def calculate_rank():
     # Load submissions
     logging.info('Loading allSubmissions.json')
     try:
-        with open('Data/allSubmissions.json') as file:
+        with open(os.path.join(data_path, 'Data/allSubmissions.json')) as file:
             submissions = json.load(file)
     except Exception as e:
         logging.error('Error loading allSubmissions.json: {}'.format(e))
@@ -70,7 +73,7 @@ def calculate_rank():
     # Save TeamData
     logging.error('Saving TeamData.json')
     try:
-        with open('Data/TeamData.json', 'w') as outfile:
+        with open(os.path.join(data_path, 'Data/TeamData.json'), 'w') as outfile:
             outfile.write(json.dumps(team_data, indent=4))
     except Exception as e:
         logging.error('Error saving TeamData.json: {}'.format(e))

@@ -1,4 +1,5 @@
 import json
+import os
 from datetime import datetime
 import logging
 
@@ -10,6 +11,7 @@ logging.basicConfig(
     datefmt='%Y-%m-%d %H:%M:%S'
 )
 
+data_path = '/home/vicente/dec/Adversarial-Machine-Learning/back-end/'
 
 
 def update_evalMetrics():
@@ -25,7 +27,7 @@ def update_evalMetrics():
     # Open submissions data
     logging.info('Loading allSubmissions.json')
     try:
-        with open ('Data/allSubmissions.json') as file:
+        with open (os.path.join(data_path, 'Data/allSubmissions.json')) as file:
             submissions = json.load(file)
     except Exception as e:
         logging.error('Error loading allSubmission.son: {}'.format(e))
@@ -86,7 +88,7 @@ def update_evalMetrics():
     # Save metrics
     logging.info('Saving evalMetric.json')
     try:
-        with open('Data/evalMetric.json', 'w') as outfile:
+        with open(os.path.join(data_path, 'Data/evalMetric.json'), 'w') as outfile:
             outfile.write(json.dumps(metrics, indent=4))
     except Exception as e:
         logging.error('Error saving evalMetric.json: {}'.format(e))
@@ -102,7 +104,7 @@ def update_leaderBoard():
     # Load submissions
     logging.info('Loading allSubmissions.json')
     try:
-        with open('Data/allSubmissions.json') as file:
+        with open(os.path.join(data_path, 'Data/allSubmissions.json')) as file:
             submissions = json.load(file)
     except Exception as e:
         logging.error('Error loading allSubmissions.json: {}'.format(e))
@@ -157,7 +159,7 @@ def update_leaderBoard():
     # Save leaderboard
     logging.info('Saving leaderboard.json')
     try:
-        with open('Data/leaderboard.json', 'w') as outfile:
+        with open(os.path.join(data_path, 'Data/leaderboard.json'), 'w') as outfile:
             outfile.write(json.dumps(leaderboard, indent=4))
     except Exception as e:
         logging.error('Error saving loaderboard.json: {}'.format(e))
