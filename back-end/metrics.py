@@ -32,6 +32,11 @@ def update_evalMetrics():
     except Exception as e:
         logging.error('Error loading allSubmission.son: {}'.format(e))
 
+    # Accounting for no submissions
+    logging.info('Outputting template due to zero submissions')
+    if len(submissions) == 1:
+        return
+
 
     # Parse submissions, group by date
     logging.info('Parsing {} entries from allSubmissions.json'.format(len(submissions)))

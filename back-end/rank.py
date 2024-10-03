@@ -26,7 +26,12 @@ def calculate_rank():
     except Exception as e:
         logging.error('Error loading allSubmissions.json: {}'.format(e))
 
-    # Sort submission by timestamp, team name for tiebreaker
+    # Accounting for no submissions
+    logging.info('Outputting template due to zero submissions')
+    if len(submissions) == 1:
+        return
+
+            # Sort submission by timestamp, team name for tiebreaker
     logging.info('Sorting submissions by timestamp & team name')
     try:
         sorted_submissions = sorted(submissions, key=lambda x: (x['time_stamp'], x['team_name']), reverse=True)
