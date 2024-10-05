@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 
 if app.debug:
     app.config.from_object(DevelopmentConfig)
@@ -129,15 +129,18 @@ def download_notebook():
     else:
         return jsonify({"error": "Notebook not found"}), 404
 
+
 @app.route("/api/update-timestamp", methods=["GET"])
 def update_timestamp():
     data = os.path.join(path, "Data/visits.json")
 
     if os.path.isfile(data):
-        timestamp = datetime.fromtimestamp(os.path.getmtime(data)).strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.fromtimestamp(os.path.getmtime(data)).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
 
-        output = {'success': True, 'timestamp': timestamp}
+        output = {"success": True, "timestamp": timestamp}
     else:
-        output = {'success': False, 'timstamp': ''}
+        output = {"success": False, "timstamp": ""}
 
     return jsonify(output)
