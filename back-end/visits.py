@@ -4,6 +4,8 @@ import re
 import json
 import os
 import logging
+import gzip
+from datetime import datetime
 
 """
 We will look for the initial HTML document load (GET /):
@@ -46,35 +48,39 @@ def update_visits():
     parsed_data = []
 
     for filename in os.listdir(logs_path):
+        file_path = os.path.join(logs_path, filename)
 
-        if filename.startswith("production-server_access"):
-            file_path = os.path.join(logs_path, filename)
-
-            try:
-                with open(file_path, "r") as file:
-                    log_data = file.readlines()
-                    
+        try:
+            if filename.startswith("production-server_access"):
+                if filename.endswith(".gz"):
+                    with gzip.open(file_path, "rt", encoding="utf-8") as file:
+                        log_data = file.readlines()
+                else:
+                    with open(file_path, "r") as file:
+                        log_data = file.readlines()
+                        
                 for log in log_data:
                     match = log_pattern.match(log)
                     if match:
                         parsed_data.append(match.groupdict())
                 
-            except Exception as e:
-                print(f"Error reading {filename}: {e}")
+        except Exception as e:
+            logging.info(f"Error reading {filename}: {e}")
 
     df_parsed = pd.DataFrame(parsed_data)
-
-
     df_parsed["date"] = pd.to_datetime(df_parsed["date"], format="%d/%b/%Y:%H:%M:%S %z")
 
     #print(df_parsed["date"])
+    today = datetime.now().date()
+    october_first_2024 = datetime(2024,10,1).date()
 
     df_filtered = df_parsed[
         (df_parsed["method"] == "GET")
-        & (df_parsed["path"] == "/")  
-    ]
+        & (df_parsed["path"] == "/") &
+        (df_parsed["date"].dt.date >= october_first_2024) ]
 
     visits = df_filtered.groupby(df_filtered["date"].dt.date)["ip"].count().to_dict()
+    unique_visits = df_parsed.groupby(df_filtered["ip"])
 
     uploads = defaultdict(int)
     unique_visits = defaultdict(set)
@@ -87,9 +93,11 @@ def update_visits():
         if method == "POST":
             uploads[date] += 1
 
-        unique_visits[date].add(ip)
+        if row["date"].date() >= october_first_2024:
+             unique_visits[date].add(ip)
 
     unique_visits_count = {}
+
 
     for date, ips in unique_visits.items():
         unique_visits_count[date] = len(ips)
@@ -113,4 +121,5 @@ def update_visits():
 
 
     logging.info("JSON file updated successfully!")
+    logging.info("-------------------------------")
 

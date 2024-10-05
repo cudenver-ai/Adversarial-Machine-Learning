@@ -8,9 +8,11 @@
         "area": true,
         "stackOrder": "ascending",
         "data": [
-            30,
             58,
-            46
+            68,
+            98,
+            80,
+            5
         ]
     },
     {
@@ -32,9 +34,11 @@
         "area": true,
         "stackOrder": "ascending",
         "data": [
-            6,
             14,
-            13
+            13,
+            13,
+            4,
+            3
         ]
     }
 ]

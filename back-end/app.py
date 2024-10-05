@@ -131,7 +131,7 @@ def download_notebook():
 
 @app.route("/api/update-timestamp", methods=["GET"])
 def update_timestamp():
-    if os.path.isfile('Data/evalMetric.json'):
+    if os.path.isfile('Data/visits.json'):
         timestamp = datetime.fromtimestamp(os.path.getmtime('Data/evalMetric.json')).strftime('%Y-%m-%d %H:%M:%S')
 
         output = {'success': True, 'timestamp': timestamp}
