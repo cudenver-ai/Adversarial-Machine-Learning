@@ -6,3 +6,4 @@ front-end/build/
 node_modules/
 notes.md
 app.log
+.DS_Store
