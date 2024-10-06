@@ -4,6 +4,7 @@ from config import DevelopmentConfig, ProductionConfig
 from parseData import loadData, load_pickle_file
 import os
 from Data.aml_database import deploy_ML_DB, get_daily_visits
+from datetime import datetime
 
 deploy_ML_DB()
 app = Flask(__name__)
@@ -128,3 +129,14 @@ def download_notebook():
         return send_from_directory(notebook, as_attachment=True)
     else:
         return jsonify({"error": "Notebook not found"}), 404
+
+@app.route("/api/update-timestamp", methods=["GET"])
+def update_timestamp():
+    if os.path.isfile('Data/evalMetric.json'):
+        timestamp = datetime.fromtimestamp(os.path.getmtime('Data/evalMetric.json')).strftime('%Y-%m-%d %H:%M:%S')
+
+        output = {'success': True, 'timestamp': timestamp}
+    else:
+        output = {'success': False, 'timstamp': ''}
+
+    return jsonify(output)

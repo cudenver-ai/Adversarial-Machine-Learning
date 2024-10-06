@@ -94,7 +94,7 @@ export default function GettingStartedPage() {
     >
       <HeroBanner
         title="Getting Started"
-        subtitle="Step-by-Step Instructions for Your First Submission"
+        subtitle="Compete, Learn, and Outsmart AI Models in this Exciting Challenge!"
         imageUrl="https://picsum.photos/1200/600?image=491"
         color="white"
       />
@@ -139,21 +139,48 @@ export default function GettingStartedPage() {
           <Box sx={{ mb: 4 }}>
             <Button
               variant="contained"
-              color="primary"
+              size="large"
+              color="secondary"
               startIcon={<PlayArrowIcon />}
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://colab.research.google.com/drive/1Vb6C_ImP-vfS0a9LHAPGtwSR_oB7sTdB?usp=sharing"
-              sx={{ mr: 2 }}
+              sx={{
+                mr: 2,
+                boxShadow: '0 3px 10px rgba(0,0,0,0.2)',
+                fontSize: '1rem',
+              }}
             >
               Open Google Colab (Easy)
             </Button>
 
             <Button
               variant="contained"
+              size="large"
               color="secondary"
               startIcon={<DownloadIcon />}
               href={`${API_BASE_URL}/api/download-notebook`}
+              sx={{
+                mr: 2,
+                boxShadow: '0 3px 10px rgba(0,0,0,0.2)',
+                fontSize: '1rem',
+              }}
             >
               Download Notebook (Moderate)
+            </Button>
+
+            <Button
+              variant="contained"
+              size="large"
+              color="secondary"
+              startIcon={<DownloadIcon />}
+              href={`${API_BASE_URL}/api/download-data`}
+              sx={{
+                boxShadow: '0 3px 10px rgba(0,0,0,0.2)',
+                fontSize: '1rem',
+              }}
+            >
+              Download DataSet (Advanced)
             </Button>
           </Box>
 
