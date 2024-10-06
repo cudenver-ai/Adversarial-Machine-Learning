@@ -5,6 +5,8 @@ import json
 import os
 import logging
 import sqlite3
+import gzip
+from datetime import datetime
 
 """
 We will look for the initial HTML document load (GET /):

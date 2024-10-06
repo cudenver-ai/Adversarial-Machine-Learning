@@ -45,7 +45,34 @@
     }
   },
   {
-    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Farnoush.jpg",
+    "logo": "https://cse.ucdenver.edu/~bdlab/img/People/Sundous.jpeg",
+    "position": "Sundous Hussein",
+    "description": "",
+    "details": {
+      "name": "Research Advisor",
+      "major": "https://www.linkedin.com/in/sundous-hussien/"
+    }
+  },
+  {
+    "logo": "",
+    "position": "Jessica Tan",
+    "description": "",
+    "details": {
+      "name": "Member",
+      "major": "https://www.linkedin.com/in/jessicatan27/"
+    }
+  },
+  {
+    "logo": "",
+    "position": "Anmol Singhal",
+    "description": "",
+    "details": {
+      "name": "Member",
+      "major": "https://www.linkedin.com/in/sundous-hussien/"
+    }
+  },
+  {
+    "logo": "https://cse.ucdenver.edu/~farnoush/images/photo.jpg",
     "position": "Dr. Farnoush Banaei-Kashani",
     "description": "",
     "details": {

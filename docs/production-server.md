@@ -1,3 +1,8 @@
+sudo systemctl start production-server
+sudo systemctl status production-server
+sudo nginx -t
+sudo systemctl restart nginx
+
 # Production Server Deployment Guide
 
 This guide covers the setup and deployment of the application in a production environment. It provides steps to configure the server, set up Gunicorn and Nginx, and ensure the application runs reliably.
@@ -301,6 +306,7 @@ sudo nginx -t
 sudo systemctl restart nginx
 ```
 
+
 ### Firewall Configuration
 
 Allow traffic for HTTP and HTTPS via the firewall.
@@ -334,10 +340,10 @@ Restart Gunicorn:
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable decoychallenge
-sudo systemctl start decoychallenge
-sudo systemctl restart decoychallenge
-sudo systemctl status decoychallenge
+sudo systemctl enable 
+sudo systemctl start 
+sudo systemctl restart 
+sudo systemctl status 
 ```
 Reload Nginx:
 

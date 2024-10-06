@@ -11,6 +11,12 @@ import Button from '@mui/material/Button';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import andy from '../assets/andy.jpg';
 import sumaiya from '../assets/sumaiya.jpg';
+import jessica from '../assets/jessica.jpg';
+
+import bus from '../assets/bus.png';
+import clas from '../assets/clas.png';
+import cse from '../assets/cse.png';
+import dsai from '../assets/dsai.png';
 
 const SyledCard = styled(Card)(({ theme }) => ({
   display: 'flex',
@@ -63,8 +69,6 @@ export default function ChallengePage() {
         spacing={2}
         columns={12}
         sx={{ mb: (theme) => theme.spacing(2) }}
-        display:flex
-        flexDirection:column
       >
         <Grid item size={{ xs: 12, sm: 12, lg: 12 }}>
           <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
@@ -88,7 +92,7 @@ export default function ChallengePage() {
             advancing your AI journey.
           </Typography>
           <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2, mt: 4 }}>
-            This challenge was built, designed, and engineered by our members.
+            This challenge was designed, and engineered by our members.
             Interested in how we did it?
           </Typography>
           <Box sx={{ mb: 4 }}>
@@ -120,13 +124,15 @@ export default function ChallengePage() {
                       ? andy
                       : member.position === 'Sumaiya Shrabony'
                         ? sumaiya
-                        : member.logo
+                        : member.position === 'Jessica Tan'
+                          ? jessica
+                          : member.logo
                   }
                   alt={member.position}
                   sx={{ width: 80, height: 80, borderRadius: '25%' }}
                 />
                 <Typography variant="h6">{member.position}</Typography>
-                <Typography variant="h6">{member.details.name}</Typography>
+                <Typography variant="body2">{member.details.name}</Typography>
                 <a
                   href={member.details.major}
                   target="_blank"
@@ -138,6 +144,87 @@ export default function ChallengePage() {
             </SyledCard>
           </Grid>
         ))}
+
+        <Grid
+          container
+          size={{ xs: 12, sm: 12, md: 12, lg: 12 }}
+          sx={{
+            justifyContent: 'center',
+          }}
+        >
+          <Box>
+            <Typography
+              variant="h5"
+              sx={{
+                textAlign: 'center',
+                fontWeight: 'bold',
+                mt: 2,
+              }}
+            >
+              Our Partners
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid container size={{ xs: 12, sm: 12, md: 12, lg: 12 }}>
+          <Grid
+            container
+            size={{ xs: 12, sm: 6, md: 3, lg: 3 }}
+            sx={{
+              justifyContent: 'center',
+            }}
+          >
+            <CardMedia
+              component="img"
+              image={dsai}
+              alt="College of Liberal Arts and Sciences"
+              sx={{ width: 129, height: 100 }}
+            />
+          </Grid>
+
+          <Grid
+            container
+            size={{ xs: 12, sm: 6, md: 3, lg: 3 }}
+            sx={{
+              justifyContent: 'center',
+            }}
+          >
+            <CardMedia
+              component="img"
+              image={clas}
+              alt="College of Liberal Arts and Sciences"
+              sx={{ width: 129, height: 79 }}
+            />
+          </Grid>
+
+          <Grid
+            container
+            size={{ xs: 12, sm: 6, md: 3, lg: 3 }}
+            sx={{
+              justifyContent: 'center',
+            }}
+          >
+            <CardMedia
+              component="img"
+              image={cse}
+              alt="College of Liberal Arts and Sciences"
+              sx={{ width: 129, height: 80 }}
+            />
+          </Grid>
+          <Grid
+            container
+            size={{ xs: 12, sm: 6, md: 3, lg: 3 }}
+            sx={{
+              justifyContent: 'center',
+            }}
+          >
+            <CardMedia
+              component="img"
+              image={bus}
+              alt="Business School"
+              sx={{ width: 153, height: 70 }}
+            />
+          </Grid>
+        </Grid>
       </Grid>
     </Box>
   );

@@ -1,0 +1,208 @@
+2024-10-02 22:00:02,997 INFO Starting evaluation script
+2024-10-02 22:00:03,024 INFO JSON file updated successfully!
+0      2024-10-02 11:13:55-06:00
+1      2024-10-02 11:13:55-06:00
+2      2024-10-02 11:13:55-06:00
+3      2024-10-02 11:13:55-06:00
+4      2024-10-02 11:13:55-06:00
+                  ...           
+1365   2024-10-01 21:28:26-06:00
+1366   2024-10-01 21:28:26-06:00
+1367   2024-10-01 21:28:26-06:00
+1368   2024-10-01 21:28:26-06:00
+1369   2024-10-01 21:28:31-06:00
+Name: date, Length: 1370, dtype: datetime64[ns, UTC-06:00]
+2024-10-02 23:00:02,603 INFO Starting evaluation script
+2024-10-02 23:00:02,631 INFO JSON file updated successfully!
+2024-10-03 00:00:03,228 INFO Starting evaluation script
+2024-10-03 00:00:03,240 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 01:00:02,814 INFO Starting evaluation script
+2024-10-03 01:00:02,826 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 02:00:02,381 INFO Starting evaluation script
+2024-10-03 02:00:02,393 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 03:00:02,957 INFO Starting evaluation script
+2024-10-03 03:00:02,968 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 04:00:02,564 INFO Starting evaluation script
+2024-10-03 04:00:02,576 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 05:00:03,144 INFO Starting evaluation script
+2024-10-03 05:00:03,155 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 06:00:02,742 INFO Starting evaluation script
+2024-10-03 06:00:02,753 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 07:00:02,315 INFO Starting evaluation script
+2024-10-03 07:00:02,328 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 08:00:02,936 INFO Starting evaluation script
+2024-10-03 08:00:02,948 INFO JSON file updated successfully!
+Error reading production-server_access.log.2.gz: 'utf-8' codec can't decode byte 0x8b in position 1: invalid start byte
+2024-10-03 09:00:02,522 INFO Starting evaluation script
+2024-10-03 09:00:02,551 INFO JSON file updated successfully!
+2024-10-03 10:00:03,143 INFO Starting evaluation script
+2024-10-03 10:00:03,174 INFO JSON file updated successfully!
+
+2024-10-03 11:00:02,723 INFO Starting evaluation script
+2024-10-03 11:00:02,755 INFO JSON file updated successfully!
+2024-10-03 11:00:02,755 INFO -------------------------------
+2024-10-03 12:00:02,325 INFO Starting evaluation script
+2024-10-03 12:00:02,355 INFO JSON file updated successfully!
+2024-10-03 12:00:02,356 INFO -------------------------------
+2024-10-03 13:00:02,921 INFO Starting evaluation script
+2024-10-03 13:00:02,954 INFO JSON file updated successfully!
+2024-10-03 13:00:02,954 INFO -------------------------------
+2024-10-03 14:00:02,614 INFO Starting evaluation script
+2024-10-03 14:00:02,647 INFO JSON file updated successfully!
+2024-10-03 14:00:02,648 INFO -------------------------------
+2024-10-03 15:00:02,415 INFO Starting evaluation script
+2024-10-03 15:00:02,457 INFO JSON file updated successfully!
+2024-10-03 15:00:02,457 INFO -------------------------------
+2024-10-03 16:00:03,108 INFO Starting evaluation script
+2024-10-03 16:00:03,143 INFO JSON file updated successfully!
+2024-10-03 16:00:03,143 INFO -------------------------------
+2024-10-03 17:00:02,752 INFO Starting evaluation script
+2024-10-03 17:00:02,787 INFO JSON file updated successfully!
+2024-10-03 17:00:02,787 INFO -------------------------------
+2024-10-03 18:00:02,431 INFO Starting evaluation script
+2024-10-03 18:00:02,467 INFO Unique visits unique_visits.items
+2024-10-03 18:00:02,467 INFO JSON file updated successfully!
+2024-10-03 18:00:02,467 INFO -------------------------------
+2024-10-03 19:00:03,061 INFO Starting evaluation script
+2024-10-03 19:00:03,100 INFO JSON file updated successfully!
+2024-10-03 19:00:03,100 INFO -------------------------------
+2024-10-03 20:00:02,682 INFO Starting evaluation script
+2024-10-03 20:00:02,722 INFO JSON file updated successfully!
+2024-10-03 20:00:02,722 INFO -------------------------------
+2024-10-03 21:00:02,301 INFO Starting evaluation script
+2024-10-03 21:00:02,340 INFO JSON file updated successfully!
+2024-10-03 21:00:02,340 INFO -------------------------------
+2024-10-03 22:00:02,919 INFO Starting evaluation script
+2024-10-03 22:00:02,959 INFO JSON file updated successfully!
+2024-10-03 22:00:02,959 INFO -------------------------------
+2024-10-03 23:00:02,573 INFO Starting evaluation script
+2024-10-03 23:00:02,611 INFO JSON file updated successfully!
+2024-10-03 23:00:02,611 INFO -------------------------------
+2024-10-04 00:00:03,191 INFO Starting evaluation script
+2024-10-04 00:00:03,229 INFO JSON file updated successfully!
+2024-10-04 00:00:03,229 INFO -------------------------------
+2024-10-04 01:00:02,771 INFO Starting evaluation script
+2024-10-04 01:00:02,809 INFO JSON file updated successfully!
+2024-10-04 01:00:02,809 INFO -------------------------------
+2024-10-04 02:00:02,363 INFO Starting evaluation script
+2024-10-04 02:00:02,402 INFO JSON file updated successfully!
+2024-10-04 02:00:02,402 INFO -------------------------------
+2024-10-04 03:00:02,968 INFO Starting evaluation script
+2024-10-04 03:00:03,006 INFO JSON file updated successfully!
+2024-10-04 03:00:03,006 INFO -------------------------------
+2024-10-04 04:00:02,592 INFO Starting evaluation script
+2024-10-04 04:00:02,630 INFO JSON file updated successfully!
+2024-10-04 04:00:02,630 INFO -------------------------------
+2024-10-04 05:00:03,227 INFO Starting evaluation script
+2024-10-04 05:00:03,266 INFO JSON file updated successfully!
+2024-10-04 05:00:03,266 INFO -------------------------------
+2024-10-04 06:00:02,829 INFO Starting evaluation script
+2024-10-04 06:00:02,868 INFO JSON file updated successfully!
+2024-10-04 06:00:02,868 INFO -------------------------------
+2024-10-04 07:00:02,415 INFO Starting evaluation script
+2024-10-04 07:00:02,453 INFO JSON file updated successfully!
+2024-10-04 07:00:02,453 INFO -------------------------------
+2024-10-04 08:00:03,010 INFO Starting evaluation script
+2024-10-04 08:00:03,048 INFO JSON file updated successfully!
+2024-10-04 08:00:03,048 INFO -------------------------------
+2024-10-04 09:00:02,594 INFO Starting evaluation script
+2024-10-04 09:00:02,633 INFO JSON file updated successfully!
+2024-10-04 09:00:02,633 INFO -------------------------------
+2024-10-04 10:00:03,212 INFO Starting evaluation script
+2024-10-04 10:00:03,250 INFO JSON file updated successfully!
+2024-10-04 10:00:03,251 INFO -------------------------------
+2024-10-04 11:00:02,853 INFO Starting evaluation script
+2024-10-04 11:00:02,892 INFO JSON file updated successfully!
+2024-10-04 11:00:02,893 INFO -------------------------------
+2024-10-04 12:00:02,458 INFO Starting evaluation script
+2024-10-04 12:00:02,499 INFO JSON file updated successfully!
+2024-10-04 12:00:02,499 INFO -------------------------------
+2024-10-04 13:00:03,057 INFO Starting evaluation script
+2024-10-04 13:00:03,097 INFO JSON file updated successfully!
+2024-10-04 13:00:03,097 INFO -------------------------------
+2024-10-04 14:00:02,714 INFO Starting evaluation script
+2024-10-04 14:00:02,755 INFO JSON file updated successfully!
+2024-10-04 14:00:02,755 INFO -------------------------------
+2024-10-04 15:00:02,332 INFO Starting evaluation script
+2024-10-04 15:00:02,372 INFO JSON file updated successfully!
+2024-10-04 15:00:02,372 INFO -------------------------------
+2024-10-04 16:00:03,217 INFO Starting evaluation script
+2024-10-04 16:00:03,261 INFO JSON file updated successfully!
+2024-10-04 16:00:03,261 INFO -------------------------------
+2024-10-04 17:00:03,625 INFO Starting evaluation script
+2024-10-04 17:00:03,672 INFO JSON file updated successfully!
+2024-10-04 17:00:03,672 INFO -------------------------------
+2024-10-04 18:00:02,316 INFO Starting evaluation script
+2024-10-04 18:00:02,357 INFO JSON file updated successfully!
+2024-10-04 18:00:02,357 INFO -------------------------------
+2024-10-04 19:00:02,903 INFO Starting evaluation script
+2024-10-04 19:00:02,944 INFO JSON file updated successfully!
+2024-10-04 19:00:02,944 INFO -------------------------------
+2024-10-04 20:00:02,492 INFO Starting evaluation script
+2024-10-04 20:00:02,533 INFO JSON file updated successfully!
+2024-10-04 20:00:02,533 INFO -------------------------------
+2024-10-04 21:00:03,064 INFO Starting evaluation script
+2024-10-04 21:00:03,105 INFO JSON file updated successfully!
+2024-10-04 21:00:03,105 INFO -------------------------------
+2024-10-04 22:00:02,648 INFO Starting evaluation script
+2024-10-04 22:00:02,690 INFO JSON file updated successfully!
+2024-10-04 22:00:02,690 INFO -------------------------------
+2024-10-04 23:00:02,249 INFO Starting evaluation script
+2024-10-04 23:00:02,292 INFO JSON file updated successfully!
+2024-10-04 23:00:02,292 INFO -------------------------------
+2024-10-05 00:00:02,844 INFO Starting evaluation script
+2024-10-05 00:00:02,887 INFO JSON file updated successfully!
+2024-10-05 00:00:02,887 INFO -------------------------------
+2024-10-05 01:00:02,475 INFO Starting evaluation script
+2024-10-05 01:00:02,518 INFO JSON file updated successfully!
+2024-10-05 01:00:02,518 INFO -------------------------------
+2024-10-05 02:00:03,118 INFO Starting evaluation script
+2024-10-05 02:00:03,160 INFO JSON file updated successfully!
+2024-10-05 02:00:03,160 INFO -------------------------------
+2024-10-05 03:00:02,708 INFO Starting evaluation script
+2024-10-05 03:00:02,752 INFO JSON file updated successfully!
+2024-10-05 03:00:02,752 INFO -------------------------------
+2024-10-05 04:00:02,345 INFO Starting evaluation script
+2024-10-05 04:00:02,388 INFO JSON file updated successfully!
+2024-10-05 04:00:02,389 INFO -------------------------------
+2024-10-05 05:00:02,915 INFO Starting evaluation script
+2024-10-05 05:00:02,958 INFO JSON file updated successfully!
+2024-10-05 05:00:02,958 INFO -------------------------------
+2024-10-05 06:00:02,487 INFO Starting evaluation script
+2024-10-05 06:00:02,530 INFO JSON file updated successfully!
+2024-10-05 06:00:02,530 INFO -------------------------------
+2024-10-05 07:00:03,085 INFO Starting evaluation script
+2024-10-05 07:00:03,129 INFO JSON file updated successfully!
+2024-10-05 07:00:03,129 INFO -------------------------------
+2024-10-05 08:00:02,662 INFO Starting evaluation script
+2024-10-05 08:00:02,705 INFO JSON file updated successfully!
+2024-10-05 08:00:02,705 INFO -------------------------------
+2024-10-05 09:00:02,231 INFO Starting evaluation script
+2024-10-05 09:00:02,274 INFO JSON file updated successfully!
+2024-10-05 09:00:02,274 INFO -------------------------------
+2024-10-05 10:00:02,846 INFO Starting evaluation script
+2024-10-05 10:00:02,889 INFO JSON file updated successfully!
+2024-10-05 10:00:02,889 INFO -------------------------------
+2024-10-05 11:00:02,433 INFO Starting evaluation script
+2024-10-05 11:00:02,476 INFO JSON file updated successfully!
+2024-10-05 11:00:02,476 INFO -------------------------------
+2024-10-05 12:00:03,029 INFO Starting evaluation script
+2024-10-05 12:00:03,073 INFO JSON file updated successfully!
+2024-10-05 12:00:03,074 INFO -------------------------------
+2024-10-05 13:00:02,608 INFO Starting evaluation script
+2024-10-05 13:00:02,651 INFO JSON file updated successfully!
+2024-10-05 13:00:02,651 INFO -------------------------------
+2024-10-05 14:00:03,197 INFO Starting evaluation script
+2024-10-05 14:00:03,244 INFO JSON file updated successfully!
+2024-10-05 14:00:03,244 INFO -------------------------------
+2024-10-05 15:00:02,768 INFO Starting evaluation script
+2024-10-05 15:00:02,812 INFO JSON file updated successfully!
+2024-10-05 15:00:02,812 INFO -------------------------------

@@ -29,5 +29,5 @@ export default function Copyright(props) {
 }
 
 Copyright.propTypes = {
-  sx: PropTypes.oneOfType([PropTypes.object, PropTypes.array]), // Validate sx prop
+  sx: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };

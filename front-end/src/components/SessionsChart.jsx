@@ -46,24 +46,17 @@ export default function SessionsChart() {
   const [visitsData, setVisitsData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Calculate total visits (all-time sum)
-  const totalVisits =
-    visitsData.length > 0
-      ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0)
-      : 0;
-
-  // Calculate the percentage change based on the last two points
   const percentageChange = useMemo(() => {
     if (visitsData.length === 0 || visitsData[0].data.length < 2) {
-      return 0; // Return 0 if there aren't enough data points
+      return 0;
     }
 
     const data = visitsData[0].data;
-    const lastValue = data[data.length - 1]; // Most recent visit count
-    const secondLastValue = data[data.length - 2]; // Previous visit count
+    const lastValue = data[data.length - 1];
+    const secondLastValue = data[data.length - 2];
 
     const change = ((lastValue - secondLastValue) / secondLastValue) * 100;
-    return change.toFixed(2); // Keep two decimal places
+    return Math.ceil(change);
   }, [visitsData]);
   const colorPalette = [
     theme.palette.primary.light,
@@ -112,8 +105,13 @@ export default function SessionsChart() {
                 ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0)
                 : 0}
             </Typography>
-            <Chip size="small" color="success" label="+35%" />
+            <Chip
+              size="small"
+              color={percentageChange >= 0 ? 'success' : 'error'}
+              label={`${percentageChange}%`}
+            />
           </Stack>
+
           <Typography variant="caption" sx={{ color: 'text.secondary' }}>
             Visits per day
           </Typography>

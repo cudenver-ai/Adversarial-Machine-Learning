@@ -7,3 +7,4 @@ node_modules/
 notes.md
 app.log
 *.db
+.DS_Store
