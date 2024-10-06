@@ -2,95 +2,80 @@ from collections import defaultdict
 import pandas as pd
 import re
 import json
+import os
+import logging
+import sqlite3
 
+"""
+We will look for the initial HTML document load (GET /):
+
+    The initial request for / (or any other base URL path) is a be a strong indicator of a visit. This would be the first request when someone accesses the website.
+    Example: GET / HTTP/1.1 or GET /index.html HTTP/1.1
+
+We also need to exclude static asset requests:
+
+    Static resources like .js, .css, .png, and API requests shouldn't be counted as individual visits. Filter those out to avoid inflating the visit count.
+    Example paths to exclude: /static/, /assets/, /api/, or file extensions like .js, .css, .png.
+
+"""
+
+conn = sqlite3.connect('./back-end/Data/ml.db')
+delete_visits_sql = '''
+delete from DailyVisits
+'''
+daily_visits_insert_sql_template = '''
+INSERT INTO DailyVisits ("DATE", IP_ADDRESS, "PATH", STATUS)
+VALUES ("{date}", "{ip_address}", "{path}", {status})
+'''
 
 def update_visits():
-    data = pd.read_csv('/var/log/nginx/production-server_access.log', delimiter=' ', header=None)
-    data.fillna(" ", inplace=True)
-    cols = [0, 1, 3]
-    filtered_data = data[cols]
+    # CLEAR DailyVisits Table
+    conn.execute(delete_visits_sql)
+    # Local path:
 
-    ip_pattern = r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b'
+    # Lab path
+    # path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
+    # #logs = f"/var/log/nginx/production-server_access.log"
+    # json_file_path = f"{path}Data/visits.json"
+    logs_path = "/var/log/nginx/"
 
-    # Filtering rows where the 3rd column contains a valid IP address
-    filtered_data_ip = filtered_data[filtered_data[3].apply(lambda x: bool(re.match(ip_pattern, x)))]
+    log_pattern = re.compile(
+        r'(?P<ip>\d+\.\d+\.\d+\.\d+) - - \[(?P<date>\d{2}/\w{3}/\d{4}:\d{2}:\d{2}:\d{2} [+-]\d{4})\] "(?P<method>\w+) (?P<path>\S+) HTTP/\d\.\d" (?P<status>\d+) (?P<size>\d+)'
+    )
 
-    filtered_data_ip.iloc[:, 1] = filtered_data_ip.iloc[:, 1].str.split(',').str[0]
-    filtered_data_ip= filtered_data_ip.drop_duplicates()
+    parsed_data = []
 
-    # this will keep order of the days
-    days = filtered_data_ip[0].unique()
+    for filename in os.listdir(logs_path):
 
-    views_per_day_list = []
-    for day in days: 
-        views_per_day_list.append(filtered_data_ip[filtered_data_ip[0] == day].shape[0])
-        
-    vistits_dict =   {
-        "id": "Visits",
-        "label": "Visits",
-        "showMark": False,
-        "curve": "linear",
-        "stack": "total",
-        "area": True,
-        "stackOrder": "ascending",
-    }
-    vistits_dict['data'] = views_per_day_list
-        
-        
-    # counts_all_visit_times_daily
-    counts_all_unique_visits_daily = []
-    filtered_data_date = filtered_data_ip[[0, 3]]
-    filtered_data_date = filtered_data_date.drop_duplicates()
+        if filename.startswith("production-server_access"):
+            file_path = os.path.join(logs_path, filename)
 
-    for day in set(filtered_data_date[0]):
-        counts_all_unique_visits_daily.append(filtered_data_date[filtered_data_date[0] == day].shape[0])
-
-    unique_vistits_dict =   {
-        "id": "Unique",
-        "label": "Unique",
-        "showMark": False,
-        "curve": "linear",
-        "stack": "total",
-        "area": True,
-        "stackOrder": "ascending",
-    }
-    unique_vistits_dict['data'] = counts_all_unique_visits_daily
-
-
-
-    # Create a defaultdict to store the counts for each day
-    post_request_counts = defaultdict(int)
-
-    # Open and read the log file line by line
-    with open('/var/log/nginx/production-server_access.log', 'r') as file:
-        for line in file:
-            # Check if the line contains a "GET" request
-            if "POST" in line:
-                # Extract the date from the line (assuming the format is consistent)
-                date_part = line.split()[0]  # This extracts the date (e.g., "2024-09-23")
+            try:
+                with open(file_path, "r") as file:
+                    log_data = file.readlines()
+                    
+                for log in log_data:
+                    match = log_pattern.match(log)
+                    if match:
+                        parsed_data.append(match.groupdict())
                 
-                # Increment the count for this date
-                post_request_counts[date_part] += 1
+            except Exception as e:
+                print(f"Error reading {filename}: {e}")
 
-    # Print the results for each day
-    uploads_list = []
-    for date, count in post_request_counts.items():
-        uploads_list.append(count)
-
-    unique_uploads_dict =   {
-        "id": "Uploads",
-        "label": "Uploads",
-        "showMark": False,
-        "curve": "linear",
-        "stack": "total",
-        "area": True,
-        "stackOrder": "ascending",
-    }
-    unique_uploads_dict['data'] = uploads_list
+    df_parsed = pd.DataFrame(parsed_data)
 
 
-    # Save the result dictionary as w JSON file
-    with open('Data/visits.json', 'w') as f:
-        tmp = [unique_vistits_dict, vistits_dict, unique_uploads_dict]
-        json.dump(tmp, f, indent=4)
+    df_parsed["date"] = pd.to_datetime(df_parsed["date"], format="%d/%b/%Y:%H:%M:%S %z")
 
+    for _, row in df_parsed.iterrows():
+        date = row["date"].strftime("%Y-%m-%d")
+        route = row["path"]
+        ip = row["ip"]
+        status = row["status"]
+
+        if route == "/" or route == "/api/upload-images":
+            insert_sql = daily_visits_insert_sql_template.format(date=date, ip_address=ip, path=route, status=status)
+            conn.execute(insert_sql)
+            conn.commit()
+
+    conn.close()
