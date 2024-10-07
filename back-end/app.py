@@ -122,14 +122,25 @@ def get_example_code():
 
 @app.route("/api/download-notebook", methods=["GET"])
 def download_notebook():
-    notebook = os.path.join(path, "Data/Decoy.ipynb")
+    notebook_dir = os.path.join(path, "Data/downloads")
+    notebook = "Decoy.ipynb"
 
-    if os.path.exists(notebook):
-        return send_from_directory(notebook, as_attachment=True)
+    if os.path.exists(os.path.join(notebook_dir, notebook)):
+        return send_from_directory(notebook_dir, notebook, as_attachment=True)
     else:
         return jsonify({"error": "Notebook not found"}), 404
+    
 
+@app.route("/api/download-data", methods=["GET"])
+def download_data():
+    dataset_dir = os.path.join(path, 'Data/downloads')
+    dataset = 'cifar10.pt'
 
+    if os.path.exists(os.path.join(dataset_dir,dataset)):
+        return send_from_directory(dataset_dir, dataset, as_attachment=True)
+    else:
+        return jsonify({"error": "Data not found"}), 404
+    
 @app.route("/api/update-timestamp", methods=["GET"])
 def update_timestamp():
     data = os.path.join(path, "Data/visits.json")
@@ -143,4 +154,6 @@ def update_timestamp():
     else:
         output = {"success": False, "timstamp": ""}
 
-    return jsonify(output)
+    response = jsonify(output)
+    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+    return response
