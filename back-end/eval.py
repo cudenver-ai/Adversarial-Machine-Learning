@@ -129,16 +129,29 @@ def evaluate():
     # Get current directory
     current_directory = os.getcwd()
 
+    # Check if 'Uploads' directory exists and is not empty
+    uploads_dir = os.path.join(current_directory, "Uploads")
+    if not os.path.exists(uploads_dir):
+        logging.warning("Uploads directory does not exist.")
+        return False
+
+    if len(os.listdir(uploads_dir)) == 0:
+        logging.info("Uploads directory is empty. Skipping evaluation.")
+        return False
+
+    logging.info(f"Starting evaluation. Files found in Uploads: {os.listdir(uploads_dir)}")
+
     # Create the 'evaluated' directory if it doesn't exist
     evaluated_dir = os.path.join(current_directory, "evaluated")
     if not os.path.exists(evaluated_dir):
         os.makedirs(evaluated_dir, exist_ok=True)
+        logging.info(f"Created 'evaluated' directory at: {evaluated_dir}")
 
     # Create a timestamped folder inside 'evaluated'
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     timestamped_folder = os.path.join(evaluated_dir, timestamp)
-    # print(timestamped_folder)
     os.makedirs(timestamped_folder, exist_ok=True)
+    logging.info(f"Created timestamped folder: {timestamped_folder}")
 
     # Move all folders from 'Uploads' to the timestamped folder
     uploads_dir = os.path.join(current_directory, "Uploads")
@@ -147,6 +160,7 @@ def evaluate():
         src_folder = os.path.join(uploads_dir, folder_name)
         dest_folder = os.path.join(timestamped_folder, folder_name)
         shutil.move(src_folder, dest_folder)
+        logging.info(f"Moved folder from {src_folder} to {dest_folder}")
 
     # Now process the folders in the timestamped folder
     for folder_name in os.listdir(timestamped_folder):
@@ -159,17 +173,20 @@ def evaluate():
             if name.endswith(".pkl"):
                 with open(path_name, "rb") as f:
                     advs = pickle.load(f)
+                logging.info(f"Loaded adversarial examples from {path_name}")
 
             if name.endswith(".txt"):
                 with open(path_name, "r") as f:
                     tmp = f.readlines()
                     team_name = tmp[1].strip()
                     time_stamp = tmp[0].strip()
+                logging.info(f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}")
 
         # Load CIFAR-10 data
         cifar_data = torch.load("cifar10_test_100_per_class.pt")
         x_test = cifar_data["images"] / 255.0
         y_test = cifar_data["labels"]
+        logging.info("Loaded CIFAR-10 test data.")
 
         # Load the model
         model = load_model(
@@ -180,19 +197,26 @@ def evaluate():
         model = model.to(device)
         x_test = x_test.to(device)
         y_test = y_test.to(device)
+        logging.info(f"Model loaded and moved to device: {device}")
 
         # Evaluate and calculate the score
         score_metrics = calculate_score(model, x_test, advs[0], y_test)
         score_metrics["team_name"] = team_name
         score_metrics["time_stamp"] = time_stamp
+        logging.info(f"Score calculated for team: {team_name}")
 
         # Append the results to the JSON file
         submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
-        # print(submission_json)
-        print(submission_json)
+        
         with open(submission_json, "r") as f:
             data = json.load(f)
+            #data.append could also be placed outside this with open block (I think)
             data.append(score_metrics)
+            logging.info(f"Loaded existing submission data from {submission_json}")
+            
 
         with open(submission_json, "w") as f:
             json.dump(data, f, indent=4)
+            logging.info(f"Updated submission data saved to {submission_json}")
+
+        return True

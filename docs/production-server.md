@@ -1,4 +1,5 @@
 sudo systemctl start production-server
+sudo systemctl restart production-server
 sudo systemctl status production-server
 sudo nginx -t
 sudo systemctl restart nginx

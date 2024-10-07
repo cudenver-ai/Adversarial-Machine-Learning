@@ -155,7 +155,7 @@ export default function MainGrid({ setCurrentPage }) {
                   </li>
                   <li>
                     <strong>Submission Deadline:</strong> October 29th, 2024,
-                    11:59 PM (CET)
+                    11:59 PM 
                   </li>
                   <li>
                     <strong>CU Denver Data Science and AI Symposium:</strong>{' '}
@@ -331,7 +331,7 @@ export default function MainGrid({ setCurrentPage }) {
                   </li>
                   <li>
                     <strong>Submission Deadline:</strong> October 29th, 2024,
-                    11:59 PM (CET)
+                    11:59 PM
                   </li>
                   <li>
                     <strong>CU Denver Data Science and AI Symposium:</strong>{' '}
