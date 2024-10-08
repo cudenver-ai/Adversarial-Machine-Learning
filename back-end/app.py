@@ -3,8 +3,10 @@ from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
 from parseData import loadData, load_pickle_file
 import os
+from Data.aml_database import deploy_ML_DB, get_daily_visits
 from datetime import datetime
 
+deploy_ML_DB()
 app = Flask(__name__)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 
@@ -30,7 +32,7 @@ print(f"FLASK_DEBUG: {os.environ.get('FLASK_DEBUG', 'Not Set')}")
 print(f"App debug mode: {app.debug}")
 
 # ensure your routes are prefixed with /api.
-path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
+path = os.getcwd()
 
 UPLOAD_FOLDER = "Uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -54,7 +56,7 @@ def upload_images():
 
 @app.route("/api/team-data", methods=["GET"])
 def get_team_data():
-    data = os.path.join(path, "Data/TeamData.json")
+    data = f"{path}/back-end/Data/TeamData.json"
 
     # Load and return the parsed team data
     if os.path.exists(data):
@@ -67,7 +69,7 @@ def get_team_data():
 @app.route("/api/eval-data", methods=["GET"])
 def get_eval_data():
     # Load and return the parsed team data
-    data = f'{path}{"Data/evalMetric.json"}'
+    data = f'{path}{"/back-end/Data/evalMetric.json"}'
 
     if os.path.exists(data):
         results = loadData(data)
@@ -78,7 +80,7 @@ def get_eval_data():
 
 @app.route("/api/organization", methods=["GET"])
 def get_challenge_content():
-    data = os.path.join(path, "Data/organization.json")
+    data = f"{path}/back-end/Data/organization.json"
 
     if os.path.exists(data):
         results = loadData(data)
@@ -89,7 +91,7 @@ def get_challenge_content():
 
 @app.route("/api/leaderboard", methods=["GET"])
 def get_leaderboard_data():
-    data = os.path.join(path, "Data/leaderboard.json")
+    data = f"{path}/back-end/Data/leaderboard.json"
 
     if os.path.exists(data):
         results = loadData(data)
@@ -100,18 +102,17 @@ def get_leaderboard_data():
 
 @app.route("/api/visits", methods=["GET"])
 def get_site_visits():
-    data = os.path.join(path, "Data/visits.json")
+    data = get_daily_visits()
 
-    if os.path.exists(data):
-        results = loadData(data)
-        return jsonify(results)
+    if data:
+        return data
     else:
         return jsonify({"error": "Challenge data not found"}), 404
 
 
 @app.route("/api/example-code", methods=["GET"])
 def get_example_code():
-    data = os.path.join(path, "Data/exampleCode.json")
+    data = f"{path}/back-end/Data/exampleCode.json"
 
     if os.path.exists(data):
         results = loadData(data)
@@ -122,25 +123,26 @@ def get_example_code():
 
 @app.route("/api/download-notebook", methods=["GET"])
 def download_notebook():
-    notebook_dir = os.path.join(path, "Data/downloads")
-    notebook = "Decoy.ipynb"
+    notebook_dir = f"{path}/back-end/Data/downloads"
+    notebook = f"Decoy.ipynb"
 
     if os.path.exists(os.path.join(notebook_dir, notebook)):
         return send_from_directory(notebook_dir, notebook, as_attachment=True)
     else:
         return jsonify({"error": "Notebook not found"}), 404
-    
+
 
 @app.route("/api/download-data", methods=["GET"])
 def download_data():
-    dataset_dir = os.path.join(path, 'Data/downloads')
-    dataset = 'cifar10.pt'
+    dataset_dir = os.path.join(path, "Data/downloads")
+    dataset = "cifar10.pt"
 
-    if os.path.exists(os.path.join(dataset_dir,dataset)):
+    if os.path.exists(os.path.join(dataset_dir, dataset)):
         return send_from_directory(dataset_dir, dataset, as_attachment=True)
     else:
         return jsonify({"error": "Data not found"}), 404
-    
+
+
 @app.route("/api/update-timestamp", methods=["GET"])
 def update_timestamp():
     data = os.path.join(path, "Data/visits.json")

@@ -104,7 +104,7 @@ source .venv/bin/activate  # On Unix/Linux
 To start the Flask back-end:
 
 ```bash
-flask run
+flask --app /back-end/app.py  run
 ```
 
 To start the React front-end:
