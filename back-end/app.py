@@ -159,3 +159,39 @@ def update_timestamp():
     response = jsonify(output)
     response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
     return response
+
+
+# @app.route("/api/update-timestamp", methods=["GET"])
+# def update_timestamp():
+#     data = os.path.join(path, "Data/visits.json")
+
+#     if os.path.isfile(data):
+#         timestamp = datetime.fromtimestamp(os.path.getmtime(data)).strftime(
+#             "%Y-%m-%d %H:%M:%S"
+#         )
+
+#         output = {"success": True, "timestamp": timestamp}
+#     else:
+#         output = {"success": False, "timstamp": ""}
+
+#     response = jsonify(output)
+#     response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+#     return response
+
+
+# @app.route("/api/update-timestamp", methods=["GET"])
+# def update_timestamp():
+#     data = os.path.join(path, "Data/visits.json")
+
+#     if os.path.isfile(data):
+#         timestamp = datetime.fromtimestamp(os.path.getmtime(data)).strftime(
+#             "%Y-%m-%d %H:%M:%S"
+#         )
+
+#         output = {"success": True, "timestamp": timestamp}
+#     else:
+#         output = {"success": False, "timstamp": ""}
+
+#     response = jsonify(output)
+#     response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
+#     return response
