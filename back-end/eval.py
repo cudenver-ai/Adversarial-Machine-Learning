@@ -133,6 +133,8 @@ def evaluate():
     uploads_dir = os.path.join(current_directory, "Uploads")
     if not os.path.exists(uploads_dir):
         logging.warning("Uploads directory does not exist.")
+        os.makedirs(evaluated_dir, exist_ok=True)
+        logging.info(f"Created Uploads directory at: {uploads_dir}")
         return False
 
     if len(os.listdir(uploads_dir)) == 0:
@@ -144,6 +146,7 @@ def evaluate():
     # Create the 'evaluated' directory if it doesn't exist
     evaluated_dir = os.path.join(current_directory, "evaluated")
     if not os.path.exists(evaluated_dir):
+        logging.warning("Evaluated directory does not exist.")
         os.makedirs(evaluated_dir, exist_ok=True)
         logging.info(f"Created 'evaluated' directory at: {evaluated_dir}")
 

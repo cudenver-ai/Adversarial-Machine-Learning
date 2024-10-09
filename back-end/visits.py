@@ -55,9 +55,11 @@ def update_visits():
                 if filename.endswith(".gz"):
                     with gzip.open(file_path, "rt", encoding="utf-8") as file:
                         log_data = file.readlines()
+                        logging.info(f"Finished reading: {filename}")
                 else:
                     with open(file_path, "r") as file:
                         log_data = file.readlines()
+                        logging.info(f"Finished reading: {filename}")
                         
                 for log in log_data:
                     match = log_pattern.match(log)
@@ -68,19 +70,19 @@ def update_visits():
             logging.info(f"Error reading {filename}: {e}")
 
     df_parsed = pd.DataFrame(parsed_data)
+    # format = 08/Oct/2024:11:50:13 -0600
     df_parsed["date"] = pd.to_datetime(df_parsed["date"], format="%d/%b/%Y:%H:%M:%S %z")
 
     #print(df_parsed["date"])
-    today = datetime.now().date()
-    october_first_2024 = datetime(2024,10,1).date()
+    october_first_2024 = pd.Timestamp(2024, 9, 30, tz='UTC-06:00')
 
     df_filtered = df_parsed[
         (df_parsed["method"] == "GET")
         & (df_parsed["path"] == "/") &
-        (df_parsed["date"].dt.date >= october_first_2024) ]
+        (df_parsed["date"] >= october_first_2024) 
+    ]
 
     visits = df_filtered.groupby(df_filtered["date"].dt.date)["ip"].count().to_dict()
-    unique_visits = df_parsed.groupby(df_filtered["ip"])
 
     uploads = defaultdict(int)
     unique_visits = defaultdict(set)
@@ -93,11 +95,10 @@ def update_visits():
         if method == "POST":
             uploads[date] += 1
 
-        if row["date"].date() >= october_first_2024:
+        if row["date"] >= october_first_2024:
              unique_visits[date].add(ip)
 
     unique_visits_count = {}
-
 
     for date, ips in unique_visits.items():
         unique_visits_count[date] = len(ips)
@@ -105,16 +106,23 @@ def update_visits():
     with open(json_file_path, "r") as f:
         json_data = json.load(f)
 
+
     for metric in json_data:
         if metric["id"] == "Visits":
-            metric["data"] = [visits.get(date, 0) for date in sorted(visits.keys())]
+            metric["data"] = []
+            for date in sorted(visits.keys()):
+                visit_count = visits.get(date, 0)
+                metric["data"].append(visit_count)
         elif metric["id"] == "Uploads":
-            metric["data"] = [uploads.get(date, 0) for date in sorted(uploads.keys())]
+            metric["data"] = []
+            for date in sorted(uploads.keys()):
+                upload_count = uploads.get(date, 0)
+                metric["data"].append(upload_count)
         elif metric["id"] == "Unique":
-            metric["data"] = [
-                unique_visits_count.get(date, 0)
-                for date in sorted(unique_visits_count.keys())
-            ]
+            metric["data"] = []
+            for date in sorted(unique_visits_count.keys()):
+                unique_count = unique_visits_count.get(date, 0)
+                metric["data"].append(unique_count)
 
     with open(json_file_path, "w") as f:
         json.dump(json_data, f, indent=4)

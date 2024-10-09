@@ -1,8 +1,12 @@
-sudo systemctl start production-server
+sudo systemctl start production-server (if needed)
+sudo systemctl start nginx (if needed)
+
 sudo systemctl restart production-server
 sudo systemctl status production-server
+
 sudo nginx -t
 sudo systemctl restart nginx
+sudo systemctl status nginx
 
 # Production Server Deployment Guide
 
