@@ -80,13 +80,16 @@ def update_evalMetrics():
     # Update trend direction
     logging.info('Updating trendline')
     try:
-        for entry in metrics:
-            if entry['data'][-1] > entry['data'][-2]:
-                entry['trend'] = 'up'
-            elif entry['data'][-1] < entry['data'][-2]:
-                entry['trend'] = 'down'
-            else:
-                entry['trend'] = 'neutral'
+        if len(entry) > 2:
+            for entry in metrics:
+                if entry['data'][-1] > entry['data'][-2]:
+                    entry['trend'] = 'up'
+                elif entry['data'][-1] < entry['data'][-2]:
+                    entry['trend'] = 'down'
+                else:
+                    entry['trend'] = 'neutral'
+        else:
+            entry['trend'] = 'neutral'
     except Exception as e:
         logging.error('Error updating trend direction: {}'.format(e))
 
