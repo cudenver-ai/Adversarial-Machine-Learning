@@ -129,11 +129,11 @@ function StatCard({ title, value, interval, data }) {
               }}
               sx={{
                 [`& .${areaElementClasses.root}`]: {
-                  fill: `url(#area-gradient-${value})`,
+                  fill: `url(#area-gradient-${title.replace(/\s+/g, '-').toLowerCase()})`,
                 },
               }}
             >
-              <AreaGradient color={chartColor} id={`area-gradient-${value}`} />
+              <AreaGradient color={chartColor} id={`area-gradient-${title.replace(/\s+/g, '-').toLowerCase()}`} />
             </SparkLineChart>
           </Box>
         </Stack>
