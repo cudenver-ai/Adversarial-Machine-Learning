@@ -17,6 +17,7 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useColorScheme } from '@mui/material/styles';
+import { Container } from '@mui/material';
 
 export const Toolbar = styled(MuiToolbar)({
   width: '100%',
@@ -75,122 +76,130 @@ export default function AppNavbar({ setCurrentPage }) {
       position="fixed"
       sx={{
         boxShadow: 0,
-        boxShadow: 0,
-        bgcolor: "transparent",
-        backgroundImage: "none",
+        bgcolor: 'transparent',
+        backgroundImage: 'none',
+        mt: 1,
       }}
     >
       <Container maxWidth="lg">
-      <StyledToolbar variant="dense">
-        <Stack
-          direction="row"
-          sx={{
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            flexGrow: 1,
-            width: '100%',
-          }}
-        >
-          <Stack direction="row" spacing={3} sx={{ justifyContent: 'center' }}>
-            <CustomIcon />
-            <Typography
-              variant="h4"
-              component="h2"
-              sx={{ color: 'text.primary' }}
+        <StyledToolbar variant="dense">
+          <Stack
+            direction="row"
+            sx={{
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexGrow: 1,
+              width: '100%',
+            }}
+          >
+            <Stack
+              direction="row"
+              spacing={3}
+              sx={{ justifyContent: 'center' }}
             >
-              Decoy Challenge
-            </Typography>
+              <CustomIcon />
+              <Typography
+                variant="h4"
+                component="h2"
+                sx={{ color: 'text.primary' }}
+              >
+                Decoy Challenge
+              </Typography>
 
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-              <Button
-                variant="text"
-                color="primary"
-                size="large"
-                onClick={() => setCurrentPage('home')}
-              >
-                Home
-              </Button>
-              <Button
-                variant="text"
-                color="primary"
-                size="large"
-                onClick={() => setCurrentPage('problem')}
-              >
-                Problem
-              </Button>
-              <Button
-                variant="text"
-                color="primary"
-                size="large"
-                onClick={() => setCurrentPage('data')}
-              >
-                Getting Started
-              </Button>
-              <Button
-                variant="text"
-                color="primary"
-                size="large"
-                onClick={() => setCurrentPage('main')}
-              >
-                Submit
-              </Button>
-              <Button
-                variant="text"
-                color="primary"
-                size="large"
-                onClick={() => setCurrentPage('organizers')}
-              >
-                Organizers
-              </Button>
-            </Box>
-            {/* For smaller screens: Mobile menu */}
-            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
-                size="medium"
-                edge="start"
-                color="inherit"
-                aria-label="menu"
-                onClick={handleMenuClick}
-              >
-                <MenuRoundedIcon />
-              </IconButton>
-              <Menu
-                anchorEl={anchorEl}
-                open={isMenuOpen}
-                onClose={handleMenuClose}
-                PaperProps={{
-                  style: {
-                    width: '200px',
-                  },
-                }}
-              >
-                <MenuItem onClick={() => handlePageChange('home')}>
+              <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+                <Button
+                  variant="text"
+                  color="primary"
+                  size="large"
+                  onClick={() => setCurrentPage('home')}
+                >
                   Home
-                </MenuItem>
-                <MenuItem onClick={() => handlePageChange('problem')}>
+                </Button>
+                <Button
+                  variant="text"
+                  color="primary"
+                  size="large"
+                  onClick={() => setCurrentPage('problem')}
+                >
                   Problem
-                </MenuItem>
-                <MenuItem onClick={() => handlePageChange('data')}>
+                </Button>
+                <Button
+                  variant="text"
+                  color="primary"
+                  size="large"
+                  onClick={() => setCurrentPage('data')}
+                >
                   Getting Started
-                </MenuItem>
-                <MenuItem onClick={() => handlePageChange('main')}>
+                </Button>
+                <Button
+                  variant="text"
+                  color="primary"
+                  size="large"
+                  onClick={() => setCurrentPage('main')}
+                >
                   Submit
-                </MenuItem>
-                <MenuItem onClick={() => handlePageChange('organizers')}>
+                </Button>
+                <Button
+                  variant="text"
+                  color="primary"
+                  size="large"
+                  onClick={() => setCurrentPage('organizers')}
+                >
                   Organizers
-                </MenuItem>
-              </Menu>
-            </Box>
+                </Button>
+              </Box>
+              {/* For smaller screens: Mobile menu */}
+              <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+                <IconButton
+                  size="medium"
+                  edge="start"
+                  color="inherit"
+                  aria-label="menu"
+                  onClick={handleMenuClick}
+                >
+                  <MenuRoundedIcon />
+                </IconButton>
+                <Menu
+                  anchorEl={anchorEl}
+                  open={isMenuOpen}
+                  onClose={handleMenuClose}
+                  PaperProps={{
+                    style: {
+                      width: '200px',
+                    },
+                  }}
+                >
+                  <MenuItem onClick={() => handlePageChange('home')}>
+                    Home
+                  </MenuItem>
+                  <MenuItem onClick={() => handlePageChange('problem')}>
+                    Problem
+                  </MenuItem>
+                  <MenuItem onClick={() => handlePageChange('data')}>
+                    Getting Started
+                  </MenuItem>
+                  <MenuItem onClick={() => handlePageChange('main')}>
+                    Submit
+                  </MenuItem>
+                  <MenuItem onClick={() => handlePageChange('organizers')}>
+                    Organizers
+                  </MenuItem>
+                </Menu>
+              </Box>
+            </Stack>
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{ justifyContent: 'center' }}
+            >
+              <ColorModeIconDropdown />
+              <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
+                <MenuRoundedIcon />
+              </MenuButton>
+              <SideMenuMobile open={open} toggleDrawer={toggleDrawer} />
+            </Stack>
           </Stack>
-          <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
-            <ColorModeIconDropdown />
-            <MenuButton aria-label="menu" onClick={toggleDrawer(true)}>
-              <MenuRoundedIcon />
-            </MenuButton>
-            <SideMenuMobile open={open} toggleDrawer={toggleDrawer} />
-          </Stack>
-        </Stack>
-      </StyledToolbar>
+        </StyledToolbar>
       </Container>
     </AppBar>
   );

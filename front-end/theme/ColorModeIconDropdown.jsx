@@ -8,7 +8,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { useColorScheme } from '@mui/material/styles';
 
 export default function ColorModeIconDropdown() {
-  const { mode, systemMode, setMode } = useColorScheme();
+  const { mode, setMode } = useColorScheme();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -37,7 +37,7 @@ export default function ColorModeIconDropdown() {
       />
     );
   }
-  const resolvedMode = systemMode || mode;
+  const resolvedMode = mode;
   const icon = {
     light: <LightModeIcon />,
     dark: <DarkModeIcon />,

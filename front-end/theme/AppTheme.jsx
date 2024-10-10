@@ -6,7 +6,12 @@ import { dataDisplayCustomizations } from './customizations/dataDisplay.jsx';
 import { feedbackCustomizations } from './customizations/feedback.jsx';
 import { navigationCustomizations } from './customizations/navigation.jsx';
 import { surfacesCustomizations } from './customizations/surfaces.jsx';
-import { colorSchemes, typography, shadows, shape } from './themePrimitives.jsx';
+import {
+  colorSchemes,
+  typography,
+  shadows,
+  shape,
+} from './themePrimitives.jsx';
 
 function AppTheme({ children, disableCustomTheme, themeComponents }) {
   const theme = React.useMemo(() => {
@@ -44,9 +49,6 @@ function AppTheme({ children, disableCustomTheme, themeComponents }) {
 
 AppTheme.propTypes = {
   children: PropTypes.node,
-  /**
-   * This is for the docs site. You can ignore it or remove it.
-   */
   disableCustomTheme: PropTypes.bool,
   themeComponents: PropTypes.object,
 };
