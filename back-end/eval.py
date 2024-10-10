@@ -9,21 +9,10 @@ import torch.nn.functional as F
 from robustbench.data import load_cifar10
 from robustbench.utils import load_model
 from skimage.metrics import structural_similarity as ssim
+from datetime import datetime
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-
-logging.basicConfig(
-    level=logging.DEBUG,
-    format="%(asctime)s %(levelname)s %(message)s",
-    handlers=[
-        logging.FileHandler("eval.log"),
-        logging.StreamHandler(),
-    ],
-)
-
-logging.info("Starting evaluation script")
 
 
 def calculate_score(
@@ -124,16 +113,21 @@ def calculate_score(
         "score": round(float(score), 4),
     }
 
+#uploads_dir = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads"
 
 def evaluate():
     # Get current directory
+    uploads_dir = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/"
+    start_time = datetime.now()
+    logging.info("Starting evaluation script")
+    logging.info(f"Evaluation started at: {start_time}")
     current_directory = os.getcwd()
 
     # Check if 'Uploads' directory exists and is not empty
-    uploads_dir = os.path.join(current_directory, "Uploads")
+    #uploads_dir = os.path.join(current_directory, "Uploads")
     if not os.path.exists(uploads_dir):
         logging.warning("Uploads directory does not exist.")
-        os.makedirs(evaluated_dir, exist_ok=True)
+        os.makedirs(uploads_dir, exist_ok=True)
         logging.info(f"Created Uploads directory at: {uploads_dir}")
         return False
 
@@ -165,61 +159,79 @@ def evaluate():
         shutil.move(src_folder, dest_folder)
         logging.info(f"Moved folder from {src_folder} to {dest_folder}")
 
+    logging.info(f"Finished Moving folders")
+
     # Now process the folders in the timestamped folder
+    
     for folder_name in os.listdir(timestamped_folder):
         folder_path = os.path.join(timestamped_folder, folder_name)
-
-        # print(folder_path)
-        for name in os.listdir(folder_path):
-            path_name = os.path.join(folder_path, name)
-
-            if name.endswith(".pkl"):
-                with open(path_name, "rb") as f:
-                    advs = pickle.load(f)
-                logging.info(f"Loaded adversarial examples from {path_name}")
-
-            if name.endswith(".txt"):
-                with open(path_name, "r") as f:
-                    tmp = f.readlines()
-                    team_name = tmp[1].strip()
-                    time_stamp = tmp[0].strip()
-                logging.info(f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}")
-
-        # Load CIFAR-10 data
-        cifar_data = torch.load("cifar10_test_100_per_class.pt")
-        x_test = cifar_data["images"] / 255.0
-        y_test = cifar_data["labels"]
-        logging.info("Loaded CIFAR-10 test data.")
-
-        # Load the model
-        model = load_model(
-            model_name="Kireev2021Effectiveness_RLATAugMix",
-            dataset="cifar10",
-            threat_model="corruptions",
-        )
-        model = model.to(device)
-        x_test = x_test.to(device)
-        y_test = y_test.to(device)
-        logging.info(f"Model loaded and moved to device: {device}")
-
-        # Evaluate and calculate the score
-        score_metrics = calculate_score(model, x_test, advs[0], y_test)
-        score_metrics["team_name"] = team_name
-        score_metrics["time_stamp"] = time_stamp
-        logging.info(f"Score calculated for team: {team_name}")
-
-        # Append the results to the JSON file
-        submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
         
-        with open(submission_json, "r") as f:
-            data = json.load(f)
-            #data.append could also be placed outside this with open block (I think)
-            data.append(score_metrics)
-            logging.info(f"Loaded existing submission data from {submission_json}")
+        try:
+            logging.info(f"Processing folder: {folder_name}")
+            team_name= ""
+            time_stamp=""
+
+            for name in os.listdir(folder_path):
+                path_name = os.path.join(folder_path, name)
+
+                if name.endswith(".pkl"):
+                    with open(path_name, "rb") as f:
+                        advs = pickle.load(f)
+                    logging.info(f"Loaded adversarial examples from {path_name}")
+
+                if name.endswith(".txt"):
+                    with open(path_name, "r") as f:
+                        tmp = f.readlines()
+                        time_stamp = tmp[0].strip()
+                        team_name = tmp[1].strip()
+                    logging.info(f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}")
+
+            # Load CIFAR-10 data
+            cifar_data = torch.load("cifar10_test_100_per_class.pt")
+            x_test = cifar_data["images"] / 255.0
+            y_test = cifar_data["labels"]
+            logging.info("Loaded CIFAR-10 test data.")
+
+            # Load the model
+            model = load_model(
+                model_name="Kireev2021Effectiveness_RLATAugMix",
+                dataset="cifar10",
+                threat_model="corruptions",
+            )
+            model = model.to(device)
+            x_test = x_test.to(device)
+            y_test = y_test.to(device)
+            logging.info(f"Model loaded and moved to device: {device}")
+
+            # Evaluate and calculate the score
+            score_metrics = calculate_score(model, x_test, advs[0], y_test)
+            score_metrics["team_name"] = team_name
+            score_metrics["time_stamp"] = time_stamp
+            logging.info(f"Score calculated for team: {team_name}")
+
+            # Append the results to the JSON file
+            submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
             
+            with open(submission_json, "r") as f:
+                data = json.load(f)
+                #data.append could also be placed outside this with open block (I think)
+                data.append(score_metrics)
+                logging.info(f"Loaded existing submission data from {submission_json}")
+                
 
-        with open(submission_json, "w") as f:
-            json.dump(data, f, indent=4)
-            logging.info(f"Updated submission data saved to {submission_json}")
+            with open(submission_json, "w") as f:
+                json.dump(data, f, indent=4)
+                logging.info(f"Updated submission data saved to {submission_json}")
 
-        return True
+            
+        except Exception as e:
+            logging.error(f"Error processing folder {folder_name}: {str(e)}", exc_info=True)
+
+        
+    end_time = datetime.now()
+    logging.info(f"Evaluation ended at: {end_time}")
+
+    duration = end_time - start_time
+    logging.info(f"Evaluation ran for: {duration}")
+
+    return True

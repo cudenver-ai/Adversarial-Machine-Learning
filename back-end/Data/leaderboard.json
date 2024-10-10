@@ -1,7 +1,27 @@
 [
-  { "rank": 1, "team": "", "score": 0 },
-  { "rank": 2, "team": "", "score": 0 },
-  { "rank": 3, "team": "", "score": 0 },
-  { "rank": 4, "team": "", "score": 0 },
-  { "rank": 5, "team": "", "score": 0 }
+    {
+        "rank": 1,
+        "team": 0.6084,
+        "score": "vicenteTest"
+    },
+    {
+        "rank": 2,
+        "team": 0.6075,
+        "score": "mohamedTest"
+    },
+    {
+        "rank": 3,
+        "team": 0.6065,
+        "score": "Samira"
+    },
+    {
+        "rank": 4,
+        "team": 0.6061,
+        "score": "check2"
+    },
+    {
+        "rank": 5,
+        "team": 0.6061,
+        "score": "VicenteTest"
+    }
 ]

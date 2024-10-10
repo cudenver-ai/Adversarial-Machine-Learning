@@ -1,32 +1,42 @@
 [
-  {
-    "title": "Success Rate",
-    "data": [0],
-    "interval": "",
-    "trend": "down"
-  },
-  {
-    "title": "Perturbation Magnitude",
-    "data": [0],
-    "interval": "",
-    "trend": "down"
-  },
-  {
-    "title": "Visual Similarity",
-    "data": [0],
-    "interval": "",
-    "trend": "down"
-  },
-  {
-    "title": "Average Confidence",
-    "data": [0],
-    "interval": "",
-    "trend": "down"
-  },
-  {
-    "title": "Confidence Gap",
-    "data": [0],
-    "interval": "",
-    "trend": "down"
-  }
+    {
+        "title": "Success Rate",
+        "data": [
+            0.953, 1.3515
+        ],
+        "interval": "daily",
+        "trend": "up"
+    },
+    {
+        "title": "Perturbation Magnitude",
+        "data": [
+            1.3515, 0.953
+        ],
+        "interval": "daily",
+        "trend": "down"
+    },
+    {
+        "title": "Visual Similarity",
+        "data": [
+            0.9893
+        ],
+        "interval": "daily",
+        "trend": "up"
+    },
+    {
+        "title": "Average Confidence",
+        "data": [
+            0.9863
+        ],
+        "interval": "daily",
+        "trend": "up"
+    },
+    {
+        "title": "Confidence Gap",
+        "data": [
+            -0.0541
+        ],
+        "interval": "daily",
+        "trend": "up"
+    }
 ]

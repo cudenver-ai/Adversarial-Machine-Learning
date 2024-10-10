@@ -18,3 +18,5 @@ cp front-end/dist/index.html back-end/templates/
 cp front-end/dist/*.svg back-end/templates/
 
 sed -i 's/\/assets\//\/static\//g' back-end/templates/index.html
+
+echo "Done"

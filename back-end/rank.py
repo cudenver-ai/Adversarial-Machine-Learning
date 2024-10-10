@@ -58,7 +58,7 @@ def calculate_rank():
         logging.error('Error converting keys: {}'.format(e))
 
     # Sort scores, keeping track of index. Timestamp for tiebreaker.
-    logging.error('Sorting submissions by score')
+    logging.info('Sorting submissions by score')
     try:
         sorted_scores = sorted(zip([entry['TotalScore'] for entry in team_data],
                                [datetime.strptime(entry['LastSubmission'], '%Y-%m-%d %H:%M:%S') for entry in team_data],
@@ -68,7 +68,7 @@ def calculate_rank():
         logging.error('Error sorting submissions by score: {}'.format(e))
 
     # Update rank
-    logging.error('Generating output')
+    logging.info('Generating output')
     try:
         for index, score in enumerate(sorted_scores):
             team_data[score[2]]['Rank'] = index + 1
@@ -76,7 +76,7 @@ def calculate_rank():
         logging.error('Error generating output: {}'.format(e))
 
     # Save TeamData
-    logging.error('Saving TeamData.json')
+    logging.info('Saving TeamData.json')
     try:
         with open(os.path.join(data_path, 'Data/TeamData.json'), 'w') as outfile:
             outfile.write(json.dumps(team_data, indent=4))

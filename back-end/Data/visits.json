@@ -17,7 +17,7 @@
             107,
             33,
             9,
-            58
+            98
         ]
     },
     {
@@ -28,7 +28,9 @@
         "stack": "total",
         "area": true,
         "stackOrder": "ascending",
-        "data": []
+        "data": [
+            29
+        ]
     },
     {
         "id": "Unique",
@@ -48,7 +50,7 @@
             9,
             6,
             7,
-            4
+            17
         ]
     }
 ]

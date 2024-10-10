@@ -7,9 +7,7 @@ export default function ColorModeSelect(props) {
   const { mode, setMode } = useColorScheme();
 
   React.useEffect(() => {
-    if (!mode) {
-      setMode('light');
-    }
+    setMode('light');
   }, [mode, setMode]);
 
   return (

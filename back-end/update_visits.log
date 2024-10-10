@@ -881,3 +881,329 @@
 2024-10-10 10:00:02 - INFO - JSON file updated successfully!
 2024-10-10 10:00:02 - INFO - -------------------------------
 2024-10-10 10:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 11:00:02 - INFO - Starting evaluation script
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 11:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 11:00:02 - INFO - JSON file updated successfully!
+2024-10-10 11:00:02 - INFO - -------------------------------
+2024-10-10 11:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 12:00:02 - INFO - Starting evaluation script
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 12:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 12:00:02 - INFO - JSON file updated successfully!
+2024-10-10 12:00:02 - INFO - -------------------------------
+2024-10-10 12:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 13:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 13:00:03 - INFO - JSON file updated successfully!
+2024-10-10 13:00:03 - INFO - -------------------------------
+2024-10-10 13:00:03 - INFO - Starting evaluation script
+2024-10-10 13:00:03 - INFO - Evaluation started at: 2024-10-10 13:00:03.104484
+2024-10-10 13:00:03 - WARNING - Uploads directory does not exist.
+2024-10-10 13:00:03 - INFO - Created Uploads directory at: /root/Uploads
+2024-10-10 13:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-10 13:00:03 - INFO - -----------------------------------------------------------
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 13:05:38 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 13:05:38 - INFO - JSON file updated successfully!
+2024-10-10 13:05:38 - INFO - -------------------------------
+2024-10-10 13:05:38 - INFO - Starting evaluation script
+2024-10-10 13:05:38 - INFO - Evaluation started at: 2024-10-10 13:05:38.714280
+2024-10-10 13:05:38 - INFO - Starting evaluation. Files found in Uploads: ['TeamA', 'Aylin', 'Test_3', 'Mohamed_Abdel-Hafiz', 'Saeedeh', 'samira', 'Mohamed_Test_Man']
+2024-10-10 13:05:38 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38
+2024-10-10 13:05:38 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/TeamA to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/TeamA
+2024-10-10 13:05:38 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Aylin to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/Aylin
+2024-10-10 13:05:38 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Test_3 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/Test_3
+2024-10-10 13:05:38 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mohamed_Abdel-Hafiz to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/Mohamed_Abdel-Hafiz
+2024-10-10 13:05:38 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Saeedeh to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/Saeedeh
+2024-10-10 13:05:38 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/samira to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/samira
+2024-10-10 13:05:38 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mohamed_Test_Man to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/Mohamed_Test_Man
+2024-10-10 13:05:38 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-05-38/TeamA/advs.pkl
+2024-10-10 13:05:38 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 13:05:38 - INFO - Model loaded and moved to device: cuda
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 13:23:11 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 13:23:11 - INFO - JSON file updated successfully!
+2024-10-10 13:23:11 - INFO - -------------------------------
+2024-10-10 13:23:11 - INFO - Starting evaluation script
+2024-10-10 13:23:11 - INFO - Evaluation started at: 2024-10-10 13:23:11.654978
+2024-10-10 13:23:11 - INFO - Starting evaluation. Files found in Uploads: ['TeamA', 'Aylin', 'Test_3', 'Mohamed_Abdel-Hafiz', 'Saeedeh', 'samira', 'Mohamed_Test_Man']
+2024-10-10 13:23:11 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11
+2024-10-10 13:23:11 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/TeamA to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/TeamA
+2024-10-10 13:23:11 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Aylin to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/Aylin
+2024-10-10 13:23:11 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Test_3 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/Test_3
+2024-10-10 13:23:11 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mohamed_Abdel-Hafiz to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/Mohamed_Abdel-Hafiz
+2024-10-10 13:23:11 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Saeedeh to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/Saeedeh
+2024-10-10 13:23:11 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/samira to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/samira
+2024-10-10 13:23:11 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mohamed_Test_Man to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/Mohamed_Test_Man
+2024-10-10 13:23:11 - INFO - Finished Moving foldels
+2024-10-10 13:23:11 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-23-11/TeamA/advs.pkl
+2024-10-10 13:23:11 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 13:23:11 - INFO - Model loaded and moved to device: cuda
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 13:24:33 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 13:24:33 - INFO - JSON file updated successfully!
+2024-10-10 13:24:33 - INFO - -------------------------------
+2024-10-10 13:24:33 - INFO - Starting evaluation script
+2024-10-10 13:24:33 - INFO - Evaluation started at: 2024-10-10 13:24:33.239551
+2024-10-10 13:24:33 - INFO - Starting evaluation. Files found in Uploads: ['TeamA', 'Aylin', 'Test_3', 'Mohamed_Abdel-Hafiz', 'Saeedeh', 'samira', 'Mohamed_Test_Man']
+2024-10-10 13:24:33 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33
+2024-10-10 13:24:33 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/TeamA to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/TeamA
+2024-10-10 13:24:33 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Aylin to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/Aylin
+2024-10-10 13:24:33 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Test_3 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/Test_3
+2024-10-10 13:24:33 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mohamed_Abdel-Hafiz to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/Mohamed_Abdel-Hafiz
+2024-10-10 13:24:33 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Saeedeh to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/Saeedeh
+2024-10-10 13:24:33 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/samira to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/samira
+2024-10-10 13:24:33 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mohamed_Test_Man to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/Mohamed_Test_Man
+2024-10-10 13:24:33 - INFO - Finished Moving foldels
+2024-10-10 13:24:33 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_13-24-33/TeamA/advs.pkl
+2024-10-10 13:24:33 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 13:24:33 - INFO - Model loaded and moved to device: cuda
+2024-10-10 13:24:33 - INFO - Score calculated for team: 
+2024-10-10 13:24:33 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 13:24:33 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 13:24:33 - INFO - Evaluation ended at: 2024-10-10 13:24:33.886142
+2024-10-10 13:24:33 - INFO - Evaluation ran for: 0:00:00.646591
+2024-10-10 13:24:33 - INFO - Starting update_evalMetrics
+2024-10-10 13:24:33 - INFO - Loading allSubmissions.json
+2024-10-10 13:24:33 - INFO - Outputting template due to zero submissions
+2024-10-10 13:24:33 - INFO - Parsing 2 entries from allSubmissions.json
+2024-10-10 13:24:33 - ERROR - Error parsing allSubmissions.json: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2024-10-10 13:24:33 - INFO - Sorting and extracting metrics
+2024-10-10 13:24:33 - INFO - Updating trendline
+2024-10-10 13:24:33 - ERROR - Error updating trend direction: list index out of range
+2024-10-10 13:24:33 - INFO - Saving evalMetric.json
+2024-10-10 13:24:33 - INFO - Done with update_evalMetrics
+2024-10-10 13:24:33 - INFO - Starting update_leaderBoard
+2024-10-10 13:24:33 - INFO - Loading allSubmissions.json
+2024-10-10 13:24:33 - INFO - Extracting scores, timestamps, and team names
+2024-10-10 13:24:33 - ERROR - Error extracting metrics: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2024-10-10 13:24:33 - INFO - Sorting stats (teamwise)
+2024-10-10 13:24:33 - INFO - Sortings stats (overall)
+2024-10-10 13:24:33 - INFO - Populating leaderboard
+2024-10-10 13:24:33 - INFO - Saving leaderboard.json
+2024-10-10 13:24:33 - INFO - Starting calculate_rank
+2024-10-10 13:24:33 - INFO - Loading allSubmissions.json
+2024-10-10 13:24:33 - INFO - Outputting template due to zero submissions
+2024-10-10 13:24:33 - INFO - Sorting submissions by timestamp & team name
+2024-10-10 13:24:33 - INFO - Converting back-end to front-end keys
+2024-10-10 13:24:33 - ERROR - Sorting submissions by score
+2024-10-10 13:24:33 - ERROR - Error sorting submissions by score: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2024-10-10 13:24:33 - ERROR - Generating output
+2024-10-10 13:24:33 - ERROR - Error generating output: cannot access local variable 'sorted_scores' where it is not associated with a value
+2024-10-10 13:24:33 - ERROR - Saving TeamData.json
+2024-10-10 13:24:33 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-10 13:24:33 - INFO - -----------------------------------------------------------
+2024-10-10 13:48:18 - INFO - Upload successful: check2 at 2024-10-10 13:48:18
+2024-10-10 13:49:00 - INFO - Upload successful: mohamedTest at 2024-10-10 13:49:00
+2024-10-10 13:49:15 - INFO - Upload successful: vicenteTest at 2024-10-10 13:49:15
+2024-10-10 13:55:28 - INFO - Upload successful: Samira at 2024-10-10 13:55:28
+2024-10-10 13:55:46 - INFO - Upload successful: VicenteTest at 2024-10-10 13:55:46
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 14:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 14:00:02 - INFO - JSON file updated successfully!
+2024-10-10 14:00:02 - INFO - -------------------------------
+2024-10-10 14:00:02 - INFO - Starting evaluation script
+2024-10-10 14:00:02 - INFO - Evaluation started at: 2024-10-10 14:00:02.889503
+2024-10-10 14:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-10 14:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-10 14:00:02 - INFO - -----------------------------------------------------------
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 14:03:00 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 14:03:00 - INFO - JSON file updated successfully!
+2024-10-10 14:03:00 - INFO - -------------------------------
+2024-10-10 14:03:00 - INFO - Starting evaluation script
+2024-10-10 14:03:00 - INFO - Evaluation started at: 2024-10-10 14:03:00.750699
+2024-10-10 14:03:00 - INFO - Starting evaluation. Files found in Uploads: ['check2', 'mohamedTest', 'VicenteTest', 'vicenteTest', 'Samira']
+2024-10-10 14:03:00 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00
+2024-10-10 14:03:00 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/check2 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00/check2
+2024-10-10 14:03:00 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/mohamedTest to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00/mohamedTest
+2024-10-10 14:03:00 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/VicenteTest to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00/VicenteTest
+2024-10-10 14:03:00 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/vicenteTest to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00/vicenteTest
+2024-10-10 14:03:00 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Samira to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00/Samira
+2024-10-10 14:03:00 - INFO - Finished Moving foldels
+2024-10-10 14:03:00 - INFO - Processing folder: check2
+2024-10-10 14:03:00 - INFO - Loaded team name: check2, time stamp: 2024-10-10 13:48:18 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00/check2/upload_info.txt
+2024-10-10 14:03:00 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-03-00/check2/advs.pkl
+2024-10-10 14:03:00 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 14:03:00 - INFO - Model loaded and moved to device: cuda
+2024-10-10 14:03:01 - INFO - Score calculated for team: check2
+2024-10-10 14:03:01 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:03:01 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:03:01 - INFO - Evaluation ended at: 2024-10-10 14:03:01.390701
+2024-10-10 14:03:01 - INFO - Evaluation ran for: 0:00:00.640002
+2024-10-10 14:03:01 - INFO - Starting update_evalMetrics
+2024-10-10 14:03:01 - INFO - Loading allSubmissions.json
+2024-10-10 14:03:01 - INFO - Outputting template due to zero submissions
+2024-10-10 14:03:01 - INFO - Parsing 2 entries from allSubmissions.json
+2024-10-10 14:03:01 - ERROR - Error parsing allSubmissions.json: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2024-10-10 14:03:01 - INFO - Sorting and extracting metrics
+2024-10-10 14:03:01 - INFO - Updating trendline
+2024-10-10 14:03:01 - ERROR - Error updating trend direction: list index out of range
+2024-10-10 14:03:01 - INFO - Saving evalMetric.json
+2024-10-10 14:03:01 - INFO - Done with update_evalMetrics
+2024-10-10 14:03:01 - INFO - Starting update_leaderBoard
+2024-10-10 14:03:01 - INFO - Loading allSubmissions.json
+2024-10-10 14:03:01 - INFO - Extracting scores, timestamps, and team names
+2024-10-10 14:03:01 - ERROR - Error extracting metrics: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2024-10-10 14:03:01 - INFO - Sorting stats (teamwise)
+2024-10-10 14:03:01 - INFO - Sortings stats (overall)
+2024-10-10 14:03:01 - INFO - Populating leaderboard
+2024-10-10 14:03:01 - INFO - Saving leaderboard.json
+2024-10-10 14:03:01 - INFO - Starting calculate_rank
+2024-10-10 14:03:01 - INFO - Loading allSubmissions.json
+2024-10-10 14:03:01 - INFO - Outputting template due to zero submissions
+2024-10-10 14:03:01 - INFO - Sorting submissions by timestamp & team name
+2024-10-10 14:03:01 - INFO - Converting back-end to front-end keys
+2024-10-10 14:03:01 - ERROR - Sorting submissions by score
+2024-10-10 14:03:01 - ERROR - Error sorting submissions by score: time data '' does not match format '%Y-%m-%d %H:%M:%S'
+2024-10-10 14:03:01 - ERROR - Generating output
+2024-10-10 14:03:01 - ERROR - Error generating output: cannot access local variable 'sorted_scores' where it is not associated with a value
+2024-10-10 14:03:01 - ERROR - Saving TeamData.json
+2024-10-10 14:03:01 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-10 14:03:01 - INFO - -----------------------------------------------------------
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 14:15:26 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 14:15:26 - INFO - JSON file updated successfully!
+2024-10-10 14:15:26 - INFO - -------------------------------
+2024-10-10 14:15:26 - INFO - Starting evaluation script
+2024-10-10 14:15:26 - INFO - Evaluation started at: 2024-10-10 14:15:26.597723
+2024-10-10 14:15:26 - INFO - Starting evaluation. Files found in Uploads: ['check2', 'mohamedTest', 'VicenteTest', 'vicenteTest', 'Samira']
+2024-10-10 14:15:26 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26
+2024-10-10 14:15:26 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/check2 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/check2
+2024-10-10 14:15:26 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/mohamedTest to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/mohamedTest
+2024-10-10 14:15:26 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/VicenteTest to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/VicenteTest
+2024-10-10 14:15:26 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/vicenteTest to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/vicenteTest
+2024-10-10 14:15:26 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Samira to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/Samira
+2024-10-10 14:15:26 - INFO - Finished Moving folders
+2024-10-10 14:15:26 - INFO - Processing folder: check2
+2024-10-10 14:15:26 - INFO - Loaded team name: check2, time stamp: 2024-10-10 13:48:18 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/check2/upload_info.txt
+2024-10-10 14:15:26 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/check2/advs.pkl
+2024-10-10 14:15:26 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 14:15:26 - INFO - Model loaded and moved to device: cuda
+2024-10-10 14:15:27 - INFO - Score calculated for team: check2
+2024-10-10 14:15:27 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:27 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:27 - INFO - Processing folder: mohamedTest
+2024-10-10 14:15:27 - INFO - Loaded team name: mohamedTest, time stamp: 2024-10-10 13:49:00 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/mohamedTest/upload_info.txt
+2024-10-10 14:15:27 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/mohamedTest/advs.pkl
+2024-10-10 14:15:27 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 14:15:27 - INFO - Model loaded and moved to device: cuda
+2024-10-10 14:15:27 - INFO - Score calculated for team: mohamedTest
+2024-10-10 14:15:27 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:27 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:27 - INFO - Processing folder: VicenteTest
+2024-10-10 14:15:27 - INFO - Loaded team name: VicenteTest, time stamp: 2024-10-10 13:55:46 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/VicenteTest/upload_info.txt
+2024-10-10 14:15:27 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/VicenteTest/vicente-submission.pkl
+2024-10-10 14:15:27 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 14:15:27 - INFO - Model loaded and moved to device: cuda
+2024-10-10 14:15:28 - INFO - Score calculated for team: VicenteTest
+2024-10-10 14:15:28 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:28 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:28 - INFO - Processing folder: vicenteTest
+2024-10-10 14:15:28 - INFO - Loaded team name: vicenteTest, time stamp: 2024-10-10 13:49:15 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/vicenteTest/upload_info.txt
+2024-10-10 14:15:28 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/vicenteTest/advs.pkl
+2024-10-10 14:15:28 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 14:15:28 - INFO - Model loaded and moved to device: cuda
+2024-10-10 14:15:28 - INFO - Score calculated for team: vicenteTest
+2024-10-10 14:15:28 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:28 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:28 - INFO - Processing folder: Samira
+2024-10-10 14:15:28 - INFO - Loaded team name: Samira, time stamp: 2024-10-10 13:55:28 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/Samira/upload_info.txt
+2024-10-10 14:15:28 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-10_14-15-26/Samira/advs.pkl
+2024-10-10 14:15:28 - INFO - Loaded CIFAR-10 test data.
+2024-10-10 14:15:28 - INFO - Model loaded and moved to device: cuda
+2024-10-10 14:15:29 - INFO - Score calculated for team: Samira
+2024-10-10 14:15:29 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:29 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-10 14:15:29 - INFO - Evaluation ended at: 2024-10-10 14:15:29.098885
+2024-10-10 14:15:29 - INFO - Evaluation ran for: 0:00:02.501162
+2024-10-10 14:15:29 - INFO - Starting update_evalMetrics
+2024-10-10 14:15:29 - INFO - Loading allSubmissions.json
+2024-10-10 14:15:29 - INFO - Outputting template due to zero submissions
+2024-10-10 14:15:29 - INFO - Parsing 6 entries from allSubmissions.json
+2024-10-10 14:15:29 - INFO - Sorting and extracting metrics
+2024-10-10 14:15:29 - INFO - Updating trendline
+2024-10-10 14:15:29 - ERROR - Error updating trend direction: list index out of range
+2024-10-10 14:15:29 - INFO - Saving evalMetric.json
+2024-10-10 14:15:29 - INFO - Done with update_evalMetrics
+2024-10-10 14:15:29 - INFO - Starting update_leaderBoard
+2024-10-10 14:15:29 - INFO - Loading allSubmissions.json
+2024-10-10 14:15:29 - INFO - Extracting scores, timestamps, and team names
+2024-10-10 14:15:29 - INFO - Sorting stats (teamwise)
+2024-10-10 14:15:29 - INFO - Sortings stats (overall)
+2024-10-10 14:15:29 - INFO - Populating leaderboard
+2024-10-10 14:15:29 - INFO - Saving leaderboard.json
+2024-10-10 14:15:29 - INFO - Starting calculate_rank
+2024-10-10 14:15:29 - INFO - Loading allSubmissions.json
+2024-10-10 14:15:29 - INFO - Outputting template due to zero submissions
+2024-10-10 14:15:29 - INFO - Sorting submissions by timestamp & team name
+2024-10-10 14:15:29 - INFO - Converting back-end to front-end keys
+2024-10-10 14:15:29 - ERROR - Sorting submissions by score
+2024-10-10 14:15:29 - ERROR - Generating output
+2024-10-10 14:15:29 - ERROR - Saving TeamData.json
+2024-10-10 14:15:29 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-10 14:15:29 - INFO - -----------------------------------------------------------

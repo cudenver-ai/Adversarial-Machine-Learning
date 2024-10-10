@@ -4,6 +4,7 @@ from config import DevelopmentConfig, ProductionConfig
 from parseData import loadData, load_pickle_file
 import os
 from datetime import datetime
+import logging
 
 app = Flask(__name__)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
@@ -32,9 +33,14 @@ print(f"App debug mode: {app.debug}")
 # ensure your routes are prefixed with /api.
 path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
 
-UPLOAD_FOLDER = "Uploads"
-os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
+#Logging
+log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
+logging.basicConfig(
+    filename=log_file,
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',  
+    datefmt='%Y-%m-%d %H:%M:%S' 
+)
 
 @app.route("/api/upload-images", methods=["POST"])
 def upload_images():
@@ -47,10 +53,14 @@ def upload_images():
     if not file.filename.endswith(".pkl"):
         return jsonify({"error": "Invalid file type. Please upload a .pkl file"}), 400
 
-    message = load_pickle_file(file, teamName)
+    try:
+    
+        message = load_pickle_file(file, teamName)
 
-    return jsonify({"message": message, "uploaded": 1})
-
+        return jsonify({"message": message, "uploaded": 1})
+    except Exception as e:
+        logging.error(f"Error during upload: {str(e)}")
+        return jsonify({"error": "Upload failed"}), 500
 
 @app.route("/api/team-data", methods=["GET"])
 def get_team_data():

@@ -1,12 +1,62 @@
 [
-  {
-    "incorrect_ratio": 0,
-    "avg_confidence_incorrect": 0,
-    "avg_l2_perturbation": 0,
-    "avg_ssim": 0,
-    "avg_confidence_gap": 0,
-    "score": 0,
-    "team_name": "",
-    "time_stamp": ""
-  }
+    {
+        "incorrect_ratio": 0.94,
+        "avg_confidence_incorrect": 0.9863,
+        "avg_l2_perturbation": 1.3494,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.059,
+        "score": 0.6061,
+        "team_name": "check2",
+        "time_stamp": "2024-10-10 13:48:18"
+    },
+    {
+        "incorrect_ratio": 0.94,
+        "avg_confidence_incorrect": 0.9863,
+        "avg_l2_perturbation": 1.3494,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.059,
+        "score": 0.6061,
+        "team_name": "check2",
+        "time_stamp": "2024-10-10 13:48:18"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9858,
+        "avg_l2_perturbation": 1.35,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0578,
+        "score": 0.6075,
+        "team_name": "mohamedTest",
+        "time_stamp": "2024-10-10 13:49:00"
+    },
+    {
+        "incorrect_ratio": 0.94,
+        "avg_confidence_incorrect": 0.9855,
+        "avg_l2_perturbation": 1.3509,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0582,
+        "score": 0.6061,
+        "team_name": "VicenteTest",
+        "time_stamp": "2024-10-10 13:55:46"
+    },
+    {
+        "incorrect_ratio": 0.953,
+        "avg_confidence_incorrect": 0.9824,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0541,
+        "score": 0.6084,
+        "team_name": "vicenteTest",
+        "time_stamp": "2024-10-10 13:49:15"
+    },
+    {
+        "incorrect_ratio": 0.942,
+        "avg_confidence_incorrect": 0.9863,
+        "avg_l2_perturbation": 1.3512,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0588,
+        "score": 0.6065,
+        "team_name": "Samira",
+        "time_stamp": "2024-10-10 13:55:28"
+    }
 ]
