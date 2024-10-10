@@ -75,14 +75,13 @@ export default function AppNavbar({ setCurrentPage }) {
       position="fixed"
       sx={{
         boxShadow: 0,
-        bgcolor: 'background.paper',
-        backgroundImage: 'none',
-        borderBottom: '1px solid',
-        borderColor: 'divider',
-        zIndex: 1100,
+        boxShadow: 0,
+        bgcolor: "transparent",
+        backgroundImage: "none",
       }}
     >
-      <StyledToolbar variant="regular">
+      <Container maxWidth="lg">
+      <StyledToolbar variant="dense">
         <Stack
           direction="row"
           sx={{
@@ -192,6 +191,7 @@ export default function AppNavbar({ setCurrentPage }) {
           </Stack>
         </Stack>
       </StyledToolbar>
+      </Container>
     </AppBar>
   );
 }

@@ -417,3 +417,467 @@
 2024-10-08 20:00:02 - INFO - JSON file updated successfully!
 2024-10-08 20:00:02 - INFO - -------------------------------
 2024-10-08 20:00:02 - WARNING - Uploads directory does not exist.
+2024-10-08 21:00:03 - INFO - Starting evaluation script
+2024-10-08 21:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-08 21:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-08 21:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-08 21:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-08 21:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-08 21:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-08 21:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-08 21:00:03 - INFO - JSON file updated successfully!
+2024-10-08 21:00:03 - INFO - -------------------------------
+2024-10-08 21:00:03 - WARNING - Uploads directory does not exist.
+2024-10-08 22:00:02 - INFO - Starting evaluation script
+2024-10-08 22:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-08 22:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-08 22:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-08 22:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-08 22:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-08 22:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-08 22:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-08 22:00:02 - INFO - JSON file updated successfully!
+2024-10-08 22:00:02 - INFO - -------------------------------
+2024-10-08 22:00:02 - WARNING - Uploads directory does not exist.
+2024-10-08 23:00:02 - INFO - Starting evaluation script
+2024-10-08 23:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-08 23:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-08 23:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-08 23:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-08 23:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-08 23:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-08 23:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-08 23:00:02 - INFO - JSON file updated successfully!
+2024-10-08 23:00:02 - INFO - -------------------------------
+2024-10-08 23:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 00:00:03 - INFO - Starting evaluation script
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 00:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 00:00:03 - INFO - JSON file updated successfully!
+2024-10-09 00:00:03 - INFO - -------------------------------
+2024-10-09 00:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 01:00:02 - INFO - Starting evaluation script
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 01:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 01:00:02 - INFO - JSON file updated successfully!
+2024-10-09 01:00:02 - INFO - -------------------------------
+2024-10-09 01:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 02:00:02 - INFO - Starting evaluation script
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 02:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 02:00:02 - INFO - JSON file updated successfully!
+2024-10-09 02:00:02 - INFO - -------------------------------
+2024-10-09 02:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 03:00:02 - INFO - Starting evaluation script
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 03:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 03:00:02 - INFO - JSON file updated successfully!
+2024-10-09 03:00:02 - INFO - -------------------------------
+2024-10-09 03:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 04:00:02 - INFO - Starting evaluation script
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 04:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 04:00:02 - INFO - JSON file updated successfully!
+2024-10-09 04:00:02 - INFO - -------------------------------
+2024-10-09 04:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 05:00:03 - INFO - Starting evaluation script
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 05:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 05:00:03 - INFO - JSON file updated successfully!
+2024-10-09 05:00:03 - INFO - -------------------------------
+2024-10-09 05:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 06:00:02 - INFO - Starting evaluation script
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 06:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 06:00:02 - INFO - JSON file updated successfully!
+2024-10-09 06:00:02 - INFO - -------------------------------
+2024-10-09 06:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 07:00:02 - INFO - Starting evaluation script
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 07:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 07:00:02 - INFO - JSON file updated successfully!
+2024-10-09 07:00:02 - INFO - -------------------------------
+2024-10-09 07:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 08:00:02 - INFO - Starting evaluation script
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 08:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 08:00:03 - INFO - JSON file updated successfully!
+2024-10-09 08:00:03 - INFO - -------------------------------
+2024-10-09 08:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 09:00:02 - INFO - Starting evaluation script
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 09:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 09:00:02 - INFO - JSON file updated successfully!
+2024-10-09 09:00:02 - INFO - -------------------------------
+2024-10-09 09:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 10:00:03 - INFO - Starting evaluation script
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 10:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 10:00:03 - INFO - JSON file updated successfully!
+2024-10-09 10:00:03 - INFO - -------------------------------
+2024-10-09 10:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 11:00:02 - INFO - Starting evaluation script
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 11:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 11:00:02 - INFO - JSON file updated successfully!
+2024-10-09 11:00:02 - INFO - -------------------------------
+2024-10-09 11:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 12:00:02 - INFO - Starting evaluation script
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 12:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 12:00:02 - INFO - JSON file updated successfully!
+2024-10-09 12:00:02 - INFO - -------------------------------
+2024-10-09 12:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 13:00:03 - INFO - Starting evaluation script
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 13:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 13:00:03 - INFO - JSON file updated successfully!
+2024-10-09 13:00:03 - INFO - -------------------------------
+2024-10-09 13:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 14:00:02 - INFO - Starting evaluation script
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 14:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 14:00:02 - INFO - JSON file updated successfully!
+2024-10-09 14:00:02 - INFO - -------------------------------
+2024-10-09 14:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 15:00:02 - INFO - Starting evaluation script
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 15:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 15:00:02 - INFO - JSON file updated successfully!
+2024-10-09 15:00:02 - INFO - -------------------------------
+2024-10-09 15:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 16:00:02 - INFO - Starting evaluation script
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 16:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 16:00:03 - INFO - JSON file updated successfully!
+2024-10-09 16:00:03 - INFO - -------------------------------
+2024-10-09 16:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 17:00:02 - INFO - Starting evaluation script
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 17:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 17:00:02 - INFO - JSON file updated successfully!
+2024-10-09 17:00:02 - INFO - -------------------------------
+2024-10-09 17:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 18:00:03 - INFO - Starting evaluation script
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 18:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 18:00:03 - INFO - JSON file updated successfully!
+2024-10-09 18:00:03 - INFO - -------------------------------
+2024-10-09 18:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 19:00:02 - INFO - Starting evaluation script
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 19:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 19:00:02 - INFO - JSON file updated successfully!
+2024-10-09 19:00:02 - INFO - -------------------------------
+2024-10-09 19:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 20:00:02 - INFO - Starting evaluation script
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 20:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 20:00:02 - INFO - JSON file updated successfully!
+2024-10-09 20:00:02 - INFO - -------------------------------
+2024-10-09 20:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 21:00:03 - INFO - Starting evaluation script
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 21:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 21:00:03 - INFO - JSON file updated successfully!
+2024-10-09 21:00:03 - INFO - -------------------------------
+2024-10-09 21:00:03 - WARNING - Uploads directory does not exist.
+2024-10-09 22:00:02 - INFO - Starting evaluation script
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 22:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 22:00:02 - INFO - JSON file updated successfully!
+2024-10-09 22:00:02 - INFO - -------------------------------
+2024-10-09 22:00:02 - WARNING - Uploads directory does not exist.
+2024-10-09 23:00:02 - INFO - Starting evaluation script
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-09 23:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-09 23:00:02 - INFO - JSON file updated successfully!
+2024-10-09 23:00:02 - INFO - -------------------------------
+2024-10-09 23:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 00:00:02 - INFO - Starting evaluation script
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 00:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 00:00:02 - INFO - JSON file updated successfully!
+2024-10-10 00:00:02 - INFO - -------------------------------
+2024-10-10 00:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 01:00:02 - INFO - Starting evaluation script
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 01:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 01:00:02 - INFO - JSON file updated successfully!
+2024-10-10 01:00:02 - INFO - -------------------------------
+2024-10-10 01:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 02:00:03 - INFO - Starting evaluation script
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 02:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 02:00:03 - INFO - JSON file updated successfully!
+2024-10-10 02:00:03 - INFO - -------------------------------
+2024-10-10 02:00:03 - WARNING - Uploads directory does not exist.
+2024-10-10 03:00:02 - INFO - Starting evaluation script
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 03:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 03:00:02 - INFO - JSON file updated successfully!
+2024-10-10 03:00:02 - INFO - -------------------------------
+2024-10-10 03:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 04:00:02 - INFO - Starting evaluation script
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 04:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 04:00:02 - INFO - JSON file updated successfully!
+2024-10-10 04:00:02 - INFO - -------------------------------
+2024-10-10 04:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 05:00:03 - INFO - Starting evaluation script
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 05:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 05:00:03 - INFO - JSON file updated successfully!
+2024-10-10 05:00:03 - INFO - -------------------------------
+2024-10-10 05:00:03 - WARNING - Uploads directory does not exist.
+2024-10-10 06:00:02 - INFO - Starting evaluation script
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 06:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 06:00:02 - INFO - JSON file updated successfully!
+2024-10-10 06:00:02 - INFO - -------------------------------
+2024-10-10 06:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 07:00:02 - INFO - Starting evaluation script
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 07:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 07:00:02 - INFO - JSON file updated successfully!
+2024-10-10 07:00:02 - INFO - -------------------------------
+2024-10-10 07:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 08:00:02 - INFO - Starting evaluation script
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 08:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 08:00:02 - INFO - JSON file updated successfully!
+2024-10-10 08:00:02 - INFO - -------------------------------
+2024-10-10 08:00:02 - WARNING - Uploads directory does not exist.
+2024-10-10 09:00:03 - INFO - Starting evaluation script
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 09:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 09:00:03 - INFO - JSON file updated successfully!
+2024-10-10 09:00:03 - INFO - -------------------------------
+2024-10-10 09:00:03 - WARNING - Uploads directory does not exist.
+2024-10-10 10:00:02 - INFO - Starting evaluation script
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-10 10:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-10 10:00:02 - INFO - JSON file updated successfully!
+2024-10-10 10:00:02 - INFO - -------------------------------
+2024-10-10 10:00:02 - WARNING - Uploads directory does not exist.

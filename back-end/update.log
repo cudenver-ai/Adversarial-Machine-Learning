@@ -277,3 +277,307 @@ Traceback (most recent call last):
     os.makedirs(evaluated_dir, exist_ok=True)
                 ^^^^^^^^^^^^^
 UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update.py", line 18, in <module>
+    if evaluate():
+       ^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 136, in evaluate
+    os.makedirs(evaluated_dir, exist_ok=True)
+                ^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'evaluated_dir' where it is not associated with a value
