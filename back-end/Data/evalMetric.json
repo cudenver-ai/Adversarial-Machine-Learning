@@ -2,18 +2,18 @@
     {
         "title": "Success Rate",
         "data": [
-            0.953, 1.3515
+            0.953
         ],
         "interval": "daily",
-        "trend": "up"
+        "trend": ""
     },
     {
         "title": "Perturbation Magnitude",
         "data": [
-            1.3515, 0.953
+            1.3515
         ],
         "interval": "daily",
-        "trend": "down"
+        "trend": ""
     },
     {
         "title": "Visual Similarity",
@@ -21,7 +21,7 @@
             0.9893
         ],
         "interval": "daily",
-        "trend": "up"
+        "trend": ""
     },
     {
         "title": "Average Confidence",
@@ -29,14 +29,14 @@
             0.9863
         ],
         "interval": "daily",
-        "trend": "up"
+        "trend": ""
     },
     {
         "title": "Confidence Gap",
         "data": [
-            -0.0541
+            -0.0538
         ],
         "interval": "daily",
-        "trend": "up"
+        "trend": ""
     }
 ]

@@ -117,14 +117,14 @@ def calculate_score(
 
 def evaluate():
     # Get current directory
-    uploads_dir = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/"
+    path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
     start_time = datetime.now()
     logging.info("Starting evaluation script")
     logging.info(f"Evaluation started at: {start_time}")
-    current_directory = os.getcwd()
+    #current_directory = os.getcwd()
 
     # Check if 'Uploads' directory exists and is not empty
-    #uploads_dir = os.path.join(current_directory, "Uploads")
+    uploads_dir = os.path.join(path, "Uploads")
     if not os.path.exists(uploads_dir):
         logging.warning("Uploads directory does not exist.")
         os.makedirs(uploads_dir, exist_ok=True)
@@ -138,7 +138,7 @@ def evaluate():
     logging.info(f"Starting evaluation. Files found in Uploads: {os.listdir(uploads_dir)}")
 
     # Create the 'evaluated' directory if it doesn't exist
-    evaluated_dir = os.path.join(current_directory, "evaluated")
+    evaluated_dir = os.path.join(path, "evaluated")
     if not os.path.exists(evaluated_dir):
         logging.warning("Evaluated directory does not exist.")
         os.makedirs(evaluated_dir, exist_ok=True)
@@ -151,7 +151,7 @@ def evaluate():
     logging.info(f"Created timestamped folder: {timestamped_folder}")
 
     # Move all folders from 'Uploads' to the timestamped folder
-    uploads_dir = os.path.join(current_directory, "Uploads")
+    #uploads_dir = os.path.join(current_directory, "Uploads")
 
     for folder_name in os.listdir(uploads_dir):
         src_folder = os.path.join(uploads_dir, folder_name)
@@ -210,7 +210,7 @@ def evaluate():
             logging.info(f"Score calculated for team: {team_name}")
 
             # Append the results to the JSON file
-            submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
+            submission_json = os.path.join(path, "Data", "allSubmissions.json")
             
             with open(submission_json, "r") as f:
                 data = json.load(f)
