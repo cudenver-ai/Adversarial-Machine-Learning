@@ -1,5 +1,4 @@
 [
-
     {
         "incorrect_ratio": 0.948,
         "avg_confidence_incorrect": 0.9856,
@@ -59,5 +58,85 @@
         "score": 0.607,
         "team_name": "Hng",
         "time_stamp": "2024-10-10 17:47:09"
+    },
+    {
+        "incorrect_ratio": 0.06,
+        "avg_confidence_incorrect": 0.7372,
+        "avg_l2_perturbation": 0.0005,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5816,
+        "score": 0.3359,
+        "team_name": "NSBE-2",
+        "time_stamp": "2024-10-10 22:34:35"
+    },
+    {
+        "incorrect_ratio": 0.06,
+        "avg_confidence_incorrect": 0.7372,
+        "avg_l2_perturbation": 0.0001,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5817,
+        "score": 0.3359,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-10 23:54:46"
+    },
+    {
+        "incorrect_ratio": 0.065,
+        "avg_confidence_incorrect": 0.7214,
+        "avg_l2_perturbation": 0.0029,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.534,
+        "score": 0.3421,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-11 09:48:08"
+    },
+    {
+        "incorrect_ratio": 0.072,
+        "avg_confidence_incorrect": 0.6959,
+        "avg_l2_perturbation": 0.0033,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.4593,
+        "score": 0.3514,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-13 10:48:32"
+    },
+    {
+        "incorrect_ratio": 0.942,
+        "avg_confidence_incorrect": 0.9853,
+        "avg_l2_perturbation": 1.3514,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0578,
+        "score": 0.6065,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-14 02:28:22"
+    },
+    {
+        "incorrect_ratio": 0.077,
+        "avg_confidence_incorrect": 0.7765,
+        "avg_l2_perturbation": 0.0314,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5013,
+        "score": 0.3585,
+        "team_name": "NSBE Bombers",
+        "time_stamp": "2024-10-14 13:50:22"
+    },
+    {
+        "incorrect_ratio": 0.081,
+        "avg_confidence_incorrect": 0.6763,
+        "avg_l2_perturbation": 0.0055,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.3766,
+        "score": 0.3634,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-14 19:08:50"
+    },
+    {
+        "incorrect_ratio": 0.946,
+        "avg_confidence_incorrect": 0.985,
+        "avg_l2_perturbation": 1.351,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0572,
+        "score": 0.6072,
+        "team_name": "Video_Test",
+        "time_stamp": "2024-10-14 21:21:24"
     }
 ]

@@ -187,7 +187,8 @@ def evaluate():
                     logging.info(f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}")
 
             # Load CIFAR-10 data
-            cifar_data = torch.load("cifar10_test_100_per_class.pt")
+            
+            cifar_data = torch.load(f"{path}cifar10_test_100_per_class.pt")
             x_test = cifar_data["images"] / 255.0
             y_test = cifar_data["labels"]
             logging.info("Loaded CIFAR-10 test data.")
@@ -210,7 +211,7 @@ def evaluate():
             logging.info(f"Score calculated for team: {team_name}")
 
             # Append the results to the JSON file
-            submission_json = os.path.join(path, "Data", "allSubmissions.json")
+            submission_json = os.path.join(path,"Data/allSubmissions.json")
             
             with open(submission_json, "r") as f:
                 data = json.load(f)
