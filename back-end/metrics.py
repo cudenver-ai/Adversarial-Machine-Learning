@@ -1,6 +1,6 @@
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 import logging
 
 log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
@@ -64,6 +64,27 @@ def update_evalMetrics():
                 }
     except Exception as e:
         logging.error('Error parsing allSubmissions.json: {}'.format(e))
+
+    # Adding days when there weren't any submissions
+    logging.info('Adding no-submission days.')
+    try:
+        today = datetime.now().date()
+        start_date = datetime(2024, 10, 1).date()
+        elapsed_days = [start_date + timedelta(days_elapsed) for days_elapsed in range((today - start_date).days + 1)]
+
+        for date in elapsed_days:
+            if date not in history.keys():
+                history[date] = {
+                        'incorrect_ratio': [0],
+                        'avg_confidence_incorrect': [0],
+                        'avg_l2_perturbation': [0],
+                        'avg_ssim': [0],
+                        'avg_confidence_gap': [0],
+                        'score': [0],
+                        'team_name': ['']
+                    }
+    except Exception as e:
+        logging.error('Error adding no-submission days: {}'.format(e))
 
     # Sort by month & day, add max per day to metrics
     logging.info('Sorting and extracting metrics')
