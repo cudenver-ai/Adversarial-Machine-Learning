@@ -138,5 +138,65 @@
         "score": 0.6072,
         "team_name": "Video_Test",
         "time_stamp": "2024-10-14 21:21:24"
+    },
+    {
+        "incorrect_ratio": 0.696,
+        "avg_confidence_incorrect": 0.7435,
+        "avg_l2_perturbation": 0.745,
+        "avg_ssim": 0.9946,
+        "avg_confidence_gap": 0.1588,
+        "score": 0.5635,
+        "team_name": "Noise Classifier",
+        "time_stamp": "2024-10-15 13:58:49"
+    },
+    {
+        "incorrect_ratio": 0.945,
+        "avg_confidence_incorrect": 0.985,
+        "avg_l2_perturbation": 1.3512,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0573,
+        "score": 0.607,
+        "team_name": "galindoj",
+        "time_stamp": "2024-10-15 20:17:36"
+    },
+    {
+        "incorrect_ratio": 0.077,
+        "avg_confidence_incorrect": 0.7762,
+        "avg_l2_perturbation": 0.0314,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5009,
+        "score": 0.3585,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-15 22:01:59"
+    },
+    {
+        "incorrect_ratio": 0.954,
+        "avg_confidence_incorrect": 0.9844,
+        "avg_l2_perturbation": 1.3507,
+        "avg_ssim": 0.9894,
+        "avg_confidence_gap": -0.056,
+        "score": 0.6086,
+        "team_name": "Vojjina",
+        "time_stamp": "2024-10-16 16:16:31"
+    },
+    {
+        "incorrect_ratio": 0.076,
+        "avg_confidence_incorrect": 0.6863,
+        "avg_l2_perturbation": 0.0047,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.4094,
+        "score": 0.3588,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-16 17:48:11"
+    },
+    {
+        "incorrect_ratio": 0.991,
+        "avg_confidence_incorrect": 0.9906,
+        "avg_l2_perturbation": 1.466,
+        "avg_ssim": 0.9876,
+        "avg_confidence_gap": -0.0596,
+        "score": 0.615,
+        "team_name": "W's Only (test)",
+        "time_stamp": "2024-10-16 18:06:43"
     }
 ]
