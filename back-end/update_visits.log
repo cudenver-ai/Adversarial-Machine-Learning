@@ -5507,3 +5507,62 @@ Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
 2024-10-17 09:00:03 - INFO - -----------------------------------------------------------
 2024-10-17 09:46:31 - INFO - Directory created: Uploads/TestingSubmisison
 2024-10-17 09:46:31 - INFO - Upload successful - Teamname: TestingSubmisison at2024-10-17 09:46:31
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 10:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 10:00:02 - INFO - JSON file updated successfully!
+2024-10-17 10:00:02 - INFO - -------------------------------
+2024-10-17 10:00:02 - INFO - Starting evaluation script
+2024-10-17 10:00:02 - INFO - Evaluation started at: 2024-10-17 10:00:02.999301
+2024-10-17 10:00:02 - INFO - Starting evaluation. Files found in Uploads: ['TestingSubmisison']
+2024-10-17 10:00:02 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_10-00-02
+2024-10-17 10:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/TestingSubmisison to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_10-00-02/TestingSubmisison
+2024-10-17 10:00:02 - INFO - Finished Moving folders
+2024-10-17 10:00:02 - INFO - Processing folder: TestingSubmisison
+2024-10-17 10:00:02 - INFO - Loaded team name: TestingSubmisison, time stamp: 2024-10-17 09:46:31 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_10-00-02/TestingSubmisison/upload_info.txt
+2024-10-17 10:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_10-00-02/TestingSubmisison/testsubmission.pkl
+2024-10-17 10:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-17 10:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-17 10:00:03 - INFO - Score calculated for team: TestingSubmisison
+2024-10-17 10:00:03 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-17 10:00:03 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-17 10:00:03 - INFO - Evaluation ended at: 2024-10-17 10:00:03.645423
+2024-10-17 10:00:03 - INFO - Evaluation ran for: 0:00:00.646122
+2024-10-17 10:00:03 - INFO - Starting update_evalMetrics
+2024-10-17 10:00:03 - INFO - Loading allSubmissions.json
+2024-10-17 10:00:03 - INFO - Outputting template due to zero submissions
+2024-10-17 10:00:03 - INFO - Parsing 21 entries from allSubmissions.json
+2024-10-17 10:00:03 - INFO - Adding no-submission days.
+2024-10-17 10:00:03 - INFO - Sorting and extracting metrics
+2024-10-17 10:00:03 - INFO - Updating trendline
+2024-10-17 10:00:03 - INFO - Saving evalMetric.json
+2024-10-17 10:00:03 - INFO - Done with update_evalMetrics
+2024-10-17 10:00:03 - INFO - Starting update_leaderBoard
+2024-10-17 10:00:03 - INFO - Loading allSubmissions.json
+2024-10-17 10:00:03 - INFO - Extracting scores, timestamps, and team names
+2024-10-17 10:00:03 - INFO - Sorting stats (teamwise)
+2024-10-17 10:00:03 - INFO - Sortings stats (overall)
+2024-10-17 10:00:03 - INFO - Populating leaderboard
+2024-10-17 10:00:03 - INFO - Saving leaderboard.json
+2024-10-17 10:00:03 - INFO - Starting calculate_rank
+2024-10-17 10:00:03 - INFO - Loading allSubmissions.json
+2024-10-17 10:00:03 - INFO - Outputting template due to zero submissions
+2024-10-17 10:00:03 - INFO - Sorting submissions by timestamp & team name
+2024-10-17 10:00:03 - INFO - Converting back-end to front-end keys
+2024-10-17 10:00:03 - INFO - Sorting submissions by score
+2024-10-17 10:00:03 - INFO - Generating output
+2024-10-17 10:00:03 - INFO - Saving TeamData.json
+2024-10-17 10:00:03 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-17 10:00:03 - INFO - -----------------------------------------------------------

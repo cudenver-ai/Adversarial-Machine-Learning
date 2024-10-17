@@ -198,5 +198,15 @@
         "score": 0.615,
         "team_name": "W's Only (test)",
         "time_stamp": "2024-10-16 18:06:43"
+    },
+    {
+        "incorrect_ratio": 0.948,
+        "avg_confidence_incorrect": 0.9858,
+        "avg_l2_perturbation": 1.35,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0578,
+        "score": 0.6075,
+        "team_name": "TestingSubmisison",
+        "time_stamp": "2024-10-17 09:46:31"
     }
 ]
