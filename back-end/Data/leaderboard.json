@@ -1,27 +1,27 @@
 [
     {
         "rank": 1,
+        "team": 0.615,
+        "score": "W's Only (test)"
+    },
+    {
+        "rank": 2,
+        "team": 0.6086,
+        "score": "Vojjina"
+    },
+    {
+        "rank": 3,
         "team": 0.6081,
         "score": "Denver Continental"
     },
     {
-        "rank": 2,
+        "rank": 4,
         "team": 0.6079,
         "score": "NSBE Bombers"
     },
     {
-        "rank": 3,
+        "rank": 5,
         "team": 0.6075,
         "score": "zahra"
-    },
-    {
-        "rank": 4,
-        "team": 0.6072,
-        "score": "Video_Test"
-    },
-    {
-        "rank": 5,
-        "team": 0.607,
-        "score": "Hung Nguyen"
     }
 ]
