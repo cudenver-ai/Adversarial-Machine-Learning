@@ -240,8 +240,7 @@ def evaluate():
 
 def reEvaluate():
     # Get current directory
-    # path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
-    path = '/Users/mohamed/Documents/School/AISA/Adversarial-Machine-Learning/back-end/'
+    path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
     start_time = datetime.now()
     logging.info("Starting re-evaluation script")
     logging.info(f"Re-evaluation started at: {start_time}")
