@@ -103,25 +103,29 @@ def update_visits():
     for date, ips in unique_visits.items():
         unique_visits_count[date] = len(ips)
 
+    start_date = october_first_2024.date()
+    end_date = datetime.now().date()
+    all_dates = pd.date_range(start=start_date, end=end_date)
+
     with open(json_file_path, "r") as f:
         json_data = json.load(f)
 
-
     for metric in json_data:
+        metric["data"] = []  
         if metric["id"] == "Visits":
-            metric["data"] = []
-            for date in sorted(visits.keys()):
-                visit_count = visits.get(date, 0)
+            for date in all_dates:
+                date_only = date.date()
+                visit_count = visits.get(date_only, 0)
                 metric["data"].append(visit_count)
         elif metric["id"] == "Uploads":
-            metric["data"] = []
-            for date in sorted(uploads.keys()):
-                upload_count = uploads.get(date, 0)
+            for date in all_dates:
+                date_str = date.strftime("%Y-%m-%d")
+                upload_count = uploads.get(date_str, 0)
                 metric["data"].append(upload_count)
         elif metric["id"] == "Unique":
-            metric["data"] = []
-            for date in sorted(unique_visits_count.keys()):
-                unique_count = unique_visits_count.get(date, 0)
+            for date in all_dates:
+                date_str = date.strftime("%Y-%m-%d")
+                unique_count = unique_visits_count.get(date_str, 0)
                 metric["data"].append(unique_count)
 
     with open(json_file_path, "w") as f:

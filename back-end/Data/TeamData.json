@@ -1,6 +1,126 @@
 [
     {
         "id": 1,
+        "TeamName": "W's Only (3)",
+        "LastSubmission": "2024-10-18 02:59:01",
+        "SuccessRate": 0.993,
+        "PerturbationMagnitude": 1.4711,
+        "AverageConfidence": 0.9918,
+        "ConfidenceGap": -0.0607,
+        "VisualSimilarity": 0.9875,
+        "TotalScore": 0.6153,
+        "Rank": 5
+    },
+    {
+        "id": 2,
+        "TeamName": "W's Only (test)",
+        "LastSubmission": "2024-10-18 02:53:50",
+        "SuccessRate": 0.984,
+        "PerturbationMagnitude": 1.3107,
+        "AverageConfidence": 0.9927,
+        "ConfidenceGap": -0.0622,
+        "VisualSimilarity": 0.99,
+        "TotalScore": 0.6141,
+        "Rank": 7
+    },
+    {
+        "id": 3,
+        "TeamName": "W's Only (2)",
+        "LastSubmission": "2024-10-18 02:23:08",
+        "SuccessRate": 0.885,
+        "PerturbationMagnitude": 19.2563,
+        "AverageConfidence": 0.8058,
+        "ConfidenceGap": 0.1196,
+        "VisualSimilarity": 0.3236,
+        "TotalScore": 0.6328,
+        "Rank": 2
+    },
+    {
+        "id": 4,
+        "TeamName": "W's Only (1)",
+        "LastSubmission": "2024-10-18 02:22:14",
+        "SuccessRate": 0.893,
+        "PerturbationMagnitude": 31.0403,
+        "AverageConfidence": 0.7553,
+        "ConfidenceGap": 0.1729,
+        "VisualSimilarity": 0.0021,
+        "TotalScore": 0.6352,
+        "Rank": 1
+    },
+    {
+        "id": 5,
+        "TeamName": "W's Only",
+        "LastSubmission": "2024-10-18 02:20:48",
+        "SuccessRate": 0.542,
+        "PerturbationMagnitude": 1.725,
+        "AverageConfidence": 0.9033,
+        "ConfidenceGap": -0.0282,
+        "VisualSimilarity": 0.9822,
+        "TotalScore": 0.5304,
+        "Rank": 22
+    },
+    {
+        "id": 6,
+        "TeamName": "W's Only (2)",
+        "LastSubmission": "2024-10-18 01:59:36",
+        "SuccessRate": 0.982,
+        "PerturbationMagnitude": 1.3056,
+        "AverageConfidence": 0.9907,
+        "ConfidenceGap": -0.0603,
+        "VisualSimilarity": 0.99,
+        "TotalScore": 0.6137,
+        "Rank": 8
+    },
+    {
+        "id": 7,
+        "TeamName": "W's Only (1)",
+        "LastSubmission": "2024-10-18 01:58:07",
+        "SuccessRate": 0.982,
+        "PerturbationMagnitude": 1.3056,
+        "AverageConfidence": 0.9907,
+        "ConfidenceGap": -0.0603,
+        "VisualSimilarity": 0.99,
+        "TotalScore": 0.6137,
+        "Rank": 9
+    },
+    {
+        "id": 8,
+        "TeamName": "W's Only (1)",
+        "LastSubmission": "2024-10-17 23:58:06",
+        "SuccessRate": 0.999,
+        "PerturbationMagnitude": 4.9993,
+        "AverageConfidence": 0.9378,
+        "ConfidenceGap": -0.0062,
+        "VisualSimilarity": 0.8785,
+        "TotalScore": 0.6191,
+        "Rank": 3
+    },
+    {
+        "id": 9,
+        "TeamName": "W's Only",
+        "LastSubmission": "2024-10-17 23:53:09",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 2.375,
+        "AverageConfidence": 0.98,
+        "ConfidenceGap": -0.0483,
+        "VisualSimilarity": 0.9684,
+        "TotalScore": 0.6155,
+        "Rank": 4
+    },
+    {
+        "id": 10,
+        "TeamName": "NSBE Bombers",
+        "LastSubmission": "2024-10-17 13:11:51",
+        "SuccessRate": 0.059,
+        "PerturbationMagnitude": 0.0314,
+        "AverageConfidence": 0.7423,
+        "ConfidenceGap": -0.5914,
+        "VisualSimilarity": 1.0,
+        "TotalScore": 0.3348,
+        "Rank": 31
+    },
+    {
+        "id": 11,
         "TeamName": "TestingSubmisison",
         "LastSubmission": "2024-10-17 09:46:31",
         "SuccessRate": 0.948,
@@ -9,10 +129,10 @@
         "ConfidenceGap": -0.0578,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6075,
-        "Rank": 6
+        "Rank": 14
     },
     {
-        "id": 2,
+        "id": 12,
         "TeamName": "W's Only (test)",
         "LastSubmission": "2024-10-16 18:06:43",
         "SuccessRate": 0.991,
@@ -21,10 +141,10 @@
         "ConfidenceGap": -0.0596,
         "VisualSimilarity": 0.9876,
         "TotalScore": 0.615,
-        "Rank": 1
+        "Rank": 6
     },
     {
-        "id": 3,
+        "id": 13,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-16 17:48:11",
         "SuccessRate": 0.076,
@@ -33,10 +153,10 @@
         "ConfidenceGap": -0.4094,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3588,
-        "Rank": 15
+        "Rank": 24
     },
     {
-        "id": 4,
+        "id": 14,
         "TeamName": "Vojjina",
         "LastSubmission": "2024-10-16 16:16:31",
         "SuccessRate": 0.954,
@@ -45,10 +165,10 @@
         "ConfidenceGap": -0.056,
         "VisualSimilarity": 0.9894,
         "TotalScore": 0.6086,
-        "Rank": 2
+        "Rank": 10
     },
     {
-        "id": 5,
+        "id": 15,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-15 22:01:59",
         "SuccessRate": 0.077,
@@ -57,10 +177,10 @@
         "ConfidenceGap": -0.5009,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3585,
-        "Rank": 17
+        "Rank": 26
     },
     {
-        "id": 6,
+        "id": 16,
         "TeamName": "galindoj",
         "LastSubmission": "2024-10-15 20:17:36",
         "SuccessRate": 0.945,
@@ -69,10 +189,10 @@
         "ConfidenceGap": -0.0573,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.607,
-        "Rank": 10
+        "Rank": 18
     },
     {
-        "id": 7,
+        "id": 17,
         "TeamName": "Noise Classifier",
         "LastSubmission": "2024-10-15 13:58:49",
         "SuccessRate": 0.696,
@@ -81,10 +201,10 @@
         "ConfidenceGap": 0.1588,
         "VisualSimilarity": 0.9946,
         "TotalScore": 0.5635,
-        "Rank": 13
+        "Rank": 21
     },
     {
-        "id": 8,
+        "id": 18,
         "TeamName": "Video_Test",
         "LastSubmission": "2024-10-14 21:21:24",
         "SuccessRate": 0.946,
@@ -93,10 +213,10 @@
         "ConfidenceGap": -0.0572,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6072,
-        "Rank": 7
+        "Rank": 15
     },
     {
-        "id": 9,
+        "id": 19,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-14 19:08:50",
         "SuccessRate": 0.081,
@@ -105,10 +225,10 @@
         "ConfidenceGap": -0.3766,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3634,
-        "Rank": 14
+        "Rank": 23
     },
     {
-        "id": 10,
+        "id": 20,
         "TeamName": "NSBE Bombers",
         "LastSubmission": "2024-10-14 13:50:22",
         "SuccessRate": 0.077,
@@ -117,10 +237,10 @@
         "ConfidenceGap": -0.5013,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3585,
-        "Rank": 16
+        "Rank": 25
     },
     {
-        "id": 11,
+        "id": 21,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-14 02:28:22",
         "SuccessRate": 0.942,
@@ -129,10 +249,10 @@
         "ConfidenceGap": -0.0578,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6065,
-        "Rank": 12
+        "Rank": 20
     },
     {
-        "id": 12,
+        "id": 22,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-13 10:48:32",
         "SuccessRate": 0.072,
@@ -141,10 +261,10 @@
         "ConfidenceGap": -0.4593,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3514,
-        "Rank": 18
+        "Rank": 27
     },
     {
-        "id": 13,
+        "id": 23,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-11 09:48:08",
         "SuccessRate": 0.065,
@@ -153,10 +273,10 @@
         "ConfidenceGap": -0.534,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3421,
-        "Rank": 19
+        "Rank": 28
     },
     {
-        "id": 14,
+        "id": 24,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-10 23:54:46",
         "SuccessRate": 0.06,
@@ -165,10 +285,10 @@
         "ConfidenceGap": -0.5817,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3359,
-        "Rank": 20
+        "Rank": 29
     },
     {
-        "id": 15,
+        "id": 25,
         "TeamName": "NSBE-2",
         "LastSubmission": "2024-10-10 22:34:35",
         "SuccessRate": 0.06,
@@ -177,10 +297,10 @@
         "ConfidenceGap": -0.5816,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3359,
-        "Rank": 21
+        "Rank": 30
     },
     {
-        "id": 16,
+        "id": 26,
         "TeamName": "Denver Continental",
         "LastSubmission": "2024-10-10 19:07:33",
         "SuccessRate": 0.951,
@@ -189,10 +309,10 @@
         "ConfidenceGap": -0.0557,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6081,
-        "Rank": 3
+        "Rank": 11
     },
     {
-        "id": 17,
+        "id": 27,
         "TeamName": "NSBE Bombers",
         "LastSubmission": "2024-10-10 18:17:30",
         "SuccessRate": 0.95,
@@ -201,10 +321,10 @@
         "ConfidenceGap": -0.0538,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6079,
-        "Rank": 4
+        "Rank": 12
     },
     {
-        "id": 18,
+        "id": 28,
         "TeamName": "zahra",
         "LastSubmission": "2024-10-10 18:04:32",
         "SuccessRate": 0.948,
@@ -213,10 +333,10 @@
         "ConfidenceGap": -0.0577,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6075,
-        "Rank": 5
+        "Rank": 13
     },
     {
-        "id": 19,
+        "id": 29,
         "TeamName": "Hung Nguyen",
         "LastSubmission": "2024-10-10 18:01:30",
         "SuccessRate": 0.945,
@@ -225,10 +345,10 @@
         "ConfidenceGap": -0.0541,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.607,
-        "Rank": 8
+        "Rank": 16
     },
     {
-        "id": 20,
+        "id": 30,
         "TeamName": "Hng",
         "LastSubmission": "2024-10-10 17:47:09",
         "SuccessRate": 0.945,
@@ -237,10 +357,10 @@
         "ConfidenceGap": -0.0541,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.607,
-        "Rank": 9
+        "Rank": 17
     },
     {
-        "id": 21,
+        "id": 31,
         "TeamName": "Test_for_presentation",
         "LastSubmission": "2024-10-10 17:42:53",
         "SuccessRate": 0.944,
@@ -249,6 +369,6 @@
         "ConfidenceGap": -0.0585,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6068,
-        "Rank": 11
+        "Rank": 19
     }
 ]

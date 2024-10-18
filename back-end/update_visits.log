@@ -5566,3 +5566,754 @@ Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
 2024-10-17 10:00:03 - INFO - Saving TeamData.json
 2024-10-17 10:00:03 - INFO - Evaluation and subsequent functions completed successfully.
 2024-10-17 10:00:03 - INFO - -----------------------------------------------------------
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 11:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 11:00:02 - INFO - JSON file updated successfully!
+2024-10-17 11:00:02 - INFO - -------------------------------
+2024-10-17 11:00:02 - INFO - Starting evaluation script
+2024-10-17 11:00:02 - INFO - Evaluation started at: 2024-10-17 11:00:02.402705
+2024-10-17 11:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 11:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 11:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 12:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 12:00:03 - INFO - JSON file updated successfully!
+2024-10-17 12:00:03 - INFO - -------------------------------
+2024-10-17 12:00:03 - INFO - Starting evaluation script
+2024-10-17 12:00:03 - INFO - Evaluation started at: 2024-10-17 12:00:03.066297
+2024-10-17 12:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 12:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 12:00:03 - INFO - -----------------------------------------------------------
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 13:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 13:00:02 - INFO - JSON file updated successfully!
+2024-10-17 13:00:02 - INFO - -------------------------------
+2024-10-17 13:00:02 - INFO - Starting evaluation script
+2024-10-17 13:00:02 - INFO - Evaluation started at: 2024-10-17 13:00:02.726740
+2024-10-17 13:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 13:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 13:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 14:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 14:00:02 - INFO - JSON file updated successfully!
+2024-10-17 14:00:02 - INFO - -------------------------------
+2024-10-17 14:00:02 - INFO - Starting evaluation script
+2024-10-17 14:00:02 - INFO - Evaluation started at: 2024-10-17 14:00:02.422213
+2024-10-17 14:00:02 - INFO - Starting evaluation. Files found in Uploads: ['NSBE_Bombers']
+2024-10-17 14:00:02 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_14-00-02
+2024-10-17 14:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/NSBE_Bombers to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_14-00-02/NSBE_Bombers
+2024-10-17 14:00:02 - INFO - Finished Moving folders
+2024-10-17 14:00:02 - INFO - Processing folder: NSBE_Bombers
+2024-10-17 14:00:02 - INFO - Loaded team name: NSBE Bombers, time stamp: 2024-10-17 13:11:51 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_14-00-02/NSBE_Bombers/upload_info.txt
+2024-10-17 14:00:02 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_14-00-02/NSBE_Bombers/Yahya.pkl
+2024-10-17 14:00:02 - INFO - Loaded CIFAR-10 test data.
+2024-10-17 14:00:02 - INFO - Model loaded and moved to device: cuda
+2024-10-17 14:00:02 - INFO - Score calculated for team: NSBE Bombers
+2024-10-17 14:00:02 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-17 14:00:02 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-17 14:00:02 - INFO - Evaluation ended at: 2024-10-17 14:00:02.842536
+2024-10-17 14:00:02 - INFO - Evaluation ran for: 0:00:00.420323
+2024-10-17 14:00:02 - INFO - Starting update_evalMetrics
+2024-10-17 14:00:02 - INFO - Loading allSubmissions.json
+2024-10-17 14:00:02 - INFO - Outputting template due to zero submissions
+2024-10-17 14:00:02 - INFO - Parsing 22 entries from allSubmissions.json
+2024-10-17 14:00:02 - INFO - Adding no-submission days.
+2024-10-17 14:00:02 - INFO - Sorting and extracting metrics
+2024-10-17 14:00:02 - INFO - Updating trendline
+2024-10-17 14:00:02 - INFO - Saving evalMetric.json
+2024-10-17 14:00:02 - INFO - Done with update_evalMetrics
+2024-10-17 14:00:02 - INFO - Starting update_leaderBoard
+2024-10-17 14:00:02 - INFO - Loading allSubmissions.json
+2024-10-17 14:00:02 - INFO - Extracting scores, timestamps, and team names
+2024-10-17 14:00:02 - INFO - Sorting stats (teamwise)
+2024-10-17 14:00:02 - INFO - Sortings stats (overall)
+2024-10-17 14:00:02 - INFO - Populating leaderboard
+2024-10-17 14:00:02 - INFO - Saving leaderboard.json
+2024-10-17 14:00:02 - INFO - Starting calculate_rank
+2024-10-17 14:00:02 - INFO - Loading allSubmissions.json
+2024-10-17 14:00:02 - INFO - Outputting template due to zero submissions
+2024-10-17 14:00:02 - INFO - Sorting submissions by timestamp & team name
+2024-10-17 14:00:02 - INFO - Converting back-end to front-end keys
+2024-10-17 14:00:02 - INFO - Sorting submissions by score
+2024-10-17 14:00:02 - INFO - Generating output
+2024-10-17 14:00:02 - INFO - Saving TeamData.json
+2024-10-17 14:00:02 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-17 14:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 15:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 15:00:02 - INFO - JSON file updated successfully!
+2024-10-17 15:00:02 - INFO - -------------------------------
+2024-10-17 15:00:02 - INFO - Starting evaluation script
+2024-10-17 15:00:02 - INFO - Evaluation started at: 2024-10-17 15:00:02.567993
+2024-10-17 15:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 15:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 15:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 16:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 16:00:03 - INFO - JSON file updated successfully!
+2024-10-17 16:00:03 - INFO - -------------------------------
+2024-10-17 16:00:03 - INFO - Starting evaluation script
+2024-10-17 16:00:03 - INFO - Evaluation started at: 2024-10-17 16:00:03.230338
+2024-10-17 16:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 16:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 16:00:03 - INFO - -----------------------------------------------------------
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 17:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 17:00:02 - INFO - JSON file updated successfully!
+2024-10-17 17:00:02 - INFO - -------------------------------
+2024-10-17 17:00:02 - INFO - Starting evaluation script
+2024-10-17 17:00:02 - INFO - Evaluation started at: 2024-10-17 17:00:02.888486
+2024-10-17 17:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 17:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 17:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 18:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 18:00:02 - INFO - JSON file updated successfully!
+2024-10-17 18:00:02 - INFO - -------------------------------
+2024-10-17 18:00:02 - INFO - Starting evaluation script
+2024-10-17 18:00:02 - INFO - Evaluation started at: 2024-10-17 18:00:02.540990
+2024-10-17 18:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 18:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 18:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 19:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 19:00:03 - INFO - JSON file updated successfully!
+2024-10-17 19:00:03 - INFO - -------------------------------
+2024-10-17 19:00:03 - INFO - Starting evaluation script
+2024-10-17 19:00:03 - INFO - Evaluation started at: 2024-10-17 19:00:03.197403
+2024-10-17 19:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 19:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 19:00:03 - INFO - -----------------------------------------------------------
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 20:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 20:00:02 - INFO - JSON file updated successfully!
+2024-10-17 20:00:02 - INFO - -------------------------------
+2024-10-17 20:00:02 - INFO - Starting evaluation script
+2024-10-17 20:00:02 - INFO - Evaluation started at: 2024-10-17 20:00:02.858090
+2024-10-17 20:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 20:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 20:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 21:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 21:00:02 - INFO - JSON file updated successfully!
+2024-10-17 21:00:02 - INFO - -------------------------------
+2024-10-17 21:00:02 - INFO - Starting evaluation script
+2024-10-17 21:00:02 - INFO - Evaluation started at: 2024-10-17 21:00:02.523925
+2024-10-17 21:00:02 - INFO - Starting evaluation. Files found in Uploads: ['Ws_Only']
+2024-10-17 21:00:02 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_21-00-02
+2024-10-17 21:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_21-00-02/Ws_Only
+2024-10-17 21:00:02 - INFO - Finished Moving folders
+2024-10-17 21:00:02 - INFO - Processing folder: Ws_Only
+2024-10-17 21:00:02 - INFO - Loaded team name: W's Only, time stamp: 2024-10-17 20:11:16 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_21-00-02/Ws_Only/upload_info.txt
+2024-10-17 21:00:02 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-17_21-00-02/Ws_Only/advs_6.pkl
+2024-10-17 21:00:02 - INFO - Loaded CIFAR-10 test data.
+2024-10-17 21:00:02 - INFO - Model loaded and moved to device: cuda
+2024-10-17 21:00:02 - ERROR - Error processing folder Ws_Only: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 208, in evaluate
+    score_metrics = calculate_score(model, x_test, advs[0], y_test)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 48, in calculate_score
+    avg_confidence_incorrect = incorrect_confidences.mean().item()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+2024-10-17 21:00:02 - INFO - Evaluation ended at: 2024-10-17 21:00:02.854721
+2024-10-17 21:00:02 - INFO - Evaluation ran for: 0:00:00.330796
+2024-10-17 21:00:02 - INFO - Starting update_evalMetrics
+2024-10-17 21:00:02 - INFO - Loading allSubmissions.json
+2024-10-17 21:00:02 - INFO - Outputting template due to zero submissions
+2024-10-17 21:00:02 - INFO - Parsing 22 entries from allSubmissions.json
+2024-10-17 21:00:02 - INFO - Adding no-submission days.
+2024-10-17 21:00:02 - INFO - Sorting and extracting metrics
+2024-10-17 21:00:02 - INFO - Updating trendline
+2024-10-17 21:00:02 - INFO - Saving evalMetric.json
+2024-10-17 21:00:02 - INFO - Done with update_evalMetrics
+2024-10-17 21:00:02 - INFO - Starting update_leaderBoard
+2024-10-17 21:00:02 - INFO - Loading allSubmissions.json
+2024-10-17 21:00:02 - INFO - Extracting scores, timestamps, and team names
+2024-10-17 21:00:02 - INFO - Sorting stats (teamwise)
+2024-10-17 21:00:02 - INFO - Sortings stats (overall)
+2024-10-17 21:00:02 - INFO - Populating leaderboard
+2024-10-17 21:00:02 - INFO - Saving leaderboard.json
+2024-10-17 21:00:02 - INFO - Starting calculate_rank
+2024-10-17 21:00:02 - INFO - Loading allSubmissions.json
+2024-10-17 21:00:02 - INFO - Outputting template due to zero submissions
+2024-10-17 21:00:02 - INFO - Sorting submissions by timestamp & team name
+2024-10-17 21:00:02 - INFO - Converting back-end to front-end keys
+2024-10-17 21:00:02 - INFO - Sorting submissions by score
+2024-10-17 21:00:02 - INFO - Generating output
+2024-10-17 21:00:02 - INFO - Saving TeamData.json
+2024-10-17 21:00:02 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-17 21:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 22:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 22:00:02 - INFO - JSON file updated successfully!
+2024-10-17 22:00:02 - INFO - -------------------------------
+2024-10-17 22:00:02 - INFO - Starting evaluation script
+2024-10-17 22:00:02 - INFO - Evaluation started at: 2024-10-17 22:00:02.584623
+2024-10-17 22:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 22:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 22:00:02 - INFO - -----------------------------------------------------------
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-17 23:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-17 23:00:03 - INFO - JSON file updated successfully!
+2024-10-17 23:00:03 - INFO - -------------------------------
+2024-10-17 23:00:03 - INFO - Starting evaluation script
+2024-10-17 23:00:03 - INFO - Evaluation started at: 2024-10-17 23:00:03.240696
+2024-10-17 23:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-17 23:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-17 23:00:03 - INFO - -----------------------------------------------------------
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 00:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 00:00:02 - INFO - JSON file updated successfully!
+2024-10-18 00:00:02 - INFO - -------------------------------
+2024-10-18 00:00:02 - INFO - Starting evaluation script
+2024-10-18 00:00:02 - INFO - Evaluation started at: 2024-10-18 00:00:02.903093
+2024-10-18 00:00:02 - INFO - Starting evaluation. Files found in Uploads: ['Ws_Only_1', 'Ws_Only']
+2024-10-18 00:00:02 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_00-00-02
+2024-10-18 00:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only_1 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_00-00-02/Ws_Only_1
+2024-10-18 00:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_00-00-02/Ws_Only
+2024-10-18 00:00:02 - INFO - Finished Moving folders
+2024-10-18 00:00:02 - INFO - Processing folder: Ws_Only_1
+2024-10-18 00:00:02 - INFO - Loaded team name: W's Only (1), time stamp: 2024-10-17 23:58:06 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_00-00-02/Ws_Only_1/upload_info.txt
+2024-10-18 00:00:02 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_00-00-02/Ws_Only_1/advs_9.pkl
+2024-10-18 00:00:02 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 00:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-18 00:00:03 - INFO - Score calculated for team: W's Only (1)
+2024-10-18 00:00:03 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 00:00:03 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 00:00:03 - INFO - Processing folder: Ws_Only
+2024-10-18 00:00:03 - INFO - Loaded team name: W's Only, time stamp: 2024-10-17 23:53:09 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_00-00-02/Ws_Only/upload_info.txt
+2024-10-18 00:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_00-00-02/Ws_Only/advs_1.pkl
+2024-10-18 00:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 00:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-18 00:00:04 - INFO - Score calculated for team: W's Only
+2024-10-18 00:00:04 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 00:00:04 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 00:00:04 - INFO - Evaluation ended at: 2024-10-18 00:00:04.025218
+2024-10-18 00:00:04 - INFO - Evaluation ran for: 0:00:01.122125
+2024-10-18 00:00:04 - INFO - Starting update_evalMetrics
+2024-10-18 00:00:04 - INFO - Loading allSubmissions.json
+2024-10-18 00:00:04 - INFO - Outputting template due to zero submissions
+2024-10-18 00:00:04 - INFO - Parsing 24 entries from allSubmissions.json
+2024-10-18 00:00:04 - INFO - Adding no-submission days.
+2024-10-18 00:00:04 - INFO - Sorting and extracting metrics
+2024-10-18 00:00:04 - INFO - Updating trendline
+2024-10-18 00:00:04 - INFO - Saving evalMetric.json
+2024-10-18 00:00:04 - INFO - Done with update_evalMetrics
+2024-10-18 00:00:04 - INFO - Starting update_leaderBoard
+2024-10-18 00:00:04 - INFO - Loading allSubmissions.json
+2024-10-18 00:00:04 - INFO - Extracting scores, timestamps, and team names
+2024-10-18 00:00:04 - INFO - Sorting stats (teamwise)
+2024-10-18 00:00:04 - INFO - Sortings stats (overall)
+2024-10-18 00:00:04 - INFO - Populating leaderboard
+2024-10-18 00:00:04 - INFO - Saving leaderboard.json
+2024-10-18 00:00:04 - INFO - Starting calculate_rank
+2024-10-18 00:00:04 - INFO - Loading allSubmissions.json
+2024-10-18 00:00:04 - INFO - Outputting template due to zero submissions
+2024-10-18 00:00:04 - INFO - Sorting submissions by timestamp & team name
+2024-10-18 00:00:04 - INFO - Converting back-end to front-end keys
+2024-10-18 00:00:04 - INFO - Sorting submissions by score
+2024-10-18 00:00:04 - INFO - Generating output
+2024-10-18 00:00:04 - INFO - Saving TeamData.json
+2024-10-18 00:00:04 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-18 00:00:04 - INFO - -----------------------------------------------------------
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 01:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 01:00:02 - INFO - JSON file updated successfully!
+2024-10-18 01:00:02 - INFO - -------------------------------
+2024-10-18 01:00:02 - INFO - Starting evaluation script
+2024-10-18 01:00:02 - INFO - Evaluation started at: 2024-10-18 01:00:02.715854
+2024-10-18 01:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 01:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 01:00:02 - INFO - -----------------------------------------------------------
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 02:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 02:00:02 - INFO - JSON file updated successfully!
+2024-10-18 02:00:02 - INFO - -------------------------------
+2024-10-18 02:00:02 - INFO - Starting evaluation script
+2024-10-18 02:00:02 - INFO - Evaluation started at: 2024-10-18 02:00:02.379654
+2024-10-18 02:00:02 - INFO - Starting evaluation. Files found in Uploads: ['Ws_Only_2', 'Ws_Only_1', 'Ws_Only']
+2024-10-18 02:00:02 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02
+2024-10-18 02:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only_2 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only_2
+2024-10-18 02:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only_1 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only_1
+2024-10-18 02:00:02 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only
+2024-10-18 02:00:02 - INFO - Finished Moving folders
+2024-10-18 02:00:02 - INFO - Processing folder: Ws_Only_2
+2024-10-18 02:00:02 - INFO - Loaded team name: W's Only (2), time stamp: 2024-10-18 01:59:36 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only_2/upload_info.txt
+2024-10-18 02:00:02 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only_2/advs_12.pkl
+2024-10-18 02:00:02 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 02:00:02 - INFO - Model loaded and moved to device: cuda
+2024-10-18 02:00:03 - INFO - Score calculated for team: W's Only (2)
+2024-10-18 02:00:03 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 02:00:03 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 02:00:03 - INFO - Processing folder: Ws_Only_1
+2024-10-18 02:00:03 - INFO - Loaded team name: W's Only (1), time stamp: 2024-10-18 01:58:07 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only_1/upload_info.txt
+2024-10-18 02:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only_1/advs_11.pkl
+2024-10-18 02:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 02:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-18 02:00:03 - INFO - Score calculated for team: W's Only (1)
+2024-10-18 02:00:03 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 02:00:03 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 02:00:03 - INFO - Processing folder: Ws_Only
+2024-10-18 02:00:03 - INFO - Loaded team name: W's Only, time stamp: 2024-10-18 01:51:30 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only/upload_info.txt
+2024-10-18 02:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_02-00-02/Ws_Only/advs_10.pkl
+2024-10-18 02:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 02:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-18 02:00:03 - ERROR - Error processing folder Ws_Only: 'list' object has no attribute 'to'
+Traceback (most recent call last):
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 208, in evaluate
+    score_metrics = calculate_score(model, x_test, advs[0], y_test)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/vicente/dec/Adversarial-Machine-Learning/back-end/eval.py", line 31, in calculate_score
+    logits_adv = model(advs.to(device))
+                       ^^^^^^^
+AttributeError: 'list' object has no attribute 'to'
+2024-10-18 02:00:03 - INFO - Evaluation ended at: 2024-10-18 02:00:03.536644
+2024-10-18 02:00:03 - INFO - Evaluation ran for: 0:00:01.156990
+2024-10-18 02:00:03 - INFO - Starting update_evalMetrics
+2024-10-18 02:00:03 - INFO - Loading allSubmissions.json
+2024-10-18 02:00:03 - INFO - Outputting template due to zero submissions
+2024-10-18 02:00:03 - INFO - Parsing 26 entries from allSubmissions.json
+2024-10-18 02:00:03 - INFO - Adding no-submission days.
+2024-10-18 02:00:03 - INFO - Sorting and extracting metrics
+2024-10-18 02:00:03 - INFO - Updating trendline
+2024-10-18 02:00:03 - INFO - Saving evalMetric.json
+2024-10-18 02:00:03 - INFO - Done with update_evalMetrics
+2024-10-18 02:00:03 - INFO - Starting update_leaderBoard
+2024-10-18 02:00:03 - INFO - Loading allSubmissions.json
+2024-10-18 02:00:03 - INFO - Extracting scores, timestamps, and team names
+2024-10-18 02:00:03 - INFO - Sorting stats (teamwise)
+2024-10-18 02:00:03 - INFO - Sortings stats (overall)
+2024-10-18 02:00:03 - INFO - Populating leaderboard
+2024-10-18 02:00:03 - INFO - Saving leaderboard.json
+2024-10-18 02:00:03 - INFO - Starting calculate_rank
+2024-10-18 02:00:03 - INFO - Loading allSubmissions.json
+2024-10-18 02:00:03 - INFO - Outputting template due to zero submissions
+2024-10-18 02:00:03 - INFO - Sorting submissions by timestamp & team name
+2024-10-18 02:00:03 - INFO - Converting back-end to front-end keys
+2024-10-18 02:00:03 - INFO - Sorting submissions by score
+2024-10-18 02:00:03 - INFO - Generating output
+2024-10-18 02:00:03 - INFO - Saving TeamData.json
+2024-10-18 02:00:03 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-18 02:00:03 - INFO - -----------------------------------------------------------
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 03:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 03:00:03 - INFO - JSON file updated successfully!
+2024-10-18 03:00:03 - INFO - -------------------------------
+2024-10-18 03:00:03 - INFO - Starting evaluation script
+2024-10-18 03:00:03 - INFO - Evaluation started at: 2024-10-18 03:00:03.230199
+2024-10-18 03:00:03 - INFO - Starting evaluation. Files found in Uploads: ['Ws_Only_2', 'Ws_Only_3', 'Ws_Only_test', 'Ws_Only_1', 'Ws_Only']
+2024-10-18 03:00:03 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03
+2024-10-18 03:00:03 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only_2 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_2
+2024-10-18 03:00:03 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only_3 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_3
+2024-10-18 03:00:03 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only_test to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_test
+2024-10-18 03:00:03 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only_1 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_1
+2024-10-18 03:00:03 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Ws_Only to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only
+2024-10-18 03:00:03 - INFO - Finished Moving folders
+2024-10-18 03:00:03 - INFO - Processing folder: Ws_Only_2
+2024-10-18 03:00:03 - INFO - Loaded team name: W's Only (2), time stamp: 2024-10-18 02:23:08 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_2/upload_info.txt
+2024-10-18 03:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_2/advs_13.pkl
+2024-10-18 03:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 03:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-18 03:00:03 - INFO - Score calculated for team: W's Only (2)
+2024-10-18 03:00:03 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:03 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:03 - INFO - Processing folder: Ws_Only_3
+2024-10-18 03:00:03 - INFO - Loaded team name: W's Only (3), time stamp: 2024-10-18 02:59:01 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_3/upload_info.txt
+2024-10-18 03:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_3/advs_15.pkl
+2024-10-18 03:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 03:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-18 03:00:04 - INFO - Score calculated for team: W's Only (3)
+2024-10-18 03:00:04 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:04 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:04 - INFO - Processing folder: Ws_Only_test
+2024-10-18 03:00:04 - INFO - Loaded team name: W's Only (test), time stamp: 2024-10-18 02:53:50 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_test/upload_info.txt
+2024-10-18 03:00:04 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_test/advs_14.pkl
+2024-10-18 03:00:04 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 03:00:04 - INFO - Model loaded and moved to device: cuda
+2024-10-18 03:00:04 - INFO - Score calculated for team: W's Only (test)
+2024-10-18 03:00:04 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:04 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:04 - INFO - Processing folder: Ws_Only_1
+2024-10-18 03:00:04 - INFO - Loaded team name: W's Only (1), time stamp: 2024-10-18 02:22:14 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_1/upload_info.txt
+2024-10-18 03:00:04 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only_1/advs_12.pkl
+2024-10-18 03:00:04 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 03:00:04 - INFO - Model loaded and moved to device: cuda
+2024-10-18 03:00:05 - INFO - Score calculated for team: W's Only (1)
+2024-10-18 03:00:05 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:05 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:05 - INFO - Processing folder: Ws_Only
+2024-10-18 03:00:05 - INFO - Loaded team name: W's Only, time stamp: 2024-10-18 02:20:48 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only/upload_info.txt
+2024-10-18 03:00:05 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_03-00-03/Ws_Only/advs_12.pkl
+2024-10-18 03:00:05 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 03:00:05 - INFO - Model loaded and moved to device: cuda
+2024-10-18 03:00:05 - INFO - Score calculated for team: W's Only
+2024-10-18 03:00:05 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:05 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 03:00:05 - INFO - Evaluation ended at: 2024-10-18 03:00:05.532458
+2024-10-18 03:00:05 - INFO - Evaluation ran for: 0:00:02.302259
+2024-10-18 03:00:05 - INFO - Starting update_evalMetrics
+2024-10-18 03:00:05 - INFO - Loading allSubmissions.json
+2024-10-18 03:00:05 - INFO - Outputting template due to zero submissions
+2024-10-18 03:00:05 - INFO - Parsing 31 entries from allSubmissions.json
+2024-10-18 03:00:05 - INFO - Adding no-submission days.
+2024-10-18 03:00:05 - INFO - Sorting and extracting metrics
+2024-10-18 03:00:05 - INFO - Updating trendline
+2024-10-18 03:00:05 - INFO - Saving evalMetric.json
+2024-10-18 03:00:05 - INFO - Done with update_evalMetrics
+2024-10-18 03:00:05 - INFO - Starting update_leaderBoard
+2024-10-18 03:00:05 - INFO - Loading allSubmissions.json
+2024-10-18 03:00:05 - INFO - Extracting scores, timestamps, and team names
+2024-10-18 03:00:05 - INFO - Sorting stats (teamwise)
+2024-10-18 03:00:05 - INFO - Sortings stats (overall)
+2024-10-18 03:00:05 - INFO - Populating leaderboard
+2024-10-18 03:00:05 - INFO - Saving leaderboard.json
+2024-10-18 03:00:05 - INFO - Starting calculate_rank
+2024-10-18 03:00:05 - INFO - Loading allSubmissions.json
+2024-10-18 03:00:05 - INFO - Outputting template due to zero submissions
+2024-10-18 03:00:05 - INFO - Sorting submissions by timestamp & team name
+2024-10-18 03:00:05 - INFO - Converting back-end to front-end keys
+2024-10-18 03:00:05 - INFO - Sorting submissions by score
+2024-10-18 03:00:05 - INFO - Generating output
+2024-10-18 03:00:05 - INFO - Saving TeamData.json
+2024-10-18 03:00:05 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-18 03:00:05 - INFO - -----------------------------------------------------------
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 04:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 04:00:03 - INFO - JSON file updated successfully!
+2024-10-18 04:00:03 - INFO - -------------------------------
+2024-10-18 04:00:03 - INFO - Starting evaluation script
+2024-10-18 04:00:03 - INFO - Evaluation started at: 2024-10-18 04:00:03.214052
+2024-10-18 04:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 04:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 04:00:03 - INFO - -----------------------------------------------------------
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 05:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 05:00:02 - INFO - JSON file updated successfully!
+2024-10-18 05:00:02 - INFO - -------------------------------
+2024-10-18 05:00:02 - INFO - Starting evaluation script
+2024-10-18 05:00:02 - INFO - Evaluation started at: 2024-10-18 05:00:02.867283
+2024-10-18 05:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 05:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 05:00:02 - INFO - -----------------------------------------------------------
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 06:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 06:00:02 - INFO - JSON file updated successfully!
+2024-10-18 06:00:02 - INFO - -------------------------------
+2024-10-18 06:00:02 - INFO - Starting evaluation script
+2024-10-18 06:00:02 - INFO - Evaluation started at: 2024-10-18 06:00:02.540193
+2024-10-18 06:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 06:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 06:00:02 - INFO - -----------------------------------------------------------
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 07:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 07:00:03 - INFO - JSON file updated successfully!
+2024-10-18 07:00:03 - INFO - -------------------------------
+2024-10-18 07:00:03 - INFO - Starting evaluation script
+2024-10-18 07:00:03 - INFO - Evaluation started at: 2024-10-18 07:00:03.164094
+2024-10-18 07:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 07:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 07:00:03 - INFO - -----------------------------------------------------------
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 08:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 08:00:02 - INFO - JSON file updated successfully!
+2024-10-18 08:00:02 - INFO - -------------------------------
+2024-10-18 08:00:02 - INFO - Starting evaluation script
+2024-10-18 08:00:02 - INFO - Evaluation started at: 2024-10-18 08:00:02.821074
+2024-10-18 08:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 08:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 08:00:02 - INFO - -----------------------------------------------------------
