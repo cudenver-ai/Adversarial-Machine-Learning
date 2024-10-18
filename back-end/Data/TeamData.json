@@ -1,7 +1,7 @@
 [
     {
-        "id": 1,
-        "TeamName": "W's Only (3)",
+        "id": 28,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-18 02:59:01",
         "SuccessRate": 0.993,
         "PerturbationMagnitude": 1.4711,
@@ -12,8 +12,8 @@
         "Rank": 5
     },
     {
-        "id": 2,
-        "TeamName": "W's Only (test)",
+        "id": 27,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-18 02:53:50",
         "SuccessRate": 0.984,
         "PerturbationMagnitude": 1.3107,
@@ -24,8 +24,8 @@
         "Rank": 7
     },
     {
-        "id": 3,
-        "TeamName": "W's Only (2)",
+        "id": 26,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-18 02:23:08",
         "SuccessRate": 0.885,
         "PerturbationMagnitude": 19.2563,
@@ -36,8 +36,8 @@
         "Rank": 2
     },
     {
-        "id": 4,
-        "TeamName": "W's Only (1)",
+        "id": 25,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-18 02:22:14",
         "SuccessRate": 0.893,
         "PerturbationMagnitude": 31.0403,
@@ -48,7 +48,7 @@
         "Rank": 1
     },
     {
-        "id": 5,
+        "id": 24,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-18 02:20:48",
         "SuccessRate": 0.542,
@@ -57,11 +57,11 @@
         "ConfidenceGap": -0.0282,
         "VisualSimilarity": 0.9822,
         "TotalScore": 0.5304,
-        "Rank": 22
+        "Rank": 20
     },
     {
-        "id": 6,
-        "TeamName": "W's Only (2)",
+        "id": 23,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-18 01:59:36",
         "SuccessRate": 0.982,
         "PerturbationMagnitude": 1.3056,
@@ -72,8 +72,8 @@
         "Rank": 8
     },
     {
-        "id": 7,
-        "TeamName": "W's Only (1)",
+        "id": 22,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-18 01:58:07",
         "SuccessRate": 0.982,
         "PerturbationMagnitude": 1.3056,
@@ -84,8 +84,8 @@
         "Rank": 9
     },
     {
-        "id": 8,
-        "TeamName": "W's Only (1)",
+        "id": 21,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-17 23:58:06",
         "SuccessRate": 0.999,
         "PerturbationMagnitude": 4.9993,
@@ -96,7 +96,7 @@
         "Rank": 3
     },
     {
-        "id": 9,
+        "id": 20,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-17 23:53:09",
         "SuccessRate": 1.0,
@@ -108,8 +108,8 @@
         "Rank": 4
     },
     {
-        "id": 10,
-        "TeamName": "NSBE Bombers",
+        "id": 19,
+        "TeamName": "NSBE",
         "LastSubmission": "2024-10-17 13:11:51",
         "SuccessRate": 0.059,
         "PerturbationMagnitude": 0.0314,
@@ -117,23 +117,11 @@
         "ConfidenceGap": -0.5914,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3348,
-        "Rank": 31
+        "Rank": 29
     },
     {
-        "id": 11,
-        "TeamName": "TestingSubmisison",
-        "LastSubmission": "2024-10-17 09:46:31",
-        "SuccessRate": 0.948,
-        "PerturbationMagnitude": 1.35,
-        "AverageConfidence": 0.9858,
-        "ConfidenceGap": -0.0578,
-        "VisualSimilarity": 0.9893,
-        "TotalScore": 0.6075,
-        "Rank": 14
-    },
-    {
-        "id": 12,
-        "TeamName": "W's Only (test)",
+        "id": 18,
+        "TeamName": "W's Only",
         "LastSubmission": "2024-10-16 18:06:43",
         "SuccessRate": 0.991,
         "PerturbationMagnitude": 1.466,
@@ -144,7 +132,7 @@
         "Rank": 6
     },
     {
-        "id": 13,
+        "id": 17,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-16 17:48:11",
         "SuccessRate": 0.076,
@@ -153,10 +141,10 @@
         "ConfidenceGap": -0.4094,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3588,
-        "Rank": 24
+        "Rank": 22
     },
     {
-        "id": 14,
+        "id": 16,
         "TeamName": "Vojjina",
         "LastSubmission": "2024-10-16 16:16:31",
         "SuccessRate": 0.954,
@@ -177,10 +165,10 @@
         "ConfidenceGap": -0.5009,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3585,
-        "Rank": 26
+        "Rank": 24
     },
     {
-        "id": 16,
+        "id": 14,
         "TeamName": "galindoj",
         "LastSubmission": "2024-10-15 20:17:36",
         "SuccessRate": 0.945,
@@ -189,10 +177,10 @@
         "ConfidenceGap": -0.0573,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.607,
-        "Rank": 18
+        "Rank": 17
     },
     {
-        "id": 17,
+        "id": 13,
         "TeamName": "Noise Classifier",
         "LastSubmission": "2024-10-15 13:58:49",
         "SuccessRate": 0.696,
@@ -201,22 +189,10 @@
         "ConfidenceGap": 0.1588,
         "VisualSimilarity": 0.9946,
         "TotalScore": 0.5635,
-        "Rank": 21
+        "Rank": 19
     },
     {
-        "id": 18,
-        "TeamName": "Video_Test",
-        "LastSubmission": "2024-10-14 21:21:24",
-        "SuccessRate": 0.946,
-        "PerturbationMagnitude": 1.351,
-        "AverageConfidence": 0.985,
-        "ConfidenceGap": -0.0572,
-        "VisualSimilarity": 0.9893,
-        "TotalScore": 0.6072,
-        "Rank": 15
-    },
-    {
-        "id": 19,
+        "id": 12,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-14 19:08:50",
         "SuccessRate": 0.081,
@@ -225,10 +201,10 @@
         "ConfidenceGap": -0.3766,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3634,
-        "Rank": 23
+        "Rank": 21
     },
     {
-        "id": 20,
+        "id": 11,
         "TeamName": "NSBE Bombers",
         "LastSubmission": "2024-10-14 13:50:22",
         "SuccessRate": 0.077,
@@ -237,10 +213,10 @@
         "ConfidenceGap": -0.5013,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3585,
-        "Rank": 25
+        "Rank": 23
     },
     {
-        "id": 21,
+        "id": 10,
         "TeamName": "W's Only",
         "LastSubmission": "2024-10-14 02:28:22",
         "SuccessRate": 0.942,
@@ -249,10 +225,10 @@
         "ConfidenceGap": -0.0578,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.6065,
-        "Rank": 20
+        "Rank": 18
     },
     {
-        "id": 22,
+        "id": 9,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-13 10:48:32",
         "SuccessRate": 0.072,
@@ -261,10 +237,10 @@
         "ConfidenceGap": -0.4593,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3514,
-        "Rank": 27
+        "Rank": 25
     },
     {
-        "id": 23,
+        "id": 8,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-11 09:48:08",
         "SuccessRate": 0.065,
@@ -273,10 +249,10 @@
         "ConfidenceGap": -0.534,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3421,
-        "Rank": 28
+        "Rank": 26
     },
     {
-        "id": 24,
+        "id": 7,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-10 23:54:46",
         "SuccessRate": 0.06,
@@ -285,11 +261,11 @@
         "ConfidenceGap": -0.5817,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3359,
-        "Rank": 29
+        "Rank": 27
     },
     {
-        "id": 25,
-        "TeamName": "NSBE-2",
+        "id": 6,
+        "TeamName": "NSBE",
         "LastSubmission": "2024-10-10 22:34:35",
         "SuccessRate": 0.06,
         "PerturbationMagnitude": 0.0005,
@@ -297,10 +273,10 @@
         "ConfidenceGap": -0.5816,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.3359,
-        "Rank": 30
+        "Rank": 28
     },
     {
-        "id": 26,
+        "id": 5,
         "TeamName": "Denver Continental",
         "LastSubmission": "2024-10-10 19:07:33",
         "SuccessRate": 0.951,
@@ -312,8 +288,8 @@
         "Rank": 11
     },
     {
-        "id": 27,
-        "TeamName": "NSBE Bombers",
+        "id": 4,
+        "TeamName": "NSBE",
         "LastSubmission": "2024-10-10 18:17:30",
         "SuccessRate": 0.95,
         "PerturbationMagnitude": 1.351,
@@ -324,8 +300,8 @@
         "Rank": 12
     },
     {
-        "id": 28,
-        "TeamName": "zahra",
+        "id": 3,
+        "TeamName": "NSBE",
         "LastSubmission": "2024-10-10 18:04:32",
         "SuccessRate": 0.948,
         "PerturbationMagnitude": 1.3503,
@@ -336,7 +312,7 @@
         "Rank": 13
     },
     {
-        "id": 29,
+        "id": 2,
         "TeamName": "Hung Nguyen",
         "LastSubmission": "2024-10-10 18:01:30",
         "SuccessRate": 0.945,
@@ -345,11 +321,11 @@
         "ConfidenceGap": -0.0541,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.607,
-        "Rank": 16
+        "Rank": 15
     },
     {
-        "id": 30,
-        "TeamName": "Hng",
+        "id": 1,
+        "TeamName": "Hung Nguyen",
         "LastSubmission": "2024-10-10 17:47:09",
         "SuccessRate": 0.945,
         "PerturbationMagnitude": 1.3505,
@@ -357,18 +333,6 @@
         "ConfidenceGap": -0.0541,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.607,
-        "Rank": 17
-    },
-    {
-        "id": 31,
-        "TeamName": "Test_for_presentation",
-        "LastSubmission": "2024-10-10 17:42:53",
-        "SuccessRate": 0.944,
-        "PerturbationMagnitude": 1.3503,
-        "AverageConfidence": 0.9861,
-        "ConfidenceGap": -0.0585,
-        "VisualSimilarity": 0.9893,
-        "TotalScore": 0.6068,
-        "Rank": 19
+        "Rank": 16
     }
 ]

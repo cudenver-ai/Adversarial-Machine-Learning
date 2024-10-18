@@ -75,6 +75,15 @@ def calculate_rank():
     except Exception as e:
         logging.error('Error generating output: {}'.format(e))
 
+    # Flip the IDs
+    logging.info('Flipping team IDs')
+    try:
+        team_data_len = len(team_data)
+        for index, entry in enumerate(team_data):
+            entry['id'] = team_data_len - index
+    except Exception as e:
+        logging.error('Error flipping team IDs: {}'.format(e))
+
     # Save TeamData
     logging.info('Saving TeamData.json')
     try:

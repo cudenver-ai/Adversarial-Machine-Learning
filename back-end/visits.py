@@ -74,7 +74,7 @@ def update_visits():
     df_parsed["date"] = pd.to_datetime(df_parsed["date"], format="%d/%b/%Y:%H:%M:%S %z")
 
     #print(df_parsed["date"])
-    october_first_2024 = pd.Timestamp(2024, 9, 30, tz='UTC-06:00')
+    october_first_2024 = pd.Timestamp(2024, 10, 1, tz='UTC-06:00')
 
     df_filtered = df_parsed[
         (df_parsed["method"] == "GET")

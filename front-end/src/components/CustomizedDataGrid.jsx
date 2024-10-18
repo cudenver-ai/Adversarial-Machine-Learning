@@ -29,6 +29,7 @@ export default function CustomizedDataGrid() {
     { field: 'id', headerName: 'Submission', width: 120 },
     { field: 'TeamName', headerName: 'Team Name', width: 150 },
     { field: 'LastSubmission', headerName: 'Submission Time', width: 170 },
+    { field: 'Rank', headerName: 'Submission Rank', width: 170 },
     { field: 'SuccessRate', headerName: 'Success Rate', width: 150 },
     {
       field: 'PerturbationMagnitude',
@@ -43,7 +44,6 @@ export default function CustomizedDataGrid() {
     },
     { field: 'ConfidenceGap', headerName: 'Confidence Gap', width: 150 },
     { field: 'TotalScore', headerName: 'Total Score', width: 150 },
-    { field: 'Rank', headerName: 'Rank', width: 100 },
   ];
 
   return loading ? (
