@@ -6317,3 +6317,217 @@ AttributeError: 'list' object has no attribute 'to'
 2024-10-18 08:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
 2024-10-18 08:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
 2024-10-18 08:00:02 - INFO - -----------------------------------------------------------
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 09:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 09:00:02 - INFO - JSON file updated successfully!
+2024-10-18 09:00:02 - INFO - -------------------------------
+2024-10-18 09:00:02 - INFO - Starting evaluation script
+2024-10-18 09:00:02 - INFO - Evaluation started at: 2024-10-18 09:00:02.460515
+2024-10-18 09:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 09:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 09:00:02 - INFO - -----------------------------------------------------------
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 10:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 10:00:03 - INFO - JSON file updated successfully!
+2024-10-18 10:00:03 - INFO - -------------------------------
+2024-10-18 10:00:03 - INFO - Starting evaluation script
+2024-10-18 10:00:03 - INFO - Evaluation started at: 2024-10-18 10:00:03.227570
+2024-10-18 10:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 10:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 10:00:03 - INFO - -----------------------------------------------------------
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 11:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 11:00:02 - INFO - JSON file updated successfully!
+2024-10-18 11:00:02 - INFO - -------------------------------
+2024-10-18 11:00:02 - INFO - Starting evaluation script
+2024-10-18 11:00:02 - INFO - Evaluation started at: 2024-10-18 11:00:02.907752
+2024-10-18 11:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 11:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 11:00:02 - INFO - -----------------------------------------------------------
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 12:00:02 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 12:00:02 - INFO - JSON file updated successfully!
+2024-10-18 12:00:02 - INFO - -------------------------------
+2024-10-18 12:00:02 - INFO - Starting evaluation script
+2024-10-18 12:00:02 - INFO - Evaluation started at: 2024-10-18 12:00:02.607429
+2024-10-18 12:00:02 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 12:00:02 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 12:00:02 - INFO - -----------------------------------------------------------
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 13:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 13:00:03 - INFO - JSON file updated successfully!
+2024-10-18 13:00:03 - INFO - -------------------------------
+2024-10-18 13:00:03 - INFO - Starting evaluation script
+2024-10-18 13:00:03 - INFO - Evaluation started at: 2024-10-18 13:00:03.505886
+2024-10-18 13:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 13:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 13:00:03 - INFO - -----------------------------------------------------------
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 13:31:16 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 13:31:16 - INFO - JSON file updated successfully!
+2024-10-18 13:31:16 - INFO - -------------------------------
+2024-10-18 13:31:16 - INFO - Starting evaluation script
+2024-10-18 13:31:16 - INFO - Evaluation started at: 2024-10-18 13:31:16.717686
+2024-10-18 13:31:16 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 13:31:16 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 13:31:16 - INFO - -----------------------------------------------------------
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 13:33:29 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 13:33:30 - INFO - JSON file updated successfully!
+2024-10-18 13:33:30 - INFO - -------------------------------
+2024-10-18 13:33:30 - INFO - Starting evaluation script
+2024-10-18 13:33:30 - INFO - Evaluation started at: 2024-10-18 13:33:30.103192
+2024-10-18 13:33:30 - INFO - Starting evaluation. Files found in Uploads: ['Delete']
+2024-10-18 13:33:30 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_13-33-30
+2024-10-18 13:33:30 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Delete to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_13-33-30/Delete
+2024-10-18 13:33:30 - INFO - Finished Moving folders
+2024-10-18 13:33:30 - INFO - Processing folder: Delete
+2024-10-18 13:33:30 - INFO - Loaded team name: Delete, time stamp: 2024-10-18 13:33:24 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_13-33-30/Delete/upload_info.txt
+2024-10-18 13:33:30 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-18_13-33-30/Delete/vicente.pkl
+2024-10-18 13:33:30 - INFO - Loaded CIFAR-10 test data.
+2024-10-18 13:33:30 - INFO - Model loaded and moved to device: cuda
+2024-10-18 13:33:30 - INFO - Score calculated for team: Delete
+2024-10-18 13:33:30 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 13:33:30 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-18 13:33:30 - INFO - Evaluation ended at: 2024-10-18 13:33:30.764824
+2024-10-18 13:33:30 - INFO - Evaluation ran for: 0:00:00.661632
+2024-10-18 13:33:30 - INFO - Starting update_evalMetrics
+2024-10-18 13:33:30 - INFO - Loading allSubmissions.json
+2024-10-18 13:33:30 - INFO - Outputting template due to zero submissions
+2024-10-18 13:33:30 - INFO - Parsing 29 entries from allSubmissions.json
+2024-10-18 13:33:30 - INFO - Adding no-submission days.
+2024-10-18 13:33:30 - INFO - Sorting and extracting metrics
+2024-10-18 13:33:30 - INFO - Updating trendline
+2024-10-18 13:33:30 - INFO - Saving evalMetric.json
+2024-10-18 13:33:30 - INFO - Done with update_evalMetrics
+2024-10-18 13:33:30 - INFO - Starting update_leaderBoard
+2024-10-18 13:33:30 - INFO - Loading allSubmissions.json
+2024-10-18 13:33:30 - INFO - Extracting scores, timestamps, and team names
+2024-10-18 13:33:30 - INFO - Sorting stats (teamwise)
+2024-10-18 13:33:30 - INFO - Sortings stats (overall)
+2024-10-18 13:33:30 - INFO - Populating leaderboard
+2024-10-18 13:33:30 - INFO - Saving leaderboard.json
+2024-10-18 13:33:30 - INFO - Starting calculate_rank
+2024-10-18 13:33:30 - INFO - Loading allSubmissions.json
+2024-10-18 13:33:30 - INFO - Outputting template due to zero submissions
+2024-10-18 13:33:30 - INFO - Sorting submissions by timestamp & team name
+2024-10-18 13:33:30 - INFO - Converting back-end to front-end keys
+2024-10-18 13:33:30 - INFO - Sorting submissions by score
+2024-10-18 13:33:30 - INFO - Generating output
+2024-10-18 13:33:30 - INFO - Flipping team IDs
+2024-10-18 13:33:30 - INFO - Saving TeamData.json
+2024-10-18 13:33:30 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-18 13:33:30 - INFO - -----------------------------------------------------------
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-18 14:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-18 14:00:03 - INFO - JSON file updated successfully!
+2024-10-18 14:00:03 - INFO - -------------------------------
+2024-10-18 14:00:03 - INFO - Starting evaluation script
+2024-10-18 14:00:03 - INFO - Evaluation started at: 2024-10-18 14:00:03.251842
+2024-10-18 14:00:03 - INFO - Uploads directory is empty. Skipping evaluation.
+2024-10-18 14:00:03 - INFO - Evaluation did not proceed. Skipping subsequent functions.
+2024-10-18 14:00:03 - INFO - -----------------------------------------------------------

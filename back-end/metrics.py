@@ -181,8 +181,8 @@ def update_leaderBoard():
     num_teams = len(sorted_overall_metrics)
     try:
         leaderboard = [{'rank': index + 1,
-                        'team': sorted_overall_metrics[index][1] if index < num_teams else '',
-                        'score': sorted_overall_metrics[index][0] if index < num_teams else 0}
+                        'team': sorted_overall_metrics[index][0] if index < num_teams else '',
+                        'score': sorted_overall_metrics[index][1] if index < num_teams else 0}
                        for index in range(k)]
     except Exception as e:
         logging.error('Error populating leaderboard: {}'.format(e))

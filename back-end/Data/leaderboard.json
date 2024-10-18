@@ -1,27 +1,27 @@
 [
     {
         "rank": 1,
-        "team": 0.6352,
-        "score": "W's Only (1)"
+        "team": "W's Only",
+        "score": 0.6352
     },
     {
         "rank": 2,
-        "team": 0.6328,
-        "score": "W's Only (2)"
+        "team": "Vojjina",
+        "score": 0.6086
     },
     {
         "rank": 3,
-        "team": 0.6155,
-        "score": "W's Only"
+        "team": "Denver Continental",
+        "score": 0.6081
     },
     {
         "rank": 4,
-        "team": 0.6153,
-        "score": "W's Only (3)"
+        "team": "NSBE",
+        "score": 0.6079
     },
     {
         "rank": 5,
-        "team": 0.615,
-        "score": "W's Only (test)"
+        "team": "Hung Nguyen",
+        "score": 0.607
     }
 ]
