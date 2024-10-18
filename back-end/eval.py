@@ -93,7 +93,7 @@ def calculate_score(
         + beta
         * avg_confidence_incorrect  # No normalization needed, softmax is already in [0,1]
         + gamma * (1 - avg_l2_perturbation / max_perturbation)  # Normalized L2
-        + delta * (1 - avg_ssim)  # SSIM is already between 0 and 1
+        + delta * (avg_ssim)  # SSIM is already between 0 and 1
         + epsilon * avg_confidence_gap
     )  # Confidence gap normalized to [0,1]
 
