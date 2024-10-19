@@ -205,6 +205,10 @@ def evaluate():
             logging.info(f"Model loaded and moved to device: {device}")
 
             # Evaluate and calculate the score
+            if not isinstance(advs[0], torch.Tensor):
+                continue
+            if list(advs[0].shape) != [1000,3,32,32]:
+                continue
             score_metrics = calculate_score(model, x_test, advs[0], y_test)
             score_metrics["team_name"] = team_name
             score_metrics["time_stamp"] = time_stamp
@@ -303,6 +307,10 @@ def reEvaluate():
                 logging.info(f"Model loaded and moved to device: {device}")
 
                 # Evaluate and calculate the score
+                if not isinstance(advs[0], torch.Tensor):
+                    continue
+                if list(advs[0].shape) != [1000,3,32,32]:
+                    continue
                 score_metrics = calculate_score(model, x_test, advs[0], y_test)
                 score_metrics["team_name"] = team_name
                 score_metrics["time_stamp"] = time_stamp
@@ -332,3 +340,5 @@ def reEvaluate():
     logging.info(f"Evaluation ran for: {duration}")
 
     return True
+
+reEvaluate()
