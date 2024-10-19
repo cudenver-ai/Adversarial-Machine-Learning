@@ -340,5 +340,3 @@ def reEvaluate():
     logging.info(f"Evaluation ran for: {duration}")
 
     return True
-
-reEvaluate()
