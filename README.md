@@ -44,6 +44,9 @@ Welcome to the **Adversarial Machine Learning Challenge** project! This reposito
 
 **Important Note**: Before running the back-end, make sure to update the `path` variable in `back-end/app.py` to point to the directory on your machine where the data files (e.g., `TeamData.json`, `challenge.json`) are stored.
 
+**Windows**: SQLite3
+If you are windows you must have SQLite3 installed before developing https://www.sqlite.org/download.html
+
 For example:
 
 **Unix/Linux**: Update path like this:

@@ -16,6 +16,22 @@ def create_daily_visits_table_if_not_exists():
         connection.commit()
         connection.close()
 
+def create_team_data_table_if_not_exists():
+    with open(f'{path}/back-end/Data/deploy_db/CREATE_TABLE_TeamData.sql') as sql_file:
+        sql_script = sql_file.read()
+        connection = sqlite3.connect(f'{path}/back-end/Data/ml.db')
+        connection.execute(sql_script)
+        connection.commit()
+        connection.close()
+
+def create_all_submissions_table_if_not_exists():
+    with open(f'{path}/back-end/Data/deploy_db/CREATE_TABLE_AllSubmissions.sql') as sql_file:
+        sql_script = sql_file.read()
+        connection = sqlite3.connect(f'{path}/back-end/Data/ml.db')
+        connection.execute(sql_script)
+        connection.commit()
+        connection.close()
+
 def get_daily_visits():
     connection = sqlite3.connect(f'{path}/back-end/Data/ml.db')
     cursor = connection.cursor()
@@ -67,7 +83,27 @@ def get_daily_visits():
     connection.close()
     return response
 
+def fetch_team_data():
+    conn = sqlite3.connect(f'{path}/back-end/Data/ml.db')
+    cursor = conn.cursor()
+    cursor.execute('''SELECT * from TeamData''')
+    column_names = [description[0] for description in cursor.description]
+    rows = cursor.fetchall()
+    team_data = [dict(zip(column_names, row)) for row in rows]
+    return team_data
+
+def fetch_all_submissions():
+    conn = sqlite3.connect(f'{path}/back-end/Data/ml.db')
+    cursor = conn.cursor()
+    cursor.execute('''SELECT * from AllSubmissions''')
+    column_names = [description[0] for description in cursor.description]
+    rows = cursor.fetchall()
+    submissions = [dict(zip(column_names, row)) for row in rows]
+    return submissions
+
 
 def deploy_ML_DB():
     create_db_if_not_exists()
     create_daily_visits_table_if_not_exists()
+    create_all_submissions_table_if_not_exists()
+    create_team_data_table_if_not_exists()

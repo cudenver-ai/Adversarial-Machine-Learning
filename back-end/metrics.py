@@ -2,19 +2,20 @@ import json
 import os
 from datetime import datetime
 import logging
+from Data.aml_database import fetch_all_submissions
 
-log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
-logging.basicConfig(
-    filename=log_file,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
+# log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
+# logging.basicConfig(
+#     filename=log_file,
+#     level=logging.INFO,
+#     format='%(asctime)s - %(levelname)s - %(message)s',
+#     datefmt='%Y-%m-%d %H:%M:%S'
+# )
 
-data_path = '/home/vicente/dec/Adversarial-Machine-Learning/back-end/'
+# data_path = '/home/vicente/dec/Adversarial-Machine-Learning/back-end/'
 
 
-def update_evalMetrics():
+def get_evalMetrics():
     logging.info('Starting update_evalMetrics')
     # Prepare output array
     metric_labels = ['Success Rate', 'Perturbation Magnitude', 'Visual Similarity', 'Average Confidence',
@@ -25,12 +26,11 @@ def update_evalMetrics():
                 'trend': ''} for label in metric_labels]
 
     # Open submissions data
-    logging.info('Loading allSubmissions.json')
+    logging.info('Loading allSubmissions')
     try:
-        with open (os.path.join(data_path, 'Data/allSubmissions.json')) as file:
-            submissions = json.load(file)
+        submissions = fetch_all_submissions()
     except Exception as e:
-        logging.error('Error loading allSubmission.son: {}'.format(e))
+        logging.error('Error loading allSubmission: {}'.format(e))
 
     # Accounting for no submissions
     logging.info('Outputting template due to zero submissions')
@@ -39,7 +39,7 @@ def update_evalMetrics():
 
 
     # Parse submissions, group by date
-    logging.info('Parsing {} entries from allSubmissions.json'.format(len(submissions)))
+    logging.info('Parsing {} entries from allSubmissions'.format(len(submissions)))
     history = {}
     try:
         for entry in submissions:
@@ -63,7 +63,7 @@ def update_evalMetrics():
                     'team_name': [entry['team_name']]
                 }
     except Exception as e:
-        logging.error('Error parsing allSubmissions.json: {}'.format(e))
+        logging.error('Error parsing allSubmissions: {}'.format(e))
 
     # Sort by month & day, add max per day to metrics
     logging.info('Sorting and extracting metrics')
@@ -90,29 +90,20 @@ def update_evalMetrics():
     except Exception as e:
         logging.error('Error updating trend direction: {}'.format(e))
 
-    # Save metrics
-    logging.info('Saving evalMetric.json')
-    try:
-        with open(os.path.join(data_path, 'Data/evalMetric.json'), 'w') as outfile:
-            outfile.write(json.dumps(metrics, indent=4))
-    except Exception as e:
-        logging.error('Error saving evalMetric.json: {}'.format(e))
-
-    logging.info('Done with update_evalMetrics')
+    return metrics
 
 
-def update_leaderBoard():
+def get_leaderBoard():
     logging.info('Starting update_leaderBoard')
     k = 5  # Number of slots in leaderboard
     history = {}
 
     # Load submissions
-    logging.info('Loading allSubmissions.json')
+    logging.info('Loading allSubmissions')
     try:
-        with open(os.path.join(data_path, 'Data/allSubmissions.json')) as file:
-            submissions = json.load(file)
+        submissions = fetch_all_submissions()
     except Exception as e:
-        logging.error('Error loading allSubmissions.json: {}'.format(e))
+        logging.error('Error loading allSubmissions: {}'.format(e))
 
     # Extract scores + timestamps, and team names
     logging.info('Extracting scores, timestamps, and team names')
@@ -162,11 +153,5 @@ def update_leaderBoard():
                        for index in range(max(num_teams, k))]
     except Exception as e:
         logging.error('Error populating leaderboard: {}'.format(e))
-
-    # Save leaderboard
-    logging.info('Saving leaderboard.json')
-    try:
-        with open(os.path.join(data_path, 'Data/leaderboard.json'), 'w') as outfile:
-            outfile.write(json.dumps(leaderboard, indent=4))
-    except Exception as e:
-        logging.error('Error saving loaderboard.json: {}'.format(e))
+    
+    return leaderboard

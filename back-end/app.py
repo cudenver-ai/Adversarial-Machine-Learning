@@ -3,8 +3,9 @@ from flask_cors import CORS
 from config import DevelopmentConfig, ProductionConfig
 from parseData import loadData, load_pickle_file
 import os
-from Data.aml_database import deploy_ML_DB, get_daily_visits
+from Data.aml_database import deploy_ML_DB, fetch_team_data, get_daily_visits
 from datetime import datetime
+from metrics import get_evalMetrics, get_leaderBoard
 
 deploy_ML_DB()
 app = Flask(__name__)
@@ -56,12 +57,11 @@ def upload_images():
 
 @app.route("/api/team-data", methods=["GET"])
 def get_team_data():
-    data = f"{path}/back-end/Data/TeamData.json"
+    data = fetch_team_data()
 
     # Load and return the parsed team data
-    if os.path.exists(data):
-        results = loadData(data)
-        return jsonify(results)
+    if data != None or len(data) != 0:
+        return jsonify(data)
     else:
         return jsonify({"error": "Evaluation data not found"}), 404
 
@@ -69,11 +69,10 @@ def get_team_data():
 @app.route("/api/eval-data", methods=["GET"])
 def get_eval_data():
     # Load and return the parsed team data
-    data = f'{path}{"/back-end/Data/evalMetric.json"}'
+    data = get_evalMetrics()
 
-    if os.path.exists(data):
-        results = loadData(data)
-        return jsonify(results)
+    if data != None or len(data) != 0:
+        return jsonify(data)
     else:
         return jsonify({"error": "Visits data not found"}), 404
 
@@ -91,11 +90,10 @@ def get_challenge_content():
 
 @app.route("/api/leaderboard", methods=["GET"])
 def get_leaderboard_data():
-    data = f"{path}/back-end/Data/leaderboard.json"
+    data = get_leaderBoard()
 
-    if os.path.exists(data):
-        results = loadData(data)
-        return jsonify(results)
+    if data != None or len(data) != 0:
+        return jsonify(data)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
 
@@ -141,21 +139,3 @@ def download_data():
         return send_from_directory(dataset_dir, dataset, as_attachment=True)
     else:
         return jsonify({"error": "Data not found"}), 404
-
-
-@app.route("/api/update-timestamp", methods=["GET"])
-def update_timestamp():
-    data = os.path.join(path, "Data/visits.json")
-
-    if os.path.isfile(data):
-        timestamp = datetime.fromtimestamp(os.path.getmtime(data)).strftime(
-            "%Y-%m-%d %H:%M:%S"
-        )
-
-        output = {"success": True, "timestamp": timestamp}
-    else:
-        output = {"success": False, "timstamp": ""}
-
-    response = jsonify(output)
-    response.headers["Cache-Control"] = "no-store, no-cache, must-revalidate, max-age=0"
-    return response

@@ -1,7 +1,7 @@
-import json
-import os
 from datetime import datetime
 import logging
+import sqlite3
+from Data.aml_database import fetch_all_submissions
 
 log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
 logging.basicConfig(
@@ -12,19 +12,19 @@ logging.basicConfig(
 )
 
 data_path = '/home/vicente/dec/Adversarial-Machine-Learning/back-end/'
-
+delete_team_data = '''delete from TeamData'''
+conn = sqlite3.connect('./back-end/Data/ml.db')
+insert_team_data_sql_template = '''
+INSERT INTO TeamData ("TeamName", "LastSubmission", "SuccessRate", "PerturbationMagnitude", "AverageConfidence", "ConfidenceGap", "VisualSimilarity", "TotalScore", "Rank")
+VALUES("{team_name}", "{last_submission}", {success_rate}, {perturbation_magnitude}, {average_confidence}, {confidence_gap}, {visual_similarity}, {total_score}, {rank})
+'''
 
 def calculate_rank():
     logging.info('Starting calculate_rank')
     team_data = []
 
-    # Load submissions
-    logging.info('Loading allSubmissions.json')
-    try:
-        with open(os.path.join(data_path, 'Data/allSubmissions.json')) as file:
-            submissions = json.load(file)
-    except Exception as e:
-        logging.error('Error loading allSubmissions.json: {}'.format(e))
+    conn.execute(delete_team_data)
+    submissions = fetch_all_submissions()
 
     # Accounting for no submissions
     logging.info('Outputting template due to zero submissions')
@@ -75,10 +75,21 @@ def calculate_rank():
     except Exception as e:
         logging.error('Error generating output: {}'.format(e))
 
-    # Save TeamData
-    logging.error('Saving TeamData.json')
     try:
-        with open(os.path.join(data_path, 'Data/TeamData.json'), 'w') as outfile:
-            outfile.write(json.dumps(team_data, indent=4))
+        for entry in team_data:
+            insert_team_data_sql = insert_team_data_sql_template.format(
+                team_name = entry['TeamName'],
+                last_submission = entry['LastSubmission'],
+                success_rate = entry['SuccessRate'],
+                perturbation_magnitude = entry['PerturbationMagnitude'],
+                average_confidence = entry['AverageConfidence'],
+                confidence_gap = entry['ConfidenceGap'],
+                visual_similarity = entry['VisualSimilarity'],
+                total_score = entry['TotalScore'],
+                rank = entry['Rank']
+            )
+            conn.execute(insert_team_data_sql)
+            conn.commit()
     except Exception as e:
-        logging.error('Error saving TeamData.json: {}'.format(e))
+        logging.error('Error saving TeamData: {e}'.format(e))
+    conn.close()

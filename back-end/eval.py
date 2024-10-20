@@ -6,9 +6,9 @@ import shutil
 import pickle
 import torch
 import torch.nn.functional as F
-from robustbench.data import load_cifar10
 from robustbench.utils import load_model
 from skimage.metrics import structural_similarity as ssim
+import sqlite3
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -25,6 +25,11 @@ logging.basicConfig(
 
 logging.info("Starting evaluation script")
 
+conn = sqlite3.connect('./back-end/Data/ml.db')
+all_submissions_insert_sql = '''
+INSERT INTO AllSubmissions ("incorrect_ratio", "avg_confidence_incorrect", "avg_l2_pertubation", "avg_ssim", "avg_confidence_gap", "score", "team_name", "time_stamp")
+VALUES ({incorrect_ratio}, {avg_confidence_incorrect}, {avg_l2_pertubation}, {avg_ssim}, {avg_confidence_gap}, {score}, "{team_name}", "{time_stamp}")
+'''
 
 def calculate_score(
     model,
@@ -205,18 +210,21 @@ def evaluate():
         score_metrics["time_stamp"] = time_stamp
         logging.info(f"Score calculated for team: {team_name}")
 
-        # Append the results to the JSON file
-        submission_json = os.path.join(current_directory, "Data", "allSubmissions.json")
-        
-        with open(submission_json, "r") as f:
-            data = json.load(f)
-            #data.append could also be placed outside this with open block (I think)
-            data.append(score_metrics)
-            logging.info(f"Loaded existing submission data from {submission_json}")
-            
 
-        with open(submission_json, "w") as f:
-            json.dump(data, f, indent=4)
-            logging.info(f"Updated submission data saved to {submission_json}")
+        insert_sql = all_submissions_insert_sql.format(
+            incorrect_ratio = score_metrics["incorrect_ratio"],
+            avg_confidence_incorrect = score_metrics["avg_confidence_incorrect"],
+            avg_l2_pertubation = score_metrics["avg_l2_pertubation"],
+            avg_ssim = score_metrics["avg_ssim"],
+            avg_confidence_gap = score_metrics["avg_confidence_gap"],
+            score = score_metrics["score"],
+            team_name = score_metrics["team_name"],
+            time_stamp = score_metrics["time_stamp"]
+        )
 
-        return True
+        conn.execute(insert_sql)
+        conn.commit()
+    conn.close()
+    return True
+
+evaluate()
