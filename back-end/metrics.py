@@ -1,18 +1,14 @@
-import json
-import os
 from datetime import datetime
 import logging
 from Data.aml_database import fetch_all_submissions
 
-# log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
-# logging.basicConfig(
-#     filename=log_file,
-#     level=logging.INFO,
-#     format='%(asctime)s - %(levelname)s - %(message)s',
-#     datefmt='%Y-%m-%d %H:%M:%S'
-# )
-
-# data_path = '/home/vicente/dec/Adversarial-Machine-Learning/back-end/'
+log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
+logging.basicConfig(
+    filename=log_file,
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
 
 
 def get_evalMetrics():
