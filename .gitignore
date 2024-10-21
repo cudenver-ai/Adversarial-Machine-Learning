@@ -8,3 +8,4 @@ notes.md
 app.log
 *.db
 .DS_Store
+*.log
