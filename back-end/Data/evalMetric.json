@@ -19,7 +19,10 @@
             0.945,
             0.991,
             1.0,
-            0.993
+            0.993,
+            0.997,
+            1.0,
+            0.059
         ],
         "interval": "daily",
         "trend": "down"
@@ -44,10 +47,13 @@
             1.3512,
             1.466,
             4.9993,
-            31.0403
+            31.0403,
+            1.5194,
+            13.09,
+            0.0314
         ],
         "interval": "daily",
-        "trend": "up"
+        "trend": "down"
     },
     {
         "title": "Visual Similarity",
@@ -69,10 +75,13 @@
             1.0,
             1.0,
             1.0,
-            0.99
+            1.0,
+            1.0,
+            1.0,
+            1.0
         ],
         "interval": "daily",
-        "trend": "down"
+        "trend": "neutral"
     },
     {
         "title": "Average Confidence",
@@ -94,10 +103,13 @@
             0.985,
             0.9906,
             0.98,
-            0.9927
+            0.9927,
+            0.9957,
+            0.9962,
+            0.7423
         ],
         "interval": "daily",
-        "trend": "up"
+        "trend": "down"
     },
     {
         "title": "Confidence Gap",
@@ -119,9 +131,12 @@
             0.1588,
             -0.056,
             -0.0062,
-            0.1729
+            0.1729,
+            0.3932,
+            0.4256,
+            -0.5914
         ],
         "interval": "daily",
-        "trend": "up"
+        "trend": "down"
     }
 ]
