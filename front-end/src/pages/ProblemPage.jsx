@@ -252,7 +252,7 @@ export default function ProblemPage() {
                   <ul style={{ paddingLeft: '20px', listStyleType: 'disc' }}>
                     <li>
                       The final submission deadline is{' '}
-                      <strong>October 29th, 2024</strong>. Late submissions will
+                      <strong>October 30th, 2024</strong>. Late submissions will
                       not be accepted.
                     </li>
                   </ul>
@@ -352,7 +352,7 @@ export default function ProblemPage() {
                       the original ones.
                     </li>
                     <li>
-                      Lower SSIM values (closer to 0) indicate a more successful
+                      Higher SSIM values (closer to 1) indicate a more successful
                       attack since it implies that the perturbation was
                       perceptually subtle yet effective.
                     </li>

@@ -278,7 +278,7 @@ export default function HomePage() {
                   <strong>Challenge Start:</strong> October 1st, 2024
                 </li>
                 <li>
-                  <strong>Submission Deadline:</strong> October 29th, 2024,
+                  <strong>Submission Deadline:</strong> October 30th, 2024,
                   11:59 PM
                 </li>
                 <li>

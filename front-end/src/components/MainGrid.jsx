@@ -154,7 +154,7 @@ export default function MainGrid({ setCurrentPage }) {
                     <strong>Challenge Start:</strong> October 1st, 2024
                   </li>
                   <li>
-                    <strong>Submission Deadline:</strong> October 29th, 2024,
+                    <strong>Submission Deadline:</strong> October 30th, 2024,
                     11:59 PM 
                   </li>
                   <li>
@@ -294,7 +294,17 @@ export default function MainGrid({ setCurrentPage }) {
                 Upload Your Submission
               </Typography>
               <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-                Please upload your file in .pkl format,
+                Please make sure of the following:
+              </Typography>
+              <Typography variant="body1" fontSize={18} lineHeight={1.8}>
+                <ul style={{ paddingLeft: '20px' }}>
+                  <li>
+                    Use the same <strong>team name</strong> in all submissions.
+                  </li>
+                  <li>
+                    Your Tensor has the following shape: <strong>[1000, 3, 32, 32]</strong>.
+                  </li>
+                </ul>
               </Typography>
               <Box sx={{ mt: 2, mb: 2 }}>
                 <HighlightedCard />
@@ -330,7 +340,7 @@ export default function MainGrid({ setCurrentPage }) {
                     <strong>Challenge Start:</strong> October 1st, 2024
                   </li>
                   <li>
-                    <strong>Submission Deadline:</strong> October 29th, 2024,
+                    <strong>Submission Deadline:</strong> October 30th, 2024,
                     11:59 PM
                   </li>
                   <li>

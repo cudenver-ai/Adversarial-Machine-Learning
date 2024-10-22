@@ -9718,3 +9718,74 @@ RuntimeError: Expected all tensors to be on the same device, but found at least 
 2024-10-21 20:39:27 - INFO - Upload successful - Teamname: Mighty Milo Hackers at2024-10-21 20:39:27
 2024-10-21 20:39:29 - INFO - Directory created: Uploads/Mighty_Milo_Hackers20-39-29
 2024-10-21 20:39:29 - INFO - Upload successful - Teamname: Mighty Milo Hackers at2024-10-21 20:39:29
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.5.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.11.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.13.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.6.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.4.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.1
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.14.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.2.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.3.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.8.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.12.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.9.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.10.gz
+2024-10-21 21:00:03 - INFO - Finished reading: production-server_access.log.7.gz
+2024-10-21 21:00:03 - INFO - JSON file updated successfully!
+2024-10-21 21:00:03 - INFO - -------------------------------
+2024-10-21 21:00:03 - INFO - Starting evaluation script
+2024-10-21 21:00:03 - INFO - Evaluation started at: 2024-10-21 21:00:03.211236
+2024-10-21 21:00:03 - INFO - Starting evaluation. Files found in Uploads: ['Mighty_Milo_Hackers20-39-29', 'Mighty_Milo_Hackers20-39-26']
+2024-10-21 21:00:03 - INFO - Created timestamped folder: /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-21_21-00-03
+2024-10-21 21:00:03 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mighty_Milo_Hackers20-39-29 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-21_21-00-03/Mighty_Milo_Hackers20-39-29
+2024-10-21 21:00:03 - INFO - Moved folder from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads/Mighty_Milo_Hackers20-39-26 to /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-21_21-00-03/Mighty_Milo_Hackers20-39-26
+2024-10-21 21:00:03 - INFO - Finished Moving folders
+2024-10-21 21:00:03 - INFO - Processing folder: Mighty_Milo_Hackers20-39-29
+2024-10-21 21:00:03 - INFO - Loaded team name: Mighty Milo Hackers, time stamp: 2024-10-21 20:39:29 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-21_21-00-03/Mighty_Milo_Hackers20-39-29/upload_info.txt
+2024-10-21 21:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-21_21-00-03/Mighty_Milo_Hackers20-39-29/MMH.pkl
+2024-10-21 21:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-21 21:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-21 21:00:03 - INFO - Score calculated for team: Mighty Milo Hackers
+2024-10-21 21:00:03 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-21 21:00:03 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-21 21:00:03 - INFO - Processing folder: Mighty_Milo_Hackers20-39-26
+2024-10-21 21:00:03 - INFO - Loaded team name: Mighty Milo Hackers, time stamp: 2024-10-21 20:39:27 from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-21_21-00-03/Mighty_Milo_Hackers20-39-26/upload_info.txt
+2024-10-21 21:00:03 - INFO - Loaded adversarial examples from /home/vicente/dec/Adversarial-Machine-Learning/back-end/evaluated/2024-10-21_21-00-03/Mighty_Milo_Hackers20-39-26/MMH.pkl
+2024-10-21 21:00:03 - INFO - Loaded CIFAR-10 test data.
+2024-10-21 21:00:03 - INFO - Model loaded and moved to device: cuda
+2024-10-21 21:00:04 - INFO - Score calculated for team: Mighty Milo Hackers
+2024-10-21 21:00:04 - INFO - Loaded existing submission data from /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-21 21:00:04 - INFO - Updated submission data saved to /home/vicente/dec/Adversarial-Machine-Learning/back-end/Data/allSubmissions.json
+2024-10-21 21:00:04 - INFO - Evaluation ended at: 2024-10-21 21:00:04.346669
+2024-10-21 21:00:04 - INFO - Evaluation ran for: 0:00:01.135433
+2024-10-21 21:00:04 - INFO - Starting update_evalMetrics
+2024-10-21 21:00:04 - INFO - Loading allSubmissions.json
+2024-10-21 21:00:04 - INFO - Outputting template due to zero submissions
+2024-10-21 21:00:04 - INFO - Parsing 58 entries from allSubmissions.json
+2024-10-21 21:00:04 - INFO - Adding no-submission days.
+2024-10-21 21:00:04 - INFO - Sorting and extracting metrics
+2024-10-21 21:00:04 - INFO - Updating trendline
+2024-10-21 21:00:04 - INFO - Saving evalMetric.json
+2024-10-21 21:00:04 - INFO - Done with update_evalMetrics
+2024-10-21 21:00:04 - INFO - Starting update_leaderBoard
+2024-10-21 21:00:04 - INFO - Loading allSubmissions.json
+2024-10-21 21:00:04 - INFO - Extracting scores, timestamps, and team names
+2024-10-21 21:00:04 - INFO - Sorting stats (teamwise)
+2024-10-21 21:00:04 - INFO - Sortings stats (overall)
+2024-10-21 21:00:04 - INFO - Populating leaderboard
+2024-10-21 21:00:04 - INFO - Saving leaderboard.json
+2024-10-21 21:00:04 - INFO - Starting calculate_rank
+2024-10-21 21:00:04 - INFO - Loading allSubmissions.json
+2024-10-21 21:00:04 - INFO - Outputting template due to zero submissions
+2024-10-21 21:00:04 - INFO - Sorting submissions by timestamp & team name
+2024-10-21 21:00:04 - INFO - Converting back-end to front-end keys
+2024-10-21 21:00:04 - INFO - Sorting submissions by score
+2024-10-21 21:00:04 - INFO - Generating output
+2024-10-21 21:00:04 - INFO - Flipping team IDs
+2024-10-21 21:00:04 - INFO - Saving TeamData.json
+2024-10-21 21:00:04 - INFO - Evaluation and subsequent functions completed successfully.
+2024-10-21 21:00:04 - INFO - -----------------------------------------------------------
+2024-10-21 21:30:31 - INFO - Directory created: Uploads/Mighty_Milo_Hackers21-30-31
+2024-10-21 21:30:31 - INFO - Upload successful - Teamname: Mighty Milo Hackers at2024-10-21 21:30:31
