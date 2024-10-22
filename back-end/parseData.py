@@ -18,7 +18,8 @@ def loadData(file):
     return data
 
 def load_pickle_file(file, teamName):
-    dirName = secure_filename(teamName)
+    timestamp = datetime.now().strftime("%H-%M-%S")
+    dirName = secure_filename(teamName) + timestamp
     TEAM_UPLOAD = os.path.join("Uploads", dirName)
 
     try:
