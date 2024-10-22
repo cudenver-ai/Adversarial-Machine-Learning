@@ -278,5 +278,285 @@
         "score": 0.5304,
         "team_name": "W's Only",
         "time_stamp": "2024-10-18 02:20:48"
+    },
+    {
+        "incorrect_ratio": 0.132,
+        "avg_confidence_incorrect": 0.6659,
+        "avg_l2_perturbation": 0.0465,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.1411,
+        "score": 0.4092,
+        "team_name": "Vojjina",
+        "time_stamp": "2024-10-18 15:55:00"
+    },
+    {
+        "incorrect_ratio": 0.538,
+        "avg_confidence_incorrect": 0.9068,
+        "avg_l2_perturbation": 1.7249,
+        "avg_ssim": 0.9823,
+        "avg_confidence_gap": -0.0326,
+        "score": 0.5296,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-18 19:17:35"
+    },
+    {
+        "incorrect_ratio": 0.538,
+        "avg_confidence_incorrect": 0.9068,
+        "avg_l2_perturbation": 1.7249,
+        "avg_ssim": 0.9823,
+        "avg_confidence_gap": -0.0326,
+        "score": 0.5296,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-18 22:04:06"
+    },
+    {
+        "incorrect_ratio": 0.059,
+        "avg_confidence_incorrect": 0.7424,
+        "avg_l2_perturbation": 0.0,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5916,
+        "score": 0.335,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-19 01:43:00"
+    },
+    {
+        "incorrect_ratio": 0.081,
+        "avg_confidence_incorrect": 0.6764,
+        "avg_l2_perturbation": 0.0055,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.3766,
+        "score": 0.3634,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-19 02:10:14"
+    },
+    {
+        "incorrect_ratio": 0.99,
+        "avg_confidence_incorrect": 0.9939,
+        "avg_l2_perturbation": 1.4967,
+        "avg_ssim": 0.987,
+        "avg_confidence_gap": -0.063,
+        "score": 0.6147,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-19 18:35:51"
+    },
+    {
+        "incorrect_ratio": 0.985,
+        "avg_confidence_incorrect": 0.5377,
+        "avg_l2_perturbation": 0.3335,
+        "avg_ssim": 0.9992,
+        "avg_confidence_gap": 0.3932,
+        "score": 0.6177,
+        "team_name": "W's Only (2)",
+        "time_stamp": "2024-10-19 19:57:51"
+    },
+    {
+        "incorrect_ratio": 0.991,
+        "avg_confidence_incorrect": 0.9957,
+        "avg_l2_perturbation": 1.5194,
+        "avg_ssim": 0.9866,
+        "avg_confidence_gap": -0.0646,
+        "score": 0.6149,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-19 19:04:36"
+    },
+    {
+        "incorrect_ratio": 0.991,
+        "avg_confidence_incorrect": 0.5635,
+        "avg_l2_perturbation": 0.4621,
+        "avg_ssim": 0.9959,
+        "avg_confidence_gap": 0.3678,
+        "score": 0.6188,
+        "team_name": "W's Only (1)",
+        "time_stamp": "2024-10-19 19:42:15"
+    },
+    {
+        "incorrect_ratio": 0.987,
+        "avg_confidence_incorrect": 0.5534,
+        "avg_l2_perturbation": 0.3527,
+        "avg_ssim": 0.9991,
+        "avg_confidence_gap": 0.3774,
+        "score": 0.618,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-19 19:34:40"
+    },
+    {
+        "incorrect_ratio": 0.982,
+        "avg_confidence_incorrect": 0.5999,
+        "avg_l2_perturbation": 0.349,
+        "avg_ssim": 0.9991,
+        "avg_confidence_gap": 0.3305,
+        "score": 0.6171,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-19 21:51:17"
+    },
+    {
+        "incorrect_ratio": 0.997,
+        "avg_confidence_incorrect": 0.6032,
+        "avg_l2_perturbation": 0.3671,
+        "avg_ssim": 0.999,
+        "avg_confidence_gap": 0.3286,
+        "score": 0.6197,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-19 22:01:36"
+    },
+    {
+        "incorrect_ratio": 0.995,
+        "avg_confidence_incorrect": 0.573,
+        "avg_l2_perturbation": 0.3494,
+        "avg_ssim": 0.9991,
+        "avg_confidence_gap": 0.3588,
+        "score": 0.6195,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-20 01:29:18"
+    },
+    {
+        "incorrect_ratio": 0.994,
+        "avg_confidence_incorrect": 0.5716,
+        "avg_l2_perturbation": 0.3475,
+        "avg_ssim": 0.9991,
+        "avg_confidence_gap": 0.3604,
+        "score": 0.6194,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-20 02:46:10"
+    },
+    {
+        "incorrect_ratio": 0.063,
+        "avg_confidence_incorrect": 0.7656,
+        "avg_l2_perturbation": 0.0313,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5304,
+        "score": 0.3495,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-20 04:59:25"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.9284,
+        "avg_l2_perturbation": 1.5683,
+        "avg_ssim": 0.9814,
+        "avg_confidence_gap": 0.0032,
+        "score": 0.6172,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 08:40:42"
+    },
+    {
+        "incorrect_ratio": 0.993,
+        "avg_confidence_incorrect": 0.9962,
+        "avg_l2_perturbation": 1.5354,
+        "avg_ssim": 0.9863,
+        "avg_confidence_gap": -0.065,
+        "score": 0.6152,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 09:41:20"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.9025,
+        "avg_l2_perturbation": 2.2847,
+        "avg_ssim": 0.9572,
+        "avg_confidence_gap": 0.0291,
+        "score": 0.6182,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 10:43:49"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.9025,
+        "avg_l2_perturbation": 2.2847,
+        "avg_ssim": 0.9572,
+        "avg_confidence_gap": 0.0291,
+        "score": 0.6182,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 11:02:40"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.9025,
+        "avg_l2_perturbation": 2.2847,
+        "avg_ssim": 0.9572,
+        "avg_confidence_gap": 0.0291,
+        "score": 0.6182,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 12:59:09"
+    },
+    {
+        "incorrect_ratio": 0.059,
+        "avg_confidence_incorrect": 0.7424,
+        "avg_l2_perturbation": 0.0,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5916,
+        "score": 0.335,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 14:36:31"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7177,
+        "avg_l2_perturbation": 0.3768,
+        "avg_ssim": 0.999,
+        "avg_confidence_gap": 0.2139,
+        "score": 0.6202,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-20 16:36:11"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7177,
+        "avg_l2_perturbation": 0.3768,
+        "avg_ssim": 0.999,
+        "avg_confidence_gap": 0.2139,
+        "score": 0.6202,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-20 17:53:12"
+    },
+    {
+        "incorrect_ratio": 0.977,
+        "avg_confidence_incorrect": 0.72,
+        "avg_l2_perturbation": 0.3323,
+        "avg_ssim": 0.9992,
+        "avg_confidence_gap": 0.2101,
+        "score": 0.6163,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-20 18:49:48"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.5024,
+        "avg_l2_perturbation": 13.09,
+        "avg_ssim": 0.5544,
+        "avg_confidence_gap": 0.4256,
+        "score": 0.6302,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-20 19:43:45"
+    },
+    {
+        "incorrect_ratio": 0.357,
+        "avg_confidence_incorrect": 0.7434,
+        "avg_l2_perturbation": 4.3243,
+        "avg_ssim": 0.9416,
+        "avg_confidence_gap": 0.0746,
+        "score": 0.4841,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 20:36:33"
+    },
+    {
+        "incorrect_ratio": 0.043,
+        "avg_confidence_incorrect": 0.7246,
+        "avg_l2_perturbation": 0.8697,
+        "avg_ssim": 0.9595,
+        "avg_confidence_gap": -0.561,
+        "score": 0.3378,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-20 22:55:04"
+    },
+    {
+        "incorrect_ratio": 0.059,
+        "avg_confidence_incorrect": 0.7423,
+        "avg_l2_perturbation": 0.0314,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.5914,
+        "score": 0.3348,
+        "team_name": "NSBE Bombers",
+        "time_stamp": "2024-10-21 13:57:55"
     }
 ]
