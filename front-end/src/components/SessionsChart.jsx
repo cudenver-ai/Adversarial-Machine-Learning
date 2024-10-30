@@ -46,18 +46,40 @@ export default function SessionsChart() {
   const [visitsData, setVisitsData] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // Updated useMemo to calculate percentage changes for all three metrics
   const percentageChange = useMemo(() => {
-    if (visitsData.length === 0 || visitsData[0].data.length < 2) {
-      return 0;
+    if (visitsData.length < 3) {
+      // Ensure all three metrics are available
+      return { visits: 0, uploads: 0, unique: 0 };
     }
 
-    const data = visitsData[0].data;
-    const lastValue = data[data.length - 1];
-    const secondLastValue = data[data.length - 2];
+    const [visitsMetric, uploadsMetric, uniqueMetric] = visitsData;
 
-    const change = ((lastValue - secondLastValue) / secondLastValue) * 100;
-    return Math.ceil(change);
+    // Calculate percentage change for Visits
+    const visitsDataLength = visitsMetric.data.length;
+    const visitsLast = visitsMetric.data[visitsDataLength - 1];
+    const visitsSecondLast = visitsMetric.data[visitsDataLength - 2];
+    const changeVisits = visitsSecondLast !== 0 ? ((visitsLast - visitsSecondLast) / visitsSecondLast) * 100 : 0;
+
+    // Calculate percentage change for Uploads
+    const uploadsDataLength = uploadsMetric.data.length;
+    const uploadsLast = uploadsMetric.data[uploadsDataLength - 1];
+    const uploadsSecondLast = uploadsMetric.data[uploadsDataLength - 2];
+    const changeUploads = uploadsSecondLast !== 0 ? ((uploadsLast - uploadsSecondLast) / uploadsSecondLast) * 100 : 0;
+
+    // Calculate percentage change for Unique Visitors
+    const uniqueDataLength = uniqueMetric.data.length;
+    const uniqueLast = uniqueMetric.data[uniqueDataLength - 1];
+    const uniqueSecondLast = uniqueMetric.data[uniqueDataLength - 2];
+    const changeUnique = uniqueSecondLast !== 0 ? ((uniqueLast - uniqueSecondLast) / uniqueSecondLast) * 100 : 0;
+
+    return {
+      visits: Math.ceil(changeVisits),
+      uploads: Math.ceil(changeUploads),
+      unique: Math.ceil(changeUnique),
+    };
   }, [visitsData]);
+
   const colorPalette = [
     theme.palette.primary.light,
     theme.palette.primary.main,
@@ -89,9 +111,56 @@ export default function SessionsChart() {
         sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}
       >
         <Typography component="h2" variant="subtitle" gutterBottom>
-          Site Visits
+          Site Metrics
         </Typography>
-        <Stack sx={{ justifyContent: 'space-between' }}>
+        <Stack direction="row" sx={{ justifyContent: 'space-between', gap: 3, mb: 1 }}>
+          {/* Visits Summary */}
+          <Stack
+            direction="row"
+            sx={{
+              alignContent: { xs: 'center', sm: 'flex-start' },
+              alignItems: 'center',
+              gap: 1,
+              mb: 1,
+            }}
+          >
+            <Typography component="h2" variant="subtitle1">
+              All Visits: 
+              {visitsData.length > 0
+                ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0)
+                : 0}
+            </Typography>
+            <Chip
+              size="small"
+              color={percentageChange.visits >= 0 ? 'success' : 'error'}
+              label={`${percentageChange.visits}%`}
+            />
+          </Stack>
+
+          {/* Uploads Summary */}
+          <Stack
+            direction="row"
+            sx={{
+              alignContent: { xs: 'center', sm: 'flex-start' },
+              alignItems: 'center',
+              gap: 1,
+              mb: 1,
+            }}
+          >
+            <Typography component="h2" variant="subtitle1">
+              Total Uploads: 
+               {(visitsData.length > 1
+                ? visitsData[1].data.reduce((acc, curr) => acc + curr, 0)
+                : 0) - 157}
+            </Typography>
+            <Chip
+              size="small"
+              color={percentageChange.uploads >= 0 ? 'success' : 'error'}
+              label={`${percentageChange.uploads}%`}
+            />
+          </Stack>
+
+          {/* Unique Visitors Summary */}
           <Stack
             direction="row"
             sx={{
@@ -100,22 +169,20 @@ export default function SessionsChart() {
               gap: 1,
             }}
           >
-            <Typography variant="h4" component="p">
-              {visitsData.length > 0
-                ? visitsData[0].data.reduce((acc, curr) => acc + curr, 0)
+            <Typography component="h2" variant="subtitle1">
+              Unique Visits: 
+               { visitsData.length > 2
+                ? visitsData[2].data.reduce((acc, curr) => acc + curr, 0)
                 : 0}
             </Typography>
             <Chip
               size="small"
-              color={percentageChange >= 0 ? 'success' : 'error'}
-              label={`${percentageChange}%`}
+              color={percentageChange.unique >= 0 ? 'success' : 'error'}
+              label={`${percentageChange.unique}%`}
             />
           </Stack>
-
-          <Typography variant="caption" sx={{ color: 'text.secondary' }}>
-            Visits per day
-          </Typography>
         </Stack>
+
 
         <LineChart
           colors={colorPalette}
@@ -127,7 +194,7 @@ export default function SessionsChart() {
             },
           ]}
           series={visitsData}
-          height={250}
+          height={270}
           margin={{ left: 50, right: 20, top: 20, bottom: 20 }}
           grid={{ horizontal: true }}
           sx={{

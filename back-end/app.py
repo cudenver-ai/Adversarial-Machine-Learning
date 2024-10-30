@@ -106,6 +106,16 @@ def get_leaderboard_data():
         return jsonify(results)
     else:
         return jsonify({"error": "Challenge data not found"}), 404
+    
+@app.route("/api/topTen", methods=["GET"])
+def get_topTen_data():
+    data = os.path.join(path, "Data/topTen.json")
+
+    if os.path.exists(data):
+        results = loadData(data)
+        return jsonify(results)
+    else:
+        return jsonify({"error": "Challenge data not found"}), 404
 
 
 @app.route("/api/visits", methods=["GET"])

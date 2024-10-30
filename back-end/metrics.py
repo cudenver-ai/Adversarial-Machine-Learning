@@ -194,3 +194,27 @@ def update_leaderBoard():
             outfile.write(json.dumps(leaderboard, indent=4))
     except Exception as e:
         logging.error('Error saving loaderboard.json: {}'.format(e))
+
+    k = 10
+    # Populate top 10 with top 10 teams
+    logging.info('Populating Top Ten')
+    num_teams = len(sorted_overall_metrics)
+    try:
+        topTen = [{'rank': index + 1,
+                        'team': sorted_overall_metrics[index][0] if index < num_teams else '',
+                        'score': sorted_overall_metrics[index][1] if index < num_teams else 0}
+                       for index in range(k)]
+    except Exception as e:
+        logging.error('Error populating Top Ten: {}'.format(e))
+
+    # Save leaderboard
+    logging.info('Saving topTen.json')
+    try:
+        with open(os.path.join(data_path, 'Data/topTen.json'), 'w') as outfile:
+            outfile.write(json.dumps(topTen, indent=4))
+    except Exception as e:
+        logging.error('Error saving top 10.json: {}'.format(e))
+
+
+if __name__ == "__main__":
+    update_leaderBoard()

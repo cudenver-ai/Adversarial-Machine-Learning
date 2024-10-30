@@ -12,6 +12,15 @@ from skimage.metrics import structural_similarity as ssim
 from datetime import datetime
 
 
+log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
+logging.basicConfig(
+    filename=log_file,
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',  
+    datefmt='%Y-%m-%d %H:%M:%S' 
+)
+
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
@@ -202,13 +211,20 @@ def evaluate():
             model = model.to(device)
             x_test = x_test.to(device)
             y_test = y_test.to(device)
-            logging.info(f"Model loaded and moved to device: {device}")
+            logging.info(f"Model loaded and moved to device: {device}\n")
+
+            logging.info("Checking the Shape of the Upload!")
 
             # Evaluate and calculate the score
             if not isinstance(advs[0], torch.Tensor):
+                logging.info(f"Not a PyTorch Tensor: {advs[0].shape}")
                 continue
+
+            # Checks if the shape is not the expected [1000, 3, 32, 32]
             if list(advs[0].shape) != [1000,3,32,32]:
+                logging.info(f"Submission shape does not match: {advs[0].shape}")
                 continue
+
             score_metrics = calculate_score(model, x_test, advs[0], y_test)
             score_metrics["team_name"] = team_name
             score_metrics["time_stamp"] = time_stamp
@@ -308,16 +324,19 @@ def reEvaluate():
 
                 # Evaluate and calculate the score
                 if not isinstance(advs[0], torch.Tensor):
+                    logging.info(f"Submission shape: {advs[0].shape}")
                     continue
                 if list(advs[0].shape) != [1000,3,32,32]:
+                    logging.info(f"Submission shape does not match: {advs[0].shape}")
                     continue
+
                 score_metrics = calculate_score(model, x_test, advs[0], y_test)
                 score_metrics["team_name"] = team_name
                 score_metrics["time_stamp"] = time_stamp
                 logging.info(f"Score calculated for team: {team_name}")
 
                 # Append the results to the JSON file
-                submission_json = os.path.join(path, "Data/reevaluatedSubmissions.json")
+                submission_json = os.path.join(path, "Data/reevaluatedSubmissions2.json")
 
                 with open(submission_json, "r") as f:
                     data = json.load(f)

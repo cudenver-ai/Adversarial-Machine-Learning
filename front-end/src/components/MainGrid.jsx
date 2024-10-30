@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CustomizedDataGrid from './CustomizedDataGrid';
 import PageViewsBarChart from './PageViewsBarChart';
+import PageViewsBarChartTen from './PageViewsBarChartTen.jsx';
 import SessionsChart from './SessionsChart';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -488,6 +489,9 @@ export default function MainGrid({ setCurrentPage }) {
             </Box>
             <CustomizedDataGrid />
           </Grid>
+        </Grid>
+        <Grid size={{ sm: 12, md: 12 }}>
+          <PageViewsBarChartTen />
         </Grid>
       </Grid>
     </Box>
