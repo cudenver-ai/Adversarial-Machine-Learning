@@ -558,5 +558,15 @@
         "score": 0.3348,
         "team_name": "NSBE Bombers",
         "time_stamp": "2024-10-21 13:57:55"
-    }
+    },    
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7328,
+        "avg_l2_perturbation": 0.3421,
+        "avg_ssim": 0.9992,
+        "avg_confidence_gap": 0.1988,
+        "score": 0.82,
+        "team_name": "Ranas Team",
+        "time_stamp": "2024-10-30 14:06:58"
+    },
 ]

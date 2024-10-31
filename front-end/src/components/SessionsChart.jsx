@@ -149,9 +149,9 @@ export default function SessionsChart() {
           >
             <Typography component="h2" variant="subtitle1">
               Total Uploads: 
-               {(visitsData.length > 1
+               {visitsData.length > 1
                 ? visitsData[1].data.reduce((acc, curr) => acc + curr, 0)
-                : 0) - 157}
+                : 0}
             </Typography>
             <Chip
               size="small"

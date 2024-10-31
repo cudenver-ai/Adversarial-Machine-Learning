@@ -1,5 +1,977 @@
 [
     {
+        "id": 276,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 23:59:56",
+        "SuccessRate": 0.955,
+        "PerturbationMagnitude": 1.098,
+        "AverageConfidence": 0.8553,
+        "ConfidenceGap": 0.1009,
+        "VisualSimilarity": 0.9924,
+        "TotalScore": 0.8111,
+        "Rank": 73
+    },
+    {
+        "id": 275,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 23:49:40",
+        "SuccessRate": 0.955,
+        "PerturbationMagnitude": 1.098,
+        "AverageConfidence": 0.8553,
+        "ConfidenceGap": 0.1009,
+        "VisualSimilarity": 0.9924,
+        "TotalScore": 0.8111,
+        "Rank": 74
+    },
+    {
+        "id": 274,
+        "TeamName": "W's Only",
+        "LastSubmission": "2024-10-30 23:49:28",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.3245,
+        "AverageConfidence": 0.5521,
+        "ConfidenceGap": 0.3795,
+        "VisualSimilarity": 0.9993,
+        "TotalScore": 0.8201,
+        "Rank": 3
+    },
+    {
+        "id": 273,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 23:28:02",
+        "SuccessRate": 0.961,
+        "PerturbationMagnitude": 0.9373,
+        "AverageConfidence": 0.6853,
+        "ConfidenceGap": 0.2763,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8141,
+        "Rank": 61
+    },
+    {
+        "id": 272,
+        "TeamName": "W's Only",
+        "LastSubmission": "2024-10-30 23:22:43",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.32,
+        "AverageConfidence": 0.5317,
+        "ConfidenceGap": 0.3999,
+        "VisualSimilarity": 0.9993,
+        "TotalScore": 0.8201,
+        "Rank": 4
+    },
+    {
+        "id": 271,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 22:35:25",
+        "SuccessRate": 0.92,
+        "PerturbationMagnitude": 0.8496,
+        "AverageConfidence": 0.6898,
+        "ConfidenceGap": 0.2383,
+        "VisualSimilarity": 0.994,
+        "TotalScore": 0.8023,
+        "Rank": 151
+    },
+    {
+        "id": 270,
+        "TeamName": "NSBE",
+        "LastSubmission": "2024-10-30 22:09:08",
+        "SuccessRate": 0.152,
+        "PerturbationMagnitude": 0.2376,
+        "AverageConfidence": 0.7374,
+        "ConfidenceGap": -0.06,
+        "VisualSimilarity": 0.9993,
+        "TotalScore": 0.6368,
+        "Rank": 244
+    },
+    {
+        "id": 269,
+        "TeamName": "NSBE",
+        "LastSubmission": "2024-10-30 22:08:43",
+        "SuccessRate": 0.133,
+        "PerturbationMagnitude": 0.2359,
+        "AverageConfidence": 0.7533,
+        "ConfidenceGap": -0.1218,
+        "VisualSimilarity": 0.999,
+        "TotalScore": 0.626,
+        "Rank": 245
+    },
+    {
+        "id": 268,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 21:03:40",
+        "SuccessRate": 0.872,
+        "PerturbationMagnitude": 0.4226,
+        "AverageConfidence": 0.7013,
+        "ConfidenceGap": 0.2553,
+        "VisualSimilarity": 0.9986,
+        "TotalScore": 0.8023,
+        "Rank": 152
+    },
+    {
+        "id": 267,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 20:04:01",
+        "SuccessRate": 0.961,
+        "PerturbationMagnitude": 0.9373,
+        "AverageConfidence": 0.6853,
+        "ConfidenceGap": 0.2763,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8141,
+        "Rank": 62
+    },
+    {
+        "id": 266,
+        "TeamName": "Vojjina",
+        "LastSubmission": "2024-10-30 18:42:53",
+        "SuccessRate": 0.954,
+        "PerturbationMagnitude": 1.3507,
+        "AverageConfidence": 0.9844,
+        "ConfidenceGap": -0.056,
+        "VisualSimilarity": 0.9894,
+        "TotalScore": 0.8044,
+        "Rank": 112
+    },
+    {
+        "id": 265,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 18:09:52",
+        "SuccessRate": 0.961,
+        "PerturbationMagnitude": 0.9373,
+        "AverageConfidence": 0.6853,
+        "ConfidenceGap": 0.2763,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8141,
+        "Rank": 63
+    },
+    {
+        "id": 264,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 17:37:50",
+        "SuccessRate": 0.961,
+        "PerturbationMagnitude": 0.9373,
+        "AverageConfidence": 0.6853,
+        "ConfidenceGap": 0.2763,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8141,
+        "Rank": 64
+    },
+    {
+        "id": 263,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 17:05:55",
+        "SuccessRate": 0.961,
+        "PerturbationMagnitude": 0.9373,
+        "AverageConfidence": 0.6853,
+        "ConfidenceGap": 0.2763,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8141,
+        "Rank": 65
+    },
+    {
+        "id": 262,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 16:48:33",
+        "SuccessRate": 0.953,
+        "PerturbationMagnitude": 1.4717,
+        "AverageConfidence": 0.9932,
+        "ConfidenceGap": -0.0335,
+        "VisualSimilarity": 0.9873,
+        "TotalScore": 0.8084,
+        "Rank": 102
+    },
+    {
+        "id": 261,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 16:23:59",
+        "SuccessRate": 0.978,
+        "PerturbationMagnitude": 7.2268,
+        "AverageConfidence": 0.6983,
+        "ConfidenceGap": 0.2482,
+        "VisualSimilarity": 0.7532,
+        "TotalScore": 0.7323,
+        "Rank": 210
+    },
+    {
+        "id": 260,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 16:08:49",
+        "SuccessRate": 0.92,
+        "PerturbationMagnitude": 1.3585,
+        "AverageConfidence": 0.9785,
+        "ConfidenceGap": -0.0202,
+        "VisualSimilarity": 0.9892,
+        "TotalScore": 0.8036,
+        "Rank": 115
+    },
+    {
+        "id": 259,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 15:32:05",
+        "SuccessRate": 0.979,
+        "PerturbationMagnitude": 1.5353,
+        "AverageConfidence": 0.9982,
+        "ConfidenceGap": -0.0523,
+        "VisualSimilarity": 0.9864,
+        "TotalScore": 0.8099,
+        "Rank": 81
+    },
+    {
+        "id": 258,
+        "TeamName": "NSBE",
+        "LastSubmission": "2024-10-30 14:14:04",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.3396,
+        "AverageConfidence": 0.7143,
+        "ConfidenceGap": 0.2174,
+        "VisualSimilarity": 0.9992,
+        "TotalScore": 0.82,
+        "Rank": 9
+    },
+    {
+        "id": 257,
+        "TeamName": "NSBE",
+        "LastSubmission": "2024-10-30 13:55:47",
+        "SuccessRate": 0.981,
+        "PerturbationMagnitude": 3.8538,
+        "AverageConfidence": 0.7289,
+        "ConfidenceGap": 0.2015,
+        "VisualSimilarity": 0.8818,
+        "TotalScore": 0.7741,
+        "Rank": 197
+    },
+    {
+        "id": 256,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 13:33:58",
+        "SuccessRate": 0.979,
+        "PerturbationMagnitude": 1.5353,
+        "AverageConfidence": 0.9982,
+        "ConfidenceGap": -0.0523,
+        "VisualSimilarity": 0.9864,
+        "TotalScore": 0.8099,
+        "Rank": 82
+    },
+    {
+        "id": 255,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-30 12:36:43",
+        "SuccessRate": 0.933,
+        "PerturbationMagnitude": 1.3004,
+        "AverageConfidence": 0.9858,
+        "ConfidenceGap": -0.059,
+        "VisualSimilarity": 0.99,
+        "TotalScore": 0.801,
+        "Rank": 162
+    },
+    {
+        "id": 254,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-30 12:35:41",
+        "SuccessRate": 0.933,
+        "PerturbationMagnitude": 1.3004,
+        "AverageConfidence": 0.9858,
+        "ConfidenceGap": -0.059,
+        "VisualSimilarity": 0.99,
+        "TotalScore": 0.801,
+        "Rank": 163
+    },
+    {
+        "id": 253,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 12:31:59",
+        "SuccessRate": 0.979,
+        "PerturbationMagnitude": 1.4802,
+        "AverageConfidence": 0.9941,
+        "ConfidenceGap": -0.0639,
+        "VisualSimilarity": 0.9874,
+        "TotalScore": 0.8077,
+        "Rank": 108
+    },
+    {
+        "id": 252,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 12:17:17",
+        "SuccessRate": 0.081,
+        "PerturbationMagnitude": 0.0055,
+        "AverageConfidence": 0.6764,
+        "ConfidenceGap": -0.3766,
+        "VisualSimilarity": 1.0,
+        "TotalScore": 0.5634,
+        "Rank": 250
+    },
+    {
+        "id": 251,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 11:15:03",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9015,
+        "AverageConfidence": 0.7006,
+        "ConfidenceGap": 0.231,
+        "VisualSimilarity": 0.9937,
+        "TotalScore": 0.8159,
+        "Rank": 42
+    },
+    {
+        "id": 250,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 11:07:56",
+        "SuccessRate": 0.973,
+        "PerturbationMagnitude": 0.8594,
+        "AverageConfidence": 0.6756,
+        "ConfidenceGap": 0.2548,
+        "VisualSimilarity": 0.9939,
+        "TotalScore": 0.8114,
+        "Rank": 72
+    },
+    {
+        "id": 249,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 11:00:47",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9091,
+        "AverageConfidence": 0.7075,
+        "ConfidenceGap": 0.2241,
+        "VisualSimilarity": 0.9936,
+        "TotalScore": 0.8158,
+        "Rank": 44
+    },
+    {
+        "id": 248,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 10:49:02",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9574,
+        "AverageConfidence": 0.7375,
+        "ConfidenceGap": 0.1941,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8155,
+        "Rank": 48
+    },
+    {
+        "id": 247,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 10:44:53",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9583,
+        "AverageConfidence": 0.7487,
+        "ConfidenceGap": 0.1829,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8155,
+        "Rank": 49
+    },
+    {
+        "id": 246,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 10:36:56",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9605,
+        "AverageConfidence": 0.7656,
+        "ConfidenceGap": 0.166,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8155,
+        "Rank": 50
+    },
+    {
+        "id": 245,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 10:26:23",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9654,
+        "AverageConfidence": 0.8028,
+        "ConfidenceGap": 0.1289,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8154,
+        "Rank": 52
+    },
+    {
+        "id": 244,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 10:18:32",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9653,
+        "AverageConfidence": 0.8034,
+        "ConfidenceGap": 0.1283,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8154,
+        "Rank": 53
+    },
+    {
+        "id": 243,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 10:08:12",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9654,
+        "AverageConfidence": 0.8026,
+        "ConfidenceGap": 0.1291,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8154,
+        "Rank": 54
+    },
+    {
+        "id": 242,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 09:50:08",
+        "SuccessRate": 0.99,
+        "PerturbationMagnitude": 1.4957,
+        "AverageConfidence": 0.9958,
+        "ConfidenceGap": -0.0648,
+        "VisualSimilarity": 0.987,
+        "TotalScore": 0.8095,
+        "Rank": 91
+    },
+    {
+        "id": 241,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 09:49:48",
+        "SuccessRate": 0.975,
+        "PerturbationMagnitude": 0.86,
+        "AverageConfidence": 0.6751,
+        "ConfidenceGap": 0.2553,
+        "VisualSimilarity": 0.9939,
+        "TotalScore": 0.8118,
+        "Rank": 71
+    },
+    {
+        "id": 240,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-30 09:37:26",
+        "SuccessRate": 0.968,
+        "PerturbationMagnitude": 0.8565,
+        "AverageConfidence": 0.6765,
+        "ConfidenceGap": 0.2538,
+        "VisualSimilarity": 0.9939,
+        "TotalScore": 0.8106,
+        "Rank": 77
+    },
+    {
+        "id": 239,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 01:39:16",
+        "SuccessRate": 0.081,
+        "PerturbationMagnitude": 0.0314,
+        "AverageConfidence": 0.7852,
+        "ConfidenceGap": -0.4854,
+        "VisualSimilarity": 1.0,
+        "TotalScore": 0.5633,
+        "Rank": 251
+    },
+    {
+        "id": 238,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-30 01:23:54",
+        "SuccessRate": 0.99,
+        "PerturbationMagnitude": 1.5105,
+        "AverageConfidence": 0.9967,
+        "ConfidenceGap": -0.0657,
+        "VisualSimilarity": 0.9867,
+        "TotalScore": 0.8094,
+        "Rank": 93
+    },
+    {
+        "id": 237,
+        "TeamName": "Nika",
+        "LastSubmission": "2024-10-30 00:37:29",
+        "SuccessRate": 0.986,
+        "PerturbationMagnitude": 0.4465,
+        "AverageConfidence": 0.7052,
+        "ConfidenceGap": 0.2263,
+        "VisualSimilarity": 0.9985,
+        "TotalScore": 0.8169,
+        "Rank": 36
+    },
+    {
+        "id": 236,
+        "TeamName": "Nika",
+        "LastSubmission": "2024-10-29 21:46:42",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.601,
+        "AverageConfidence": 0.8133,
+        "ConfidenceGap": 0.1183,
+        "VisualSimilarity": 0.9978,
+        "TotalScore": 0.8183,
+        "Rank": 23
+    },
+    {
+        "id": 235,
+        "TeamName": "Noise Classifier",
+        "LastSubmission": "2024-10-29 21:21:35",
+        "SuccessRate": 0.82,
+        "PerturbationMagnitude": 1.0985,
+        "AverageConfidence": 0.9728,
+        "ConfidenceGap": -0.0176,
+        "VisualSimilarity": 0.9928,
+        "TotalScore": 0.7885,
+        "Rank": 176
+    },
+    {
+        "id": 234,
+        "TeamName": "Noise Classifier",
+        "LastSubmission": "2024-10-29 21:20:55",
+        "SuccessRate": 0.954,
+        "PerturbationMagnitude": 1.4676,
+        "AverageConfidence": 0.9927,
+        "ConfidenceGap": -0.0337,
+        "VisualSimilarity": 0.9875,
+        "TotalScore": 0.8084,
+        "Rank": 101
+    },
+    {
+        "id": 233,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-29 21:09:42",
+        "SuccessRate": 0.99,
+        "PerturbationMagnitude": 1.4992,
+        "AverageConfidence": 0.9959,
+        "ConfidenceGap": -0.065,
+        "VisualSimilarity": 0.9871,
+        "TotalScore": 0.8095,
+        "Rank": 90
+    },
+    {
+        "id": 232,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-29 21:00:04",
+        "SuccessRate": 0.988,
+        "PerturbationMagnitude": 1.5098,
+        "AverageConfidence": 0.9955,
+        "ConfidenceGap": -0.0647,
+        "VisualSimilarity": 0.9869,
+        "TotalScore": 0.8091,
+        "Rank": 95
+    },
+    {
+        "id": 231,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:59:41",
+        "SuccessRate": 0.982,
+        "PerturbationMagnitude": 1.4719,
+        "AverageConfidence": 0.994,
+        "ConfidenceGap": -0.0636,
+        "VisualSimilarity": 0.9875,
+        "TotalScore": 0.8083,
+        "Rank": 103
+    },
+    {
+        "id": 230,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:59:40",
+        "SuccessRate": 0.982,
+        "PerturbationMagnitude": 1.4719,
+        "AverageConfidence": 0.994,
+        "ConfidenceGap": -0.0636,
+        "VisualSimilarity": 0.9875,
+        "TotalScore": 0.8083,
+        "Rank": 104
+    },
+    {
+        "id": 229,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:59:29",
+        "SuccessRate": 0.982,
+        "PerturbationMagnitude": 1.4719,
+        "AverageConfidence": 0.994,
+        "ConfidenceGap": -0.0636,
+        "VisualSimilarity": 0.9875,
+        "TotalScore": 0.8083,
+        "Rank": 105
+    },
+    {
+        "id": 228,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:56:16",
+        "SuccessRate": 0.981,
+        "PerturbationMagnitude": 1.5088,
+        "AverageConfidence": 0.9957,
+        "ConfidenceGap": -0.0654,
+        "VisualSimilarity": 0.9867,
+        "TotalScore": 0.8078,
+        "Rank": 107
+    },
+    {
+        "id": 227,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:49:44",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 131
+    },
+    {
+        "id": 226,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:49:40",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 132
+    },
+    {
+        "id": 225,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:49:21",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 133
+    },
+    {
+        "id": 224,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:49:19",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 134
+    },
+    {
+        "id": 223,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:49:17",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 135
+    },
+    {
+        "id": 222,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:49:12",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 136
+    },
+    {
+        "id": 221,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:49:04",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 137
+    },
+    {
+        "id": 220,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:43:19",
+        "SuccessRate": 0.911,
+        "PerturbationMagnitude": 1.3049,
+        "AverageConfidence": 0.9866,
+        "ConfidenceGap": -0.0616,
+        "VisualSimilarity": 0.9898,
+        "TotalScore": 0.797,
+        "Rank": 167
+    },
+    {
+        "id": 219,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:41:39",
+        "SuccessRate": 0.99,
+        "PerturbationMagnitude": 1.7803,
+        "AverageConfidence": 0.9358,
+        "ConfidenceGap": -0.0048,
+        "VisualSimilarity": 0.9822,
+        "TotalScore": 0.807,
+        "Rank": 109
+    },
+    {
+        "id": 218,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:28:09",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3508,
+        "AverageConfidence": 0.9833,
+        "ConfidenceGap": -0.0558,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 138
+    },
+    {
+        "id": 217,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:25:41",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 139
+    },
+    {
+        "id": 216,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:25:32",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 140
+    },
+    {
+        "id": 215,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:25:26",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 141
+    },
+    {
+        "id": 214,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:25:08",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 142
+    },
+    {
+        "id": 213,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:25:07",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 143
+    },
+    {
+        "id": 212,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:24:46",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 144
+    },
+    {
+        "id": 211,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:24:37",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 145
+    },
+    {
+        "id": 210,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:23:59",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 146
+    },
+    {
+        "id": 209,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:23:23",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 147
+    },
+    {
+        "id": 208,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:23:19",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 148
+    },
+    {
+        "id": 207,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:23:12",
+        "SuccessRate": 0.943,
+        "PerturbationMagnitude": 1.3515,
+        "AverageConfidence": 0.983,
+        "ConfidenceGap": -0.0554,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8024,
+        "Rank": 149
+    },
+    {
+        "id": 206,
+        "TeamName": "Mighty Milo Hackers",
+        "LastSubmission": "2024-10-29 20:13:33",
+        "SuccessRate": 0.959,
+        "PerturbationMagnitude": 1.4057,
+        "AverageConfidence": 0.9884,
+        "ConfidenceGap": -0.0596,
+        "VisualSimilarity": 0.9884,
+        "TotalScore": 0.8048,
+        "Rank": 110
+    },
+    {
+        "id": 205,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 19:34:08",
+        "SuccessRate": 0.97,
+        "PerturbationMagnitude": 0.8555,
+        "AverageConfidence": 0.6761,
+        "ConfidenceGap": 0.254,
+        "VisualSimilarity": 0.9939,
+        "TotalScore": 0.8109,
+        "Rank": 75
+    },
+    {
+        "id": 204,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 19:32:32",
+        "SuccessRate": 0.993,
+        "PerturbationMagnitude": 0.9536,
+        "AverageConfidence": 0.7224,
+        "ConfidenceGap": 0.2088,
+        "VisualSimilarity": 0.9934,
+        "TotalScore": 0.8143,
+        "Rank": 60
+    },
+    {
+        "id": 203,
+        "TeamName": "Hung Nguyen",
+        "LastSubmission": "2024-10-29 19:01:32",
+        "SuccessRate": 0.945,
+        "PerturbationMagnitude": 1.3518,
+        "AverageConfidence": 0.9853,
+        "ConfidenceGap": -0.0576,
+        "VisualSimilarity": 0.9893,
+        "TotalScore": 0.8027,
+        "Rank": 128
+    },
+    {
+        "id": 202,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 18:55:16",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9082,
+        "AverageConfidence": 0.6968,
+        "ConfidenceGap": 0.2348,
+        "VisualSimilarity": 0.9937,
+        "TotalScore": 0.8158,
+        "Rank": 43
+    },
+    {
+        "id": 201,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 18:45:29",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9653,
+        "AverageConfidence": 0.8016,
+        "ConfidenceGap": 0.1301,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8154,
+        "Rank": 51
+    },
+    {
+        "id": 200,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 18:37:54",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 1.0232,
+        "AverageConfidence": 0.9488,
+        "ConfidenceGap": -0.0172,
+        "VisualSimilarity": 0.9927,
+        "TotalScore": 0.815,
+        "Rank": 55
+    },
+    {
+        "id": 199,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 18:37:52",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 1.0232,
+        "AverageConfidence": 0.9488,
+        "ConfidenceGap": -0.0172,
+        "VisualSimilarity": 0.9927,
+        "TotalScore": 0.815,
+        "Rank": 56
+    },
+    {
+        "id": 198,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 18:30:30",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9604,
+        "AverageConfidence": 0.7658,
+        "ConfidenceGap": 0.1658,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8155,
+        "Rank": 45
+    },
+    {
+        "id": 197,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 18:27:58",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9604,
+        "AverageConfidence": 0.7663,
+        "ConfidenceGap": 0.1654,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8155,
+        "Rank": 46
+    },
+    {
+        "id": 196,
+        "TeamName": "AI Posers",
+        "LastSubmission": "2024-10-29 18:14:18",
+        "SuccessRate": 1.0,
+        "PerturbationMagnitude": 0.9604,
+        "AverageConfidence": 0.7659,
+        "ConfidenceGap": 0.1658,
+        "VisualSimilarity": 0.9933,
+        "TotalScore": 0.8155,
+        "Rank": 47
+    },
+    {
         "id": 195,
         "TeamName": "NSBE",
         "LastSubmission": "2024-10-29 13:57:29",
@@ -9,7 +981,7 @@
         "ConfidenceGap": 0.1884,
         "VisualSimilarity": 0.8818,
         "TotalScore": 0.7741,
-        "Rank": 122
+        "Rank": 196
     },
     {
         "id": 194,
@@ -21,7 +993,7 @@
         "ConfidenceGap": -0.0523,
         "VisualSimilarity": 0.9906,
         "TotalScore": 0.7919,
-        "Rank": 98
+        "Rank": 171
     },
     {
         "id": 193,
@@ -33,7 +1005,7 @@
         "ConfidenceGap": 0.1991,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.82,
-        "Rank": 6
+        "Rank": 8
     },
     {
         "id": 192,
@@ -45,7 +1017,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 157
+        "Rank": 233
     },
     {
         "id": 191,
@@ -57,7 +1029,7 @@
         "ConfidenceGap": -0.0642,
         "VisualSimilarity": 0.9676,
         "TotalScore": 0.8021,
-        "Rank": 85
+        "Rank": 155
     },
     {
         "id": 190,
@@ -69,7 +1041,7 @@
         "ConfidenceGap": -0.0642,
         "VisualSimilarity": 0.9676,
         "TotalScore": 0.8021,
-        "Rank": 86
+        "Rank": 156
     },
     {
         "id": 189,
@@ -81,7 +1053,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 158
+        "Rank": 234
     },
     {
         "id": 188,
@@ -93,7 +1065,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 159
+        "Rank": 235
     },
     {
         "id": 187,
@@ -105,7 +1077,7 @@
         "ConfidenceGap": -0.5636,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5347,
-        "Rank": 193
+        "Rank": 273
     },
     {
         "id": 186,
@@ -117,7 +1089,7 @@
         "ConfidenceGap": -0.5498,
         "VisualSimilarity": 0.8983,
         "TotalScore": 0.4981,
-        "Rank": 195
+        "Rank": 275
     },
     {
         "id": 185,
@@ -129,7 +1101,7 @@
         "ConfidenceGap": 0.1735,
         "VisualSimilarity": 0.9978,
         "TotalScore": 0.8182,
-        "Rank": 23
+        "Rank": 27
     },
     {
         "id": 184,
@@ -141,7 +1113,7 @@
         "ConfidenceGap": 0.3104,
         "VisualSimilarity": 0.917,
         "TotalScore": 0.7837,
-        "Rank": 106
+        "Rank": 180
     },
     {
         "id": 183,
@@ -153,7 +1125,7 @@
         "ConfidenceGap": -0.0531,
         "VisualSimilarity": 0.6592,
         "TotalScore": 0.6997,
-        "Rank": 161
+        "Rank": 237
     },
     {
         "id": 182,
@@ -165,7 +1137,7 @@
         "ConfidenceGap": -0.0433,
         "VisualSimilarity": 0.9689,
         "TotalScore": 0.8025,
-        "Rank": 80
+        "Rank": 129
     },
     {
         "id": 181,
@@ -177,7 +1149,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 139
+        "Rank": 215
     },
     {
         "id": 180,
@@ -189,7 +1161,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 140
+        "Rank": 216
     },
     {
         "id": 179,
@@ -201,7 +1173,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 141
+        "Rank": 217
     },
     {
         "id": 178,
@@ -213,7 +1185,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 142
+        "Rank": 218
     },
     {
         "id": 177,
@@ -225,7 +1197,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 143
+        "Rank": 219
     },
     {
         "id": 176,
@@ -237,7 +1209,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 144
+        "Rank": 220
     },
     {
         "id": 175,
@@ -249,7 +1221,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 145
+        "Rank": 221
     },
     {
         "id": 174,
@@ -261,7 +1233,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 146
+        "Rank": 222
     },
     {
         "id": 173,
@@ -273,7 +1245,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 147
+        "Rank": 223
     },
     {
         "id": 172,
@@ -285,7 +1257,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 148
+        "Rank": 224
     },
     {
         "id": 171,
@@ -297,7 +1269,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 149
+        "Rank": 225
     },
     {
         "id": 170,
@@ -309,7 +1281,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 150
+        "Rank": 226
     },
     {
         "id": 169,
@@ -321,7 +1293,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 151
+        "Rank": 227
     },
     {
         "id": 168,
@@ -333,7 +1305,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 152
+        "Rank": 228
     },
     {
         "id": 167,
@@ -345,7 +1317,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 153
+        "Rank": 229
     },
     {
         "id": 166,
@@ -357,7 +1329,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 154
+        "Rank": 230
     },
     {
         "id": 165,
@@ -369,7 +1341,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 155
+        "Rank": 231
     },
     {
         "id": 164,
@@ -381,7 +1353,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 156
+        "Rank": 232
     },
     {
         "id": 163,
@@ -393,7 +1365,7 @@
         "ConfidenceGap": -0.5916,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.535,
-        "Rank": 188
+        "Rank": 268
     },
     {
         "id": 162,
@@ -405,7 +1377,7 @@
         "ConfidenceGap": -0.5916,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.535,
-        "Rank": 189
+        "Rank": 269
     },
     {
         "id": 161,
@@ -417,7 +1389,7 @@
         "ConfidenceGap": -0.036,
         "VisualSimilarity": 0.9689,
         "TotalScore": 0.8028,
-        "Rank": 76
+        "Rank": 124
     },
     {
         "id": 160,
@@ -429,7 +1401,7 @@
         "ConfidenceGap": -0.0215,
         "VisualSimilarity": 0.9701,
         "TotalScore": 0.8025,
-        "Rank": 81
+        "Rank": 130
     },
     {
         "id": 159,
@@ -441,7 +1413,7 @@
         "ConfidenceGap": -0.5277,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5496,
-        "Rank": 178
+        "Rank": 258
     },
     {
         "id": 158,
@@ -453,7 +1425,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 138
+        "Rank": 214
     },
     {
         "id": 157,
@@ -465,7 +1437,7 @@
         "ConfidenceGap": -0.0517,
         "VisualSimilarity": 0.9988,
         "TotalScore": 0.8193,
-        "Rank": 14
+        "Rank": 17
     },
     {
         "id": 156,
@@ -477,7 +1449,7 @@
         "ConfidenceGap": -0.0513,
         "VisualSimilarity": 0.9986,
         "TotalScore": 0.8192,
-        "Rank": 15
+        "Rank": 18
     },
     {
         "id": 155,
@@ -489,7 +1461,7 @@
         "ConfidenceGap": -0.5916,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.535,
-        "Rank": 187
+        "Rank": 267
     },
     {
         "id": 154,
@@ -501,7 +1473,7 @@
         "ConfidenceGap": 0.5083,
         "VisualSimilarity": 0.9986,
         "TotalScore": 0.8191,
-        "Rank": 17
+        "Rank": 20
     },
     {
         "id": 153,
@@ -513,7 +1485,7 @@
         "ConfidenceGap": 0.1214,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.8199,
-        "Rank": 8
+        "Rank": 11
     },
     {
         "id": 152,
@@ -525,7 +1497,7 @@
         "ConfidenceGap": 0.1214,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.8199,
-        "Rank": 9
+        "Rank": 12
     },
     {
         "id": 151,
@@ -537,7 +1509,7 @@
         "ConfidenceGap": -0.0071,
         "VisualSimilarity": 0.999,
         "TotalScore": 0.8197,
-        "Rank": 12
+        "Rank": 15
     },
     {
         "id": 150,
@@ -549,7 +1521,7 @@
         "ConfidenceGap": 0.1886,
         "VisualSimilarity": 0.9979,
         "TotalScore": 0.8183,
-        "Rank": 19
+        "Rank": 22
     },
     {
         "id": 149,
@@ -561,7 +1533,7 @@
         "ConfidenceGap": 0.134,
         "VisualSimilarity": 0.8756,
         "TotalScore": 0.7719,
-        "Rank": 124
+        "Rank": 199
     },
     {
         "id": 148,
@@ -573,7 +1545,7 @@
         "ConfidenceGap": 0.134,
         "VisualSimilarity": 0.8756,
         "TotalScore": 0.7719,
-        "Rank": 125
+        "Rank": 200
     },
     {
         "id": 147,
@@ -585,7 +1557,7 @@
         "ConfidenceGap": 0.134,
         "VisualSimilarity": 0.8756,
         "TotalScore": 0.7719,
-        "Rank": 126
+        "Rank": 201
     },
     {
         "id": 146,
@@ -597,7 +1569,7 @@
         "ConfidenceGap": 0.134,
         "VisualSimilarity": 0.8756,
         "TotalScore": 0.7719,
-        "Rank": 127
+        "Rank": 202
     },
     {
         "id": 145,
@@ -609,7 +1581,7 @@
         "ConfidenceGap": 0.1343,
         "VisualSimilarity": 0.8756,
         "TotalScore": 0.7719,
-        "Rank": 123
+        "Rank": 198
     },
     {
         "id": 144,
@@ -621,7 +1593,7 @@
         "ConfidenceGap": -0.0051,
         "VisualSimilarity": 0.9702,
         "TotalScore": 0.8022,
-        "Rank": 84
+        "Rank": 154
     },
     {
         "id": 143,
@@ -633,7 +1605,7 @@
         "ConfidenceGap": 0.1734,
         "VisualSimilarity": 0.9978,
         "TotalScore": 0.8182,
-        "Rank": 21
+        "Rank": 25
     },
     {
         "id": 142,
@@ -645,7 +1617,7 @@
         "ConfidenceGap": -0.0663,
         "VisualSimilarity": 0.8474,
         "TotalScore": 0.761,
-        "Rank": 133
+        "Rank": 208
     },
     {
         "id": 141,
@@ -657,7 +1629,7 @@
         "ConfidenceGap": -0.0478,
         "VisualSimilarity": 0.9085,
         "TotalScore": 0.7796,
-        "Rank": 108
+        "Rank": 182
     },
     {
         "id": 140,
@@ -669,7 +1641,7 @@
         "ConfidenceGap": 0.1828,
         "VisualSimilarity": 0.9978,
         "TotalScore": 0.8182,
-        "Rank": 22
+        "Rank": 26
     },
     {
         "id": 139,
@@ -681,7 +1653,7 @@
         "ConfidenceGap": -0.0355,
         "VisualSimilarity": 0.9879,
         "TotalScore": 0.8088,
-        "Rank": 61
+        "Rank": 99
     },
     {
         "id": 138,
@@ -693,7 +1665,7 @@
         "ConfidenceGap": 0.2113,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.8199,
-        "Rank": 7
+        "Rank": 10
     },
     {
         "id": 137,
@@ -705,7 +1677,7 @@
         "ConfidenceGap": 0.2669,
         "VisualSimilarity": 0.9939,
         "TotalScore": 0.7922,
-        "Rank": 97
+        "Rank": 170
     },
     {
         "id": 136,
@@ -717,7 +1689,7 @@
         "ConfidenceGap": -0.041,
         "VisualSimilarity": 0.973,
         "TotalScore": 0.8029,
-        "Rank": 74
+        "Rank": 122
     },
     {
         "id": 135,
@@ -741,7 +1713,7 @@
         "ConfidenceGap": 0.1991,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.82,
-        "Rank": 3
+        "Rank": 5
     },
     {
         "id": 133,
@@ -753,7 +1725,7 @@
         "ConfidenceGap": 0.1991,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.82,
-        "Rank": 4
+        "Rank": 6
     },
     {
         "id": 132,
@@ -765,7 +1737,7 @@
         "ConfidenceGap": -0.0658,
         "VisualSimilarity": 0.987,
         "TotalScore": 0.809,
-        "Rank": 58
+        "Rank": 96
     },
     {
         "id": 131,
@@ -777,7 +1749,7 @@
         "ConfidenceGap": 0.1988,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.82,
-        "Rank": 5
+        "Rank": 7
     },
     {
         "id": 130,
@@ -789,7 +1761,7 @@
         "ConfidenceGap": 0.1588,
         "VisualSimilarity": 0.9946,
         "TotalScore": 0.7613,
-        "Rank": 132
+        "Rank": 207
     },
     {
         "id": 129,
@@ -801,7 +1773,7 @@
         "ConfidenceGap": 0.0667,
         "VisualSimilarity": 0.8573,
         "TotalScore": 0.703,
-        "Rank": 160
+        "Rank": 236
     },
     {
         "id": 128,
@@ -813,7 +1785,7 @@
         "ConfidenceGap": 0.2624,
         "VisualSimilarity": 0.994,
         "TotalScore": 0.7903,
-        "Rank": 102
+        "Rank": 175
     },
     {
         "id": 127,
@@ -825,7 +1797,7 @@
         "ConfidenceGap": -0.5916,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.535,
-        "Rank": 186
+        "Rank": 266
     },
     {
         "id": 126,
@@ -837,7 +1809,7 @@
         "ConfidenceGap": 0.1692,
         "VisualSimilarity": 0.9965,
         "TotalScore": 0.8174,
-        "Rank": 29
+        "Rank": 33
     },
     {
         "id": 125,
@@ -849,7 +1821,7 @@
         "ConfidenceGap": 0.4026,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.7665,
-        "Rank": 130
+        "Rank": 205
     },
     {
         "id": 124,
@@ -861,7 +1833,7 @@
         "ConfidenceGap": -0.066,
         "VisualSimilarity": 0.9871,
         "TotalScore": 0.8094,
-        "Rank": 56
+        "Rank": 92
     },
     {
         "id": 123,
@@ -885,7 +1857,7 @@
         "ConfidenceGap": -0.0311,
         "VisualSimilarity": 0.9884,
         "TotalScore": 0.8082,
-        "Rank": 63
+        "Rank": 106
     },
     {
         "id": 121,
@@ -897,7 +1869,7 @@
         "ConfidenceGap": -0.0653,
         "VisualSimilarity": 0.9874,
         "TotalScore": 0.8095,
-        "Rank": 55
+        "Rank": 89
     },
     {
         "id": 120,
@@ -909,7 +1881,7 @@
         "ConfidenceGap": -0.5916,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5348,
-        "Rank": 192
+        "Rank": 272
     },
     {
         "id": 119,
@@ -921,7 +1893,7 @@
         "ConfidenceGap": -0.0658,
         "VisualSimilarity": 0.9863,
         "TotalScore": 0.8092,
-        "Rank": 57
+        "Rank": 94
     },
     {
         "id": 118,
@@ -933,7 +1905,7 @@
         "ConfidenceGap": 0.0224,
         "VisualSimilarity": 0.9982,
         "TotalScore": 0.693,
-        "Rank": 163
+        "Rank": 239
     },
     {
         "id": 117,
@@ -945,7 +1917,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 109
+        "Rank": 183
     },
     {
         "id": 116,
@@ -957,7 +1929,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 110
+        "Rank": 184
     },
     {
         "id": 115,
@@ -969,7 +1941,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 111
+        "Rank": 185
     },
     {
         "id": 114,
@@ -981,7 +1953,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 112
+        "Rank": 186
     },
     {
         "id": 113,
@@ -993,7 +1965,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 113
+        "Rank": 187
     },
     {
         "id": 112,
@@ -1005,7 +1977,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 114
+        "Rank": 188
     },
     {
         "id": 111,
@@ -1017,7 +1989,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 115
+        "Rank": 189
     },
     {
         "id": 110,
@@ -1029,7 +2001,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 116
+        "Rank": 190
     },
     {
         "id": 109,
@@ -1041,7 +2013,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 117
+        "Rank": 191
     },
     {
         "id": 108,
@@ -1053,7 +2025,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 118
+        "Rank": 192
     },
     {
         "id": 107,
@@ -1065,7 +2037,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 119
+        "Rank": 193
     },
     {
         "id": 106,
@@ -1077,7 +2049,7 @@
         "ConfidenceGap": 0.3299,
         "VisualSimilarity": 0.8952,
         "TotalScore": 0.7791,
-        "Rank": 120
+        "Rank": 194
     },
     {
         "id": 105,
@@ -1089,7 +2061,7 @@
         "ConfidenceGap": 0.3785,
         "VisualSimilarity": 0.3619,
         "TotalScore": 0.582,
-        "Rank": 169
+        "Rank": 247
     },
     {
         "id": 104,
@@ -1101,7 +2073,7 @@
         "ConfidenceGap": 0.4133,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.7826,
-        "Rank": 107
+        "Rank": 181
     },
     {
         "id": 103,
@@ -1113,7 +2085,7 @@
         "ConfidenceGap": -0.5649,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.535,
-        "Rank": 185
+        "Rank": 265
     },
     {
         "id": 102,
@@ -1125,7 +2097,7 @@
         "ConfidenceGap": 0.257,
         "VisualSimilarity": 0.994,
         "TotalScore": 0.8106,
-        "Rank": 45
+        "Rank": 76
     },
     {
         "id": 101,
@@ -1137,7 +2109,7 @@
         "ConfidenceGap": 0.4028,
         "VisualSimilarity": 0.9993,
         "TotalScore": 0.8137,
-        "Rank": 40
+        "Rank": 66
     },
     {
         "id": 100,
@@ -1149,7 +2121,7 @@
         "ConfidenceGap": 0.4181,
         "VisualSimilarity": 0.9958,
         "TotalScore": 0.8023,
-        "Rank": 82
+        "Rank": 150
     },
     {
         "id": 99,
@@ -1161,7 +2133,7 @@
         "ConfidenceGap": 0.1002,
         "VisualSimilarity": 0.9975,
         "TotalScore": 0.8179,
-        "Rank": 26
+        "Rank": 30
     },
     {
         "id": 98,
@@ -1173,7 +2145,7 @@
         "ConfidenceGap": -0.0412,
         "VisualSimilarity": 0.9697,
         "TotalScore": 0.8034,
-        "Rank": 70
+        "Rank": 119
     },
     {
         "id": 97,
@@ -1185,11 +2157,11 @@
         "ConfidenceGap": 0.1803,
         "VisualSimilarity": 0.9978,
         "TotalScore": 0.818,
-        "Rank": 25
+        "Rank": 29
     },
     {
         "id": 96,
-        "TeamName": "Nsbe",
+        "TeamName": "NSBE",
         "LastSubmission": "2024-10-23 09:53:52",
         "SuccessRate": 0.077,
         "PerturbationMagnitude": 0.0314,
@@ -1197,11 +2169,11 @@
         "ConfidenceGap": -0.5009,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5585,
-        "Rank": 176
+        "Rank": 256
     },
     {
         "id": 95,
-        "TeamName": "Nsbe",
+        "TeamName": "NSBE",
         "LastSubmission": "2024-10-23 08:55:53",
         "SuccessRate": 0.947,
         "PerturbationMagnitude": 1.3515,
@@ -1209,7 +2181,7 @@
         "ConfidenceGap": -0.0569,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8031,
-        "Rank": 72
+        "Rank": 121
     },
     {
         "id": 94,
@@ -1221,7 +2193,7 @@
         "ConfidenceGap": 0.3836,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.7457,
-        "Rank": 134
+        "Rank": 209
     },
     {
         "id": 93,
@@ -1233,7 +2205,7 @@
         "ConfidenceGap": 0.4264,
         "VisualSimilarity": 0.5553,
         "TotalScore": 0.6527,
-        "Rank": 165
+        "Rank": 241
     },
     {
         "id": 92,
@@ -1245,7 +2217,7 @@
         "ConfidenceGap": 0.4264,
         "VisualSimilarity": 0.5553,
         "TotalScore": 0.6527,
-        "Rank": 166
+        "Rank": 242
     },
     {
         "id": 91,
@@ -1257,7 +2229,7 @@
         "ConfidenceGap": 0.4026,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.7665,
-        "Rank": 129
+        "Rank": 204
     },
     {
         "id": 90,
@@ -1269,7 +2241,7 @@
         "ConfidenceGap": 0.4166,
         "VisualSimilarity": 0.9957,
         "TotalScore": 0.7996,
-        "Rank": 94
+        "Rank": 166
     },
     {
         "id": 89,
@@ -1281,7 +2253,7 @@
         "ConfidenceGap": 0.414,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.7855,
-        "Rank": 103
+        "Rank": 177
     },
     {
         "id": 88,
@@ -1293,7 +2265,7 @@
         "ConfidenceGap": 0.414,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.7855,
-        "Rank": 104
+        "Rank": 178
     },
     {
         "id": 87,
@@ -1305,7 +2277,7 @@
         "ConfidenceGap": 0.4128,
         "VisualSimilarity": 0.9599,
         "TotalScore": 0.7959,
-        "Rank": 95
+        "Rank": 168
     },
     {
         "id": 86,
@@ -1317,7 +2289,7 @@
         "ConfidenceGap": 0.414,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.7855,
-        "Rank": 105
+        "Rank": 179
     },
     {
         "id": 85,
@@ -1329,7 +2301,7 @@
         "ConfidenceGap": 0.4177,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.7956,
-        "Rank": 96
+        "Rank": 169
     },
     {
         "id": 84,
@@ -1341,7 +2313,7 @@
         "ConfidenceGap": 0.3184,
         "VisualSimilarity": 0.9989,
         "TotalScore": 0.7786,
-        "Rank": 121
+        "Rank": 195
     },
     {
         "id": 83,
@@ -1353,7 +2325,7 @@
         "ConfidenceGap": -0.0413,
         "VisualSimilarity": 0.9697,
         "TotalScore": 0.8034,
-        "Rank": 69
+        "Rank": 118
     },
     {
         "id": 82,
@@ -1365,7 +2337,7 @@
         "ConfidenceGap": 0.3461,
         "VisualSimilarity": 0.9645,
         "TotalScore": 0.7999,
-        "Rank": 92
+        "Rank": 164
     },
     {
         "id": 81,
@@ -1377,7 +2349,7 @@
         "ConfidenceGap": 0.186,
         "VisualSimilarity": 0.9979,
         "TotalScore": 0.818,
-        "Rank": 24
+        "Rank": 28
     },
     {
         "id": 80,
@@ -1389,7 +2361,7 @@
         "ConfidenceGap": 0.1735,
         "VisualSimilarity": 0.9978,
         "TotalScore": 0.8182,
-        "Rank": 20
+        "Rank": 24
     },
     {
         "id": 79,
@@ -1401,7 +2373,7 @@
         "ConfidenceGap": 0.3461,
         "VisualSimilarity": 0.9645,
         "TotalScore": 0.7999,
-        "Rank": 93
+        "Rank": 165
     },
     {
         "id": 78,
@@ -1413,7 +2385,7 @@
         "ConfidenceGap": 0.0572,
         "VisualSimilarity": 0.9961,
         "TotalScore": 0.8169,
-        "Rank": 31
+        "Rank": 35
     },
     {
         "id": 77,
@@ -1425,7 +2397,7 @@
         "ConfidenceGap": 0.047,
         "VisualSimilarity": 0.9954,
         "TotalScore": 0.8165,
-        "Rank": 33
+        "Rank": 38
     },
     {
         "id": 76,
@@ -1437,7 +2409,7 @@
         "ConfidenceGap": 0.0398,
         "VisualSimilarity": 0.9947,
         "TotalScore": 0.816,
-        "Rank": 34
+        "Rank": 39
     },
     {
         "id": 75,
@@ -1449,7 +2421,7 @@
         "ConfidenceGap": 0.026,
         "VisualSimilarity": 0.9924,
         "TotalScore": 0.8149,
-        "Rank": 37
+        "Rank": 57
     },
     {
         "id": 74,
@@ -1461,7 +2433,7 @@
         "ConfidenceGap": 0.0262,
         "VisualSimilarity": 0.9923,
         "TotalScore": 0.8149,
-        "Rank": 38
+        "Rank": 58
     },
     {
         "id": 73,
@@ -1473,7 +2445,7 @@
         "ConfidenceGap": 0.0401,
         "VisualSimilarity": 0.9947,
         "TotalScore": 0.816,
-        "Rank": 35
+        "Rank": 40
     },
     {
         "id": 72,
@@ -1485,7 +2457,7 @@
         "ConfidenceGap": 0.0208,
         "VisualSimilarity": 0.9887,
         "TotalScore": 0.813,
-        "Rank": 44
+        "Rank": 70
     },
     {
         "id": 71,
@@ -1497,7 +2469,7 @@
         "ConfidenceGap": 0.026,
         "VisualSimilarity": 0.9924,
         "TotalScore": 0.8149,
-        "Rank": 39
+        "Rank": 59
     },
     {
         "id": 70,
@@ -1509,7 +2481,7 @@
         "ConfidenceGap": 0.0212,
         "VisualSimilarity": 0.9887,
         "TotalScore": 0.8131,
-        "Rank": 42
+        "Rank": 68
     },
     {
         "id": 69,
@@ -1521,7 +2493,7 @@
         "ConfidenceGap": 0.0212,
         "VisualSimilarity": 0.9887,
         "TotalScore": 0.8131,
-        "Rank": 43
+        "Rank": 69
     },
     {
         "id": 68,
@@ -1533,7 +2505,7 @@
         "ConfidenceGap": -0.0519,
         "VisualSimilarity": 0.9369,
         "TotalScore": 0.791,
-        "Rank": 99
+        "Rank": 172
     },
     {
         "id": 67,
@@ -1545,7 +2517,7 @@
         "ConfidenceGap": -0.0519,
         "VisualSimilarity": 0.9369,
         "TotalScore": 0.791,
-        "Rank": 100
+        "Rank": 173
     },
     {
         "id": 66,
@@ -1557,7 +2529,7 @@
         "ConfidenceGap": -0.0519,
         "VisualSimilarity": 0.9369,
         "TotalScore": 0.791,
-        "Rank": 101
+        "Rank": 174
     },
     {
         "id": 65,
@@ -1569,7 +2541,7 @@
         "ConfidenceGap": -0.0531,
         "VisualSimilarity": 0.6588,
         "TotalScore": 0.6996,
-        "Rank": 162
+        "Rank": 238
     },
     {
         "id": 64,
@@ -1581,7 +2553,7 @@
         "ConfidenceGap": 0.0212,
         "VisualSimilarity": 0.9887,
         "TotalScore": 0.8131,
-        "Rank": 41
+        "Rank": 67
     },
     {
         "id": 63,
@@ -1593,7 +2565,7 @@
         "ConfidenceGap": -0.0651,
         "VisualSimilarity": 0.987,
         "TotalScore": 0.8086,
-        "Rank": 62
+        "Rank": 100
     },
     {
         "id": 62,
@@ -1605,7 +2577,7 @@
         "ConfidenceGap": 0.0291,
         "VisualSimilarity": 0.9572,
         "TotalScore": 0.8011,
-        "Rank": 91
+        "Rank": 161
     },
     {
         "id": 61,
@@ -1617,7 +2589,7 @@
         "ConfidenceGap": -0.0644,
         "VisualSimilarity": 0.9878,
         "TotalScore": 0.8088,
-        "Rank": 60
+        "Rank": 98
     },
     {
         "id": 60,
@@ -1629,7 +2601,7 @@
         "ConfidenceGap": -0.0575,
         "VisualSimilarity": 0.9901,
         "TotalScore": 0.8012,
-        "Rank": 87
+        "Rank": 157
     },
     {
         "id": 59,
@@ -1641,7 +2613,7 @@
         "ConfidenceGap": -0.0654,
         "VisualSimilarity": 0.9869,
         "TotalScore": 0.8089,
-        "Rank": 59
+        "Rank": 97
     },
     {
         "id": 58,
@@ -1653,7 +2625,7 @@
         "ConfidenceGap": -0.0558,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8034,
-        "Rank": 67
+        "Rank": 116
     },
     {
         "id": 57,
@@ -1665,7 +2637,7 @@
         "ConfidenceGap": -0.0558,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8034,
-        "Rank": 68
+        "Rank": 117
     },
     {
         "id": 56,
@@ -1677,7 +2649,7 @@
         "ConfidenceGap": -0.5914,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5348,
-        "Rank": 191
+        "Rank": 271
     },
     {
         "id": 55,
@@ -1689,7 +2661,7 @@
         "ConfidenceGap": -0.561,
         "VisualSimilarity": 0.9595,
         "TotalScore": 0.5216,
-        "Rank": 194
+        "Rank": 274
     },
     {
         "id": 54,
@@ -1701,7 +2673,7 @@
         "ConfidenceGap": 0.0746,
         "VisualSimilarity": 0.9416,
         "TotalScore": 0.6608,
-        "Rank": 164
+        "Rank": 240
     },
     {
         "id": 53,
@@ -1713,7 +2685,7 @@
         "ConfidenceGap": 0.4256,
         "VisualSimilarity": 0.5544,
         "TotalScore": 0.6519,
-        "Rank": 167
+        "Rank": 243
     },
     {
         "id": 52,
@@ -1725,7 +2697,7 @@
         "ConfidenceGap": 0.2101,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.8159,
-        "Rank": 36
+        "Rank": 41
     },
     {
         "id": 51,
@@ -1737,7 +2709,7 @@
         "ConfidenceGap": 0.2139,
         "VisualSimilarity": 0.999,
         "TotalScore": 0.8198,
-        "Rank": 10
+        "Rank": 13
     },
     {
         "id": 50,
@@ -1749,7 +2721,7 @@
         "ConfidenceGap": 0.2139,
         "VisualSimilarity": 0.999,
         "TotalScore": 0.8198,
-        "Rank": 11
+        "Rank": 14
     },
     {
         "id": 49,
@@ -1761,7 +2733,7 @@
         "ConfidenceGap": -0.5916,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.535,
-        "Rank": 184
+        "Rank": 264
     },
     {
         "id": 48,
@@ -1773,7 +2745,7 @@
         "ConfidenceGap": 0.0291,
         "VisualSimilarity": 0.9572,
         "TotalScore": 0.8011,
-        "Rank": 88
+        "Rank": 158
     },
     {
         "id": 47,
@@ -1785,7 +2757,7 @@
         "ConfidenceGap": 0.0291,
         "VisualSimilarity": 0.9572,
         "TotalScore": 0.8011,
-        "Rank": 89
+        "Rank": 159
     },
     {
         "id": 46,
@@ -1797,7 +2769,7 @@
         "ConfidenceGap": 0.0291,
         "VisualSimilarity": 0.9572,
         "TotalScore": 0.8011,
-        "Rank": 90
+        "Rank": 160
     },
     {
         "id": 45,
@@ -1809,7 +2781,7 @@
         "ConfidenceGap": -0.065,
         "VisualSimilarity": 0.9863,
         "TotalScore": 0.8097,
-        "Rank": 52
+        "Rank": 86
     },
     {
         "id": 44,
@@ -1821,7 +2793,7 @@
         "ConfidenceGap": 0.0032,
         "VisualSimilarity": 0.9814,
         "TotalScore": 0.8098,
-        "Rank": 49
+        "Rank": 83
     },
     {
         "id": 43,
@@ -1833,7 +2805,7 @@
         "ConfidenceGap": -0.5304,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5495,
-        "Rank": 179
+        "Rank": 259
     },
     {
         "id": 42,
@@ -1845,7 +2817,7 @@
         "ConfidenceGap": 0.3604,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.819,
-        "Rank": 18
+        "Rank": 21
     },
     {
         "id": 41,
@@ -1857,7 +2829,7 @@
         "ConfidenceGap": 0.3588,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.8191,
-        "Rank": 16
+        "Rank": 19
     },
     {
         "id": 40,
@@ -1869,7 +2841,7 @@
         "ConfidenceGap": 0.3286,
         "VisualSimilarity": 0.999,
         "TotalScore": 0.8194,
-        "Rank": 13
+        "Rank": 16
     },
     {
         "id": 39,
@@ -1881,7 +2853,7 @@
         "ConfidenceGap": 0.3305,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.8167,
-        "Rank": 32
+        "Rank": 37
     },
     {
         "id": 38,
@@ -1893,7 +2865,7 @@
         "ConfidenceGap": 0.3932,
         "VisualSimilarity": 0.9992,
         "TotalScore": 0.8174,
-        "Rank": 28
+        "Rank": 32
     },
     {
         "id": 37,
@@ -1905,7 +2877,7 @@
         "ConfidenceGap": 0.3678,
         "VisualSimilarity": 0.9959,
         "TotalScore": 0.8171,
-        "Rank": 30
+        "Rank": 34
     },
     {
         "id": 36,
@@ -1917,7 +2889,7 @@
         "ConfidenceGap": 0.3774,
         "VisualSimilarity": 0.9991,
         "TotalScore": 0.8176,
-        "Rank": 27
+        "Rank": 31
     },
     {
         "id": 35,
@@ -1929,7 +2901,7 @@
         "ConfidenceGap": -0.0646,
         "VisualSimilarity": 0.9866,
         "TotalScore": 0.8095,
-        "Rank": 53
+        "Rank": 87
     },
     {
         "id": 34,
@@ -1941,7 +2913,7 @@
         "ConfidenceGap": -0.063,
         "VisualSimilarity": 0.987,
         "TotalScore": 0.8095,
-        "Rank": 54
+        "Rank": 88
     },
     {
         "id": 33,
@@ -1953,7 +2925,7 @@
         "ConfidenceGap": -0.3766,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5634,
-        "Rank": 171
+        "Rank": 249
     },
     {
         "id": 32,
@@ -1965,7 +2937,7 @@
         "ConfidenceGap": -0.5916,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.535,
-        "Rank": 183
+        "Rank": 263
     },
     {
         "id": 31,
@@ -1977,7 +2949,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 136
+        "Rank": 212
     },
     {
         "id": 30,
@@ -1989,7 +2961,7 @@
         "ConfidenceGap": -0.0326,
         "VisualSimilarity": 0.9823,
         "TotalScore": 0.7225,
-        "Rank": 137
+        "Rank": 213
     },
     {
         "id": 29,
@@ -2001,7 +2973,7 @@
         "ConfidenceGap": -0.1411,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.6092,
-        "Rank": 168
+        "Rank": 246
     },
     {
         "id": 28,
@@ -2013,7 +2985,7 @@
         "ConfidenceGap": -0.0607,
         "VisualSimilarity": 0.9875,
         "TotalScore": 0.8103,
-        "Rank": 46
+        "Rank": 78
     },
     {
         "id": 27,
@@ -2025,7 +2997,7 @@
         "ConfidenceGap": -0.0622,
         "VisualSimilarity": 0.99,
         "TotalScore": 0.8101,
-        "Rank": 47
+        "Rank": 79
     },
     {
         "id": 26,
@@ -2037,7 +3009,7 @@
         "ConfidenceGap": 0.1196,
         "VisualSimilarity": 0.3236,
         "TotalScore": 0.5623,
-        "Rank": 172
+        "Rank": 252
     },
     {
         "id": 25,
@@ -2049,7 +3021,7 @@
         "ConfidenceGap": 0.1729,
         "VisualSimilarity": 0.0021,
         "TotalScore": 0.436,
-        "Rank": 196
+        "Rank": 276
     },
     {
         "id": 24,
@@ -2061,7 +3033,7 @@
         "ConfidenceGap": -0.0282,
         "VisualSimilarity": 0.9822,
         "TotalScore": 0.7233,
-        "Rank": 135
+        "Rank": 211
     },
     {
         "id": 23,
@@ -2073,7 +3045,7 @@
         "ConfidenceGap": -0.0603,
         "VisualSimilarity": 0.99,
         "TotalScore": 0.8097,
-        "Rank": 50
+        "Rank": 84
     },
     {
         "id": 22,
@@ -2085,7 +3057,7 @@
         "ConfidenceGap": -0.0603,
         "VisualSimilarity": 0.99,
         "TotalScore": 0.8097,
-        "Rank": 51
+        "Rank": 85
     },
     {
         "id": 21,
@@ -2097,7 +3069,7 @@
         "ConfidenceGap": -0.0062,
         "VisualSimilarity": 0.8785,
         "TotalScore": 0.7705,
-        "Rank": 128
+        "Rank": 203
     },
     {
         "id": 20,
@@ -2109,7 +3081,7 @@
         "ConfidenceGap": -0.0483,
         "VisualSimilarity": 0.9684,
         "TotalScore": 0.8028,
-        "Rank": 75
+        "Rank": 123
     },
     {
         "id": 19,
@@ -2121,7 +3093,7 @@
         "ConfidenceGap": -0.5914,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5348,
-        "Rank": 190
+        "Rank": 270
     },
     {
         "id": 18,
@@ -2133,7 +3105,7 @@
         "ConfidenceGap": -0.0596,
         "VisualSimilarity": 0.9876,
         "TotalScore": 0.81,
-        "Rank": 48
+        "Rank": 80
     },
     {
         "id": 17,
@@ -2145,7 +3117,7 @@
         "ConfidenceGap": -0.4094,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5588,
-        "Rank": 173
+        "Rank": 253
     },
     {
         "id": 16,
@@ -2157,7 +3129,7 @@
         "ConfidenceGap": -0.056,
         "VisualSimilarity": 0.9894,
         "TotalScore": 0.8044,
-        "Rank": 64
+        "Rank": 111
     },
     {
         "id": 15,
@@ -2169,7 +3141,7 @@
         "ConfidenceGap": -0.5009,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5585,
-        "Rank": 175
+        "Rank": 255
     },
     {
         "id": 14,
@@ -2181,7 +3153,7 @@
         "ConfidenceGap": -0.0573,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8027,
-        "Rank": 79
+        "Rank": 127
     },
     {
         "id": 13,
@@ -2193,7 +3165,7 @@
         "ConfidenceGap": 0.1588,
         "VisualSimilarity": 0.9946,
         "TotalScore": 0.7613,
-        "Rank": 131
+        "Rank": 206
     },
     {
         "id": 12,
@@ -2205,7 +3177,7 @@
         "ConfidenceGap": -0.3766,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5634,
-        "Rank": 170
+        "Rank": 248
     },
     {
         "id": 11,
@@ -2217,7 +3189,7 @@
         "ConfidenceGap": -0.5013,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5585,
-        "Rank": 174
+        "Rank": 254
     },
     {
         "id": 10,
@@ -2229,7 +3201,7 @@
         "ConfidenceGap": -0.0578,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8022,
-        "Rank": 83
+        "Rank": 153
     },
     {
         "id": 9,
@@ -2241,7 +3213,7 @@
         "ConfidenceGap": -0.4593,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5514,
-        "Rank": 177
+        "Rank": 257
     },
     {
         "id": 8,
@@ -2253,7 +3225,7 @@
         "ConfidenceGap": -0.534,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5421,
-        "Rank": 180
+        "Rank": 260
     },
     {
         "id": 7,
@@ -2265,7 +3237,7 @@
         "ConfidenceGap": -0.5817,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5359,
-        "Rank": 181
+        "Rank": 261
     },
     {
         "id": 6,
@@ -2277,7 +3249,7 @@
         "ConfidenceGap": -0.5816,
         "VisualSimilarity": 1.0,
         "TotalScore": 0.5359,
-        "Rank": 182
+        "Rank": 262
     },
     {
         "id": 5,
@@ -2289,7 +3261,7 @@
         "ConfidenceGap": -0.0557,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8038,
-        "Rank": 65
+        "Rank": 113
     },
     {
         "id": 4,
@@ -2301,7 +3273,7 @@
         "ConfidenceGap": -0.0538,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8036,
-        "Rank": 66
+        "Rank": 114
     },
     {
         "id": 3,
@@ -2313,7 +3285,7 @@
         "ConfidenceGap": -0.0577,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8033,
-        "Rank": 71
+        "Rank": 120
     },
     {
         "id": 2,
@@ -2325,7 +3297,7 @@
         "ConfidenceGap": -0.0541,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8027,
-        "Rank": 77
+        "Rank": 125
     },
     {
         "id": 1,
@@ -2337,6 +3309,6 @@
         "ConfidenceGap": -0.0541,
         "VisualSimilarity": 0.9893,
         "TotalScore": 0.8027,
-        "Rank": 78
+        "Rank": 126
     }
 ]

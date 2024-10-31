@@ -1948,5 +1948,815 @@
         "score": 0.7741,
         "team_name": "NSBE",
         "time_stamp": "2024-10-29 13:57:29"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7659,
+        "avg_l2_perturbation": 0.9604,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1658,
+        "score": 0.8155,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 18:14:18"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7663,
+        "avg_l2_perturbation": 0.9604,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1654,
+        "score": 0.8155,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 18:27:58"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7658,
+        "avg_l2_perturbation": 0.9604,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1658,
+        "score": 0.8155,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 18:30:30"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.9488,
+        "avg_l2_perturbation": 1.0232,
+        "avg_ssim": 0.9927,
+        "avg_confidence_gap": -0.0172,
+        "score": 0.815,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 18:37:52"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.9488,
+        "avg_l2_perturbation": 1.0232,
+        "avg_ssim": 0.9927,
+        "avg_confidence_gap": -0.0172,
+        "score": 0.815,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 18:37:54"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.8016,
+        "avg_l2_perturbation": 0.9653,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1301,
+        "score": 0.8154,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 18:45:29"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.6968,
+        "avg_l2_perturbation": 0.9082,
+        "avg_ssim": 0.9937,
+        "avg_confidence_gap": 0.2348,
+        "score": 0.8158,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 18:55:16"
+    },
+    {
+        "incorrect_ratio": 0.945,
+        "avg_confidence_incorrect": 0.9853,
+        "avg_l2_perturbation": 1.3518,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0576,
+        "score": 0.8027,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-29 19:01:32"
+    },
+    {
+        "incorrect_ratio": 0.97,
+        "avg_confidence_incorrect": 0.6761,
+        "avg_l2_perturbation": 0.8555,
+        "avg_ssim": 0.9939,
+        "avg_confidence_gap": 0.254,
+        "score": 0.8109,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 19:34:08"
+    },
+    {
+        "incorrect_ratio": 0.993,
+        "avg_confidence_incorrect": 0.7224,
+        "avg_l2_perturbation": 0.9536,
+        "avg_ssim": 0.9934,
+        "avg_confidence_gap": 0.2088,
+        "score": 0.8143,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-29 19:32:32"
+    },
+    {
+        "incorrect_ratio": 0.959,
+        "avg_confidence_incorrect": 0.9884,
+        "avg_l2_perturbation": 1.4057,
+        "avg_ssim": 0.9884,
+        "avg_confidence_gap": -0.0596,
+        "score": 0.8048,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:13:33"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:23:23"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:23:19"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:23:59"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:23:12"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:24:46"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:24:37"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:28:09"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:25:41"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:25:08"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:25:07"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:25:32"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.983,
+        "avg_l2_perturbation": 1.3515,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0554,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:25:26"
+    },
+    {
+        "incorrect_ratio": 0.99,
+        "avg_confidence_incorrect": 0.9358,
+        "avg_l2_perturbation": 1.7803,
+        "avg_ssim": 0.9822,
+        "avg_confidence_gap": -0.0048,
+        "score": 0.807,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:41:39"
+    },
+    {
+        "incorrect_ratio": 0.911,
+        "avg_confidence_incorrect": 0.9866,
+        "avg_l2_perturbation": 1.3049,
+        "avg_ssim": 0.9898,
+        "avg_confidence_gap": -0.0616,
+        "score": 0.797,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:43:19"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:49:44"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:49:21"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:49:40"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:49:04"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:49:17"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:49:12"
+    },
+    {
+        "incorrect_ratio": 0.943,
+        "avg_confidence_incorrect": 0.9833,
+        "avg_l2_perturbation": 1.3508,
+        "avg_ssim": 0.9893,
+        "avg_confidence_gap": -0.0558,
+        "score": 0.8024,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:49:19"
+    },
+    {
+        "incorrect_ratio": 0.982,
+        "avg_confidence_incorrect": 0.994,
+        "avg_l2_perturbation": 1.4719,
+        "avg_ssim": 0.9875,
+        "avg_confidence_gap": -0.0636,
+        "score": 0.8083,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:59:29"
+    },
+    {
+        "incorrect_ratio": 0.981,
+        "avg_confidence_incorrect": 0.9957,
+        "avg_l2_perturbation": 1.5088,
+        "avg_ssim": 0.9867,
+        "avg_confidence_gap": -0.0654,
+        "score": 0.8078,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:56:16"
+    },
+    {
+        "incorrect_ratio": 0.982,
+        "avg_confidence_incorrect": 0.994,
+        "avg_l2_perturbation": 1.4719,
+        "avg_ssim": 0.9875,
+        "avg_confidence_gap": -0.0636,
+        "score": 0.8083,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:59:41"
+    },
+    {
+        "incorrect_ratio": 0.982,
+        "avg_confidence_incorrect": 0.994,
+        "avg_l2_perturbation": 1.4719,
+        "avg_ssim": 0.9875,
+        "avg_confidence_gap": -0.0636,
+        "score": 0.8083,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-29 20:59:40"
+    },
+    {
+        "incorrect_ratio": 0.988,
+        "avg_confidence_incorrect": 0.9955,
+        "avg_l2_perturbation": 1.5098,
+        "avg_ssim": 0.9869,
+        "avg_confidence_gap": -0.0647,
+        "score": 0.8091,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-29 21:00:04"
+    },
+    {
+        "incorrect_ratio": 0.99,
+        "avg_confidence_incorrect": 0.9959,
+        "avg_l2_perturbation": 1.4992,
+        "avg_ssim": 0.9871,
+        "avg_confidence_gap": -0.065,
+        "score": 0.8095,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-29 21:09:42"
+    },
+    {
+        "incorrect_ratio": 0.954,
+        "avg_confidence_incorrect": 0.9927,
+        "avg_l2_perturbation": 1.4676,
+        "avg_ssim": 0.9875,
+        "avg_confidence_gap": -0.0337,
+        "score": 0.8084,
+        "team_name": "Noise Classifier",
+        "time_stamp": "2024-10-29 21:20:55"
+    },
+    {
+        "incorrect_ratio": 0.82,
+        "avg_confidence_incorrect": 0.9728,
+        "avg_l2_perturbation": 1.0985,
+        "avg_ssim": 0.9928,
+        "avg_confidence_gap": -0.0176,
+        "score": 0.7885,
+        "team_name": "Noise Classifier",
+        "time_stamp": "2024-10-29 21:21:35"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.8133,
+        "avg_l2_perturbation": 0.601,
+        "avg_ssim": 0.9978,
+        "avg_confidence_gap": 0.1183,
+        "score": 0.8183,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-29 21:46:42"
+    },
+    {
+        "incorrect_ratio": 0.986,
+        "avg_confidence_incorrect": 0.7052,
+        "avg_l2_perturbation": 0.4465,
+        "avg_ssim": 0.9985,
+        "avg_confidence_gap": 0.2263,
+        "score": 0.8169,
+        "team_name": "Nika",
+        "time_stamp": "2024-10-30 00:37:29"
+    },
+    {
+        "incorrect_ratio": 0.99,
+        "avg_confidence_incorrect": 0.9967,
+        "avg_l2_perturbation": 1.5105,
+        "avg_ssim": 0.9867,
+        "avg_confidence_gap": -0.0657,
+        "score": 0.8094,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 01:23:54"
+    },
+    {
+        "incorrect_ratio": 0.081,
+        "avg_confidence_incorrect": 0.7852,
+        "avg_l2_perturbation": 0.0314,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.4854,
+        "score": 0.5633,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 01:39:16"
+    },
+    {
+        "incorrect_ratio": 0.968,
+        "avg_confidence_incorrect": 0.6765,
+        "avg_l2_perturbation": 0.8565,
+        "avg_ssim": 0.9939,
+        "avg_confidence_gap": 0.2538,
+        "score": 0.8106,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 09:37:26"
+    },
+    {
+        "incorrect_ratio": 0.975,
+        "avg_confidence_incorrect": 0.6751,
+        "avg_l2_perturbation": 0.86,
+        "avg_ssim": 0.9939,
+        "avg_confidence_gap": 0.2553,
+        "score": 0.8118,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 09:49:48"
+    },
+    {
+        "incorrect_ratio": 0.99,
+        "avg_confidence_incorrect": 0.9958,
+        "avg_l2_perturbation": 1.4957,
+        "avg_ssim": 0.987,
+        "avg_confidence_gap": -0.0648,
+        "score": 0.8095,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 09:50:08"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.8026,
+        "avg_l2_perturbation": 0.9654,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1291,
+        "score": 0.8154,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 10:08:12"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.8034,
+        "avg_l2_perturbation": 0.9653,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1283,
+        "score": 0.8154,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 10:18:32"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.8028,
+        "avg_l2_perturbation": 0.9654,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1289,
+        "score": 0.8154,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 10:26:23"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7656,
+        "avg_l2_perturbation": 0.9605,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.166,
+        "score": 0.8155,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 10:36:56"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7487,
+        "avg_l2_perturbation": 0.9583,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1829,
+        "score": 0.8155,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 10:44:53"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7375,
+        "avg_l2_perturbation": 0.9574,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.1941,
+        "score": 0.8155,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 10:49:02"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7075,
+        "avg_l2_perturbation": 0.9091,
+        "avg_ssim": 0.9936,
+        "avg_confidence_gap": 0.2241,
+        "score": 0.8158,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 11:00:47"
+    },
+    {
+        "incorrect_ratio": 0.973,
+        "avg_confidence_incorrect": 0.6756,
+        "avg_l2_perturbation": 0.8594,
+        "avg_ssim": 0.9939,
+        "avg_confidence_gap": 0.2548,
+        "score": 0.8114,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 11:07:56"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7006,
+        "avg_l2_perturbation": 0.9015,
+        "avg_ssim": 0.9937,
+        "avg_confidence_gap": 0.231,
+        "score": 0.8159,
+        "team_name": "AI Posers",
+        "time_stamp": "2024-10-30 11:15:03"
+    },
+    {
+        "incorrect_ratio": 0.081,
+        "avg_confidence_incorrect": 0.6764,
+        "avg_l2_perturbation": 0.0055,
+        "avg_ssim": 1.0,
+        "avg_confidence_gap": -0.3766,
+        "score": 0.5634,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 12:17:17"
+    },
+    {
+        "incorrect_ratio": 0.979,
+        "avg_confidence_incorrect": 0.9941,
+        "avg_l2_perturbation": 1.4802,
+        "avg_ssim": 0.9874,
+        "avg_confidence_gap": -0.0639,
+        "score": 0.8077,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 12:31:59"
+    },
+    {
+        "incorrect_ratio": 0.933,
+        "avg_confidence_incorrect": 0.9858,
+        "avg_l2_perturbation": 1.3004,
+        "avg_ssim": 0.99,
+        "avg_confidence_gap": -0.059,
+        "score": 0.801,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-30 12:35:41"
+    },
+    {
+        "incorrect_ratio": 0.933,
+        "avg_confidence_incorrect": 0.9858,
+        "avg_l2_perturbation": 1.3004,
+        "avg_ssim": 0.99,
+        "avg_confidence_gap": -0.059,
+        "score": 0.801,
+        "team_name": "Mighty Milo Hackers",
+        "time_stamp": "2024-10-30 12:36:43"
+    },
+    {
+        "incorrect_ratio": 0.979,
+        "avg_confidence_incorrect": 0.9982,
+        "avg_l2_perturbation": 1.5353,
+        "avg_ssim": 0.9864,
+        "avg_confidence_gap": -0.0523,
+        "score": 0.8099,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 13:33:58"
+    },
+    {
+        "incorrect_ratio": 0.981,
+        "avg_confidence_incorrect": 0.7289,
+        "avg_l2_perturbation": 3.8538,
+        "avg_ssim": 0.8818,
+        "avg_confidence_gap": 0.2015,
+        "score": 0.7741,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-30 13:55:47"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.7143,
+        "avg_l2_perturbation": 0.3396,
+        "avg_ssim": 0.9992,
+        "avg_confidence_gap": 0.2174,
+        "score": 0.82,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-30 14:14:04"
+    },
+    {
+        "incorrect_ratio": 0.979,
+        "avg_confidence_incorrect": 0.9982,
+        "avg_l2_perturbation": 1.5353,
+        "avg_ssim": 0.9864,
+        "avg_confidence_gap": -0.0523,
+        "score": 0.8099,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 15:32:05"
+    },
+    {
+        "incorrect_ratio": 0.92,
+        "avg_confidence_incorrect": 0.9785,
+        "avg_l2_perturbation": 1.3585,
+        "avg_ssim": 0.9892,
+        "avg_confidence_gap": -0.0202,
+        "score": 0.8036,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 16:08:49"
+    },
+    {
+        "incorrect_ratio": 0.978,
+        "avg_confidence_incorrect": 0.6983,
+        "avg_l2_perturbation": 7.2268,
+        "avg_ssim": 0.7532,
+        "avg_confidence_gap": 0.2482,
+        "score": 0.7323,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 16:23:59"
+    },
+    {
+        "incorrect_ratio": 0.953,
+        "avg_confidence_incorrect": 0.9932,
+        "avg_l2_perturbation": 1.4717,
+        "avg_ssim": 0.9873,
+        "avg_confidence_gap": -0.0335,
+        "score": 0.8084,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 16:48:33"
+    },
+    {
+        "incorrect_ratio": 0.961,
+        "avg_confidence_incorrect": 0.6853,
+        "avg_l2_perturbation": 0.9373,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.2763,
+        "score": 0.8141,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 17:05:55"
+    },
+    {
+        "incorrect_ratio": 0.961,
+        "avg_confidence_incorrect": 0.6853,
+        "avg_l2_perturbation": 0.9373,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.2763,
+        "score": 0.8141,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 17:37:50"
+    },
+    {
+        "incorrect_ratio": 0.961,
+        "avg_confidence_incorrect": 0.6853,
+        "avg_l2_perturbation": 0.9373,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.2763,
+        "score": 0.8141,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 18:09:52"
+    },
+    {
+        "incorrect_ratio": 0.954,
+        "avg_confidence_incorrect": 0.9844,
+        "avg_l2_perturbation": 1.3507,
+        "avg_ssim": 0.9894,
+        "avg_confidence_gap": -0.056,
+        "score": 0.8044,
+        "team_name": "Vojjina",
+        "time_stamp": "2024-10-30 18:42:53"
+    },
+    {
+        "incorrect_ratio": 0.961,
+        "avg_confidence_incorrect": 0.6853,
+        "avg_l2_perturbation": 0.9373,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.2763,
+        "score": 0.8141,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 20:04:01"
+    },
+    {
+        "incorrect_ratio": 0.872,
+        "avg_confidence_incorrect": 0.7013,
+        "avg_l2_perturbation": 0.4226,
+        "avg_ssim": 0.9986,
+        "avg_confidence_gap": 0.2553,
+        "score": 0.8023,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 21:03:40"
+    },
+    {
+        "incorrect_ratio": 0.152,
+        "avg_confidence_incorrect": 0.7374,
+        "avg_l2_perturbation": 0.2376,
+        "avg_ssim": 0.9993,
+        "avg_confidence_gap": -0.06,
+        "score": 0.6368,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-30 22:09:08"
+    },
+    {
+        "incorrect_ratio": 0.133,
+        "avg_confidence_incorrect": 0.7533,
+        "avg_l2_perturbation": 0.2359,
+        "avg_ssim": 0.999,
+        "avg_confidence_gap": -0.1218,
+        "score": 0.626,
+        "team_name": "NSBE",
+        "time_stamp": "2024-10-30 22:08:43"
+    },
+    {
+        "incorrect_ratio": 0.92,
+        "avg_confidence_incorrect": 0.6898,
+        "avg_l2_perturbation": 0.8496,
+        "avg_ssim": 0.994,
+        "avg_confidence_gap": 0.2383,
+        "score": 0.8023,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 22:35:25"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.5317,
+        "avg_l2_perturbation": 0.32,
+        "avg_ssim": 0.9993,
+        "avg_confidence_gap": 0.3999,
+        "score": 0.8201,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-30 23:22:43"
+    },
+    {
+        "incorrect_ratio": 0.961,
+        "avg_confidence_incorrect": 0.6853,
+        "avg_l2_perturbation": 0.9373,
+        "avg_ssim": 0.9933,
+        "avg_confidence_gap": 0.2763,
+        "score": 0.8141,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 23:28:02"
+    },
+    {
+        "incorrect_ratio": 1.0,
+        "avg_confidence_incorrect": 0.5521,
+        "avg_l2_perturbation": 0.3245,
+        "avg_ssim": 0.9993,
+        "avg_confidence_gap": 0.3795,
+        "score": 0.8201,
+        "team_name": "W's Only",
+        "time_stamp": "2024-10-30 23:49:28"
+    },
+    {
+        "incorrect_ratio": 0.955,
+        "avg_confidence_incorrect": 0.8553,
+        "avg_l2_perturbation": 1.098,
+        "avg_ssim": 0.9924,
+        "avg_confidence_gap": 0.1009,
+        "score": 0.8111,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 23:49:40"
+    },
+    {
+        "incorrect_ratio": 0.955,
+        "avg_confidence_incorrect": 0.8553,
+        "avg_l2_perturbation": 1.098,
+        "avg_ssim": 0.9924,
+        "avg_confidence_gap": 0.1009,
+        "score": 0.8111,
+        "team_name": "Hung Nguyen",
+        "time_stamp": "2024-10-30 23:59:56"
     }
 ]

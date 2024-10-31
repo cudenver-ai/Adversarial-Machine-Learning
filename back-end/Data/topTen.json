@@ -16,37 +16,37 @@
     },
     {
         "rank": 4,
+        "team": "AI Posers",
+        "score": 0.8159
+    },
+    {
+        "rank": 5,
+        "team": "Hung Nguyen",
+        "score": 0.8141
+    },
+    {
+        "rank": 6,
         "team": "Mighty Milo Hackers",
         "score": 0.8095
     },
     {
-        "rank": 5,
+        "rank": 7,
         "team": "Noise Classifier",
         "score": 0.8088
     },
     {
-        "rank": 6,
+        "rank": 8,
         "team": "Vojjina",
         "score": 0.8086
     },
     {
-        "rank": 7,
+        "rank": 9,
         "team": "Denver Continental",
         "score": 0.8038
     },
     {
-        "rank": 8,
+        "rank": 10,
         "team": "Ranas Team",
         "score": 0.8028
-    },
-    {
-        "rank": 9,
-        "team": "Hung Nguyen",
-        "score": 0.8027
-    },
-    {
-        "rank": 10,
-        "team": "galindoj",
-        "score": 0.8027
     }
 ]
