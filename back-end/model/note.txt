@@ -1,0 +1,5 @@
+Move here:
+- data_gen.py
+- eval.py
+- gen.py
+- cifar.pt
