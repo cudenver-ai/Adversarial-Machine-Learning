@@ -78,10 +78,8 @@ If you need to make any specific adjustments to the development environment, you
 - If the script did not automatically start the back-end server, you can do so manually:
 
 ``` bash
-
-source venv/bin/activate  
+source venv/bin/activate
 flask run
-
 ```
 
 - The server will start on `http://0.0.0.0:5000`
@@ -91,9 +89,7 @@ flask run
 - To start the front-end development server:
 
 ``` bash
-
 npm run dev
-
 ```
 
 - The application will be accessible at `http://localhost:5173` or `http://your-ip:5173`.
@@ -105,7 +101,6 @@ npm run dev
     - In .env.dev, modify the API base URL and proxy target as needed:
 
 ``` ini
-
 # For Home
 VITE_API_BASE_URL=http://home-ip:5000
 VITE_PROXY_TARGET=http://home-ip:5000
@@ -113,12 +108,10 @@ VITE_PROXY_TARGET=http://home-ip:5000
 # For location like the lab
 # VITE_API_BASE_URL=http://lab-ip:5000
 # VITE_PROXY_TARGET=http://lab-ip:5000
-
-``` 
+```
 - In config.py, update CORS origins to accommodate the different environments:
 
 ``` python
-
 class DevelopmentConfig(Config):
     DEBUG = True
     CORS_ORIGINS = [
@@ -126,7 +119,6 @@ class DevelopmentConfig(Config):
         "http://127.0.0.1:5173",
         "http://your-ip:5173",
     ]
-
 ```
 
 ### Workflow Summary

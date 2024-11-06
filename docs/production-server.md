@@ -1,13 +1,3 @@
-sudo systemctl start production-server (if needed)
-sudo systemctl start nginx (if needed)
-
-sudo systemctl restart production-server
-sudo systemctl status production-server
-
-sudo nginx -t
-sudo systemctl restart nginx
-sudo systemctl status nginx
-
 # Production Server Deployment Guide
 
 This guide covers the setup and deployment of the application in a production environment. It provides steps to configure the server, set up Gunicorn and Nginx, and ensure the application runs reliably.
@@ -51,7 +41,7 @@ Update the server and install necessary software packages.
 ``` bash
 sudo apt update
 sudo apt install python3 python3-venv python3-pip nginx git
-``` 
+```
 
 ##### 2. Clone the Repository
 
@@ -90,7 +80,7 @@ class ProductionConfig(Config):
     DEBUG = False
     CORS_ORIGINS = [
         "http://10.18.22.224",
-        "http://dns-name", # if we can get one 
+        "http://dns-name", # if we can get one
     ]
 ```
 
@@ -99,12 +89,10 @@ class ProductionConfig(Config):
 For production, disable debug mode and configure Flask to bind to all network interfaces (`0.0.0.0`):
 
 ``` ini
-
 FLASK_APP=app.py
 FLASK_DEBUG=0
 FLASK_RUN_HOST=0.0.0.0
 FLASK_RUN_PORT=5000
-
 ```
 
 - c. `app.py`
@@ -128,7 +116,6 @@ mkdir -p back-end/templates
 For example:
 
 ```bash
-
 mv front-end/dist/index.html back-end/templates/
 mv front-end/dist/*.js back-end/static/
 mv front-end/dist/*.css back-end/static/
@@ -137,14 +124,11 @@ mv front-end/dist/*.svg back-end/static/
 - **Flask Route Update**: Ensure that your app.py has the correct routing to serve the HTML from the templates directory and static assets from static/:
 
 ```python
-
 from flask import Flask, render_template
 
 @app.route('/')
 def index():
-return render_template('index.html')  # This will render the HTML from templates
-
-# Flask will automatically serve files from /static/
+return render_template('index.html')
 ```
 
 ### Front-End Setup
@@ -217,10 +201,7 @@ sudo systemctl enable production-server
 sudo systemctl start production-server
 sudo systemctl status production-server
 ```
-OUTPUT
-``` bash
 
-```
 ### Nginx Configuration
 ##### 1. Install Nginx
 
@@ -285,9 +266,7 @@ server {
     add_header X-XSS-Protection "1; mode=block" always;
     add_header Referrer-Policy "no-referrer" always;
     add_header Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';" always;
-
 }
-
 
 # HTTP Server Block
 server {
@@ -298,7 +277,7 @@ server {
     return 301 https://$host$request_uri;
 }
 
-``` 
+```
 
 ##### 3. Enable Nginx Configuration and Restart
 
@@ -319,7 +298,7 @@ Allow traffic for HTTP and HTTPS via the firewall.
 ``` bash
 sudo ufw allow 'Nginx Full'
 sudo ufw status
-``` 
+```
 
 ### Ensuring Reliability
 
@@ -345,10 +324,10 @@ Restart Gunicorn:
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable 
-sudo systemctl start 
-sudo systemctl restart 
-sudo systemctl status 
+sudo systemctl enable
+sudo systemctl start
+sudo systemctl restart
+sudo systemctl status
 ```
 Reload Nginx:
 
@@ -370,51 +349,26 @@ Stop Services (Kill the server)
 Stop Nginx:
 
 ```bash
-
 sudo systemctl stop nginx
 ```
+
 Stop Gunicorn (decoychallenge service):
 
 ```bash
 sudo systemctl stop decoychallenge
 ```
-```bash    KILLLL
-sudo systemctl stop decoychallenge
-sudo systemctl stop nginx
-sudo pkill gunicorn
-sudo pkill nginx
-sudo rm -rf /var/cache/nginx/*
-```
+### Commonly used commands
+```bash
+sudo systemctl start production-server (if needed)
+sudo systemctl start nginx (if needed)
 
-
-sudo systemctl daemon-reload
-sudo systemctl start decoychallenge
-sudo systemctl start nginx
-
-sudo systemctl status decoychallenge
-sudo systemctl status nginx
-
-journalctl -u decoychallenge -f
-sudo tail -f /var/log/nginx/access.log /var/log/nginx/error.log
-
-
-sudo gedit /etc/systemd/system/decoychallenge.service
-
-
-
-
-sudo chown -R vicente:www-data /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
-sudo chmod -R 755 /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
-
-
-sudo systemctl enable decoychallenge
-sudo systemctl start decoychallenge
-sudo systemctl restart decoychallenge
-sudo systemctl reload nginx
+sudo systemctl restart production-server
+sudo systemctl status production-server
 
 sudo nginx -t
 sudo systemctl restart nginx
-sudo systemctl reload nginx
+sudo systemctl status nginx
+```
 
 
 - **Monitor Logs**:
@@ -465,13 +419,11 @@ If you're the only user on the machine, you can change the ownership of the stat
 Change Ownership:
 
 ```bash
-
 sudo chown -R vicente:www-data /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
 ```
 Set Permissions:
 
 ```bash
-
 sudo chmod -R 755 /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end/static
 ```
 Explanation:
@@ -486,19 +438,19 @@ Since Nginx needs to traverse the directory structure to reach the static direct
 Set Execute Permissions for Others:
 
 ```bash
-
 sudo chmod o+x /home/vicente
 sudo chmod o+x /home/vicente/prod-decoy-challenge
 sudo chmod o+x /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning
 sudo chmod o+x /home/vicente/prod-decoy-challenge/Adversarial-Machine-Learning/back-end
 ```
+
 This grants execute permissions to others (which includes www-data) on the directories.
+
 2. Final Steps
 
 Restart Nginx:
 
 ```bash
-
 sudo systemctl restart nginx
 ```
 Test Application:

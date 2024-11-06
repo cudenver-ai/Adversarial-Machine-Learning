@@ -19,7 +19,7 @@ Prerequisites
 
 
 Option 1: Self-Signed Certificates with Static IP(This is our current configuration)
-Setting Up SSL/TLS with Self-Signed Certificates 
+Setting Up SSL/TLS with Self-Signed Certificates
 Step 1: Generate a Self-Signed Certificate
 
 First, we'll generate a self-signed SSL certificate and a corresponding private key.
@@ -181,7 +181,6 @@ sudo nginx -t
 Reload Nginx:
 
 ```bash
-
 sudo systemctl reload nginx
 ```
 Step 6: Access Your Site Using HTTPS
