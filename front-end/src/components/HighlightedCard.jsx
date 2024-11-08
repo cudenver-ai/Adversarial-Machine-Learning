@@ -59,11 +59,10 @@ export default function HighlightedCard() {
       </Typography>
       <TextField
         label="Team Name"
-        required
+        required 
         fullWidth
         value={teamName}
         onChange={(e) => setTeamName(e.target.value)}
-        disabled
       />
 
       <input
@@ -71,7 +70,6 @@ export default function HighlightedCard() {
         accept=".pkl"
         onChange={handleFileUpload}
         style={{ display: 'block', marginBottom: '16px', marginTop: '16px' }}
-        disabled
       />
       <Button
         onClick={handleSubmit}
@@ -79,7 +77,6 @@ export default function HighlightedCard() {
         size="Large"
         color="primary"
         endIcon={<ChevronRightRoundedIcon />}
-        disabled
       >
         Upload
       </Button>

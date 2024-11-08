@@ -1,21 +1,11 @@
 from metrics import update_evalMetrics, update_leaderBoard
 from rank import calculate_rank
 from eval import evaluate
-from visits import update_visits
-
 import logging
+from utils.utils import update_visit
+from pathlib import Path
 
-#Logging
-log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
-logging.basicConfig(
-    filename=log_file,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
-)
-
-
-# update_visits()
+update_visit((Path.cwd()).parent)
 
 # evaluate will either return true or false depending if the uploads dir is populated. if it is then it run the folwoing functions
 if evaluate():

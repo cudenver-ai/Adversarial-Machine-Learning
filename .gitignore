@@ -7,3 +7,5 @@ node_modules/
 notes.md
 app.log
 .DS_Store
+back-end/logs/
+env

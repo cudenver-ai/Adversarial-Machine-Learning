@@ -6,17 +6,13 @@ import os
 import logging
 import gzip
 from datetime import datetime
+from pathlib import Path
+from utils.utils import update_visit
 
-log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
-logging.basicConfig(
-    filename=log_file,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',  
-    datefmt='%Y-%m-%d %H:%M:%S' 
-)
+update_visit((Path.cwd()).parent)
 
 def update_visits():
-    path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
+    path = (Path.cwd()).parent
     json_file_path = f"{path}Data/visits.json"
     logs_paths = ["/var/log/nginx/"]
 
@@ -40,12 +36,12 @@ def update_visits():
                         with open(file_path, "r") as file:
                             log_data = file.readlines()
                             logging.info(f"Finished reading: {filename}")
-                            
+
                     for log in log_data:
                         match = log_pattern.match(log)
                         if match:
                             parsed_data.append(match.groupdict())
-                    
+
             except Exception as e:
                 logging.info(f"Error reading {filename}: {e}")
 
@@ -61,13 +57,13 @@ def update_visits():
     max_date = df_parsed["date"].max().date()
     logging.info(f"Log entries date range: {min_date} to {max_date}")
 
-    #october_first_2024 = datetime(2024, 10, 1).date()
+    # october_first_2024 = datetime(2024, 10, 1).date()
     october_15th_2024 = datetime(2024, 10, 15).date()
     end_date = datetime.now().date()
 
-    old_visits_data = [30, 58, 68, 98, 80, 27, 107, 33, 9, 158, 18, 1, 3, 15] 
-    old_uploads_data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 6, 1, 7, 0]          
-    old_unique_data = [6, 14, 13, 13, 4, 4, 9, 6, 7, 33, 4, 1, 2, 10]     
+    old_visits_data = [30, 58, 68, 98, 80, 27, 107, 33, 9, 158, 18, 1, 3, 15]
+    old_uploads_data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 6, 1, 7, 0]
+    old_unique_data = [6, 14, 13, 13, 4, 4, 9, 6, 7, 33, 4, 1, 2, 10]
 
     visits_data = old_visits_data.copy()
     uploads_data = old_uploads_data.copy()
@@ -109,7 +105,7 @@ def update_visits():
             "stack": "total",
             "area": True,
             "stackOrder": "ascending",
-            "data": visits_data
+            "data": visits_data,
         },
         {
             "id": "Uploads",
@@ -119,7 +115,7 @@ def update_visits():
             "stack": "total",
             "area": True,
             "stackOrder": "ascending",
-            "data": uploads_data
+            "data": uploads_data,
         },
         {
             "id": "Unique",
@@ -129,8 +125,8 @@ def update_visits():
             "stack": "total",
             "area": True,
             "stackOrder": "ascending",
-            "data": unique_data
-        }
+            "data": unique_data,
+        },
     ]
 
     with open(json_file_path, "w") as f:

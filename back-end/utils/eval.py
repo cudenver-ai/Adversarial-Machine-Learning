@@ -6,23 +6,15 @@ import shutil
 import pickle
 import torch
 import torch.nn.functional as F
-from robustbench.data import load_cifar10
 from robustbench.utils import load_model
 from skimage.metrics import structural_similarity as ssim
 from datetime import datetime
+from pathlib import Path
+from utils.utils import update_visit
 
-
-log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
-logging.basicConfig(
-    filename=log_file,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',  
-    datefmt='%Y-%m-%d %H:%M:%S' 
-)
-
+update_visit((Path.cwd()).parent)
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
 
 def calculate_score(
     model,
@@ -122,15 +114,17 @@ def calculate_score(
         "score": round(float(score), 4),
     }
 
-#uploads_dir = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads"
+
+# uploads_dir = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/Uploads"
+
 
 def evaluate():
     # Get current directory
-    path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
+    path = (Path.cwd()).parent
     start_time = datetime.now()
     logging.info("Starting evaluation script")
     logging.info(f"Evaluation started at: {start_time}")
-    #current_directory = os.getcwd()
+    # current_directory = os.getcwd()
 
     # Check if 'Uploads' directory exists and is not empty
     uploads_dir = os.path.join(path, "Uploads")
@@ -144,7 +138,9 @@ def evaluate():
         logging.info("Uploads directory is empty. Skipping evaluation.")
         return False
 
-    logging.info(f"Starting evaluation. Files found in Uploads: {os.listdir(uploads_dir)}")
+    logging.info(
+        f"Starting evaluation. Files found in Uploads: {os.listdir(uploads_dir)}"
+    )
 
     # Create the 'evaluated' directory if it doesn't exist
     evaluated_dir = os.path.join(path, "evaluated")
@@ -160,7 +156,7 @@ def evaluate():
     logging.info(f"Created timestamped folder: {timestamped_folder}")
 
     # Move all folders from 'Uploads' to the timestamped folder
-    #uploads_dir = os.path.join(current_directory, "Uploads")
+    # uploads_dir = os.path.join(current_directory, "Uploads")
 
     for folder_name in os.listdir(uploads_dir):
         src_folder = os.path.join(uploads_dir, folder_name)
@@ -171,14 +167,14 @@ def evaluate():
     logging.info(f"Finished Moving folders")
 
     # Now process the folders in the timestamped folder
-    
+
     for folder_name in os.listdir(timestamped_folder):
         folder_path = os.path.join(timestamped_folder, folder_name)
-        
+
         try:
             logging.info(f"Processing folder: {folder_name}")
-            team_name= ""
-            time_stamp=""
+            team_name = ""
+            time_stamp = ""
 
             for name in os.listdir(folder_path):
                 path_name = os.path.join(folder_path, name)
@@ -193,10 +189,12 @@ def evaluate():
                         tmp = f.readlines()
                         time_stamp = tmp[0].strip()
                         team_name = tmp[1].strip()
-                    logging.info(f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}")
+                    logging.info(
+                        f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}"
+                    )
 
             # Load CIFAR-10 data
-            
+
             cifar_data = torch.load(f"{path}cifar10_test_100_per_class.pt")
             x_test = cifar_data["images"] / 255.0
             y_test = cifar_data["labels"]
@@ -221,7 +219,7 @@ def evaluate():
                 continue
 
             # Checks if the shape is not the expected [1000, 3, 32, 32]
-            if list(advs[0].shape) != [1000,3,32,32]:
+            if list(advs[0].shape) != [1000, 3, 32, 32]:
                 logging.info(f"Submission shape does not match: {advs[0].shape}")
                 continue
 
@@ -231,24 +229,23 @@ def evaluate():
             logging.info(f"Score calculated for team: {team_name}")
 
             # Append the results to the JSON file
-            submission_json = os.path.join(path,"Data/allSubmissions.json")
-            
+            submission_json = os.path.join(path, "Data/allSubmissions.json")
+
             with open(submission_json, "r") as f:
                 data = json.load(f)
-                #data.append could also be placed outside this with open block (I think)
+                # data.append could also be placed outside this with open block (I think)
                 data.append(score_metrics)
                 logging.info(f"Loaded existing submission data from {submission_json}")
-                
 
             with open(submission_json, "w") as f:
                 json.dump(data, f, indent=4)
                 logging.info(f"Updated submission data saved to {submission_json}")
 
-            
         except Exception as e:
-            logging.error(f"Error processing folder {folder_name}: {str(e)}", exc_info=True)
+            logging.error(
+                f"Error processing folder {folder_name}: {str(e)}", exc_info=True
+            )
 
-        
     end_time = datetime.now()
     logging.info(f"Evaluation ended at: {end_time}")
 
@@ -258,9 +255,12 @@ def evaluate():
     return True
 
 
+# Not needed
+
+
 def reEvaluate():
     # Get current directory
-    path = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/"
+    path = "C:/Users/Elyas/OneDrive - The University of Colorado Denver/Desktop/AI_Club/Adversarial-Machine-Learning/back-end/"
     start_time = datetime.now()
     logging.info("Starting re-evaluation script")
     logging.info(f"Re-evaluation started at: {start_time}")
@@ -277,7 +277,9 @@ def reEvaluate():
         logging.info("Re-evaluated directory is empty. Skipping re-evaluation.")
         return False
 
-    logging.info(f"Starting re-evaluation. Files found in evaluated: {os.listdir(uploads_dir)}")
+    logging.info(
+        f"Starting re-evaluation. Files found in evaluated: {os.listdir(uploads_dir)}"
+    )
 
     for timestamped_folder_name in os.listdir(uploads_dir):
         timestamped_folder = os.path.join(uploads_dir, timestamped_folder_name)
@@ -302,7 +304,9 @@ def reEvaluate():
                             tmp = f.readlines()
                             time_stamp = tmp[0].strip()
                             team_name = tmp[1].strip()
-                        logging.info(f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}")
+                        logging.info(
+                            f"Loaded team name: {team_name}, time stamp: {time_stamp} from {path_name}"
+                        )
 
                 # Load CIFAR-10 data
 
@@ -326,7 +330,7 @@ def reEvaluate():
                 if not isinstance(advs[0], torch.Tensor):
                     logging.info(f"Submission shape: {advs[0].shape}")
                     continue
-                if list(advs[0].shape) != [1000,3,32,32]:
+                if list(advs[0].shape) != [1000, 3, 32, 32]:
                     logging.info(f"Submission shape does not match: {advs[0].shape}")
                     continue
 
@@ -336,21 +340,26 @@ def reEvaluate():
                 logging.info(f"Score calculated for team: {team_name}")
 
                 # Append the results to the JSON file
-                submission_json = os.path.join(path, "Data/reevaluatedSubmissions2.json")
+                submission_json = os.path.join(
+                    path, "Data/reevaluatedSubmissions2.json"
+                )
 
                 with open(submission_json, "r") as f:
                     data = json.load(f)
                     # data.append could also be placed outside this with open block (I think)
                     data.append(score_metrics)
-                    logging.info(f"Loaded existing submission data from {submission_json}")
+                    logging.info(
+                        f"Loaded existing submission data from {submission_json}"
+                    )
 
                 with open(submission_json, "w") as f:
                     json.dump(data, f, indent=4)
                     logging.info(f"Updated submission data saved to {submission_json}")
 
-
             except Exception as e:
-                logging.error(f"Error processing folder {folder_name}: {str(e)}", exc_info=True)
+                logging.error(
+                    f"Error processing folder {folder_name}: {str(e)}", exc_info=True
+                )
 
     end_time = datetime.now()
     logging.info(f"Evaluation ended at: {end_time}")
