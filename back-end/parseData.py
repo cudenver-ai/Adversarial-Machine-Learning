@@ -1,21 +1,11 @@
 from werkzeug.utils import secure_filename
-import json
 import os
 import logging
 from datetime import datetime
+from utils.utils import update_visit
+from pathlib import Path
 
-log_file = "/home/vicente/dec/Adversarial-Machine-Learning/back-end/update_visits.log"
-logging.basicConfig(
-    filename=log_file,
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',  
-    datefmt='%Y-%m-%d %H:%M:%S' 
-)
-
-def loadData(file):
-    with open(file, "r") as f:
-        data = json.load(f)
-    return data
+update_visit(Path.cwd())
 
 def load_pickle_file(file, teamName):
     timestamp = datetime.now().strftime("%H-%M-%S")
@@ -48,4 +38,4 @@ def load_pickle_file(file, teamName):
 
     except Exception as e:
         logging.error(f"Error in load_pickle_file: {str(e)}")
-        raise e 
+        raise e

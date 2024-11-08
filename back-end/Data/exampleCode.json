@@ -1,6 +1,6 @@
 [
   {
-    "block1": "%%capture\n!pip install git+https://github.com/RobustBench/robustbench.git # library for loading robust classifer\n!pip install -q foolbox # library for adversarial example generation",
+    "block1": "pip install git+https://github.com/RobustBench/robustbench.git # library for loading robust classifer\npip install foolbox # library for adversarial example generation\npip install timm==1.0.9 # fixes dependency issue with foolbox",
     "block2": "from robustbench.utils import clean_accuracy\nfrom robustbench.utils import load_model\nimport matplotlib.pyplot as plt\nfrom torch import unique\nimport foolbox as fb\nimport numpy as np\nimport pickle\nimport torch\nimport os",
     "block3": "import gdown\noutput_file = 'cifar10.pt'\nfile_id = \"1A5gQCE0bHZhBlfcLQ2fFP5UygpgVkdAX\"\ngdown.download(f\"https://drive.google.com/uc?id={file_id}\", output_file)",
     "block4": "cifar_data = torch.load('cifar10.pt')",
