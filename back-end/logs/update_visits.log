@@ -206,3 +206,39 @@
 2024-11-08 13:32:33 - INFO - 127.0.0.1 - - [08/Nov/2024 13:32:33] "GET /api/organization HTTP/1.1" 200 -
 2024-11-08 13:32:34 - INFO - 127.0.0.1 - - [08/Nov/2024 13:32:34] "GET /api/example-code HTTP/1.1" 200 -
 2024-11-08 13:32:34 - INFO - 127.0.0.1 - - [08/Nov/2024 13:32:34] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:19:06 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2024-11-08 14:19:06 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-08 14:19:06 - INFO -  * Restarting with stat
+2024-11-08 14:19:07 - WARNING -  * Debugger is active!
+2024-11-08 14:19:07 - INFO -  * Debugger PIN: 713-692-122
+2024-11-08 14:19:24 - INFO - 127.0.0.1 - - [08/Nov/2024 14:19:24] "[33mGET /api/eval-data HTTP/1.1[0m" 404 -
+2024-11-08 14:19:24 - INFO - 127.0.0.1 - - [08/Nov/2024 14:19:24] "GET /api/update-timestamp HTTP/1.1" 200 -
+2024-11-08 14:19:24 - INFO - 127.0.0.1 - - [08/Nov/2024 14:19:24] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:19:24 - INFO - 127.0.0.1 - - [08/Nov/2024 14:19:24] "GET /api/update-timestamp HTTP/1.1" 200 -
+2024-11-08 14:19:24 - INFO - 127.0.0.1 - - [08/Nov/2024 14:19:24] "[33mGET /api/eval-data HTTP/1.1[0m" 404 -
+2024-11-08 14:19:24 - INFO - 127.0.0.1 - - [08/Nov/2024 14:19:24] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:26:53 - INFO - 127.0.0.1 - - [08/Nov/2024 14:26:53] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:27:00 - INFO - 127.0.0.1 - - [08/Nov/2024 14:27:00] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:27:09 - INFO - 127.0.0.1 - - [08/Nov/2024 14:27:09] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:27:11 - INFO - 127.0.0.1 - - [08/Nov/2024 14:27:11] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:28:45 - INFO - 127.0.0.1 - - [08/Nov/2024 14:28:45] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:28:49 - INFO - 127.0.0.1 - - [08/Nov/2024 14:28:49] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:29:59 - INFO - 127.0.0.1 - - [08/Nov/2024 14:29:59] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:29:59 - INFO - 127.0.0.1 - - [08/Nov/2024 14:29:59] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:34:26 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+2024-11-08 14:34:26 - INFO - [33mPress CTRL+C to quit[0m
+2024-11-08 14:34:26 - INFO -  * Restarting with stat
+2024-11-08 14:34:26 - WARNING -  * Debugger is active!
+2024-11-08 14:34:26 - INFO -  * Debugger PIN: 713-692-122
+2024-11-08 14:34:30 - INFO - 127.0.0.1 - - [08/Nov/2024 14:34:30] "GET /api/update-timestamp HTTP/1.1" 200 -
+2024-11-08 14:34:30 - INFO - 127.0.0.1 - - [08/Nov/2024 14:34:30] "[33mGET /api/eval-data HTTP/1.1[0m" 404 -
+2024-11-08 14:34:30 - INFO - 127.0.0.1 - - [08/Nov/2024 14:34:30] "GET /api/update-timestamp HTTP/1.1" 200 -
+2024-11-08 14:34:30 - INFO - 127.0.0.1 - - [08/Nov/2024 14:34:30] "[33mGET /api/eval-data HTTP/1.1[0m" 404 -
+2024-11-08 14:34:31 - INFO - 127.0.0.1 - - [08/Nov/2024 14:34:31] "GET /api/example-code HTTP/1.1" 200 -
+2024-11-08 14:34:31 - INFO - 127.0.0.1 - - [08/Nov/2024 14:34:31] "GET /api/example-code HTTP/1.1" 200 -

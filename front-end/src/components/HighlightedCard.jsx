@@ -59,7 +59,7 @@ export default function HighlightedCard() {
       </Typography>
       <TextField
         label="Team Name"
-        required 
+        required
         fullWidth
         value={teamName}
         onChange={(e) => setTeamName(e.target.value)}

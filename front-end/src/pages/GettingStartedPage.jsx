@@ -237,47 +237,53 @@ export default function GettingStartedPage() {
                 setup process.
               </Typography>
               <Divider />
-              <Typography variant="h4" sx={{ fontWeight: 'bold', mt: 4 }}>
-                Step 1: Install Dependencies
-              </Typography>
-              <Divider sx={{ my: 4 }} />
-              <Typography variant="body1" fontSize={18} lineHeight={1.8}>
-                Before starting, ensure you have installed the necessary
-                libraries for this project. Follow these steps:
-              </Typography>
-              <ul
-                style={{
-                  paddingLeft: '20px',
-                  fontSize: '1.05rem',
-                  lineHeight: 1.7,
-                }}
-              >
-                <li>
-                  Ensure you have Python installed (version 3.8 or higher).
-                </li>
-                <li>
-                  Create a virtual environment to manage dependencies (optional,
-                  but recommended).
-                </li>
-                <li>
-                  Run the following commands to install the required libraries:
-                  <ul
-                    style={{
-                      paddingLeft: '20px',
-                      fontSize: '1.05rem',
-                      lineHeight: 1.7,
-                    }}
-                  >
-                    <li>
-                      <code>RobustBench</code>: For loading pre-trained robust
-                      classifiers.
-                    </li>
-                    <li>
-                      <code>Foolbox</code>: For generating adversarial examples.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+            <Typography variant="h4" sx={{ fontWeight: 'bold', mt: 4 }}>
+              Step 1: Install Dependencies
+            </Typography>
+            <Divider sx={{ my: 4 }} />
+            <Typography variant="body1" fontSize={18} lineHeight={1.8}>
+              Before starting, ensure you have installed the necessary libraries for this project. Follow these steps:
+            </Typography>
+            <ul
+              style={{
+                paddingLeft: '20px',
+                fontSize: '1.05rem',
+                lineHeight: 1.7,
+              }}
+            >
+              <li>
+                Ensure you have Python installed (version 3.8 or higher).
+              </li>
+              <li>
+                Create a virtual environment to manage dependencies. You can use either <strong>Anaconda</strong> or <strong>venv</strong>:
+                <ul
+                  style={{
+                    paddingLeft: '20px',
+                    fontSize: '1.05rem',
+                    lineHeight: 1.7,
+                  }}
+                >
+                  <li>
+                    <strong>Using Anaconda</strong>:
+                    <pre style={{ backgroundColor: '#f5f5f5', padding: '10px', borderRadius: '5px', overflowX: 'auto' }}>
+                      <code>conda create -n myenv python=3.8<br />conda activate myenv</code>
+                    </pre>
+                  </li>
+                  <li>
+                    <strong>Using venv</strong>:
+                    <pre style={{ backgroundColor: '#f5f5f5', padding: '10px', borderRadius: '5px', overflowX: 'auto' }}>
+                      <code>python -m venv myenv<br />source myenv/bin/activate  # Linux/Mac<br />myenv\Scripts\activate  # Windows</code>
+                    </pre>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Install the required libraries in the virtual environment by running the following commands:
+                <pre style={{ backgroundColor: '#f5f5f5', padding: '10px', borderRadius: '5px', overflowX: 'auto' }}>
+                  <code>pip install robustbench<br />pip install foolbox <br /> pip install timm==1.0.9</code>
+                </pre>
+              </li>
+            </ul>
 
               <Box sx={{ position: 'relative', mb: 4 }}>
                 <pre className="language-python">

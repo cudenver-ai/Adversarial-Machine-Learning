@@ -30,7 +30,6 @@ path = Path.cwd()
 
 update_visit(path)
 
-
 @app.route("/api/upload-images", methods=["POST"])
 def upload_images():
     if "file" not in request.files:
